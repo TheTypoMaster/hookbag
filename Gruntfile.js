@@ -153,8 +153,11 @@ grunt.initConfig({
     jekyllSiteStyle: {
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
     },
+    bootstrapDir: {
+      command: 'mkdir -p ./style/base/bootstrap',
+    },
     bootstrap: {
-      command: '<%= pkg.rsync %> ../bootstrap/dist/* ./style/base',
+      command: '<%= pkg.rsync %> ../bootstrap/dist/* ./style/base/bootstrap',
     },
     v2SvnStylev2: {
       command: '<%= pkg.rsync %> style/v2 ~/Sites/svn/hb3/front/public/style',
@@ -204,6 +207,7 @@ grunt.loadNpmTasks('grunt-shell-spawn');
 grunt.registerTask('v3', [
   'clean',
   //'shell:baseOo',
+  'shell:bootstrapDir',
   'shell:bootstrap',
   'less',
   'uglify',
