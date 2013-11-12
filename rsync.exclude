@@ -8,4 +8,5 @@ less
 README
 component.json
 package.json
-
+.bowerrc
+bower.json
