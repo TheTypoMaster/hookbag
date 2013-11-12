@@ -1,3 +1,5 @@
+## Hookbag v{{ site.version }}
+
 ## 如何开始工作
 
 * 进入 hookbag 项目目录, 首先同步文件..
