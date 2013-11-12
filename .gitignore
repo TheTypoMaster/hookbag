@@ -39,3 +39,37 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+#style/**
+style/**/bower.json
+style/**/package.json
+style/**/README.md
+style/**/CONTRIBUTING.md
+style/**/Gemfile
+style/**/Gemfile.*
+style/**/_config.yml
+style/**/component.json
+style/**/composer.json
+style/**/Gruntfile.js
+style/**/.*
+style/**/less/
+style/**/sass/
+style/**/scss/
+
+#style/jquery
+style/base/jquery/jquery-*.js
+style/base/jquery/*.map
+
+#modernizr
+style/base/modernizr/feature-detects/
+style/base/modernizr/media/
+style/base/modernizr/test/
+style/base/modernizr/grunt.js
+
+#animate.css
+style/base/animate.css/source/
+style/base/animate.css/README.md
+
+#font-awesome
+style/base/font-awesome/less/
+style/base/font-awesome/src/

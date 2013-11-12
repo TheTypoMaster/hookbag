@@ -1,0 +1,263 @@
+#un-item {
+  /*product accessories*/
+
+  /*product Introduction*/
+
+}
+#un-item .un-itemInfo {
+  /*product img*/
+
+  /*product not available*/
+
+  /*product filter*/
+
+  /*product buy*/
+
+}
+#un-item .un-itemInfo .un-productPhoto {
+  margin-left: 20px;
+}
+#un-item .un-itemInfo .un-productPhoto .un-productPhoto_big {
+  width: auto;
+}
+#un-item .un-itemInfo .un-productPhoto .un-productPhoto_sma {
+  position: inherit;
+  text-align: left;
+  width: auto;
+  margin-left: 0;
+  margin-right: 20px;
+}
+#un-item .un-itemInfo .un-productPhoto .un-productPhoto_sma li {
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  display: block;
+  border: none;
+  margin: 0 0 10px 0;
+  opacity: 0.4;
+}
+#un-item .un-itemInfo .un-productPhoto .un-productPhoto_sma li.active {
+  opacity: 1;
+}
+#un-item .un-itemInfo .un-info .un-title {
+  margin-top: 0;
+  font-size: 17px;
+}
+#un-item .un-itemInfo .un-price {
+  font-family: 'amblelight';
+  border-top: 1px dotted #eee;
+  border-bottom: 1px dotted #eee;
+  padding: 10px 0;
+}
+#un-item .un-itemInfo .un-price .un-priceCurrent span {
+  font-size: 21px;
+}
+#un-item .un-itemInfo .un-sold {
+  padding: 5px 0;
+}
+#un-item .un-itemInfo .un-unavailable {
+  display: block;
+  width: auto;
+  float: left;
+  margin-bottom: 10px;
+}
+#un-item .un-itemInfo .un-unavailable h5 {
+  margin: 2px 0;
+}
+#un-item .un-itemInfo .un-productAttr {
+  color: #666;
+  margin: 10px 0 ;
+  clear: both;
+}
+#un-item .un-itemInfo .un-productAttr strong {
+  color: #000;
+}
+#un-item .un-itemInfo .un-productAttr .un-proSelect {
+  margin: 10px 0 5px;
+}
+#un-item .un-itemInfo .un-productAttr select {
+  border-radius: 0;
+  width: auto;
+  margin-left: 30px;
+}
+#un-item .un-itemInfo .un-productAttr .un-selectDiv {
+  padding: 0;
+  margin-left: 30px;
+}
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .un-selectLi {
+  margin-right: 5px;
+  border: 1px solid #eee;
+  padding: 2px;
+}
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .un-select {
+  border-color: #000;
+}
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .unavailable a,
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .un-backOrder a {
+  color: #666;
+}
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .unavailable,
+#un-item .un-itemInfo .un-productAttr .un-selectDiv .unavailable a {
+  cursor: no-drop;
+  color: #bbb;
+}
+#un-item .un-itemInfo .un-productBuy {
+  border-bottom: 1px dotted #eee;
+  padding: 10px 0;
+}
+#un-item .un-itemInfo .un-productBuy .un-qty label {
+  line-height: 30px;
+}
+#un-item .un-itemInfo .un-productBuy .un-qty #un-qtyNum {
+  width: auto;
+}
+#un-item .un-itemInfo .un-productBuy .btn {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 2px 0 rgba(0, 0, 0, 0.2);
+  background-image: none;
+  border-radius: 0;
+}
+#un-item .un-itemInfo .share-button {
+  margin: 10px 0;
+}
+#un-item .un-itemInfo.affix {
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+#un-item .un-itemInfo.affix .un-productBuy,
+#un-item .un-itemInfo.affix .un-price {
+  border: none;
+}
+#un-item .un-itemInfo.affix .un-price {
+  color: #D9534F;
+}
+#un-item .un-itemInfo.affix-top {
+  visibility: hidden;
+}
+#un-item .un-accessories {
+  margin: 10px 0 20px;
+}
+#un-item .un-accessories .un-acceList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#un-item .un-accessories .un-acceList .un-acc-icon {
+  position: absolute;
+  right: -15%;
+  top: 20%;
+  color: #ddd;
+}
+#un-item #un-tabs .nav-tabs > li {
+  margin: 0 5px 0 0;
+}
+#un-item #un-tabs .nav-tabs > li > a {
+  padding: 5px 15px;
+  border-radius: 0;
+  background-color: #fafafa;
+  color: #454545;
+  border: none;
+}
+#un-item #un-tabs .nav-tabs > li.active > a {
+  background-color: #ddd;
+}
+#un-item #un-tabs #un-size .tab-content .un-sizeTable table {
+  width: auto;
+}
+#un-item #un-tabs #un-size .tab-content .un-sizeTable h1 {
+  color: #FF6600;
+  font-size: 16px;
+  margin: 0;
+}
+#un-item #un-tabs #un-size .tab-content h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgLarge {
+  color: #FF6600;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgMed {
+  font-size: 14px;
+  font-weight: bold;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgSmall,
+#un-item #un-tabs #un-size .tab-content th {
+  font-size: 11px;
+  line-height: 14px;
+  padding-left: 10px;
+  padding-right: 18px;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgFill {
+  background-color: #EEEFEF;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgFill,
+#un-item #un-tabs #un-size .tab-content .dsfgNorm {
+  height: 50px;
+}
+#un-item #un-tabs #un-size .tab-content .dsfgBase {
+  font-size: 11px;
+  line-height: 18px;
+  padding-left: 10px;
+}
+#un-item #un-tabs .un-afterSS {
+  padding-top: 0;
+  font-size: 11px;
+}
+#un-item #un-tabs .un-afterSS h3 {
+  margin: 5px 0px;
+}
+#un-item #un-tabs .un-afterSS .un-return {
+  padding: 10px;
+}
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv {
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv em,
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv span {
+  font-weight: bold;
+}
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv em {
+  font-size: 18px;
+}
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv strong {
+  font-size: 24px;
+}
+#un-item #un-tabs .un-afterSS .rows .un-afterDiv span {
+  font-size: 13px;
+  line-height: 18px;
+}
+#un-item #un-tabs .un-afterSS .un-afterNext {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  bottom: 50%;
+  display: block;
+  height: 9px;
+  position: absolute;
+  right: -10px;
+  z-index: 9;
+  margin-left: -5px;
+  width: 20px;
+}
+#un-item #un-tabs .un-afterSS h3 {
+  background-color: #666;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 18px;
+}
+#un-item #un-tabs .un-tar {
+  text-align: right;
+}
+#un-item #un-tabs .un-tar .btn {
+  font-size: 12px;
+  background: none;
+}

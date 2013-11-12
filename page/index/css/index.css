@@ -1,0 +1,67 @@
+#un-finder {
+  background-color: #fafafa;
+  padding-bottom: 20px;
+}
+#un-finder select.input-sm {
+  margin-bottom: -1px;
+  border-radius: 0;
+}
+.un-index-grid {
+  border: 1px dotted #ddd;
+  margin-top: 10px;
+}
+.un-index-grid .un-title {
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+.un-index-grid .un-title a {
+  color: #ddd;
+}
+.un-index-grid .un-index-gridItem {
+  background-color: #fff;
+}
+.un-index-grid:hover .un-title {
+  color: #428BCA;
+}
+.un-index-spc-grid:hover .un-title a {
+  color: #fff;
+}
+#un-hottest:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+#un-hottest .un-title {
+  color: rgba(231, 76, 60, 0.6);
+}
+#un-lowest:hover {
+  background-color: rgba(41, 128, 185, 0.1);
+}
+#un-lowest .un-title {
+  color: rgba(41, 128, 185, 0.6);
+}
+#un-hard:hover {
+  background-color: rgba(149, 165, 166, 0.1);
+}
+#un-hard .un-title {
+  color: #95a5a6;
+}
+#un-bestseller .carousel-inner {
+  padding: 15px 0;
+}
+#un-cate .panel-body .un-title {
+  margin: 10px 0 20px;
+  padding-bottom: 0;
+}
+#un-cate .panel-body .un-title a {
+  color: #000;
+}
+#un-cate .panel-body .un-title a:hover {
+  color: #428BCA;
+}
+#un-brand {
+  margin-top: 10px;
+}
+#un-brand .un-title {
+  line-height: 25px;
+  background-color: #fafafa;
+  letter-spacing: 0;
+}
