@@ -1,0 +1,61 @@
+<div class="container ug-account">
+
+	<div id="" class="row">
+		<div class="col-md-3">
+			{% include page/login/block/mya.html %}
+		</div>
+		<div class="col-md-9">
+
+			<div class="panel panel-default ug-account-list">
+			  <div class="panel-heading">
+			  <strong>My Orders</strong>
+			  </div>
+			  <div class="panel-body">
+			  <div class="pull-right col-md-4 input-group input-group-sm">
+					<input type="text" class="form-control">
+					<span class="input-group-btn">
+					<button class="btn btn-default" type="button">search</button>
+					</span>
+				</div><!-- /input-group -->
+				<table class="table table-striped">
+					<thead>
+						<tr>
+						<th>ID</th>
+						<th>Payment Status</th>
+						<th>Order Step</th>
+						<th>Creation Time</th>
+						<th>Invoice</th>
+						</tr>
+					</thead>
+					<tbody>
+					  {% for x in (1..4) %}
+						<tr>
+							<td><a href="/myaccount/order/detail/id/1113817173441535">1113817173441535</a></td>
+							<td>Not Paid</td>
+							<td>Pending</td>
+							<td>Sun, 13 Oct 2013 22:22:27 -0400</td>
+							<td>
+							</td>
+						</tr>
+					  {% endfor %}
+					</tbody>
+				</table>
+				<ul class="pull-right pagination mr10">
+				  <li><a href="#">Prev</a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">Next</a></li>
+				</ul>
+
+			  </div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+

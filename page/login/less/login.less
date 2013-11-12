@@ -1,0 +1,30 @@
+@import url("../../common/less/config.less");
+#ug-login{
+	margin-left:15px;
+	font-size:12px;
+	li{
+		list-style-type:none;
+	}
+	.ug-exist,.ug-signin-help,.ug-signup{
+		border:@border;
+		.ug-title{
+			padding-left:20px;
+		}
+		form,>div{
+			padding:20px;
+			input{
+				font-size:12px;
+				height:auto;
+			}
+			.checkbox{
+				margin-bottom:15px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	#ug-login{
+		margin-left:0;
+		margin-top:10px;
+	}
+}
