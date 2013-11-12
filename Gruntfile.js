@@ -3,6 +3,7 @@ grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
   clean: {
     v3: ["./style/*","./_site"],
+    base: ["./style/base/font-awesome/less","./style/base/font-awesome/scss","./style/base/font-awesome/src"],
   },
   // less
   less: {
@@ -45,6 +46,10 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathBuild %>/css/un.css',
           dest: '<%= pkg.pathBuild %>/css/un.css'
+        },
+        {
+          src: '<%= pkg.pathBuild %>/css/ui.css',
+          dest: '<%= pkg.pathBuild %>/css/ui.css'
         }
       ]
     },
@@ -98,6 +103,13 @@ grunt.initConfig({
           './block/easydropdown/css/easydropdown.css',
         ]
       }
+    },
+    ui: {
+      files: {
+        '<%= pkg.pathBuild %>/css/ui.css':[
+          '<%= pkg.pathPage %>/ui/css/ui.css',
+        ]
+      }
     }
   },
   // imagemin
@@ -120,7 +132,7 @@ grunt.initConfig({
     dev : {
       src : './',
       dest: './_site/',
-      ext: ['.html', '.css', '.png', '.jpg', '.gif']
+      ext: ['.html', '.css', '.js', '.png', '.jpg', '.gif']
     },
     server : {
       src : './',
@@ -161,6 +173,9 @@ grunt.initConfig({
     },
     v2SvnStylev2: {
       command: '<%= pkg.rsync %> style/v2 ~/Sites/svn/hb3/front/public/style',
+    },
+    bower: {
+      command: 'bower install',
     }
   },
   // watch
@@ -205,7 +220,9 @@ grunt.loadNpmTasks('grunt-shell-spawn');
 
 // 默认执行的任务
 grunt.registerTask('v3', [
-  'clean',
+  'clean:v3',
+  'shell:bower',
+  'clean:base',
   //'shell:baseOo',
   'shell:bootstrapDir',
   'shell:bootstrap',
