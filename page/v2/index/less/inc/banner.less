@@ -1,0 +1,51 @@
+#ug-banner{
+	position:relative;
+	overflow:hidden;
+	.ug-banner-big{
+		width:85.82%;
+	}
+	.ug-banner-small{
+		float:right;
+		margin:0;
+		width:12.17%;
+		position:static;
+		li{
+			border:@border;
+			cursor:pointer;
+			margin-bottom:16px;
+			margin-left:0;
+			text-indent:0;
+			border-radius:0;
+			width:auto;
+			height:auto;
+			float:none;
+			position:relative;
+			&:last-child{
+				margin-bottom:0;
+			}
+			img{
+				width:100%;
+			}
+		}
+		.arrow {
+			border-color: transparent #0E71C0 transparent transparent;
+			border-style: solid;
+			border-width: 8px;
+			font-size: 0;
+			height: 0;
+			left: -16px;
+			margin-top: -8px;
+			position: absolute;
+			top: 50%;
+			width: 0;
+			display:none;
+		}
+		.active{
+			border-color:#0E71C0;
+			.arrow{
+				display:block;
+			}
+		}
+	}
+}
+

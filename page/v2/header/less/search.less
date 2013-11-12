@@ -1,0 +1,46 @@
+#ug-search,#ug-search2{
+  margin-left:0px;
+  padding:0;
+  border:@border-blue;
+  .rounded-corners;
+    .ug-searchAll{
+      position:relative;
+      height:30px;
+      line-height:30px;
+      border-radius:0;
+      padding:0 10px;
+      overflow:hidden;
+	  border:none;
+      select{
+        position:absolute;
+        left:-2px;
+        top:0;
+        opacity:0;
+        height:30px;
+        background-color:#f5f5f5;
+        cursor:pointer;
+      }
+    }
+    .form-control{
+      border:none;
+      height:30px;
+      border-radius:0;
+	  position:relative;
+    }
+    .ug-searchBtn{
+      background-image:url(../img/search-icon.png);
+      background-position:0 0;
+      border:none;
+      border-radius: 0 0 0 0;
+      height:30px;
+      width: 35px;
+      position:absolute;
+      top:0;
+      right:0;
+      &:hover{
+        background-position:0 bottom;
+        transition: none 0s ease 0s;
+      }
+    }
+
+}

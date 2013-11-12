@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html id="oo">
+  <head>
+    <!-- meta, title, css, favicons -->
+    {% include flow/header.html %}
+  </head>
+  <body>
+
+    <div id="wrap">
+
+      {% include flow/nav.html %}
+
+      <div class="container">
+        <div class="page-header">
+          <h1>{{ page.title }}</h1>
+        </div>
+        {{ content }}
+      </div>
+
+    </div>
+
+    {% include flow/footer.html %}
+
+    <script src="//localhost:6801/livereload.js"></script>
+  </body>
+</html>

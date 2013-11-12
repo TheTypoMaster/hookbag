@@ -1,0 +1,46 @@
+<script>
+		var targ='index';
+</script>
+
+<!-- mt20 只是临时添加.修复面包屑没出来时的间距 bug ( by zvg 2013-08-28 0:28 ) -->
+<div class="container" style="padding-top:20px">
+
+  <div class="row">
+
+    <div class="col-md-7 col-md-offset-3 ug-index-control" style="margin-top:-20px;margin-bottom:10px;">
+      {% include page/index/block/promotion.html %}
+    </div>
+
+    <div class="visible-md visible-lg col-md-2">
+      <!-- 墨盒的工具 ( by zvg 2013-08-28 0:28 ) -->
+      {% include page/index/block/finder.html %}
+    </div>
+
+  </div>
+  
+  <div class="row">
+    <div class="visible-md visible-lg col-md-12">
+    {% include page/index/block/halfprice.html %}
+    </div>
+  </div>
+
+
+  <div class="row ug-category">
+    <!-- 热门分类 ( by zvg 2013-08-28 0:28 ) -->
+    <!-- md 6 sm 3 xs 2 -->
+    {% include page/index/block/category.html %}
+  </div>
+
+  <div class="row">
+    <div class="visible-md visible-lg col-md-12">
+    {% include page/index/block/bestseller.html %}
+    </div>
+  </div>
+
+  <div id="ug-elec" class="">
+
+    {% include page/index/block/3c.html %}
+
+  </div>
+
+</div>

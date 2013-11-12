@@ -1,0 +1,12 @@
+---
+layout: flow
+title: Other 其它
+---
+
+<div class="">
+  <ul>
+    {% for post in site.categories.other %}
+      <li><a href="{{ post.url }}">{{post.date | date:"%Y年%m月%d日"}} - {{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+<div id="ug-hotBrand" class="visible-md visible-lg">
+
+  <div class="ug-mainMsg" style="margin-left:0px;">
+    <strong>Hot Brands</strong>
+  </div>
+
+  <table class="table table-condensed">
+    {% for x in (1..3) %}
+    <tr>
+      {% for x in (1..5) %}
+      <td style="padding: 15px 10px;">
+        <a href="">
+          <img class="hotBrandPic" style="max-height: 30px;" src="holder.js?75x20">
+        </a>
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </table>
+
+</div>

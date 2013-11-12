@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         rdiscount
+pygments:         true
+auto:             true
+
+# Permalinks
+#permalink:        pretty
+#permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title.html
+
+# Server
+destination:      ./_site
+exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json", "composer.json", "CONTRIBUTING.md", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "readme.md", "Readme.md", "History.md", "less", "start.cmd", "start.sh", "rsync.exclude"]
+port:             6800
+
+# Custom vars
+title: "Hookbag"

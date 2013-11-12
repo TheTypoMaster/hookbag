@@ -1,0 +1,44 @@
+---
+layout: flow
+title: Hookbag
+---
+
+<div class="row">
+
+  <div class="col-sm-12 col-md-6">
+    <h2>常用链接</h2>
+    <h3>网站</h3>
+    <ul>
+      <li><a href="http://www.hookbag.ca/">加拿大站</a> (前台)</li>
+      <li><a href="http://www.hookbag.com/">美国站</a> (前台)</li>
+      <li><a href="http://admin.hookbag.ca/">后台</a> (开帐号咨询 coffee)</li>
+    </ul>
+    <h3>邮箱</h3>
+    <ul>
+      <li><a href="http://mail.hookbag.com">邮箱.com</a></li>
+      <li><a href="http://mail.hookbag.ca">邮箱.ca</a></li>
+    </ul>
+    <h3>开发</h3>
+    <ul>
+      <li><a href="http://dev.hookbag.com/svn/hb/trunk/hb3/">SVN</a></li>
+      <li><a href="http://github.com/zvg/hookbag/">Git</a></li>
+      <li>(开通帐号请联系 coffee & 布衣)</li>
+    </ul>
+    <h3>工具</h3>
+    <ul>
+      <li><a href="">Google Analytics</a></li>
+      <li><a href="">Google Webmasters</a></li>
+      <li><a href="">Google Merchants</a></li>
+    </ul>
+  </div>
+
+  <div class="col-sm-6 col-md-6">
+    <h2>最近更新</h2>
+    <ul class="recent">
+    {% for post in site.posts limit: 20 %}
+      <li><a href="{{ post.url }}">{{post.date | date:"%Y年%m月%d日"}} - {{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+
+</div>

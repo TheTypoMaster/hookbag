@@ -1,0 +1,79 @@
+<script>
+		var targ='';
+</script>
+
+<!-- #top pos:a 控制整个top大小 ( by zvg 2013-08-28 0:30 ) -->
+<div id="top" class="container">
+
+  <div id="top2" class="row fz15">
+
+    <div class="col-md-3">
+      <!-- logo 美国和加拿大不一样 ( by zvg 2013-08-28 0:32 ) -->
+      <div class="mt10">
+        {% include page/header/block/logo.html %}
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <ul class="nav navbar-nav visible-md visible-lg">
+        <li>
+          <!-- 电话 ,注意美国和加拿大号码不一样 ( by zvg 2013-08-28 0:31 ) -->
+          <a class="fz13" href="/page/page/html/page.html">
+            <span class="glyphicon glyphicon-earphone"></span> {% include page/header/assets/tel.html %}
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" style="background-color: #f9f9f9;">
+        
+        <!-- 登录状态 程序上无法显示用户名 ( by zvg 2013-08-28 0:32 ) -->
+        <li class="fz15" id="ug-sign">
+          {% include page/header/user/sign.html %}
+        </li>
+
+        <!-- my account ( by zvg 2013-08-28 8:27 ) -->
+        <li class="dropdown fz15" id="ug-mya">
+          {% include page/header/user/mya.html %}
+        </li>
+        <!-- cart ( by zvg 2013-08-28 8:27 ) -->
+        <li class="dropdown fz15" id="ug-cart">
+          {% include page/header/user/cart.html %}
+        </li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+
+  <!-- 暂时禁用 header 的 affix ( by zvg 2013-08-29 16:58 ) -->
+  <!-- <div id="top3" class="row" data-spy="affix" data-offset-top="10"> -->
+  <div id="top3" class="row">
+
+    <!-- 菜单.移动设备时隐藏.只显示搜索 ( by zvg 2013-08-28 0:33 ) -->
+    <div class="visible-md visible-lg col-md-3" id="ug-nav-vertical">
+      {% include page/header/block/nav-vertical.html %}
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9">
+      <!-- 所有分类和 input 的宽度还有 bug ( by zvg 2013-08-28 0:33 ) -->
+      {% include page/header/block/search.html %}
+    </div>
+
+ </div>
+
+ <div id="top4" class="row">
+    <!-- 面包屑 最终目标隐藏它 ( by zvg 2013-08-28 0:35 ) -->
+    {% include page/header/block/breadcrumb.html %}
+
+ </div>
+
+</div>
+
+
+
+
+
+
+
+

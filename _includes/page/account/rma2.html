@@ -1,0 +1,44 @@
+<div class="container ug-account">
+
+	<div id="" class="row">
+		<div class="col-md-3">
+			{% include page/login/block/mya.html %}
+		</div>
+		<div class="col-md-9">
+
+			<div class="panel panel-default ug-account-list">
+			  <div class="panel-heading">
+			  <strong>Create a RMA</strong>
+			  </div>
+			  <div class="panel-body">
+				<div class="alert alert-warning"><span class="glyphicon glyphicon-warning-sign"></span>　Please select an order !</div>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+						<th>ID</th>
+						<th>Payment Status</th>
+						<th>Order Step</th>
+						<th>Creation Time</th>
+						</tr>
+					</thead>
+					<tbody>
+					  {% for x in (1..4) %}
+						<tr>
+							<td><a href="rma3.html">1113817173441535</a></td>
+							<td>Not Paid</td>
+							<td>Completed</td>
+							<td>Mon, 14 Oct 2013 03:37:04 -0400</td>	
+						</tr>
+					  {% endfor %}
+					</tbody>
+				</table>
+
+			  </div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+

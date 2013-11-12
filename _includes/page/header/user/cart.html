@@ -1,0 +1,25 @@
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  <span class="glyphicon glyphicon-shopping-cart"></span> CART(0)<b class="caret"></b>
+</a>
+
+<ul class="dropdown-menu">
+  {% for x in (1..4) %}
+  <li>
+    <div class="media" style="margin: 0px 5px;">
+      <a class="pull-left" href="#">
+        <img class="media-object" src="holder.js?40x40">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">
+          <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+              </div>
+        </h4>
+        <div class="ug-pty">qty:1</div>
+      </div>
+    </div>
+
+  </li>
+  <li class="divider"></li>
+  {% endfor %}
+  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+</ul>

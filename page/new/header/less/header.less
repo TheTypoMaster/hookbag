@@ -1,0 +1,210 @@
+
+/*头部切换效果*/
+.row-offcanvas {
+    position: relative;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.row-offcanvas-right.active
+.sidebar-offcanvas {
+	top:110px;
+	display:block;
+}
+.row-offcanvas-right.active {
+	bottom: 100px;
+}
+.sidebar-offcanvas {
+	position: absolute;
+	width:100%;
+	display:none;
+}
+
+/*头部样式*/
+
+.un-top{
+	padding:10px 0;
+	#un-logo{
+		margin-left:30px;
+	}
+	#un-search{	
+		width:100%;
+		&>li{
+			padding:0;
+		}
+		input[type=search]{
+			border-radius:0;
+			margin:5px 15px 0 0;
+			border-color:#eee;
+			box-shadow:0 0 0 rgba(0,0,0,.5);
+			-webkit-box-shadow: 0 0 0 rgba(0,0,0,.5);
+			-moz-box-shadow: 0 0 0 rgba(0,0,0,.5);
+		}
+		.dropdown{
+			border-radius: 0;
+			border-right:0;
+			margin-top:5px;
+			border-color:#eee;
+			height:34px;
+			width:auto;
+			&.open{
+				z-index: 999;
+			}
+			ul{
+				padding:0;
+				li.focus{
+					background: #F60;
+				}
+			}
+			li,.selected{
+				font-size:12px;
+				color:#666;
+			}
+			.selected{
+				padding:12px;
+			
+			}
+			.carat{
+				border: 4px solid transparent;
+				border-top: 6px solid #000;
+			}
+		}	
+	}
+
+	#un-login{
+		#un-signUp{
+			margin:0 15px;
+			text-decoration:underline;
+		}
+	}
+	.un-navmember{
+		position:static;
+		#un-user{
+			border-right:1px solid #eee;
+		}
+		#un-user{
+			color:#777;
+			&:hover{
+				color:#428bca;
+			}
+			span{
+				padding:15px;
+				cursor:pointer;
+			}
+			&.active span{
+				color:#428bca;
+			}
+		}
+		li{	
+			&>a{
+				position:relative;
+				background:none;
+				color:#777;
+				.un-cartNum{
+					position: absolute;
+					top: 3px;
+					left: 50%;
+					font-size: 11px;
+					margin-left: -6px;
+				}
+				&:hover{
+					color:#428bca;
+				}
+			}
+		}
+	}
+}
+/*导航样式*/
+.un-nav-affix{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0;
+    box-shadow:none;
+	border-width:1px 0;
+    min-height: 0;
+	margin-bottom:0;
+	z-index:9;
+	&.affix{
+			top:0;
+			width:100%;
+			position:static;
+	}
+}
+.un-nav{
+    border: medium none;
+	position:relative;
+    font-family: 'amblelight';
+	font-size:15px;
+	display:table;
+	.un-navlist{
+		display:table-row;
+		float:none;
+		width:100%;
+		&>li{
+			display:table-cell;
+			float:none;
+			text-align:center;
+			border-right:1px solid #eee;
+			&:first-child{
+			}
+			&:last-child{
+				border-right:none;
+			}
+			.un-navgroup{
+				display: none;
+				position: absolute;
+				padding:10px 30px;
+				border:1px solid #eee;
+				background-color:#fff;
+				text-align:left;
+				min-width:178px;
+				z-index:999;
+				li{
+					list-style-image: url("../img/menudyn1_fleche.png");
+				}
+				a{
+					font-size:12px;
+					line-height:1.8;
+				}
+			}
+			&:hover{
+				.un-navgroup{
+					display:block;
+				}
+				&>a{
+					border-color:#F60;
+				}
+			}
+			&>a{
+				border-bottom:2px solid transparent;
+				-moz-box-sizing: content-box;
+				padding:8px 0;
+				text-decoration:none;
+				color:#777
+			}
+		}
+	}
+}
+
+
+#un-index{
+	.affix{
+		position:fixed;
+		top:0;
+		width:100%;
+		background-color:rgba(255,255,255,0.96);
+		z-index:997;
+	}
+
+}
+
+
+
+
+/*面包屑样式*/
+.breadcrumb{
+	font-size:13px;
+	background:#fff;
+	position:relative;
+	border-radius:0;
+	margin-bottom:10px;
+}

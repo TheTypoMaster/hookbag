@@ -1,0 +1,59 @@
+---
+layout: other
+title: video
+---
+
+<!--the container-->
+<div class="container">
+  <!--the main-->
+  <article class="col-md-10 col-md-push-2" style="border:1px solid #ddd;border-width:0 1px;">
+    <div class="row page-header">
+      <h4 class="col-md-12"><strong>教育</strong></h4>
+      <div class="col-xs-6 col-sm-6 col-md-2"><select class="form-control input-sm"><option>视频</option></select></div>
+
+    </div>
+    {% for x in (1..3) %}
+    <div class="row">
+        {% for x in (1..3) %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" style="border:none; text-align:center;">
+          <img data-src="holder.js/205x115" alt="...">
+          <div class="caption">
+            <a href=""><strong>RSA Animate - Changing Education Paradigms</strong></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+        </div>
+    {% endfor %}
+
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+    
+  </article>
+  <!--the aside-->
+  <aside class="col-md-2 col-md-pull-10">
+    <ul class="nav">
+    <li><a href=""><span class="text-danger glyphicon glyphicon-star"></span> YouTube 上的热门视频</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-music"></span> 音乐</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-road"></span> 体育</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-send"></span> 游戏</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-book"></span> 教育</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-film"></span> 电影</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-play-circle"></span> 电视节目</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-globe"></span> 新闻</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-sound-dolby"></span> 直播</a></li>
+    <li><a href=""><span class="text-danger glyphicon glyphicon-star"></span> 精彩视频</a></li>
+    </ul>
+  </aside>
+</div>
+
+</body>
+</html>

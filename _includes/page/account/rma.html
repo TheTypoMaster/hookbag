@@ -1,0 +1,56 @@
+<div class="container ug-account">
+
+	<div id="" class="row">
+		<div class="col-md-3">
+			{% include page/login/block/mya.html %}
+		</div>
+		<div class="col-md-9">
+
+			<div class="panel panel-default ug-account-list">
+			  <div class="panel-heading">
+			  <strong>RMA Status</strong>
+			  </div>
+			  <div class="panel-body">
+				<a href="rma2.html" class="btn btn-primary btn-xs pull-right"><span class="glyphicon glyphicon-plus"></span> <strong> Create a new RMA</strong></a>
+			  
+				<table class="table table-striped">
+					<thead>
+						<tr>
+						<th>Order #</th>
+						<th>RMA #</th>
+						<th>Type</th>
+						<th>Status</th>
+						<th>Time</th>
+						</tr>
+					</thead>
+					<tbody>
+					  {% for x in (1..4) %}
+						<tr>
+							<td>1113817173441535</td>
+							<td>1213817173441535</td>
+							<td>Returns</td>
+							<td>Pending</td>
+							<td>Mon, 14 Oct 2013 03:37:04 -0400</td>	
+						</tr>
+					  {% endfor %}
+					</tbody>
+				</table>
+				<ul class="pull-right pagination mr10">
+				  <li><a href="#">Prev</a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">Next</a></li>
+				</ul>
+
+			  </div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+

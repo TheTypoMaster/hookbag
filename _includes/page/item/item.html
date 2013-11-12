@@ -1,0 +1,60 @@
+<script src="../js/qty.js"></script>
+
+<div class="container ug-main">
+  <div class="row ug-productInfo-01">
+    <div class="col-xs-12 col-sm-3 col-md-3">
+      {% include page/item/block/item/photo.html %}
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-9">
+      {% include page/item/block/item/title.html %}
+
+      <div class="row">
+        <div class="col-md-6">
+          
+          <div class="visible-md visible-lg pull-right" style="margin:5px;">
+            <a id="tfw-badge" href="http://www.testfreaks.ca">TestFreaks</a>
+          </div>
+
+          {% include page/item/block/item/price.html %}
+          {% include page/item/block/item/ship.html %}
+          <div class="ug-productAttr">
+            <div class="ug-proSelect">Color: <strong>R TNF Black 2</strong></div>
+
+            {% include page/item/block/item/filter.html %}
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="label label-default ug-unavailable"><i class="glyphicon glyphicon-exclamation-sign"></i>
+            <h4>This product is not available now.</h4>
+          </div>
+          {% include page/item/block/item/buy.html %}
+          <div class="visible-md visible-lg">
+            {% include page/item/block/item/share.html %}
+          </div>
+          <!--share end-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--productInfo-01 end-->
+  <div class="row ug-productInfo-02">
+
+    <div class="ug-productMain">
+      {% include page/item/block/list/accessories.html %}
+
+      {% include page/item/block/tool/nav.html %}
+      <!--productFixedSide end-->
+      
+      {% include page/item/block/list/also.html %}
+      {% include page/item/block/attr/overview.html %}
+      {% include page/item/block/attr/doc.html %}
+      {% include page/item/block/attr/size.html %}
+      <hr class="ug-dottedBorder">
+      {% include page/item/block/attr/specifications.html %}
+      {% include page/item/block/list/best.html %}
+      {% include page/item/block/msg/toc.html %}
+    </div>
+
+  </div>
+</div>

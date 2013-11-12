@@ -1,0 +1,274 @@
+#un-item{
+	.un-itemInfo{
+		/*product img*/
+		.un-productPhoto{
+			margin-left:20px;
+			.un-productPhoto_big{
+				width: auto;
+			}
+			.un-productPhoto_sma{
+				position: inherit;
+				text-align: left;
+				width: auto;
+				margin-left:0;
+				margin-right:20px;
+				li{
+					width:auto;
+					height:auto;
+					text-indent:0;
+					display:block;
+					border:none;
+					margin:0 0 10px 0;
+					opacity:0.4;
+					&.active{
+						opacity:1;
+					}
+				}
+			}
+		}
+		.un-info{
+			.un-title{
+				margin-top:0;
+				font-size:17px;
+			}
+		}
+		.un-price{
+			font-family: 'amblelight';
+			border-top:1px dotted #eee;
+			border-bottom:1px dotted #eee;
+			padding:10px 0;
+			.un-priceCurrent span{
+				font-size:21px;
+			}
+		}
+		.un-sold{
+			padding:5px 0;
+		}
+
+		/*product not available*/
+		.un-unavailable{
+			display:block;
+			width:auto;
+			float:left;
+			margin-bottom:10px;
+			h5{
+				margin:2px 0;
+			}
+		}
+
+		/*product filter*/
+		.un-productAttr{
+			color:#666;
+			margin:10px 0 ;
+			clear:both;
+			strong{
+				color:#000;
+			}
+			.un-proSelect{
+				margin:10px 0 5px;
+			}
+			select{
+				border-radius:0;
+				width:auto;
+				margin-left:30px;
+			}
+			.un-selectDiv{
+				padding:0;
+				margin-left:30px;
+				.un-selectLi{
+					margin-right:5px;
+					border:1px solid #eee;
+					padding:2px;
+				}
+				.un-select{
+					border-color:#000;
+				}
+				.unavailable a,.un-backOrder a {
+					color:#666;
+				}
+				.unavailable,
+				.unavailable a {
+					cursor:no-drop;
+					color:#bbb;
+				}
+			}
+		}
+
+		/*product buy*/
+		.un-productBuy{
+			border-bottom:1px dotted #eee;
+			padding:10px 0;
+			.un-qty{
+				label{
+					line-height:30px;
+				}
+				#un-qtyNum{
+					width:auto;
+				}
+			
+			}
+			.btn{
+				box-shadow:0 1px 0 rgba(255, 255, 255, 0.15) inset, 1px 2px 0 rgba(0, 0, 0, 0.2);
+				background-image:none;
+				border-radius:0;
+			}
+		}
+		.share-button{
+			margin:10px 0;
+		}
+		&.affix{
+			top:0;
+			left:0;
+			background-color:rgba(255,255,255,0.95);
+			border-bottom:1px solid #eee;
+			width:100%;
+			.un-productBuy,.un-price{
+				border:none;
+			}
+			.un-price{
+				color:#D9534F;
+			}
+		}
+		&.affix-top{
+			visibility:hidden;
+		}
+	}
+	/*product accessories*/
+	.un-accessories{
+		margin:10px 0 20px;
+		.un-acceList{
+			margin:0;
+			padding:0;
+			list-style-type:none;
+			.un-acc-icon{
+				position:absolute;
+				right:-15%;
+				top:20%;
+				color:#ddd;
+			}
+		}
+	}
+	/*product Introduction*/
+	#un-tabs{
+		.nav-tabs > li{
+			margin:0 5px 0 0;
+			&> a{
+				padding:5px 15px;
+				border-radius:0;
+				background-color:#fafafa;
+				color:#454545;
+				border:none;
+			}
+			&.active>a{
+				background-color:#ddd;
+			}
+		} 
+		#un-size{
+			.tab-content{
+				.un-sizeTable{
+					table{
+						width:auto;
+					}
+
+					h1{
+						color: #FF6600;
+						font-size: 16px;
+						margin:0;
+					}
+				}
+				h4{
+					font-size:14px;
+					font-weight:700;
+				}
+				.dsfgLarge{
+					color: #FF6600;
+					font-size: 16px;
+					font-weight:bold;
+					padding-top:10px;
+				}
+				.dsfgMed{
+					font-size:14px;
+					font-weight:bold;
+				}
+				.dsfgSmall,th {
+					font-size: 11px;
+					line-height: 14px;
+					padding-left: 10px;
+					padding-right: 18px;
+				}
+				.dsfgFill {
+					background-color: #EEEFEF;
+				}
+				.dsfgFill, .dsfgNorm {
+					height: 50px;
+				}
+				.dsfgBase {
+					font-size: 11px;
+					line-height: 18px;
+					padding-left: 10px;
+				}
+				
+			}
+		}
+		.un-afterSS {
+			padding-top:0;
+			font-size:11px;
+		  h3 {
+			margin: 5px 0px;
+		  }
+		  .un-return{
+			padding:10px;
+		  }
+		  .rows{
+			.un-afterDiv{
+			  padding:0 10px;
+			  margin-top:10px;
+			  margin-bottom:10px;
+			  position:relative;
+			  em,
+			  span{
+				font-weight:bold;
+			  }
+			  em {
+				font-size:18px;
+			  }
+			  strong {
+				font-size:24px;
+			  }
+			  span {
+				font-size:13px;
+				line-height:18px;
+			  }
+			}
+		  }
+		  .un-afterNext {
+			background-repeat:no-repeat;
+			background-position:0 0;
+			bottom:50%;
+			display:block;
+			height:9px;
+			position:absolute;
+			right:-10px;
+			z-index:9;
+			margin-left:-5px;
+			width:20px;
+		  }
+		  h3 {
+			background-color:#666;
+			color:#fff;
+			height:30px;
+			line-height:30px;
+			padding:0 10px;
+			font-size:18px;
+		  }
+		}
+		.un-tar{
+			text-align:right;
+			.btn{
+				font-size:12px;
+				background:none;
+			}
+		}
+		
+	}
+}
