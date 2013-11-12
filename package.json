@@ -1,29 +1,14 @@
 {
   "author": "zvg",
   "name": "hookbag",
-  "version": "3.0.0",
-  "pathBuildV2": "./style/v2",
-  "pathBuildFlow": "./style/flow",
-  "pathSrc": "./style/src",
+  "version": "3.11.12",
+  "pathBuild": "./style/v3",
   "pathPage": "./page",
   "pathMod": "./mod",
-  "pathLib": "./style/src/lib",
   "pathSite": "./_site",
   "pathOo": "~/Sites/oo",
+
   "rsync": "rsync --progress -a --exclude-from=rsync.exclude -e 'ssh -q'",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zvg/hookbag.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zvg/hookbag/issues"
-  },
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",

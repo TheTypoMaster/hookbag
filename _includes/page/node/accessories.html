@@ -1,148 +1,40 @@
-<div class="container">
-<div class="clearfix ug-node">
-<div class="pull-left ug-side">
-	<ul class="ug-navSideBar">
-		<li> <a title="Computer Systems" href="">
-		<icon class="icon-angle-right"></icon>
-		Computer Systems <span>(11)</span> </a> </li>
-		<li> <a title="Computer Parts" href="">
-		<icon class="icon-angle-right"></icon>
-		Phones <span>(1433)</span> </a> </li>
-    </ul><!--kindselect end-->
+<div class="container un-container">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li class="active">grid</li>
+	</ol>
+	<div class="row">
+		<div class="col-md-2 un-side">
+			{% include new/node/block/category.html %}
+		</div><!--the side-->
+		<div class="col-md-10 un-main">
+			<div class="un-list un-acce" data-spy="affix" data-offset-top="310" class="affix-top">
+				<div class="clearfix un-clip">
+					<div class="un-mainImg pull-left mr20">
+						<a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?160x160"></a>
+					</div><!--img end-->
+					<div class="un-tit">
+					  <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+					</div>
+					<div class="text-muted un-sku">
+						<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
+					</div>
+					<div class="text-muted un-pri">
+					  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
+					</div>
+					<span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
+					<span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
+				</div>
+			</div>
+			<!--the item-->
+			<h3 class="un-title un-grid-title un-spc-title">accessories</h3>
+			{% for x in (1..24) %}
+			<div class="col-md-3">
+				{% include new/node/block/item.html %}
+			</div>			
+			{% endfor %}
 
-</div><!--side end-->
-<div class="pull-right ug-main" id="ug-mainAccessories">
-	<div class="col-md-8 ug-mainList ug-accessories">
-		<div class="ug-mainMsg"><strong>Accessories</strong></div>
-		<div class="ug-accessoriesList">
-			<div class="media ug-clip"><a class="ug-targ ug-targ-freeshipping" href=""></a>
-				<div class="col-md-2 pull-left ug-mainImg">
-					<div class="ug-bra">
-					<a title="Cooler Master" href="http://www.hookbag.ca/vendor/717/1/"><img alt="Image of Cooler Master" title="Cooler Master" src="http://images.hookbag.ca/e/a/ef64957fac2af4e6"></a>
-					</div>
-					<div class="ug-img">
-					<a href=""> <img src="http://images.hookbag.ca/6/6/6ad17c096a92a9f5/thumb.jpg"></a>
-					</div>
-				</div><!--img end-->
-				<div class="col-md-10 media-body">
-					<div class="ug-info">
-						<div class="ug-tit">
-						<a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-						</div>
-						<div class="ug-sku">
-							<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
-						</div>
-						<div class="ug-pri">
-							<div class="ug-price"><del>$63.06</del><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong> </span> </div> 
-						</div>
-					</div>		
-				</div><!--info end-->
-			</div><!--media end-->
-			<div class="media ug-clip">
-				<div class="col-md-2 pull-left ug-mainImg">
-					<div class="ug-bra">
-					<a title="Cooler Master" href="http://www.hookbag.ca/vendor/717/1/"><img alt="Image of Cooler Master" title="Cooler Master" src="http://images.hookbag.ca/e/a/ef64957fac2af4e6"></a>
-					</div>
-					<div class="ug-img">
-					<a href=""> <img src="http://images.hookbag.ca/6/6/6ad17c096a92a9f5/thumb.jpg"></a>
-					</div>
-				</div><!--img end-->
-				<div class="col-md-10 media-body">
-					<div class="ug-info">
-						<div class="ug-tit">
-						<a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-						</div>
-						<div class="ug-sku">
-							<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
-						</div>
-						<div class="ug-pri">
-							<div class="ug-price"><del>$63.06</del><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong> </span> </div> 
-						</div>
-					</div>		
-				</div><!--info end-->
-			</div><!--media end-->
-			<div class="media ug-clip"><a href="" class="ug-targ ug-targ-bestseller"></a>
-				<div class="col-md-2 pull-left ug-mainImg">
-					<div class="ug-bra">
-					<a title="Cooler Master" href="http://www.hookbag.ca/vendor/717/1/"><img alt="Image of Cooler Master" title="Cooler Master" src="http://images.hookbag.ca/e/a/ef64957fac2af4e6"></a>
-					</div>
-					<div class="ug-img">
-					<a href=""> <img src="http://images.hookbag.ca/6/6/6ad17c096a92a9f5/thumb.jpg"></a>
-					</div>
-				</div><!--img end-->
-				<div class="col-md-10 media-body">
-					<div class="ug-info">
-						<div class="ug-tit">
-						<a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-						</div>
-						<div class="ug-sku">
-							<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
-						</div>
-						<div class="ug-pri">
-							<div class="ug-price"><del>$63.06</del><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong> </span> </div> 
-						</div>
-					</div>		
-				</div><!--info end-->
-			</div><!--media end-->
-			<div class="media ug-clip">
-				<div class="col-md-2 pull-left ug-mainImg">
-					<div class="ug-bra">
-					<a title="Cooler Master" href="http://www.hookbag.ca/vendor/717/1/"><img alt="Image of Cooler Master" title="Cooler Master" src="http://images.hookbag.ca/e/a/ef64957fac2af4e6"></a>
-					</div>
-					<div class="ug-img">
-					<a href=""> <img src="http://images.hookbag.ca/6/6/6ad17c096a92a9f5/thumb.jpg"></a>
-					</div>
-				</div><!--img end-->
-				<div class="col-md-10 media-body">
-					<div class="ug-info">
-						<div class="ug-tit">
-						<a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-						</div>
-						<div class="ug-sku">
-							<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
-						</div>
-						<div class="ug-pri">
-							<div class="ug-price"><del>$63.06</del><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong> </span> </div> 
-						</div>
-					</div>		
-				</div><!--info end-->
-			</div><!--media end-->
-		</div>
-		<ul class="pull-right pagination">
-		<li><a href="#">Prev</a></li>
-		<li><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li><a href="#">Next</a></li>
-		</ul><!--pagination end-->
-	
-	</div><!--accessoriesList end-->
-	<div class="col-md-4 ug-mainGrid">
-	<div class="clearfix thumbnail ug-clip"><a href="" class="ug-targ ug-targ-freeshipping"></a>
-		<div class=" ug-mainImg">
-			<div class="ug-bra">
-			<a title="Cooler Master" href="http://www.hookbag.ca/vendor/717/1/"><img alt="Image of Cooler Master" title="Cooler Master" src="http://images.hookbag.ca/e/a/ef64957fac2af4e6"></a>
-			</div>
-			<div class="ug-img">
-			<a title="Cooler Master" href="http://www.hookbag.ca/product/H3C06OU15/r9-nbs-ustd-gp-884102012136-cooler-master"> <img r9-nbs-ustd-gp"="" -="" fans)="" configurable="" 100mm="" x="" (2="" alt="Thumbnail of Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" title="Cooler Master" src="http://images.hookbag.ca/6/6/6ad17c096a92a9f5/thumb.jpg"></a>
-			</div>
-		</div><!--img end-->
-		<div class="caption">
-			<div class=" ug-info">
-				<div class="ug-tit">
-				<a  href="http://www.hookbag.ca/product/H3C06OU15/r9-nbs-ustd-gp-884102012136-cooler-master"> <strong>Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</strong></a>
-				</div>
-				<div class="ug-sku">
-					<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
-				</div>
-			</div>		
-			<div class="ug-pri">
-				<div class="ug-price"><del>$63.06</del><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong> </span> </div> 
-			</div>
-		</div><!--info end-->
+		</div><!--the gridList-->
+		
 	</div>
-	</div><!--productInfo end-->
-</div><!--ug-main end-->
 </div>

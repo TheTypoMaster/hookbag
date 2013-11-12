@@ -1,60 +1,219 @@
-<script src="../js/qty.js"></script>
+<div class="container" id="un-item">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li><a href="#">Computer Systems</a></li>
+	  <li><a href="#">Laptop Accessories</a></li>
+	  <li><a href="#">Laptops Cooler & Stand</a></li>
+	  <li><a href="#">Cooler Master</a></li>
+	  <li class="active">9-NBS-USTD-GP from Cooler Master</li>
+	</ol>
+	<div class="row un-itemInfo">
+		<div class="col-md-6 col-lg-5">
+			<div class="un-productPhoto clearfix">
+				<div id="un-photo">
+					<ul class="pull-left carousel-indicators un-productPhoto_sma">
+						<!--最多放6个图片预览，多的从下面的链接过去-->
+						<li data-slide-to="0" data-target="#un-photo" class="active"><img class="" src="holder.js?48x48/#fd0:#fff"></li>
+						<li data-slide-to="1" data-target="#un-photo"><img class="" src="holder.js?48x48/#000:#fff"></li>
+					</ul>
+					<div class="pull-left carousel-inner un-productPhoto_big">
+						<a href="" target="_blank" class="item active">
+							<img src="holder.js?380x380/#fd0:#fff">
+						</a>
+						<a href="" target="_blank" class="item">
+							<img src="holder.js?380x380/#000:#fff">
+						</a>
+					</div>
+				</div>
+			</div>			
+			<div class="tac mt10"><a href="">View All Photos</a></div>
+		</div>
+		<!--the img-->
+		<div class="col-md-6 col-lg-7 fz11">
+			<div class="un-info">
+				<h3 class="un-title"> <a class="un-bra" title="Shuttle" href=" "> <img title="Shuttle" alt="Shuttle" src="holder.js?75x20"> </a>Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</h3>
+				<div class="text-muted un-sku">
+					<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
+				</div>
+			</div>		
+			<!--the info-->
+			<div class="un-price">
+				<del class="text-muted">$63.06</del><div class="un-priceCurrent"><span> CDN$ 40.57 </span> <em class="text-muted">Save: $270.45 (-41%)</em></div>
+				
+			</div>		
+			<!--the price-->
+			<div class="un-sold">Sold  by Hookbag  Canada</div>
+			<div class="label label-default un-unavailable">
+				
+				<h5><i class="glyphicon glyphicon-exclamation-sign"></i> This product is not available now.</h5>
+			</div>
+			<!--the unavailable-->
+			<div class="un-productAttr">
+				<div class="un-proSelect">Color: <strong>R TNF Black 2</strong></div>
 
-<div class="container ug-main">
-  <div class="row ug-productInfo-01">
-    <div class="col-xs-12 col-sm-3 col-md-3">
-      {% include page/item/block/item/photo.html %}
-    </div>
-    <div class="col-xs-12 col-sm-9 col-md-9">
-      {% include page/item/block/item/title.html %}
+				<ul class="un-selectDiv un-selectSize list-inline">
+					<li class="un-selectLi un-select un-backOrder ">
+						<a href=""><img src="holder.js?40x40"> </a>
+					</li>
+					<li class="un-selectLi un-backOrder unavailable">
+						<a href=""><img src="holder.js?40x40"> </a>
+					</li>
+				</ul>
 
-      <div class="row">
-        <div class="col-md-6">
-          
-          <div class="visible-md visible-lg pull-right" style="margin:5px;">
-            <a id="tfw-badge" href="http://www.testfreaks.ca">TestFreaks</a>
-          </div>
+				<div class="un-proSelect">Size: <strong>LG (14-16 Big Kids)</strong></div>
 
-          {% include page/item/block/item/price.html %}
-          {% include page/item/block/item/ship.html %}
-          <div class="ug-productAttr">
-            <div class="ug-proSelect">Color: <strong>R TNF Black 2</strong></div>
+				<select class="form-control input-sm">
+					{% for x in (1..4) %}
+					<option>LG (14-16 Big Kids)</option>
+					{% endfor %}
+				</select>
+			</div>
+			<!--the filter-->
+			<form title="" action="" method="post" class="formHorizontal un-productBuy">
+				<div class="clearfix un-qty">
+				  <label class="pull-left mr10" for="un-qtyNum">Qty:</label>
+				  <input type="text" size="1" class="pull-left form-control input-sm mr10" id="un-qtyNum" value="1" maxlength="3" name="qty">
+				  <button type="submit" class="btn btn-danger btn-sm un-addToCart" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+				  <button type="submit" class="btn btn-default btn-sm un-backOrder" alt="Back Order" title="Back Order"><span class="glyphicon glyphicon-saved"></span> Back Order</button>
+				</div>
+			</form>			
+			<!--the add cart-->
+			<div class="share-button clear">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_preferred_1 addthis_button_facebook at300b" title="Facebook" href="#"><span class="at16nc at300bs at15nc at15t_facebook at16t_facebook"><span class="at_a11y">Share on facebook</span></span></a> <a class="addthis_button_preferred_2 addthis_button_twitter at300b" title="Tweet" href="#"><span class="at16nc at300bs at15nc at15t_twitter at16t_twitter"><span class="at_a11y">Share on twitter</span></span></a> <a class="addthis_button_preferred_3 addthis_button_email at300b" target="_blank" title="电子信箱" href="#"><span class="at16nc at300bs at15nc at15t_email at16t_email"><span class="at_a11y">Share on email</span></span></a> <a class="addthis_button_preferred_4 addthis_button_print at300b" title="打印" href="#"><span class="at16nc at300bs at15nc at15t_print at16t_print"><span class="at_a11y">Share on print</span></span></a> <a class="addthis_button_compact at300m" href="#"><span class="at16nc at300bs at15nc at15t_compact at16t_compact"><span class="at_a11y">More Sharing Services</span></span></a> <a class="addthis_counter addthis_bubble_style" style="display: block;" href="#" tabindex="1000"><a class="addthis_button_expanded" target="_blank" title="更多服务" href="#">0</a><a class="atc_s addthis_button_compact"><span></span></a></a>
+					<div class="atclear"></div>
+				</div>
+				<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50dc031f54e87694" type="text/javascript"></script>
+				<!-- AddThis Button END -->
+			</div>
+			<!--the share button-->
+			
+		</div>
+	</div>
+	<!--the product -->
+	<div class="row">
+		<div class="col-md-12 un-accessories">
+			<h4 class="un-title un-spc-title">Frequently Bought Together & Accessories</h4>
+			<ul class="un-acceList clearfix">
+			{% for x in (1..5) %}
+			  <li class="col-md-2">
+			  <dl class="un-clip tac">
+				  <dd class="un-mainImg"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
+				  <dd class="un-tit">HP Smart - Power adapter - car - 12 / 24 V - 90 Watt - for Compaq 610; HP 45X, 65X; EliteBook 2170, 84XX, 85XX</dd>
+				  <dd class="un-price text-muted"> CDN$ 40.57</dd>
+				  <dd class="un-acc-icon"><span class="glyphicon glyphicon-plus"></span></dd>
+			  </dl>
+			  </li>
+			{% endfor %}
+			  <li class="col-md-2">
+			  <dl class="un-clip tac">
+				  <dd class="un-mainImg"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
+				  <dd class="un-tit">HP Smart - Power adapter - car - 12 / 24 V - 90 Watt - for Compaq 610; HP 45X, 65X; EliteBook 2170, 84XX, 85XX</dd>
+				  <dd class="un-price text-muted"> CDN$ 40.57</dd>
+			  </dl>
+			  </li>
+			</ul>
+		</div>	
+	</div>
+	<!--the accessories-->
+	<div class="row mb20">
+		<div class="col-md-12">
+			<h4 class="un-title un-spc-title">Customers Who Bought This Also Bought</h4>
+			{% for x in (1...6) %}
+			<div class="col-md-2">
+				<div class="un-clip tac">
+					<span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
+					<span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
+					<div class="un-mainImg">
+						<a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?80x80"></a>
+					</div><!--img end-->
+					<div class="un-tit">
+					  <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+					</div>
+					<div class="text-muted un-pri">
+					  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!--the alsobuy-->
+	<div class="row">
+	<div class="col-md-12" id="un-tabs">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+		  <li><a href="#sizechart" data-toggle="tab">Size Chart</a></li>
+		  <li><a href="#specifications" data-toggle="tab">Specifications</a></li>
+		  <li><a href="#returnpolicy" data-toggle="tab">Return Policy</a></li>
+		</ul>
 
-            {% include page/item/block/item/filter.html %}
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div class="tab-pane fade active in" id="overview">
+		  {% include new/item/block/attr/overview.html %}
+		  </div>
+		  <div class="tab-pane fade" id="sizechart">
+		  {% include new/item/block/attr/size.html %}
+		  </div>
+		  <div class="tab-pane fade" id="specifications">
+		  {% include new/item/block/attr/specifications.html %}
+		  </div>
+		  <div class="tab-pane fade" id="returnpolicy">
+		  {% include new/item/block/attr/doc.html %}
+		  </div>
+		</div>	
+	</div>
+	</div>
+	<!--the Introduction-->
 
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="label label-default ug-unavailable"><i class="glyphicon glyphicon-exclamation-sign"></i>
-            <h4>This product is not available now.</h4>
-          </div>
-          {% include page/item/block/item/buy.html %}
-          <div class="visible-md visible-lg">
-            {% include page/item/block/item/share.html %}
-          </div>
-          <!--share end-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--productInfo-01 end-->
-  <div class="row ug-productInfo-02">
-
-    <div class="ug-productMain">
-      {% include page/item/block/list/accessories.html %}
-
-      {% include page/item/block/tool/nav.html %}
-      <!--productFixedSide end-->
-      
-      {% include page/item/block/list/also.html %}
-      {% include page/item/block/attr/overview.html %}
-      {% include page/item/block/attr/doc.html %}
-      {% include page/item/block/attr/size.html %}
-      <hr class="ug-dottedBorder">
-      {% include page/item/block/attr/specifications.html %}
-      {% include page/item/block/list/best.html %}
-      {% include page/item/block/msg/toc.html %}
-    </div>
-
-  </div>
+	<div class="row">
+		<div class="col-md-12">
+			<h4 class="un-title un-spc-title">Best Seller</h4>
+			{% for x in (1...6) %}
+			<div class="col-md-2">
+				<div class="un-clip tac">
+					<span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
+					<span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
+					<div class="un-mainImg">
+						<a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?80x80"></a>
+					</div><!--img end-->
+					<div class="un-tit">
+					  <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+					</div>
+					<div class="text-muted un-pri">
+					  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<!--the Best Seller-->
+	<div class="un-itemInfo" data-spy="affix" data-offset-top="750">
+		<div class="pull-right mt20 mr20">
+			<form title="" action="" method="post" class="formHorizontal un-productBuy">
+				<div class="clearfix un-qty">
+				  <label class="pull-left mr10" for="un-qtyNum">Qty:</label>
+				  <input type="text" size="1" class="pull-left form-control input-sm mr10" id="un-qtyNum" value="1" maxlength="3" name="qty">
+					<button type="submit" class="btn btn-danger btn-sm un-addToCart" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+				</div>
+			</form>			
+			<!--the add cart-->
+		</div>
+		<div class="media ml20">
+		  <a class="pull-left" href="#">
+			<img class="media-object" src="holder.js?100x100/#fd0:#fff" >
+		  </a>
+		  <div class="media-body">
+			<h4 class="media-heading">Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</h4>
+			<div class="un-price"><div class="un-priceCurrent"><span> CDN$ 40.57 </span></div>
+				
+			</div>		
+			<!--the price-->
+		  </div>
+		</div>	
+	</div>
+	<!--the affix-->
 </div>

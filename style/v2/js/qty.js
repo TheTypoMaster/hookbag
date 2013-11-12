@@ -1,1 +1,0 @@
-$(function(){if($("#ug-qtyNum").val()>0){var a=$("#ug-qtyDel"),b=$("#ug-qtyNum"),c=b.val(),d=$("#ug-qtyAdd");b.change(function(){c=b.val(),c||(b.val("1"),c=1)}),a.click(function(){c>1&&(b.val(-1+c--),console.log("1"))}),d.click(function(){999>c>=1&&b.val(1+c++)})}});

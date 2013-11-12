@@ -1,0 +1,11 @@
+{
+  "name": "hookbag",
+  "version": "3.11.12",
+  "dependencies": {
+    "holderjs": "~2.2.0",
+    "animate.css": "~2.1.0",
+    "font-awesome": "~4.0.3",
+    "jquery": "~1.10.2",
+    "modernizr": "~2.6.2"
+  }
+}
