@@ -1,0 +1,12 @@
+.svn
+.git
+less
+*.less
+*.scss
+*.sass
+*.md
+README
+component.json
+package.json
+.bowerrc
+bower.json
