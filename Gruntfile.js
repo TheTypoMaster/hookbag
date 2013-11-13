@@ -61,11 +61,11 @@ grunt.initConfig({
         }
       ]
     },
-    block: {
+    mod: {
       files: [
         {
-          src: '<%= pkg.pathBuild %>/css/block.css',
-          dest: '<%= pkg.pathBuild %>/css/block.css'
+          src: '<%= pkg.pathBuild %>/css/mod.css',
+          dest: '<%= pkg.pathBuild %>/css/mod.css'
         }
       ]
     }
@@ -85,7 +85,7 @@ grunt.initConfig({
     v3: {
       files: [
         {
-          src: './block/easydropdown/js/easydropdown.js',
+          src: './mod/easydropdown/js/easydropdown.js',
           dest: '<%= pkg.pathBuild %>/js/app.js'
         }
       ]
@@ -105,10 +105,10 @@ grunt.initConfig({
         ]
       }
     },
-    block: {
+    mod: {
       files: {
-        '<%= pkg.pathBuild %>/css/block.css':[
-          './block/easydropdown/css/easydropdown.css',
+        '<%= pkg.pathBuild %>/css/mod.css':[
+          './mod/easydropdown/css/easydropdown.css',
         ]
       }
     }
@@ -161,7 +161,7 @@ grunt.initConfig({
       }
     },
     base: {
-      command: '<%= pkg.rsync %> ./block/Amble-Light/fonts/* ./style/v3/fonts',
+      command: '<%= pkg.rsync %> ./mod/Amble-Light/fonts/* ./style/v3/fonts',
     },
     jekyllSiteStyle: {
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
