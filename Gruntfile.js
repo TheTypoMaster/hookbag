@@ -190,7 +190,7 @@ grunt.initConfig({
     },
     v2StyleJs: {
       files: ['./page/**/*.js', './page/**/*.less'],
-      tasks: ['less:v2', 'uglify:v2', 'concat:v2', 'cssmin:v2', 'shell:v2SvnStylev2']
+      tasks: ['less', 'uglify', 'concat', 'cssmin']
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
