@@ -1,54 +1,56 @@
-	<div class="container un-top">
-		<a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
-		<ul class="nav navbar-nav navbar-right un-navmember">
-			<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > </span></li>
-			<li><a class="glyphicon glyphicon-shopping-cart" href=""><span class="un-cartNum">2</span></a></li>
-		</ul>
-		<div class="row col-md-9 pull-right row-offcanvas row-offcanvas-right">
-			<ul class="nav navbar-nav" id="un-search">
-			<li class="col-md-2">
-				<select class="dropdown form-contorl" tabindex="7">
-					<option value="1" selected>All Categories</option>
-					<option value="2">Computer Systems</option>
-					<option value="3">Computer Parts</option>
-					<option value="4">Phones</option>
-					<option value="5">Network</option>
-				</select>
-			</li>
-			<li class="col-md-10">
-				<input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
-				<datalist id="search_list"> 
-				<option label="Computer Systems" value="Computer Systems" /> 
-				<option label="Peripheral" value="Peripheral" /> 
-				<option label="Garden" value="Garden" /> 
-				<option label="Storage" value="Storage" /> 
-				<option label="Phones" value="Phones" /> 
-				<option label="Cooler" value="Cooler" /> 
-				</datalist>	
-			</li>
-			</ul>
-			<div id="un-login" class="sidebar-offcanvas">
-				<form class="form-inline" role="form">
-				<div class="form-group">
-				  <label class="sr-only" for="exampleInputEmail2">Email address</label>
-				  <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-				  <label class="sr-only" for="exampleInputPassword2">Password</label>
-				  <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
-				</div>
-				<div class="checkbox">
-				  <label>
-					<input type="checkbox"> Remember me
-				  </label>
-				</div>
-				<button type="submit" class="btn btn-primary btn-sm">Sign in</button>
-				<a id="un-signUp" href="">Sign up</a>
-				</form>				
-			</div>
-		</div>
-	</div>
-	
-	{% include page/header/mod/nav.html %}
-
-<!--the top-->
+<div id="ui-top" class="bgGray">
+  <div class="container un-top pb0">
+    {% include page/header/mod/logo.html %}
+    <ul class="nav navbar-nav navbar-right un-navmember">
+      <li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > </span></li>
+      <li><a class="glyphicon glyphicon-shopping-cart" href=""><span class="un-cartNum">2</span></a></li>
+    </ul>
+    <div class="row col-md-9 pull-right row-offcanvas row-offcanvas-right">
+      <ul class="nav navbar-nav" id="un-search">
+      <li class="col-md-2">
+        <select class="dropdown form-contorl" tabindex="7">
+          <option value="1" selected>All Categories</option>
+          <option value="2">Computer Systems</option>
+          <option value="3">Computer Parts</option>
+          <option value="4">Phones</option>
+          <option value="5">Network</option>
+        </select>
+      </li>
+      <li class="col-md-10">
+        <input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
+        <datalist id="search_list"> 
+        <option label="Computer Systems" value="Computer Systems" /> 
+        <option label="Peripheral" value="Peripheral" /> 
+        <option label="Garden" value="Garden" /> 
+        <option label="Storage" value="Storage" /> 
+        <option label="Phones" value="Phones" /> 
+        <option label="Cooler" value="Cooler" /> 
+        </datalist> 
+      </li>
+      </ul>
+      <div id="un-login" class="sidebar-offcanvas">
+        <form class="form-inline" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">Email address</label>
+          <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword2">Password</label>
+          <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+        <a id="un-signUp" href="">Sign up</a>
+        </form>       
+      </div>
+    </div>
+  </div>
+  
+  {% include page/header/mod/nav.html %}
+  
+  <!--the top-->
+</div>
