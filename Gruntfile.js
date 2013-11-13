@@ -93,18 +93,6 @@ grunt.initConfig({
   },
   // 合并文件
   concat: {
-    v3: {
-      files: {
-        '<%= pkg.pathBuild %>/css/un.css':[
-          '<%= pkg.pathPage %>/common/css/common.css',
-          '<%= pkg.pathPage %>/header/css/header.css',
-          '<%= pkg.pathPage %>/footer/css/footer.css',
-          '<%= pkg.pathPage %>/index/css/index.css',
-          '<%= pkg.pathPage %>/item/css/item.css',
-          '<%= pkg.pathPage %>/node/css/node.css',
-        ]
-      }
-    },
     mod: {
       files: {
         '<%= pkg.pathBuild %>/css/mod.css':[
@@ -189,8 +177,8 @@ grunt.initConfig({
       tasks: ['jekyll:dev']
     },
     v2StyleJs: {
-      files: ['./page/**/*.js', './page/**/*.less'],
-      tasks: ['less', 'uglify', 'concat', 'cssmin']
+      files: ['./page/**/*.js', './page/**/*.less', './style/**/*.less'],
+      tasks: ['less', 'uglify', 'concat', 'cssmin', 'shell:jekyllSiteStyle']
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
