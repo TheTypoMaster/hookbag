@@ -30,5 +30,19 @@
 <body>
 
   
-  {% include page/header/header1.html %}
+<div id="ui-top" class="bgGray">
+
+  <div class="container un-top pb0">
+    {% include page/header/mod/logo.html %}
+    {% include page/header/mod/user.html %}
+    
+    <div class="row col-md-9 pull-right row-offcanvas row-offcanvas-right">
+      {% include page/header/mod/search.html %}
+      {% include page/header/mod/login.html %}
+    </div>
+  </div>
+
+  {% include page/header/mod/nav.html %}
+
+</div>
   
