@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
   clean: {
-    v3: ["./style/*","./_site"],
+    v3: ["./style/v3/css/*","./style/v3/img/*","./style/v3/js/*","./_site"],
     base: ["./style/base/font-awesome/less","./style/base/font-awesome/scss","./style/base/font-awesome/src","./style/base/modernizr/test","./style/base/modernizr/media","./style/base/modernizr/feature-detects","./style/base/animate.css/source"],
   },
   // less
@@ -32,6 +32,14 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathPage %>/node/less/node.less',
           dest: '<%= pkg.pathPage %>/node/css/node.css'
+        },
+        {
+          src: '<%= pkg.pathBuild %>/less/un.less',
+          dest: '<%= pkg.pathBuild %>/css/un.css'
+        },
+        {
+          src: '<%= pkg.pathBuild %>/less/ui.less',
+          dest: '<%= pkg.pathBuild %>/css/ui.css'
         }
       ]
     }
@@ -101,13 +109,6 @@ grunt.initConfig({
       files: {
         '<%= pkg.pathBuild %>/css/block.css':[
           './block/easydropdown/css/easydropdown.css',
-        ]
-      }
-    },
-    ui: {
-      files: {
-        '<%= pkg.pathBuild %>/css/ui.css':[
-          '<%= pkg.pathPage %>/ui/css/ui.css',
         ]
       }
     }
