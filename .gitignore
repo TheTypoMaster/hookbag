@@ -52,7 +52,6 @@ style/**/component.json
 style/**/composer.json
 style/**/Gruntfile.js
 style/**/.*
-style/**/less/
 style/**/sass/
 style/**/scss/
 
