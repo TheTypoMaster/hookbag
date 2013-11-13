@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    
+      login | Hookbag
+    
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style/v3/css/un.css">
+<link rel="stylesheet" href="/style/v3/css/ui.css">
+<link rel="stylesheet" href="/style/v3/css/mod.css">
+
+
+<script src="/style/base/jquery/jquery.js"></script>
+<script src="/style/base/bootstrap/js/bootstrap.min.js"></script>
+<script src="/style/v3/js/app.js"></script>
+
+<script src="/style/base/holderjs/holder.js"></script>
+<script>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+	$(this).toggleClass('active')
+  });
+  $('.nav-button').click(function() {
+    $('.un-nav').toggleClass('un-nav1 un-nav3');
+	$(this).toggleClass('nav-txt')
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+
+  
+  	<div class="container un-top">
+		<a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
+		<ul class="nav navbar-nav navbar-right un-navmember">
+			<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > </span></li>
+			<li><a class="glyphicon glyphicon-shopping-cart" href=""><span class="un-cartNum">2</span></a></li>
+		</ul>
+		<div class="row col-md-9 pull-right row-offcanvas row-offcanvas-right">
+			<ul class="nav navbar-nav" id="un-search">
+			<li class="col-md-2">
+				<select class="dropdown form-contorl" tabindex="7">
+					<option value="1" selected>All Categories</option>
+					<option value="2">Computer Systems</option>
+					<option value="3">Computer Parts</option>
+					<option value="4">Phones</option>
+					<option value="5">Network</option>
+				</select>
+			</li>
+			<li class="col-md-10">
+				<input type="search" placeholder="Keywords,Model#,SKU or UPC#" class="col-md-3 form-control"></li>
+			</ul>
+			<div id="un-login" class="sidebar-offcanvas">
+				<form class="form-inline" role="form">
+				<div class="form-group">
+				  <label class="sr-only" for="exampleInputEmail2">Email address</label>
+				  <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+				  <label class="sr-only" for="exampleInputPassword2">Password</label>
+				  <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
+				</div>
+				<div class="checkbox">
+				  <label>
+					<input type="checkbox"> Remember me
+				  </label>
+				</div>
+				<button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+				<a id="un-signUp" href="">Sign up</a>
+				</form>				
+			</div>
+		</div>
+	</div>
+	
+	<div class="navbar navbar-default affix-top un-nav-affix" data-spy="affix" data-offset-top="70">
+
+  <nav class="container un-nav">
+    <ul class="nav navbar-nav un-navlist">
+      <li>
+        <a href="/page/node/html/grid.html">Computer Systems</a>
+        <ul class="un-navgroup">
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/page/node/html/grid.html">Computer Parts</a>
+        <ul class="un-navgroup">
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="/page/node/html/grid.html">Phones</a>
+        <ul class="un-navgroup">
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="/page/node/html/grid.html">Network</a></li>
+      <li><a href="/page/node/html/grid.html">Office</a></li>
+      <li><a href="/page/node/html/grid.html">Educational</a></li>
+      <li><a href="/page/node/html/grid.html">Software</a></li>
+      <li><a href="/page/node/html/grid.html">HardWare</a></li>
+      <li><a href="/page/node/html/grid.html">Home & Garden</a></li>
+      <li><a href="/page/node/html/grid.html">Clothing & Shoes</a></li>
+    </ul> 
+  </nav>
+
+</div>
+
+<!--the top-->
+  
+
+<div class="container">
+
+	<div id="" class="row">
+		<div class="col-md-3">
+			<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">My Account</h3>
+  </div>
+  <ul class="list-group">
+	<li class="list-group-item">My Shopping</li>
+    <li class="list-group-item"><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> My Shopping Cart</a></li>
+	<li class="list-group-item">My Orders</li>
+    <li class="list-group-item"><a href="order.html"><span class="glyphicon glyphicon-list-alt"></span> My Orders</a></li>
+    <li class="list-group-item"><a href="rma.html"><span class="glyphicon glyphicon-tags"></span>  My RMA</a></li>
+	<li class="list-group-item">Customer Support</li>
+    <li class="list-group-item"><a href="ticket.html"><span class="glyphicon glyphicon-bookmark"></span> My Ticket</a></li>
+    <li class="list-group-item"><a href="testimonial.html"><span class="glyphicon glyphicon-comment"></span> Testimonial</a></li>
+	<li class="list-group-item">Account Settings</li>
+    <li class="list-group-item"><a href="settings.html"><span class="glyphicon glyphicon-wrench"></span> General Settings</a></li>
+    <li class="list-group-item"><a href="addr.html"><span class="glyphicon glyphicon-user"></span> Address Book</a></li>
+    <li class="list-group-item"><a href="password.html"><span class="glyphicon glyphicon-lock"></span> Change Password</a></li>
+    <li class="list-group-item"><a href="email.html"><span class="glyphicon glyphicon-envelope"></span> Change Email</a></li>
+  </ul>
+</div>
+
+		</div>
+		<div class="col-md-5">
+
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">Existing Customers</div>
+			  <div class="panel-body">
+
+
+					<div class="ug-exist">
+
+						<form role="form">
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Password</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Remember my Hookbag ID. 
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+
+					</div>
+
+
+			  </div>
+			</div>
+
+			<div class="ug-signin-help">
+				
+				<div class="panel panel-default">
+				  <div class="panel-heading">Sign-In Help</div>
+				  <div class="panel-body">
+				    <p>If you are having problems logging in, try the following:</p>
+				    <ul>
+				    <li>1.Enable Cookies</li>
+				    <li>2.Refresh the page.</li>
+				    </ul>
+				    <p>
+				    If you are still experiencing problems, try using this
+				    <a href="/hb3/front/public/myaccount/cleancookie">link</a> to reset your cookies
+				    and reload the page automatically.
+				    </p>
+				  </div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+		<div class="col-md-4">
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">New Customer Sign-Up</div>
+			  <div class="panel-body">
+
+
+					<div class="ug-signup">
+
+					<form role="form">
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Login ID/Email</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Login ID/Email">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Confirm Email</label>
+					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Confirm Email">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Confirm Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+					  </div>
+					  <div class="checkbox">
+					    <label>
+					      <input type="checkbox"> Remember my Hookbag ID. 
+					    </label>
+					  </div>
+					  <button type="submit" class="btn btn-success">Sign up</button>
+					</form>
+
+					</div>
+
+
+			  			  </div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+<div class="container">
+<div class="un-footer row" id="un-footer-info">
+  <div class="col-md-2 un-footer-service">
+    <h3 class="un-title un-footer-title">Customer Service</h3>
+    <ul>
+    <li><a href="">> About Us</a></li>
+    <li><a href="">> Contact Us</a></li>
+    <li><a href="">> Address Verification</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2 un-footer-service">
+    <h3 class="un-title un-footer-title">Customer Service</h3>
+    <ul>
+    <li><a href="">> About Us</a></li>
+    <li><a href="">> Contact Us</a></li>
+    <li><a href="">> Address Verification</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2 un-footer-service">
+    <h3 class="un-title un-footer-title">Customer Service</h3>
+    <ul>
+    <li><a href="">> About Us</a></li>
+    <li><a href="">> Contact Us</a></li>
+    <li><a href="">> Address Verification</a></li>
+    </ul>
+  </div>
+  <div class="col-md-2 un-footer-service">
+    <h3 class="un-title un-footer-title">Customer Service</h3>
+    <ul>
+    <li><a href="">> About Us</a></li>
+    <li><a href="">> Contact Us</a></li>
+    <li><a href="">> Address Verification</a></li>
+    </ul>
+  </div>
+  <div class="col-md-4 un-footer-text">
+  <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+  <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+  </div>
+<div class="row un-footer un-footer-copyright">
+  <div class="col-md-9"><strong>PAYMENT METHOD</strong>
+    <div class="un-footer-payment">
+    <table>
+      <tbody><tr>
+
+      </tr>
+    </tbody>
+    </table>
+    </div>
+  </div>
+  <div class="col-md-3">Copyright &copy;2012 Hookbag Inc. All rights reserved.</div>
+</div>
+</div>
+
+
+</body>
+</html>
+
