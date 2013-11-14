@@ -10,30 +10,6 @@ grunt.initConfig({
     v3: {
       files: [
         {
-          src: '<%= pkg.pathPage %>/common/less/common.less',
-          dest: '<%= pkg.pathPage %>/common/css/common.css'
-        },
-        {
-          src: '<%= pkg.pathPage %>/header/less/header.less',
-          dest: '<%= pkg.pathPage %>/header/css/header.css'
-        },
-        {
-          src: '<%= pkg.pathPage %>/footer/less/footer.less',
-          dest: '<%= pkg.pathPage %>/footer/css/footer.css'
-        },
-        {
-          src: '<%= pkg.pathPage %>/index/less/index.less',
-          dest: '<%= pkg.pathPage %>/index/css/index.css'
-        },
-        {
-          src: '<%= pkg.pathPage %>/item/less/item.less',
-          dest: '<%= pkg.pathPage %>/item/css/item.css'
-        },
-        {
-          src: '<%= pkg.pathPage %>/node/less/node.less',
-          dest: '<%= pkg.pathPage %>/node/css/node.css'
-        },
-        {
           src: '<%= pkg.pathBuild %>/less/un.less',
           dest: '<%= pkg.pathBuild %>/css/un.css'
         },
