@@ -1,45 +1,29 @@
 <div class="container un-container">
-	<ol class="breadcrumb">
-	  <li><a href="#">Home</a></li>
-	  <li class="active">grid</li>
-	</ol>
-	<div class="row">
-		<div class="un-side col-md-2">
-			{% include page/node/mod/side.html %}
-		</div><!--the side-->
-		<div class="col-md-10 pull-right un-main">
-			<h3 class="un-title un-grid-title un-spc-title">Best Seller</h3>
-			<div class="row">
-				{% for x in (1..4) %}
-				<div class="col-md-3">
-					{% include page/node/mod/item.html %}
-				</div>			
-				{% endfor %}
-			</div>			
-			<h3 class="un-title un-grid-title un-spc-title">Hot Brands</h3>
-			<div class="row">
-				{% for x in (1..24) %}
-				<div class="col-md-2 tac mb10">
-					<a href=""><img src="holder.js?75x25"></a>
-				</div>			
-				{% endfor %}
-			</div>			
-			<h3 class="un-title un-grid-title un-spc-title">Computer Systems</h3>
-			<div class="row">
-				{% for x in (1..6) %}
-				<div class="col-md-4">
-					{% include page/node/mod/item.html %}
-				</div>			
-				{% endfor %}
-				{% for x in (1..8) %}
-				<div class="col-md-3">
-					{% include page/node/mod/item.html %}
-				</div>			
-				{% endfor %}
-				<div id="container" class="tac mb10"><span class="btn btn-default">View More</span></div>
-			</div>			
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class="active">grid</li>
+  </ol>
+  <div class="row">
+    <div class="un-side col-md-2">
+      {% include page/node/mod/side.html %}
+    </div><!--the side-->
+    <div class="col-md-10 pull-right un-main">
+      <h3 class="un-title un-grid-title un-spc-title">Computer Systems</h3>
+      <div class="row">
+        {% for x in (1..6) %}
+        <div class="col-md-4">
+          {% include page/node/mod/item.html %}
+        </div>      
+        {% endfor %}
+        {% for x in (1..9) %}
+        <div class="col-md-4">
+          {% include page/node/mod/item.html %}
+        </div>      
+        {% endfor %}
+        <div id="container" class="tac mb10"><span class="btn btn-default">View More</span></div>
+      </div>      
 
-		</div><!--the gridList-->
-		
-	</div>
+    </div><!--the gridList-->
+    
+  </div>
 </div>
