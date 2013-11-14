@@ -171,7 +171,7 @@
   top: 3px;
   left: 50%;
   font-size: 11px;
-  margin-left: -6px;
+  margin-left: -8px;
 }
 .un-top .un-navmember li > a:hover {
   color: #428bca;
@@ -195,23 +195,44 @@
   position: relative;
   font-family: 'amblelight';
   font-size: 15px;
-  display: table;
-}
-.un-nav .un-navlist {
-  display: table-row;
-  float: none;
-  width: 100%;
 }
 .un-nav .un-navlist > li {
   display: table-cell;
   float: none;
   text-align: center;
+  padding: 0 30px;
+}
+.un-nav .un-navlist > li:first-child {
+  font-weight: 700;
+}
+.un-nav .un-navlist > li > a {
+  border-bottom: 2px solid transparent;
+  -moz-box-sizing: content-box;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #777777;
+}
+.un-nav .un-navlist > li:hover a {
+  border-color: #F60;
+}
+.un-nav .un-cateNavlist {
   border-right: 1px solid #eee;
 }
-.un-nav .un-navlist > li:last-child {
-  border-right: none;
+.un-nav .un-cateNavlist > li:first-child {
+  font-weight: 700;
+  font-size: 21px;
 }
-.un-nav .un-navlist > li .un-navgroup {
+.un-nav .un-cateNavlist > li:last-child {
+  font-size: 17px;
+}
+.un-nav .un-cateNavlist > li .glyphicon {
+  top: 0;
+  font-size: 11px;
+}
+.un-nav .un-cateNavlist > li .glyphicon:empty {
+  width: 2em;
+}
+.un-nav .un-cateNavlist > li .un-navgroup {
   display: none;
   position: absolute;
   padding: 10px 30px;
@@ -220,26 +241,18 @@
   text-align: left;
   min-width: 178px;
   z-index: 999;
+  font-size: 15px;
 }
-.un-nav .un-navlist > li .un-navgroup li {
+.un-nav .un-cateNavlist > li .un-navgroup li {
   list-style-image: url("../../../page/header/img/menudyn1_fleche.png");
 }
-.un-nav .un-navlist > li .un-navgroup a {
+.un-nav .un-cateNavlist > li .un-navgroup a {
   font-size: 12px;
   line-height: 1.8;
+  font-weight: 400;
 }
-.un-nav .un-navlist > li:hover .un-navgroup {
+.un-nav .un-cateNavlist > li:hover .un-navgroup {
   display: block;
-}
-.un-nav .un-navlist > li:hover > a {
-  border-color: #F60;
-}
-.un-nav .un-navlist > li > a {
-  border-bottom: 2px solid transparent;
-  -moz-box-sizing: content-box;
-  padding: 8px 0;
-  text-decoration: none;
-  color: #777777;
 }
 #un-index .affix {
   position: fixed;

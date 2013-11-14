@@ -62,7 +62,8 @@
   background-color: #fafafa;
 }
 .un-list .un-clip {
-  padding: 0;
+  margin: 10px 0;
+  padding: 0 5px 0 0;
 }
 .un-list .un-clip .un-targ {
   position: relative;

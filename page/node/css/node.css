@@ -12,12 +12,20 @@
   top: 20px;
   z-index: 99;
   background-color: #fff;
+  width: 16%;
 }
 .un-side .affix .un-gridSide {
   display: none;
 }
 .un-side .affix #un-side-affix .panel:first-child .panel-heading {
   border-top: none;
+}
+.un-side .un-sortPrice {
+  margin-bottom: 10px;
+}
+.un-side .un-sortPrice #un-sort {
+  width: 50%;
+  margin-top: 10px;
 }
 .un-side #un-side-affix {
   padding: 0;
