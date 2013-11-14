@@ -60,8 +60,7 @@
 #un-brand {
   margin-top: 10px;
 }
-#un-brand .un-title {
-  line-height: 25px;
-  background-color: #fafafa;
-  letter-spacing: 0;
+#un-brand li {
+  margin: 10px;
+  padding: 0;
 }

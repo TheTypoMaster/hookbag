@@ -30,6 +30,8 @@
 <script src="/style/base/jquery/jquery.js"></script>
 <script src="/style/base/bootstrap/js/bootstrap.min.js"></script>
 <script src="/style/v3/js/app.js"></script>
+<script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.9.0"></script>
+<!--延迟加载-->
 
 <script src="/style/base/holderjs/holder.js"></script>
 <script>
@@ -52,63 +54,139 @@ $(document).ready(function() {
 <body>
 
   
-  	<div class="container un-top">
-		<a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
-		<ul class="nav navbar-nav navbar-right un-navmember">
-			<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > </span></li>
-			<li><a class="glyphicon glyphicon-shopping-cart" href=""><span class="un-cartNum">2</span></a></li>
-		</ul>
-		<div class="row col-md-9 pull-right row-offcanvas row-offcanvas-right">
-			<ul class="nav navbar-nav" id="un-search">
-			<li class="col-md-2">
-				<select class="dropdown form-contorl" tabindex="7">
-					<option value="1" selected>All Categories</option>
-					<option value="2">Computer Systems</option>
-					<option value="3">Computer Parts</option>
-					<option value="4">Phones</option>
-					<option value="5">Network</option>
-				</select>
-			</li>
-			<li class="col-md-10">
-				<input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
-				<datalist id="search_list"> 
-				<option label="Computer Systems" value="Computer Systems" /> 
-				<option label="Peripheral" value="Peripheral" /> 
-				<option label="Garden" value="Garden" /> 
-				<option label="Storage" value="Storage" /> 
-				<option label="Phones" value="Phones" /> 
-				<option label="Cooler" value="Cooler" /> 
-				</datalist>	
-			</li>
-			</ul>
-			<div id="un-login" class="sidebar-offcanvas">
-				<form class="form-inline" role="form">
-				<div class="form-group">
-				  <label class="sr-only" for="exampleInputEmail2">Email address</label>
-				  <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-				  <label class="sr-only" for="exampleInputPassword2">Password</label>
-				  <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
-				</div>
-				<div class="checkbox">
-				  <label>
-					<input type="checkbox"> Remember me
-				  </label>
-				</div>
-				<button type="submit" class="btn btn-primary btn-sm">Sign in</button>
-				<a id="un-signUp" href="">Sign up</a>
-				</form>				
+<div id="ui-top" class="bgGray">
+
+  <div class="container un-top pb0">
+    <a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
+    <ul class="nav navbar-nav navbar-right un-navmember">
+	<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > Hi,</span></li>
+	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
 			</div>
-		</div>
-	</div>
-	
-	<div class="navbar navbar-default affix-top un-nav-affix" data-spy="affix" data-offset-top="70">
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+		</ul>
+	</li>
+</ul>
+    
+    <div class="row col-md-7 pull-right row-offcanvas row-offcanvas-right">
+      <ul class="nav navbar-nav" id="un-search">
+  <li class="col-md-2">
+    <select class="dropdown form-contorl" tabindex="7">
+      <option value="1" selected>All Categories</option>
+      <option value="2">Computer Systems</option>
+      <option value="3">Computer Parts</option>
+      <option value="4">Phones</option>
+      <option value="5">Network</option>
+    </select>
+  </li>
+  <li class="col-md-10">
+    <input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
+    <datalist id="search_list"> 
+      <option label="Computer Systems" value="Computer Systems"> 
+      <option label="Peripheral" value="Peripheral"> 
+      <option label="Garden" value="Garden"> 
+      <option label="Storage" value="Storage"> 
+      <option label="Phones" value="Phones"> 
+      <option label="Cooler" value="Cooler"> 
+    </datalist> 
+  </li>
+</ul>
+      <div id="un-login" class="sidebar-offcanvas">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+      <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword2">Password</label>
+      <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+    <a id="un-signUp" href="">Sign up</a>
+  </form>       
+</div>
+    </div>
+  </div>
+
+  <div class="navbar navbar-default un-nav-affix">
 
   <nav class="container un-nav">
-    <ul class="nav navbar-nav un-navlist">
+    <ul class="nav navbar-nav un-navlist un-cateNavlist">
       <li>
-        <a href="/page/node/html/grid.html">Computer Systems</a>
+        
+          <a href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+        
         <ul class="un-navgroup">
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
@@ -118,41 +196,25 @@ $(document).ready(function() {
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
         </ul>
       </li>
-      <li>
-        <a href="/page/node/html/grid.html">Computer Parts</a>
-        <ul class="un-navgroup">
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="/page/node/html/grid.html">Phones</a>
-        <ul class="un-navgroup">
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-        </ul>
-      </li>
-      <li><a href="/page/node/html/grid.html">Network</a></li>
-      <li><a href="/page/node/html/grid.html">Office</a></li>
-      <li><a href="/page/node/html/grid.html">Educational</a></li>
-      <li><a href="/page/node/html/grid.html">Software</a></li>
-      <li><a href="/page/node/html/grid.html">HardWare</a></li>
-      <li><a href="/page/node/html/grid.html">Home & Garden</a></li>
-      <li><a href="/page/node/html/grid.html">Clothing & Shoes</a></li>
-    </ul> 
+      
+        
+
+      
+      
+    </ul>
+    <ul class="nav navbar-nav un-navlist list-inline">
+      
+        <li class=""><a href="">Hookbag Home</a></li>
+        <li><a href="">Hottest Deals</a></li>
+        <li><a href="">Always Lowest Price</a></li>
+        <li><a href="">Hard To Find</a></li>
+      
+    </ul>
   </nav>
 
 </div>
 
-<!--the top-->
+</div>
   
 
 <div class="container un-container">
@@ -166,23 +228,8 @@ $(document).ready(function() {
 			<div  data-spy="affix" data-offset-top="310" class="affix-top">
 <h4 class="un-title">Computer Systems</h4>
 <div class="text-muted page-header">1000 <small>product(s)</small></div>
-<ul class="nav un-gridSide">
-	<li><a href="/page/node/html/grid.html">
-	  Notebooks
-	</a></li>
-	<li><a href="/page/node/html/grid.html">
-	  Tablets
-	</a></li>
-	<li><a href="/page/node/html/grid.html">
-	  Workstations
-	</a></li>
-	<li><a href="/page/node/html/grid.html">
-	  Barebone Systems
-	</a></li>
-	<li><a href="/page/node/html/grid.html">
-	  Laptop Accessories
-	</a></li>
-</ul>
+
+<div class="un-sortPrice">Sort by Price:<span id="result" class="text-danger"></span><br/> $36 <input id="un-sort" name="sort" type="range" min="36" max="436" value="5"> $436 </div>
 <ul id="un-side-affix">
 <div class="panel">
   <div class="panel-heading">
@@ -229,16 +276,18 @@ $(document).ready(function() {
 </div>
 </ul>
 </div>
+
 		</div><!--the side-->
 		<div class="col-md-10">
 		
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -246,16 +295,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -263,16 +316,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -280,16 +337,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -297,16 +358,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -314,16 +379,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -331,16 +400,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -348,16 +421,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -365,16 +442,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -382,16 +463,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -399,16 +484,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -416,16 +505,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -433,16 +526,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -450,16 +547,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -467,16 +568,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -484,16 +589,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -501,16 +610,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -518,16 +631,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -535,16 +652,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -552,16 +673,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -569,16 +694,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -586,16 +715,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -603,16 +736,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -620,16 +757,20 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
 			<div class="col-md-3">
-				<div class="un-clip tac">
-	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
-	<div class="un-mainImg">
-		<a title="" href="/page/item/html/item.html"> <img src="holder.js?128x128"></a>
+				
+<div class="un-list">
+<div class="un-clip clearfix">
+	<div class="un-mainImg pull-left mr10">
+		<a title="" href="/page/item/html/item.html"><img class="lazy" src="../img/grey.gif" data-original="http://images.hookbag.ca/4/7f/4753/47532acd7fbde4ab/thumb.jpg"  width="128" heigh="128"></a>
+		
 	</div><!--img end-->
 	<div class="un-tit">
 	  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
@@ -637,10 +778,14 @@ $(document).ready(function() {
 	<div class="text-muted un-pri">
 	  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
 	</div>
+	<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+	<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+</div>
 </div>
 
 			</div>			
 			
+			<div id="container" class="tac mb10"><span class="btn btn-default">View More</span></div>
 
 		</div><!--the gridList-->
 		
@@ -649,60 +794,78 @@ $(document).ready(function() {
 </body>
 </html>
 
-<div class="container">
-<div class="un-footer row" id="un-footer-info">
-  <div class="col-md-2 un-footer-service">
-    <h3 class="un-title un-footer-title">Customer Service</h3>
-    <ul>
-    <li><a href="">> About Us</a></li>
-    <li><a href="">> Contact Us</a></li>
-    <li><a href="">> Address Verification</a></li>
-    </ul>
-  </div>
-  <div class="col-md-2 un-footer-service">
-    <h3 class="un-title un-footer-title">Customer Service</h3>
-    <ul>
-    <li><a href="">> About Us</a></li>
-    <li><a href="">> Contact Us</a></li>
-    <li><a href="">> Address Verification</a></li>
-    </ul>
-  </div>
-  <div class="col-md-2 un-footer-service">
-    <h3 class="un-title un-footer-title">Customer Service</h3>
-    <ul>
-    <li><a href="">> About Us</a></li>
-    <li><a href="">> Contact Us</a></li>
-    <li><a href="">> Address Verification</a></li>
-    </ul>
-  </div>
-  <div class="col-md-2 un-footer-service">
-    <h3 class="un-title un-footer-title">Customer Service</h3>
-    <ul>
-    <li><a href="">> About Us</a></li>
-    <li><a href="">> Contact Us</a></li>
-    <li><a href="">> Address Verification</a></li>
-    </ul>
-  </div>
-  <div class="col-md-4 un-footer-text">
-  <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
-  <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
-  </div>
-<div class="row un-footer un-footer-copyright">
-  <div class="col-md-9"><strong>PAYMENT METHOD</strong>
-    <div class="un-footer-payment">
-    <table>
-      <tbody><tr>
-
-      </tr>
-    </tbody>
-    </table>
+<div id="ui-footer" class="bgGray">
+  <div class="container">
+    <div class="un-footer row" id="un-footer-info">
+      <div class="col-md-2 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 un-footer-text">
+      <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+      <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+    </div>
+    <div class="row un-footer un-footer-copyright">
+      <div class="col-md-9">
+        <strong>PAYMENT METHOD</strong>
+        <div class="un-footer-payment">
+          <table>
+            <tr></tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3">Copyright &copy;2012 Hookbag Inc. All rights reserved.</div>
+    </div>
     </div>
   </div>
-  <div class="col-md-3">Copyright &copy;2012 Hookbag Inc. All rights reserved.</div>
 </div>
-</div>
+<script>
+ $("img.lazy").lazyload({
+	effect : "fadeIn"
+ });
+$("#container").one("click", function() {
+     $("#container").load("image.html", function(response, status, xhr) {
+         $("img.lazy").lazyload({
+			effect : "fadeIn"
+		 });
+     });              
+ });
+var p = document.getElementById("un-sort"),
+    res = document.getElementById("result");
+res.innerHTML = "$" + p.value;
 
-
+p.addEventListener("input", function() {
+    res.innerHTML = "$" + p.value;
+}, false); 
+</script>
 </body>
 </html>
 

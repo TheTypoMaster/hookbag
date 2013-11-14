@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    
+      node | Hookbag
+    
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style/v3/css/un.css">
+<link rel="stylesheet" href="/style/v3/css/ui.css">
+<link rel="stylesheet" href="/style/v3/css/mod.css">
+
+
+<script src="/style/base/jquery/jquery.js"></script>
+<script src="/style/base/bootstrap/js/bootstrap.min.js"></script>
+<script src="/style/v3/js/app.js"></script>
+<script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.9.0"></script>
+<!--延迟加载-->
+
+<script src="/style/base/holderjs/holder.js"></script>
+<script>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+	$(this).toggleClass('active')
+  });
+  $('.nav-button').click(function() {
+    $('.un-nav').toggleClass('un-nav1 un-nav3');
+	$(this).toggleClass('nav-txt')
+  });
+});
+</script>
+
+
+
+</head>
+
+<body>
+
+  
+<div id="ui-top" class="bgGray">
+
+  <div class="container un-top pb0">
+    <a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
+    <ul class="nav navbar-nav navbar-right un-navmember">
+	<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > Hi,</span></li>
+	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+		</ul>
+	</li>
+</ul>
+    
+    <div class="row col-md-7 pull-right row-offcanvas row-offcanvas-right">
+      <ul class="nav navbar-nav" id="un-search">
+  <li class="col-md-2">
+    <select class="dropdown form-contorl" tabindex="7">
+      <option value="1" selected>All Categories</option>
+      <option value="2">Computer Systems</option>
+      <option value="3">Computer Parts</option>
+      <option value="4">Phones</option>
+      <option value="5">Network</option>
+    </select>
+  </li>
+  <li class="col-md-10">
+    <input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
+    <datalist id="search_list"> 
+      <option label="Computer Systems" value="Computer Systems"> 
+      <option label="Peripheral" value="Peripheral"> 
+      <option label="Garden" value="Garden"> 
+      <option label="Storage" value="Storage"> 
+      <option label="Phones" value="Phones"> 
+      <option label="Cooler" value="Cooler"> 
+    </datalist> 
+  </li>
+</ul>
+      <div id="un-login" class="sidebar-offcanvas">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+      <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword2">Password</label>
+      <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
+    <a id="un-signUp" href="">Sign up</a>
+  </form>       
+</div>
+    </div>
+  </div>
+
+  <div class="navbar navbar-default un-nav-affix">
+
+  <nav class="container un-nav">
+    <ul class="nav navbar-nav un-navlist un-cateNavlist">
+      <li>
+        
+          <a href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
+        
+        <ul class="un-navgroup">
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+        </ul>
+      </li>
+      
+
+        <li>
+          <a href="/page/node/html/node.html">Sub Category <span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="un-navgroup">
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+          </ul>
+        </li>
+        
+      
+      
+    </ul>
+    <ul class="nav navbar-nav un-navlist list-inline">
+      
+        <li><a href="">Home</a></li>
+        <li><a href="">Best Seller</a></li>
+        <li><a href="">HOT BRANDS</a></li>
+        <li><a href="">INK & TONER FINDER</a></li>
+      
+    </ul>
+  </nav>
+
+</div>
+
+</div>
+  
+
+<div class="container un-container">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class="active">node</li>
+  </ol>
+  
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">All Category</a></li>
+    <li><a href="#">All Brand</a></li>
+  </ul>
+  <div class="node-category">
+    <div class="ui-node-list bgGray" data-spy="affix" data-offset-top="200" style="top:0px;">
+      <ul class="nav nav-pills">
+        <li class="ui-list-item"><a href="">A</a></li>
+        <li class="ui-list-item"><a href="">B</a></li>
+        <li class="ui-list-item"><a href="">C</a></li>
+        <li class="ui-list-item"><a href="">D</a></li>
+        <li class="ui-list-item"><a href="">E</a></li>
+        <li class="ui-list-item"><a href="">F</a></li>
+        <li class="ui-list-item"><a href="">G</a></li>
+        <li class="ui-list-item"><a href="">H</a></li>
+        <li class="ui-list-item"><a href="">I</a></li>
+        <li class="ui-list-item"><a href="">J</a></li>
+        <li class="ui-list-item"><a href="">K</a></li>
+        <li class="ui-list-item"><a href="">L</a></li>
+        <li class="ui-list-item"><a href="">M</a></li>
+        <li class="ui-list-item"><a href="">N</a></li>
+        <li class="ui-list-item"><a href="">O</a></li>
+        <li class="ui-list-item"><a href="">P</a></li>
+        <li class="ui-list-item"><a href="">Q</a></li>
+        <li class="ui-list-item"><a href="">R</a></li>
+        <li class="ui-list-item"><a href="">S</a></li>
+        <li class="ui-list-item"><a href="">T</a></li>
+        <li class="ui-list-item"><a href="">U</a></li>
+        <li class="ui-list-item"><a href="">V</a></li>
+        <li class="ui-list-item"><a href="">W</a></li>
+        <li class="ui-list-item"><a href="">X</a></li>
+        <li class="ui-list-item"><a href="">Y</a></li>
+        <li class="ui-list-item"><a href="">Z</a></li>
+      </ul>
+    </div>
+    <div class="ui-node-item">
+      
+      <h3>A</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Atorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aeripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Accessories</a></li>
+      </ul>
+      <h3>B</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+      </ul>
+      
+      <h3>A</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Atorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aeripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Accessories</a></li>
+      </ul>
+      <h3>B</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+      </ul>
+      
+      <h3>A</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Atorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aeripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Accessories</a></li>
+      </ul>
+      <h3>B</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+      </ul>
+      
+      <h3>A</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Atorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aeripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Aomputer Accessories</a></li>
+      </ul>
+      <h3>B</h3>
+      <ul class="nav nav-pills">
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Hardware</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Btorage</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bisc</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Beripheral</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bower Supplies</a></li>
+        <li ><a href="/page/node/html/grid.html" class="">Bomputer Accessories</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+<div id="ui-footer" class="bgGray">
+  <div class="container">
+    <div class="un-footer row" id="un-footer-info">
+      <div class="col-md-2 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4 un-footer-text">
+      <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+      <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+    </div>
+    <div class="row un-footer un-footer-copyright">
+      <div class="col-md-9">
+        <strong>PAYMENT METHOD</strong>
+        <div class="un-footer-payment">
+          <table>
+            <tr></tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-3">Copyright &copy;2012 Hookbag Inc. All rights reserved.</div>
+    </div>
+    </div>
+  </div>
+</div>
+<script>
+ $("img.lazy").lazyload({
+	effect : "fadeIn"
+ });
+$("#container").one("click", function() {
+     $("#container").load("image.html", function(response, status, xhr) {
+         $("img.lazy").lazyload({
+			effect : "fadeIn"
+		 });
+     });              
+ });
+var p = document.getElementById("un-sort"),
+    res = document.getElementById("result");
+res.innerHTML = "$" + p.value;
+
+p.addEventListener("input", function() {
+    res.innerHTML = "$" + p.value;
+}, false); 
+</script>
+</body>
+</html>
+
