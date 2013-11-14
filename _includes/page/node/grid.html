@@ -4,7 +4,7 @@
 	  <li class="active">grid</li>
 	</ol>
 	<div class="row">
-		<div class="un-side">
+		<div class="un-side col-md-2">
 			{% include page/node/mod/side.html %}
 		</div><!--the side-->
 		<div class="col-md-10 pull-right un-main">
@@ -26,7 +26,12 @@
 			</div>			
 			<h3 class="un-title un-grid-title un-spc-title">Computer Systems</h3>
 			<div class="row">
-				{% for x in (1..12) %}
+				{% for x in (1..6) %}
+				<div class="col-md-4">
+					{% include page/node/mod/item.html %}
+				</div>			
+				{% endfor %}
+				{% for x in (1..8) %}
 				<div class="col-md-3">
 					{% include page/node/mod/item.html %}
 				</div>			
