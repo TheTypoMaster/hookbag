@@ -3,7 +3,11 @@
   <nav class="container un-nav">
     <ul class="nav navbar-nav un-navlist un-cateNavlist">
       <li>
-        <a href="/page/node/html/node.html">全部二级分类 <span class="glyphicon glyphicon-chevron-down"></span></a>
+        {% if page.title == "grid" %}
+          <a href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
+        {% else if %}
+          <a href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+        {% endif %}
         <ul class="un-navgroup">
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
@@ -13,23 +17,38 @@
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
         </ul>
       </li>
-      <li>
-        <a href="/page/node/html/node.html">三级分类 <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <ul class="un-navgroup">
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-        </ul>
-      </li>
-    </ul> 
+      {% if page.title == "grid" %}
+
+        <li>
+          <a href="/page/node/html/node.html">Sub Category <span class="glyphicon glyphicon-chevron-down"></span></a>
+          <ul class="un-navgroup">
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+          </ul>
+        </li>
+        
+      {% else if %}
+        
+
+      {% endif %}
+      
+    </ul>
     <ul class="nav navbar-nav un-navlist list-inline">
-		<li><a href="">分类首页</a></li>
-		<li><a href="">热卖排行榜</a></li>
-		<li><a href="">最新上架产品</a></li>
-	</ul>
+      {% if page.title == "grid" %}
+        <li><a href="">Home</a></li>
+        <li><a href="">Best Seller</a></li>
+        <li><a href="">INK & TONER FINDER</a></li>
+      {% else if %}
+        <li class=""><a href="">Hookbag Home</a></li>
+        <li><a href="">Hottest Deals</a></li>
+        <li><a href="">Always Lowest Price</a></li>
+        <li><a href="">Hard To Find</a></li>
+      {% endif %}
+    </ul>
   </nav>
 
 </div>
