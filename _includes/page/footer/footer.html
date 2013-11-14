@@ -62,7 +62,13 @@ $("#container").one("click", function() {
 		 });
      });              
  });
-</script>
+var p = document.getElementById("un-sort"),
+    res = document.getElementById("result");
+res.innerHTML = "$" + p.value;
 
+p.addEventListener("input", function() {
+    res.innerHTML = "$" + p.value;
+}, false); 
+</script>
 </body>
 </html>

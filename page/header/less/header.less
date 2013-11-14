@@ -181,7 +181,7 @@
 					top: 3px;
 					left: 50%;
 					font-size: 11px;
-					margin-left: -6px;
+					margin-left: -8px;
 				}
 				&:hover{
 					color:#428bca;
@@ -209,20 +209,49 @@
 	position:relative;
     font-family: 'amblelight';
 	font-size:15px;
-	display:table;
+	//display:table;
 	.un-navlist{
-		display:table-row;
-		float:none;
-		width:100%;
+		//display:table-row;
+		//float:none;
+		//width:100%;
 		&>li{
 			display:table-cell;
 			float:none;
 			text-align:center;
-			border-right:1px solid #eee;
+			padding:0 30px;
 			&:first-child{
+				font-weight:700;
+			}
+			&>a{
+				border-bottom:2px solid transparent;
+				-moz-box-sizing: content-box;
+				padding:12px 0;
+				text-decoration:none;
+				color:#777
+			}
+			&:hover{
+				a{
+					border-color:#F60;
+				}
+			}
+		}
+	}
+	.un-cateNavlist{
+		border-right:1px solid #eee;
+		&>li{
+			&:first-child{
+				font-weight:700;
+				font-size:21px;
 			}
 			&:last-child{
-				border-right:none;
+				font-size:17px;
+			}
+			.glyphicon{
+				top:0;
+				font-size:11px;
+				&:empty{
+					width:2em;
+				}
 			}
 			.un-navgroup{
 				display: none;
@@ -233,28 +262,20 @@
 				text-align:left;
 				min-width:178px;
 				z-index:999;
+				font-size:15px;
 				li{
 					list-style-image: url("../../../page/header/img/menudyn1_fleche.png");
 				}
 				a{
 					font-size:12px;
 					line-height:1.8;
+					font-weight:400;
 				}
 			}
 			&:hover{
 				.un-navgroup{
 					display:block;
 				}
-				&>a{
-					border-color:#F60;
-				}
-			}
-			&>a{
-				border-bottom:2px solid transparent;
-				-moz-box-sizing: content-box;
-				padding:8px 0;
-				text-decoration:none;
-				color:#777
 			}
 		}
 	}
