@@ -28,11 +28,12 @@
 			</div>			
 			<h3 class="un-title un-grid-title un-spc-title">Computer Systems</h3>
 			<div class="row">
-				{% for x in (1..300) %}
+				{% for x in (1..12) %}
 				<div class="col-md-3">
 					{% include page/node/mod/item.html %}
 				</div>			
 				{% endfor %}
+				<div id="container" class="tac mb10"><span class="btn btn-default">View More</span></div>
 			</div>			
 
 		</div><!--the gridList-->
@@ -40,6 +41,12 @@
 	</div>
 </div>
 <script>
-$("img.lazy").lazyload({
+ $("img.lazy").lazyload({
 	effect : "fadeIn"
-});</script>
+ });
+$("#container").one("click", function() {
+     $("#container").load("image.html", function(response, status, xhr) {
+         $("img.lazy").lazyload();
+     });              
+ });
+</script>
