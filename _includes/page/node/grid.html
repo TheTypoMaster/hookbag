@@ -46,7 +46,9 @@
  });
 $("#container").one("click", function() {
      $("#container").load("image.html", function(response, status, xhr) {
-         $("img.lazy").lazyload();
+         $("img.lazy").lazyload({
+			effect : "fadeIn"
+		 });
      });              
  });
 </script>
