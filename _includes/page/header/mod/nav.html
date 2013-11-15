@@ -2,13 +2,13 @@
 
   <nav class="container un-nav">
     <ul class="nav navbar-nav un-navlist un-cateNavlist">
-      <li>
+      <li class="dropdown">
         {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-          <a href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
+          <a class="dropdown-toggle"  data-toggle="dropdown" href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
         {% else if %}
-          <a href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+          <a class="dropdown-toggle"  data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
         {% endif %}
-        <ul class="un-navgroup">
+        <ul class="dropdown-menu un-navgroup">
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
           <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
@@ -19,9 +19,9 @@
       </li>
       {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
 
-        <li>
-          <a href="/page/node/html/node.html">Sub Category <span class="glyphicon glyphicon-chevron-down"></span></a>
-          <ul class="un-navgroup">
+      <li class="dropdown">
+          <a class="dropdown-toggle"  data-toggle="dropdown" href="/page/node/html/node.html">Sub Category <span class="glyphicon glyphicon-chevron-down"></span></a>
+        <ul class="dropdown-menu un-navgroup">
             <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
             <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
             <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>

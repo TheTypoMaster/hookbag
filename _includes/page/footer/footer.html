@@ -64,11 +64,14 @@ $("#container").one("click", function() {
  });
 var p = document.getElementById("un-sort"),
     res = document.getElementById("result");
-res.innerHTML = "$" + p.value;
+	if(p){
+		res.innerHTML = "$" + p.value;
 
-p.addEventListener("input", function() {
-    res.innerHTML = "$" + p.value;
-}, false); 
+		p.addEventListener("input", function() {
+			res.innerHTML = "$" + p.value;
+		}, false); 
+	
+	}
 </script>
 </body>
 </html>
