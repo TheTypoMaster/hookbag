@@ -1,22 +1,18 @@
-<ul class="nav navbar-nav" id="un-search">
-  <li class="col-md-2">
-    <select class="dropdown form-contorl" tabindex="7">
-      <option value="1" selected>All Categories</option>
-      <option value="2">Computer Systems</option>
-      <option value="3">Computer Parts</option>
-      <option value="4">Phones</option>
-      <option value="5">Network</option>
-    </select>
-  </li>
-  <li class="col-md-10">
-    <input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
-    <datalist id="search_list"> 
-      <option label="Computer Systems" value="Computer Systems"> 
-      <option label="Peripheral" value="Peripheral"> 
-      <option label="Garden" value="Garden"> 
-      <option label="Storage" value="Storage"> 
-      <option label="Phones" value="Phones"> 
-      <option label="Cooler" value="Cooler"> 
-    </datalist> 
-  </li>
-</ul>
+<div id="un-search">
+  <select class="pull-left dropdown form-contorl" tabindex="7">
+    <option value="1" selected>All Categories</option>
+    <option value="2">Computer Systems</option>
+    <option value="3">Computer Parts</option>
+    <option value="4">Phones</option>
+    <option value="5">Network</option>
+  </select>
+  <input class="pull-left col-md-12 form-control" type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list">
+  <datalist id="search_list"> 
+    <option label="Computer Systems" value="Computer Systems"> 
+    <option label="Peripheral" value="Peripheral"> 
+    <option label="Garden" value="Garden"> 
+    <option label="Storage" value="Storage"> 
+    <option label="Phones" value="Phones"> 
+    <option label="Cooler" value="Cooler"> 
+  </datalist>
+</div>

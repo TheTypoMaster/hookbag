@@ -33,13 +33,20 @@
 <div id="ui-top" class="bgGray">
 
   <div class="container un-top pb0">
-    {% include page/header/mod/logo.html %}
-    {% include page/header/mod/user.html %}
-    
-    <div class="row col-md-7 pull-right row-offcanvas row-offcanvas-right">
-      {% include page/header/mod/search.html %}
-      {% include page/header/mod/login.html %}
+
+    <div class="row">
+      <div class="col-md-3">
+        {% include page/header/mod/logo.html %}
+      </div>
+      <div id="un-search" class="col-md-6">
+        {% include page/header/mod/search.html %}
+        {% include page/header/mod/login.html %}
+      </div>
+      <div class="col-md-3">
+        {% include page/header/mod/user.html %}
+      </div>
     </div>
+
   </div>
 
   {% include page/header/mod/nav.html %}
