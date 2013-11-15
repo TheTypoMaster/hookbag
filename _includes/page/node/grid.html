@@ -1,14 +1,53 @@
 <div class="container un-container">
-  <ol class="breadcrumb">
-    <li><a href="#">Home</a></li>
-    <li class="active">grid</li>
-  </ol>
+
   <div class="row">
-    <div class="un-side col-md-2">
-      {% include page/node/mod/side.html %}
-    </div><!--the side-->
-    <div class="col-md-10 pull-right un-main">
-      <h3 class="un-title un-grid-title un-spc-title">Computer Systems</h3>
+    <div class="col-md-12">
+      <h3 class="un-title un-spc-title list-inline" style="padding-bottom:0px;">Computer Systems</h3>
+      <div class="text-muted list-inline">1000 <small>product(s)</small></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <form action="" class="form-inline">
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="排除关键词" autofocus>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">排除</button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-3">
+      <div class="un-sortPrice">Sort by Price:<span id="result" class="text-danger"></span><br/> $36 <input id="un-sort" name="sort" type="range" min="36" max="436" value="5"> $436 </div>
+    </div>
+    <div class="col-md-6">
+      <div class="btn-group">
+        <a type="button" class="btn btn-default">人气</a>
+        <a type="button" class="btn btn-default">销量</a>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            仓库
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">美国</a></li>
+            <li><a href="#">加拿大</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <hr>
+ 
+  <div class="row">
+   
+    <div class="col-md-12 pull-right un-main">
+
       <div class="row">
         {% for x in (1..12) %}
         <div class="col-md-4">
