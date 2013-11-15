@@ -67,8 +67,8 @@ $('#un-navList>.dropdown').hover(function (){
  $("img.lazy").lazyload({
 	effect : "fadeIn"
  });
-$("#container").one("click", function() {
-     $("#container").load("image.html", function(response, status, xhr) {
+$("#un-gridMore").one("click", function() {
+     $("#un-gridList").load("image.html", function(response, status, xhr) {
          $("img.lazy").lazyload({
 			effect : "fadeIn"
 		 });
