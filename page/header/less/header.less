@@ -24,23 +24,26 @@
 .un-top{
   padding:10px 0;
   #un-logo{
-    margin-bottom: -10px;
-    margin-left: 30px;
-    margin-top: -10px;
-    padding: 11px 20px;
+    //margin-bottom: -10px;
+    //margin-left: 30px;
+    //margin-top: -10px;
+    padding: 0 20px;
     //background-color:#fff;
   }
   #un-search{ 
+	overflow:hidden;
     &>li{
       padding:0;
     }
     input[type=search]{
       border-radius:0;
       margin:5px 15px 0 0;
+	  padding-left:26px;
       border-color:#eee;
       box-shadow:0 0 0 rgba(0,0,0,.5);
       -webkit-box-shadow: 0 0 0 rgba(0,0,0,.5);
       -moz-box-shadow: 0 0 0 rgba(0,0,0,.5);
+	  background:#fff url("../../../page/header/img/search-icon.png") no-repeat 7px center;
     }
 
   }
@@ -217,6 +220,7 @@
       &:first-child{
         font-weight:700;
         font-size:21px;
+		padding-left:0;
       }
       &:last-child{
         font-size:17px;
@@ -280,4 +284,5 @@
   position:relative;
   border-radius:0;
   margin-bottom:10px;
+  padding:8px 0;
 }
