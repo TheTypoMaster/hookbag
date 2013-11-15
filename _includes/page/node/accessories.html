@@ -28,12 +28,13 @@
 			</div>
 			<!--the item-->
 			<h3 class="un-title un-grid-title un-spc-title">accessories</h3>
-			{% for x in (1..24) %}
-			<div class="col-md-3">
+			{% for x in (1..12) %}
+			<div class="col-md-4 col-lg-3">
 				{% include page/node/mod/item.html %}
 			</div>			
 			{% endfor %}
-			<div id="container" class="tac mb10"><span class="btn btn-default">View More</span></div>
+			<div id="un-gridList"></div>
+			<div id="un-gridMore" class="tac mb10"><span class="btn btn-default">View More</span></div>
 
 		</div><!--the gridList-->
 		
