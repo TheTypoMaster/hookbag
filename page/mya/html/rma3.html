@@ -26,11 +26,13 @@
 <link rel="stylesheet" href="/style/v3/css/ui.css">
 <link rel="stylesheet" href="/style/v3/css/mod.css">
 
-
 <script src="/style/base/jquery/jquery.js"></script>
 <script src="/style/base/bootstrap/js/bootstrap.min.js"></script>
 <script src="/style/v3/js/app.js"></script>
 <script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.9.0"></script>
+
+<link rel="stylesheet" href="/style/base/select2/select2.css">
+<script src="/style/base/select2/select2.min.js"></script>
 <!--延迟加载-->
 
 <script src="/style/base/holderjs/holder.js"></script>
@@ -57,8 +59,14 @@ $(document).ready(function() {
 <div id="ui-top" class="bgGray">
 
   <div class="container un-top pb0">
-    <a id="un-logo" class="pull-left" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
-    <ul class="nav navbar-nav navbar-right un-navmember">
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+        <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
+      </div>
+      
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 col-md-push-6 col-lg-push-8">
+        <ul class="pull-right list-inline un-navmember">
 	<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > Hi,</span></li>
 	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
 		<ul class="dropdown-menu">
@@ -135,84 +143,71 @@ $(document).ready(function() {
 		</ul>
 	</li>
 </ul>
-    
-    <div class="row col-md-7 pull-right row-offcanvas row-offcanvas-right">
-      <ul class="nav navbar-nav" id="un-search">
-  <li class="col-md-2">
-    <select class="dropdown form-contorl" tabindex="7">
-      <option value="1" selected>All Categories</option>
-      <option value="2">Computer Systems</option>
-      <option value="3">Computer Parts</option>
-      <option value="4">Phones</option>
-      <option value="5">Network</option>
-    </select>
-  </li>
-  <li class="col-md-10">
-    <input type="search" placeholder="Keywords,Model#,SKU or UPC#" autofocus list="search_list" class="col-md-3 form-control">
-    <datalist id="search_list"> 
-      <option label="Computer Systems" value="Computer Systems"> 
-      <option label="Peripheral" value="Peripheral"> 
-      <option label="Garden" value="Garden"> 
-      <option label="Storage" value="Storage"> 
-      <option label="Phones" value="Phones"> 
-      <option label="Cooler" value="Cooler"> 
-    </datalist> 
-  </li>
-</ul>
-      <div id="un-login" class="sidebar-offcanvas">
-  <form class="form-inline" role="form">
-    <div class="form-group">
-      <label class="sr-only" for="exampleInputEmail2">Email address</label>
-      <input type="email" class="form-control input-sm" id="exampleInputEmail2" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label class="sr-only" for="exampleInputPassword2">Password</label>
-      <input type="password" class="form-control input-sm" id="exampleInputPassword2" placeholder="Password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-primary btn-sm">Sign in</button>
-    <a id="un-signUp" href="">Sign up</a>
-  </form>       
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-md-pull-3 col-lg-pull-2">
+        <div id="un-search" class="clearfix mt10">
+<form action="" class="form-inline">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Keywords,Model#,SKU or UPC#" autofocus>
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button">Go!</button>
+    </span>
+  </div>
+</form>
 </div>
+
+      </div>
     </div>
+
   </div>
 
-  <div class="navbar navbar-default un-nav-affix">
-
-  <nav class="container un-nav">
-    <ul class="nav navbar-nav un-navlist un-cateNavlist">
-      <li>
-        
-          <a href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
-        
-        <ul class="un-navgroup">
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+  <div class="navbar un-nav mb0">
+  <div id="un-navList" class="container">
+    <div class="navbar-header dropdown">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+      
+        <ul class="dropdown-menu">
+          <li><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
+          <li><a href="/page/node/html/grid.html" class="">Storage</a></li>
+          <li><a href="/page/node/html/grid.html" class="">Misc</a></li>
+          <li><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
+          <li><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
+          <li><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
         </ul>
-      </li>
-      
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+
         
 
+        
+          <li class="active"><a href="">Hookbag Home</a></li>
+          <li><a href="">Hottest Deals</a></li>
+          <li><a href="">Always Lowest Price</a></li>
+          <li><a href="">Hard To Find</a></li>
+        
+        
+      </ul>
       
-      
-    </ul>
-    <ul class="nav navbar-nav un-navlist list-inline">
-      
-        <li class=""><a href="">Hookbag Home</a></li>
-        <li><a href="">Hottest Deals</a></li>
-        <li><a href="">Always Lowest Price</a></li>
-        <li><a href="">Hard To Find</a></li>
-      
-    </ul>
-  </nav>
+    </div>
 
+  </div>
 </div>
+
+
+
+
+
+
 
 </div>
   
@@ -317,7 +312,7 @@ $(document).ready(function() {
         <li><a href="">> Address Verification</a></li>
       </ul>
     </div>
-    <div class="col-md-4 un-footer-text">
+    <div class="visible-md visible-lg col-md-3 col-md-4 un-footer-text">
       <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
       <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
     </div>
@@ -336,23 +331,43 @@ $(document).ready(function() {
   </div>
 </div>
 <script>
+
+/*导航延迟*/
+$('.dropdown').hover(function (){
+	var navLi=$(this);
+	handle = setTimeout(function(){
+		navLi.addClass('open');
+	},600);
+
+},function(){
+	clearTimeout(handle);
+	$(this).removeClass('open');
+});
+/*延迟加载*/
  $("img.lazy").lazyload({
 	effect : "fadeIn"
  });
-$("#container").one("click", function() {
-     $("#container").load("image.html", function(response, status, xhr) {
+$("#un-gridMore").one("click", function() {
+     $("#un-gridList").load("image.html", function(response, status, xhr) {
          $("img.lazy").lazyload({
 			effect : "fadeIn"
 		 });
      });              
  });
+
+/*价格选择*/
 var p = document.getElementById("un-sort"),
     res = document.getElementById("result");
-res.innerHTML = "$" + p.value;
+if(p){
+	res.innerHTML = "$" + p.value;
 
-p.addEventListener("input", function() {
-    res.innerHTML = "$" + p.value;
-}, false); 
+	p.addEventListener("input", function() {
+		res.innerHTML = "$" + p.value;
+	}, false); 
+
+}
+
+
 </script>
 </body>
 </html>
