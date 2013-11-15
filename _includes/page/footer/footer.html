@@ -52,6 +52,18 @@
   </div>
 </div>
 <script>
+
+/*导航延迟*/
+$('#un-navList>.dropdown').hover(function (){
+	var navLi=$(this);
+	handle = setTimeout(function(){
+		navLi.addClass('open').siblings().removeClass('open');
+	},600);
+
+},function(){
+	clearTimeout(handle);
+});
+/*延迟加载*/
  $("img.lazy").lazyload({
 	effect : "fadeIn"
  });
@@ -62,16 +74,20 @@ $("#container").one("click", function() {
 		 });
      });              
  });
+
+/*价格选择*/
 var p = document.getElementById("un-sort"),
     res = document.getElementById("result");
-	if(p){
-		res.innerHTML = "$" + p.value;
+if(p){
+	res.innerHTML = "$" + p.value;
 
-		p.addEventListener("input", function() {
-			res.innerHTML = "$" + p.value;
-		}, false); 
-	
-	}
+	p.addEventListener("input", function() {
+		res.innerHTML = "$" + p.value;
+	}, false); 
+
+}
+
+
 </script>
 </body>
 </html>
