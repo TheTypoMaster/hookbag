@@ -54,6 +54,7 @@ style/**/Gruntfile.js
 style/**/.*
 style/**/sass/
 style/**/scss/
+style/v3/css/
 
 #style/jquery
 style/base/jquery/jquery-*.js
