@@ -1,5 +1,5 @@
-<div class="navbar navbar-inverse">
-  <div class="container">
+<div class="navbar un-nav">
+  <div id="un-navList" class="container">
     <div class="navbar-header dropdown">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -7,7 +7,10 @@
         <span class="icon-bar"></span>
       </button>
       {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-        <a class="dropdown-toggle" data-toggle="dropdown" class="navbar-brand" href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
+        <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
+      {% else if %}
+        <a class="navbar-brand"  class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+      {% endif %}
         <ul class="dropdown-menu">
           <li><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
           <li><a href="/page/node/html/grid.html" class="">Storage</a></li>
@@ -16,9 +19,6 @@
           <li><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
           <li><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
         </ul>
-      {% else if %}
-        <a class="navbar-brand" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
-      {% endif %}
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
@@ -64,58 +64,3 @@
 
 
 
-<div class="navbar navbar-default un-nav-affix">
-
-  <nav class="container un-nav">
-    <ul id="un-navList" class="nav navbar-nav un-navlist un-cateNavlist">
-      <li class="dropdown">
-        {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-          <a class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
-        {% else if %}
-          <a class="dropdown-toggle"  data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
-        {% endif %}
-        <ul class="dropdown-menu un-navgroup">
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-        </ul>
-      </li>
-      {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-
-      <li class="dropdown">
-          <a class="dropdown-toggle"  data-toggle="dropdown" href="/page/node/html/node.html">Sub Category <span class="glyphicon glyphicon-chevron-down"></span></a>
-        <ul class="dropdown-menu un-navgroup">
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Storage</a></li>
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Misc</a></li>
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-            <li class="un-sNavLink"><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-          </ul>
-        </li>
-        
-      {% else if %}
-        
-
-      {% endif %}
-      
-    </ul>
-    <ul class="nav navbar-nav un-navlist list-inline">
-      {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-        <li class="active"><a href="">Home</a></li>
-        <li><a href="">Best Seller</a></li>
-        <li><a href="">HOT BRANDS</a></li>
-        <li><a href="">INK & TONER FINDER</a></li>
-      {% else if %}
-        <li class="active"><a href="">Hookbag Home</a></li>
-        <li><a href="">Hottest Deals</a></li>
-        <li><a href="">Always Lowest Price</a></li>
-        <li><a href="">Hard To Find</a></li>
-      {% endif %}
-    </ul>
-  </nav>
-
-</div>

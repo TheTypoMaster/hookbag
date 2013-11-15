@@ -54,14 +54,15 @@
 <script>
 
 /*导航延迟*/
-$('#un-navList>.dropdown').hover(function (){
+$('.dropdown').hover(function (){
 	var navLi=$(this);
 	handle = setTimeout(function(){
-		navLi.addClass('open').siblings().removeClass('open');
+		navLi.addClass('open');
 	},600);
 
 },function(){
 	clearTimeout(handle);
+	$(this).removeClass('open');
 });
 /*延迟加载*/
  $("img.lazy").lazyload({
