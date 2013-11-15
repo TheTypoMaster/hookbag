@@ -1,4 +1,4 @@
-<div class="navbar un-nav">
+<div class="navbar un-nav mb0">
   <div id="un-navList" class="container">
     <div class="navbar-header dropdown">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -9,7 +9,7 @@
       {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
         <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">Computer Systems <span class="glyphicon glyphicon-align-justify"></span></a>
       {% else if %}
-        <a class="navbar-brand"  class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
+        <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-chevron-down"></span></a>
       {% endif %}
         <ul class="dropdown-menu">
           <li><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
@@ -25,7 +25,7 @@
         {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
 
         <li class="dropdown">
-          <a href="/forum/index" class="dropdown-toggle" data-toggle="dropdown">Sub Category <b class="caret"></b></a>
+          <a href="/forum/index" class="dropdown-toggle" style="border-right: 1px solid #E2E2E2;" data-toggle="dropdown">Sub Category <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="/page/node/html/grid.html">Computer Hardware</a></li>
             <li><a href="/page/node/html/grid.html">Storage</a></li>
@@ -42,7 +42,7 @@
         {% endif %}
 
         {% if page.title == "grid" or page.title == "node" or page.title == "item" %}
-          <li class="active"><a href="">Home</a></li>
+          <li class="active"><a href="">Category Home</a></li>
           <li><a href="">Best Seller</a></li>
           <li><a href="">HOT BRANDS</a></li>
           <li><a href="">INK & TONER FINDER</a></li>
