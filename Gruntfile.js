@@ -16,6 +16,10 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathBuild %>/less/ui.less',
           dest: '<%= pkg.pathBuild %>/css/ui.css'
+        },
+        {
+          src: '<%= pkg.pathBuild %>/less/mod.less',
+          dest: '<%= pkg.pathBuild %>/css/mod.css'
         }
       ]
     }
@@ -154,7 +158,7 @@ grunt.initConfig({
     },
     v2StyleJs: {
       files: ['./page/**/*.js', './page/**/*.less', './style/**/*.less'],
-      tasks: ['less', 'uglify', 'concat', 'cssmin', 'shell:jekyllSiteStyle']
+      tasks: ['less', 'uglify', 'cssmin', 'shell:jekyllSiteStyle']
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
@@ -193,7 +197,7 @@ grunt.registerTask('v3', [
   'shell:bootstrap',
   'less',
   'uglify',
-  'concat',
+  //'concat',
   'cssmin',
   //'imagemin:v2Base',
   'shell:jekyllBuild',
