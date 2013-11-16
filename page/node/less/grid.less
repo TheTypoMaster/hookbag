@@ -1,3 +1,30 @@
+.un-select{
+	padding:0;
+	.un-gridSelect{
+		padding:0;
+		list-style-type:none;
+		.select2-container{
+			width:100%;
+			.select2-choice{
+				background:none;
+				border-radius:0;
+				border-right:0;
+				border-color:#ddd;
+				height:32px;
+				line-height:32px;
+				.select2-arrow{
+					background:none;
+					border-left:0;
+					
+				}
+			}
+		}
+		&:last-child{
+			border-right:1px solid #ddd;
+		}
+		
+	}
+}
 .un-side{
 	.nav>li>a{
 		padding:3px 15px;
@@ -21,13 +48,6 @@
 			.panel-heading{
 				border-top:none;
 			}
-		}
-	}
-	.un-sortPrice{
-		margin-bottom:10px;
-		#un-sort{
-			width:50%;
-			margin-top:10px;
 		}
 	}
 	#un-side-affix{

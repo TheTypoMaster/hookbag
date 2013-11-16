@@ -1,24 +1,24 @@
 <div class="container un-container">
 
   <div class="row">
-    <div class="col-md-12">
-      <h3 class="un-title un-spc-title list-inline" style="padding-bottom:0px;">Computer Systems</h3>
-      <div class="text-muted list-inline"><strong style="font-size:15px;">共有 </strong>1000 <small>product(s)</small> 符合</div>
+    <div class="col-md-12 mb10">
+		<h3 class="un-title un-spc-title list-inline" style="padding-bottom:0px;">Computer Systems</h3>
+		<div class="mb10">
+		  {% for x in (1..1) %}
+		  <span class="label label-default">人气降序 <sup>X</sup></span>
+		  <span class="label label-primary">HP 品牌 <sup>X</sup></span>
+		  <span class="label label-success">4G 内存 <sup>X</sup></span>
+		  <span class="label label-info">价格 10~500 <sup>X</sup></span>
+		  <span class="label label-warning">红色 <sup>X</sup></span>
+		  <span class="label label-danger">排除 GT650 <sup>X</sup></span>
+		  {% endfor %}
+		</div>
+		<div class="text-muted"><strong style="font-size:15px;">共有 </strong>1000 <small>product(s)</small> 符合</div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-12 mb10">
-      {% for x in (1..1) %}
-      <span class="label label-default">人气降序 <sup>X</sup></span>
-      <span class="label label-primary">HP 品牌 <sup>X</sup></span>
-      <span class="label label-success">4G 内存 <sup>X</sup></span>
-      <span class="label label-info">价格 10~500 <sup>X</sup></span>
-      <span class="label label-warning">红色 <sup>X</sup></span>
-      <span class="label label-danger">排除 GT650 <sup>X</sup></span>
-      {% endfor %}
-    </div>
-    <div class="col-md-2">
+	
+  <ul class="clearfix mb10 un-select">
+    <li class="col-md-2 un-gridSelect">
       <script id="script_e1">
           $(document).ready(function() {
             $("#e1").select2({
@@ -27,7 +27,7 @@
             });
           });
         </script>
-        <select id="e1" style="width:180px" class="populate placeholder">
+        <select id="e1" class="populate placeholder">
           <option value="">尺寸</option>
           <option value="">222</option>
           <option value="">3333</option>
@@ -39,8 +39,8 @@
           <option value="">3d3d3d</option>
           <option value="">4f4r4f</option>
         </select>
-    </div>
-    <div class="col-md-2">
+	</li>
+    <li class="col-md-2 un-gridSelect">
       <script id="script_e2">
         $(document).ready(function() {
           $("#e2").select2({
@@ -49,7 +49,7 @@
           });
         });
       </script>
-      <select id="e2" style="width:180px" class="populate placeholder">
+      <select id="e2" class="populate placeholder">
         <option value="">品牌</option>
         <option value="">222</option>
         <option value="">3333</option>
@@ -61,8 +61,8 @@
         <option value="">3d3d3d</option>
         <option value="">4f4r4f</option>
       </select>
-    </div>
-    <div class="col-md-2">
+	</li>
+    <li class="col-md-2 un-gridSelect">
       <script id="script_e3">
         $(document).ready(function() {
           $("#e3").select2({
@@ -71,7 +71,7 @@
           });
         });
       </script>
-      <select id="e3" style="width:180px" class="populate placeholder">
+      <select id="e3" class="populate placeholder">
         <option value="">属性</option>
         <option value="">222</option>
         <option value="">3333</option>
@@ -83,8 +83,8 @@
         <option value="">3d3d3d</option>
         <option value="">4f4r4f</option>
       </select>
-    </div>
-    <div class="col-md-2">
+	</li>
+    <li class="col-md-2 un-gridSelect">
       <script id="script_e4">
         $(document).ready(function() {
           $("#e4").select2({
@@ -93,7 +93,7 @@
           });
         });
       </script>
-      <select id="e4" style="width:180px" class="populate placeholder">
+      <select id="e4" class="populate placeholder">
         <option value="">价格</option>
         <option value="">222</option>
         <option value="">3333</option>
@@ -105,56 +105,8 @@
         <option value="">3d3d3d</option>
         <option value="">4f4r4f</option>
       </select>
-    </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-2"></div>
-  </div>
-
-  <table class="table" data-spy="affix-top" data-offset-top="200">
-    <tr>
-  
-      <!-- <td>
-        <form action="" class="form-inline">
-          <div class="input-group input-group-sm">
-            <input type="text" class="form-control" placeholder="排除关键词" autofocus>
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">排除</button>
-            </span>
-          </div>
-        </form>
-      </td> -->
-      <!-- <td colspan="2">
-        <div class="btn-group">
-          <a type="button" class="btn btn-default">人气</a>
-          <a type="button" class="btn btn-default">销量</a>
-
-          <div class="btn-group">
-            <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-              仓库
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">美国</a></li>
-              <li><a href="#">加拿大</a></li>
-            </ul>
-          </div>
-        </div>
-      </td> -->
-    </tr>
-    <tr>
-      <td>
-        
-      </td>
-      <td>
-        
-      </td>
-      <td>
-        
-      </td>
-      <td>
-        
-      </td>
-      <td>
+	</li>
+    <li class="col-md-2 un-gridSelect">
         <script id="script_e5">
           $(document).ready(function() {
             $("#e5").select2({
@@ -163,7 +115,7 @@
             });
           });
         </script>
-        <select id="e5" style="width:200px" class="populate placeholder">
+        <select id="e5" class="populate placeholder">
           <option value="">颜色</option>
           <option value="">222</option>
           <option value="">3333</option>
@@ -175,8 +127,8 @@
           <option value="">3d3d3d</option>
           <option value="">4f4r4f</option>
         </select>
-      </td>
-      <td>
+	</li>
+    <li class="col-md-2 un-gridSelect">
         <script id="script_e6">
           $(document).ready(function() {
             $("#e6").select2({
@@ -185,7 +137,7 @@
             });
           });
         </script>
-        <select id="e6" style="width:200px" class="populate placeholder">
+        <select id="e6" class="populate placeholder">
           <option value="">内存</option>
           <option value="">222</option>
           <option value="">3333</option>
@@ -197,11 +149,11 @@
           <option value="">3d3d3d</option>
           <option value="">4f4r4f</option>
         </select>
-      </td>
-    </tr>
-  </table>
+	</li>
+  </ul>
 
-  <hr>
+
+
  
   <div class="row">
    
