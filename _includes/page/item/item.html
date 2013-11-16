@@ -93,23 +93,23 @@
     </div>
   </div>
   <!--the product -->
-  <div class="row">
+  <div class="row mt10">
     <div class="col-md-12 un-accessories">
       <h4 class="un-title un-spc-title">Frequently Bought Together & Accessories</h4>
       <ul class="un-acceList clearfix">
       {% for x in (1..5) %}
-        <li class="col-md-2">
-        <dl class="un-clip tac">
-          <dd class="un-mainImg"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
-          <dd class="un-tit">HP Smart - Power adapter - car - 12 / 24 V - 90 Watt - for Compaq 610; HP 45X, 65X; EliteBook 2170, 84XX, 85XX</dd>
+        <li class="col-md-2 un-list">
+        <dl class="un-clip">
+          <dd class="un-mainImg pull-left mr10"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
+          <dd class="un-tit"><a href="">HP Smart - Power adapter - car - 12 / 24 V - 90 Watt - for Compaq 610; HP 45X, 65X; EliteBook 2170, 84XX, 85XX</a></dd>
           <dd class="un-price text-muted"> CDN$ 40.57</dd>
           <dd class="un-acc-icon"><span class="glyphicon glyphicon-plus"></span></dd>
         </dl>
         </li>
       {% endfor %}
-        <li class="col-md-2">
-        <dl class="un-clip tac">
-          <dd class="un-mainImg"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
+        <li class="col-md-2 un-list">
+        <dl class="un-clip">
+          <dd class="un-mainImg pull-left mr10"><a href=""><img data-src="holder.js/60x60" alt="..."></a></dd>
           <dd class="un-tit">HP Smart - Power adapter - car - 12 / 24 V - 90 Watt - for Compaq 610; HP 45X, 65X; EliteBook 2170, 84XX, 85XX</dd>
           <dd class="un-price text-muted"> CDN$ 40.57</dd>
         </dl>
@@ -118,29 +118,6 @@
     </div>  
   </div>
   <!--the accessories-->
-  <div class="row mb20">
-    <div class="col-md-12">
-      <h4 class="un-title un-spc-title">Customers Who Bought This Also Bought</h4>
-      {% for x in (1...6) %}
-      <div class="col-md-2">
-        <div class="un-clip tac">
-          <span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
-          <span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
-          <div class="un-mainImg">
-            <a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?80x80"></a>
-          </div><!--img end-->
-          <div class="un-tit">
-            <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-          </div>
-          <div class="text-muted un-pri">
-            <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <!--the alsobuy-->
   <div class="row">
   <div class="col-md-12" id="un-tabs">
     <!-- Nav tabs -->
@@ -173,21 +150,22 @@
   <div class="row">
     <div class="col-md-12">
       <h4 class="un-title un-spc-title">Best Seller</h4>
-      {% for x in (1...6) %}
-      <div class="col-md-2">
-        <div class="un-clip tac">
-          <span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
-          <span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
-          <div class="un-mainImg">
-            <a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?80x80"></a>
-          </div><!--img end-->
-          <div class="un-tit">
-            <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-          </div>
-          <div class="text-muted un-pri">
-            <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
-          </div>
-        </div>
+      {% for x in (1...4) %}
+      <div class="col-md-3 un-list">
+		<div class="un-clip clearfix">
+			<div class="un-mainImg pull-left mr10">
+				<a title="" href="/page/item/html/item.html"><img class="lazy" src="holder.js/100x100" ></a>
+				
+			</div><!--img end-->
+			<div class="un-tit">
+			  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+			</div>
+			<div class="text-muted un-pri">
+			  <strong> CDN$ 40.57</strong>
+			</div>
+			<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+			<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+		</div>
       </div>
       {% endfor %}
     </div>
