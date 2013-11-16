@@ -7,19 +7,113 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-12 mb10">
+      {% for x in (1..1) %}
+      <span class="label label-default">人气降序 <sup>X</sup></span>
+      <span class="label label-primary">HP 品牌 <sup>X</sup></span>
+      <span class="label label-success">4G 内存 <sup>X</sup></span>
+      <span class="label label-info">价格 10~500 <sup>X</sup></span>
+      <span class="label label-warning">红色 <sup>X</sup></span>
+      <span class="label label-danger">排除 GT650 <sup>X</sup></span>
+      {% endfor %}
+    </div>
+    <div class="col-md-2">
+      <script id="script_e1">
+          $(document).ready(function() {
+            $("#e1").select2({
+            placeholder: "Select a State",
+            allowClear: true
+            });
+          });
+        </script>
+        <select id="e1" style="width:180px" class="populate placeholder">
+          <option value="">尺寸</option>
+          <option value="">222</option>
+          <option value="">3333</option>
+          <option value="">4444</option>
+          <option value="">5555</option>
+          <option value="">1a1a1a1a1</option>
+          <option value="">1b1b1b</option>
+          <option value="">2c2c2c2c</option>
+          <option value="">3d3d3d</option>
+          <option value="">4f4r4f</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+      <script id="script_e2">
+        $(document).ready(function() {
+          $("#e2").select2({
+          placeholder: "Select a State",
+          allowClear: true
+          });
+        });
+      </script>
+      <select id="e2" style="width:180px" class="populate placeholder">
+        <option value="">品牌</option>
+        <option value="">222</option>
+        <option value="">3333</option>
+        <option value="">4444</option>
+        <option value="">5555</option>
+        <option value="">1a1a1a1a1</option>
+        <option value="">1b1b1b</option>
+        <option value="">2c2c2c2c</option>
+        <option value="">3d3d3d</option>
+        <option value="">4f4r4f</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <script id="script_e3">
+        $(document).ready(function() {
+          $("#e3").select2({
+          placeholder: "Select a State",
+          allowClear: true
+          });
+        });
+      </script>
+      <select id="e3" style="width:180px" class="populate placeholder">
+        <option value="">属性</option>
+        <option value="">222</option>
+        <option value="">3333</option>
+        <option value="">4444</option>
+        <option value="">5555</option>
+        <option value="">1a1a1a1a1</option>
+        <option value="">1b1b1b</option>
+        <option value="">2c2c2c2c</option>
+        <option value="">3d3d3d</option>
+        <option value="">4f4r4f</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <script id="script_e4">
+        $(document).ready(function() {
+          $("#e4").select2({
+          placeholder: "Select a State",
+          allowClear: true
+          });
+        });
+      </script>
+      <select id="e4" style="width:180px" class="populate placeholder">
+        <option value="">价格</option>
+        <option value="">222</option>
+        <option value="">3333</option>
+        <option value="">4444</option>
+        <option value="">5555</option>
+        <option value="">1a1a1a1a1</option>
+        <option value="">1b1b1b</option>
+        <option value="">2c2c2c2c</option>
+        <option value="">3d3d3d</option>
+        <option value="">4f4r4f</option>
+      </select>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+  </div>
+
   <table class="table" data-spy="affix-top" data-offset-top="200">
     <tr>
-      <td rowspan="2">
-        {% for x in (1..1) %}
-        <span class="label label-default">人气降序 <sup>X</sup></span>
-        <span class="label label-primary">HP 品牌 <sup>X</sup></span>
-        <span class="label label-success">4G 内存 <sup>X</sup></span>
-        <span class="label label-info">价格 10~500 <sup>X</sup></span>
-        <span class="label label-warning">红色 <sup>X</sup></span>
-        <span class="label label-danger">排除 GT650 <sup>X</sup></span>
-        {% endfor %}
-      </td>
-      <td>
+  
+      <!-- <td>
         <form action="" class="form-inline">
           <div class="input-group input-group-sm">
             <input type="text" class="form-control" placeholder="排除关键词" autofocus>
@@ -28,8 +122,8 @@
             </span>
           </div>
         </form>
-      </td>
-      <td colspan="2">
+      </td> -->
+      <!-- <td colspan="2">
         <div class="btn-group">
           <a type="button" class="btn btn-default">人气</a>
           <a type="button" class="btn btn-default">销量</a>
@@ -45,21 +139,32 @@
             </ul>
           </div>
         </div>
-      </td>
+      </td> -->
     </tr>
     <tr>
-      
       <td>
-        <script id="script_e2">
+        
+      </td>
+      <td>
+        
+      </td>
+      <td>
+        
+      </td>
+      <td>
+        
+      </td>
+      <td>
+        <script id="script_e5">
           $(document).ready(function() {
-            $("#e2").select2({
+            $("#e5").select2({
             placeholder: "Select a State",
             allowClear: true
             });
           });
         </script>
-        <select id="e2" style="width:200px" class="populate placeholder">
-          <option value="">品牌</option>
+        <select id="e5" style="width:200px" class="populate placeholder">
+          <option value="">颜色</option>
           <option value="">222</option>
           <option value="">3333</option>
           <option value="">4444</option>
@@ -72,38 +177,16 @@
         </select>
       </td>
       <td>
-        <script id="script_e3">
+        <script id="script_e6">
           $(document).ready(function() {
-            $("#e3").select2({
+            $("#e6").select2({
             placeholder: "Select a State",
             allowClear: true
             });
           });
         </script>
-        <select id="e3" style="width:200px" class="populate placeholder">
-          <option value="">属性</option>
-          <option value="">222</option>
-          <option value="">3333</option>
-          <option value="">4444</option>
-          <option value="">5555</option>
-          <option value="">1a1a1a1a1</option>
-          <option value="">1b1b1b</option>
-          <option value="">2c2c2c2c</option>
-          <option value="">3d3d3d</option>
-          <option value="">4f4r4f</option>
-        </select>
-      </td>
-      <td>
-        <script id="script_e4">
-          $(document).ready(function() {
-            $("#e4").select2({
-            placeholder: "Select a State",
-            allowClear: true
-            });
-          });
-        </script>
-        <select id="e4" style="width:200px" class="populate placeholder">
-          <option value="">价格</option>
+        <select id="e6" style="width:200px" class="populate placeholder">
+          <option value="">内存</option>
           <option value="">222</option>
           <option value="">3333</option>
           <option value="">4444</option>
