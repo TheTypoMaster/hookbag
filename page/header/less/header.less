@@ -192,76 +192,63 @@
    position:relative;
    font-family: 'amblelight';
    font-size:15px;
+   min-height:0;
+   .navbar-header{
+		.navbar-brand{
+			border-bottom:2px solid transparent;
+			padding:12px 0;
+			color:#000;
+			margin-left:0;
+			&:hover{
+			  border-color:#F60;
+			}
+			.glyphicon{
+				font-size:13px;
+			}
+		}
+		.dropdown-menu{
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			margin-top: 0;
+		}
+		&.open .navbar-brand{
+			border-color:#F60;
+		}
+   }
   .un-navlist{
-    &>li{
-      text-align:center;
-      padding:0 30px;
-      &:first-child{
-        font-weight:700;
-      }
-      &>a{
-        border-bottom:2px solid transparent;
-        -moz-box-sizing: content-box;
-        padding:12px 0;
-        color:#777
-      }
-      &.active,&:hover,&.open{
-        a{
-          border-color:#F60;
-		  background:none;
-		  &:hover{
+    .navbar-collapse .nav{
+		.dropdown{
+			border-right:1px solid #eee;
+			.caret{
+				border-top-color:#777;
+				border-bottom-color:#777;
+			}
+		}
+		&>li{
+		  text-align:center;
+		  padding:0 30px;
+		  &:first-child{
+			font-weight:700;
+		  }
+		  &>a{
+			border-bottom:2px solid transparent;
+			-moz-box-sizing: content-box;
+			padding:12px 0;
+			color:#777
+		  }
+		  &.active,&:hover,&.open{
+			a{
+			  border-color:#F60;
 			  background:none;
+			  &:hover{
+				  background:none;
+			  }
+			}
 		  }
-        }
-      }
-    }
-  }
-  .un-cateNavlist{
-    border-right:1px solid #eee;
-    &>li{
-      &:first-child{
-        font-weight:700;
-        font-size:21px;
-		padding-left:0;
-      }
-      &:last-child{
-        font-size:17px;
-      }
-      .glyphicon{
-        top:0;
-        font-size:11px;
-        &:empty{
-          width:2em;
-        }
-      }
-      .un-navgroup{
-        position: absolute;
-        padding:10px 30px;
-        border:1px solid #eee;
-        background-color:#fff;
-        text-align:left;
-        width:100%;
-        z-index:999;
-        font-size:15px;
-        li{
-          list-style-image: url("../../../page/header/img/menudyn1_fleche.png");
-        }
-        a{
-          font-size:12px;
-          line-height:1.8;
-          font-weight:400;
-		  &:hover{
-			text-decoration:underline;
-		  }
-        }
-      }
-    }
-	.open {
-		a,a:hover,a:focus{
-			background:none;
 		}
 	}
   }
+
 }
 
 
