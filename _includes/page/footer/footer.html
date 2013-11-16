@@ -53,17 +53,6 @@
 </div>
 <script>
 
-/*导航延迟*/
-$('.dropdown').hover(function (){
-	var navLi=$(this);
-	handle = setTimeout(function(){
-		$('.dropdown').removeClass('open');
-		navLi.addClass('open');
-	},400);
-
-},function(){
-	clearTimeout(handle);
-});
 /*延迟加载*/
  $("img.lazy").lazyload({
 	effect : "fadeIn"
