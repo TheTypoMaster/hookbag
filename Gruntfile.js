@@ -140,8 +140,11 @@ grunt.initConfig({
     bootstrap: {
       command: '<%= pkg.rsync %> ../bootstrap/dist/* ./style/base/bootstrap',
     },
-    v2SvnStylev2: {
-      command: '<%= pkg.rsync %> style/v2 ~/Sites/svn/hb3/front/public/style',
+    v3Svn: {
+      command: '<%= pkg.rsync %> ./_site/* ~/Sites/hb4',
+    },
+    v3Source: {
+      command: '<%= pkg.rsync %> ./_includes/page/* ~/Sites/hb4/app/view/source',
     },
     bower: {
       command: 'bower install',
@@ -204,6 +207,8 @@ grunt.registerTask('v3', [
   'shell:base',
   //'shell:v2SvnStylev2',
   //'shell:v2SvnStyleBase',
+  'shell:v3Svn',
+  'shell:v3Source',
   'connect',
   'watch'
 ]);
