@@ -135,7 +135,7 @@ grunt.initConfig({
       command: '<%= pkg.rsync %> ../bootstrap/dist/* ./style/base/bootstrap',
     },
     v3Svn: {
-      command: '<%= pkg.rsync %> ./_site/* ~/Sites/hb4',
+      command: '<%= pkg.rsync %> ./_site/style/* ~/Sites/hb4/style',
     },
     v3Source: {
       command: '<%= pkg.rsync %> ./_includes/page/* ~/Sites/hb4/app/view/source',
@@ -151,11 +151,11 @@ grunt.initConfig({
     },
     jekyllHtml: {
       files: ['./**/*.html'],
-      tasks: ['jekyll:dev', 'shell:v3Svn', 'shell:v3Source']
+      tasks: ['jekyll:dev', 'shell:v3Source']
     },
     v2StyleJs: {
       files: ['./page/**/*.js', './page/**/*.less', './style/**/*.less'],
-      tasks: ['less', 'uglify', 'cssmin', 'shell:jekyllSiteStyle', 'shell:v3Svn', 'shell:v3Source']
+      tasks: ['less', 'uglify', 'cssmin', 'shell:jekyllSiteStyle', 'shell:v3Svn']
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
