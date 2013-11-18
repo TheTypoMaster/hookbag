@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="/style/v3/css/un.css">
-<link rel="stylesheet" href="/style/v3/css/ui.css">
-<link rel="stylesheet" href="/style/v3/css/mod.css">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css?ui=2013-11-18T10%3A29%3A38%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-11-18T10%3A29%3A38%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-11-18T10%3A29%3A38%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-11-18T10%3A29%3A38%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js"></script>
-<script src="/style/base/bootstrap/js/bootstrap.min.js"></script>
-<script src="/style/v3/js/app.js"></script>
+<script src="/style/base/jquery/jquery.js?ui=2013-11-18T10%3A29%3A38%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.min.js?ui=2013-11-18T10%3A29%3A38%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2013-11-18T10%3A29%3A38%2B08%3A00"></script>
 <script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.9.0"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css">
-<script src="/style/base/select2/select2.min.js"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-11-18T10%3A29%3A38%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2013-11-18T10%3A29%3A38%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js"></script>
+<script src="/style/base/holderjs/holder.js?ui=2013-11-18T10%3A29%3A38%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -48,8 +48,6 @@ $(document).ready(function() {
   });
 });
 </script>
-
-
 
 </head>
 
@@ -151,7 +149,7 @@ $(document).ready(function() {
   <div class="input-group">
     <input type="text" class="form-control" placeholder="Keywords,Model#,SKU or UPC#" autofocus>
     <span class="input-group-btn">
-      <button class="btn btn-default" type="button">Go!</button>
+      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
     </span>
   </div>
 </form>
@@ -162,8 +160,8 @@ $(document).ready(function() {
 
   </div>
 
-  <div class="navbar un-nav mb0">
-  <div id="un-navList" class="container">
+  <div class="navbar navbar-default un-nav mb0">
+  <div id="un-navList" class="container un-navlist">
     <div class="navbar-header dropdown">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -591,17 +589,6 @@ $(document).ready(function() {
 </div>
 <script>
 
-/*导航延迟*/
-$('.dropdown').hover(function (){
-	var navLi=$(this);
-	handle = setTimeout(function(){
-		navLi.addClass('open');
-	},600);
-
-},function(){
-	clearTimeout(handle);
-	$(this).removeClass('open');
-});
 /*延迟加载*/
  $("img.lazy").lazyload({
 	effect : "fadeIn"
