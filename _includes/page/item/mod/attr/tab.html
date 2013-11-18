@@ -1,0 +1,23 @@
+<div id="un-tabs">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+    <li><a href="#sizechart" data-toggle="tab">Size Chart</a></li>
+    <li><a href="#specifications" data-toggle="tab">Specifications</a></li>
+    <li><a href="#returnpolicy" data-toggle="tab">Return Policy</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div class="tab-pane fade active in" id="overview">
+    {% include page/item/mod/attr/overview.html %}
+    </div>
+    <div class="tab-pane fade" id="sizechart">
+    {% include page/item/mod/attr/size.html %}
+    </div>
+    <div class="tab-pane fade" id="specifications">
+    {% include page/item/mod/attr/specifications.html %}
+    </div>
+    <div class="tab-pane fade" id="returnpolicy">
+    {% include page/item/mod/attr/doc.html %}
+    </div>
+  </div>
+</div>
