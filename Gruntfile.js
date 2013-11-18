@@ -88,10 +88,13 @@ grunt.initConfig({
         optimizationLevel: 3
       },
       files: [
-        // page header
         {
           src: '<%= pkg.pathPage %>/header/img/logo.png',
-          dest: '<%= pkg.pathBuild %>/img/logo.png'
+          dest: './style/v3/img/logo.png'
+        },
+        {
+          src: '<%= pkg.pathPage %>/header/img/logo-us.png',
+          dest: './style/v3/img/logo-us.png'
         }
       ]
     }
@@ -109,15 +112,6 @@ grunt.initConfig({
       server : true,
       server_port : 6800,
       auto : true
-    }
-  },
-  //connect
-  connect: {
-    v2: {
-      options: {
-        port: 7500,
-        base: './_site'
-      }
     }
   },
   // shell
@@ -157,15 +151,15 @@ grunt.initConfig({
     },
     jekyllHtml: {
       files: ['./**/*.html'],
-      tasks: ['jekyll:dev']
+      tasks: ['jekyll:dev', 'shell:v3Svn', 'shell:v3Source']
     },
     v2StyleJs: {
       files: ['./page/**/*.js', './page/**/*.less', './style/**/*.less'],
-      tasks: ['less', 'uglify', 'cssmin', 'shell:jekyllSiteStyle']
+      tasks: ['less', 'uglify', 'cssmin', 'shell:jekyllSiteStyle', 'shell:v3Svn', 'shell:v3Source']
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
-      tasks: ['imagemin:v2base', 'shell:v2SvnStylev2']
+      tasks: ['imagemin:v2base', 'shell:v2SvnStylev2', 'shell:v3Svn', 'shell:v3Source']
     }
   },
 // grunt.initConfig end
@@ -184,7 +178,6 @@ grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-jekyll');
 grunt.loadNpmTasks('grunt-html-validation');
 grunt.loadNpmTasks('grunt-contrib-watch');
@@ -193,26 +186,15 @@ grunt.loadNpmTasks('grunt-shell-spawn');
 // 默认执行的任务
 grunt.registerTask('v3', [
   'clean:v3',
-  'shell:bower',
-  'clean:base',
-  //'shell:baseOo',
-  'shell:bootstrapDir',
-  'shell:bootstrap',
   'less',
   'uglify',
-  //'concat',
   'cssmin',
-  //'imagemin:v2Base',
   'shell:jekyllBuild',
-  'shell:base',
-  //'shell:v2SvnStylev2',
-  //'shell:v2SvnStyleBase',
   'shell:v3Svn',
   'shell:v3Source',
-  'connect',
   'watch'
 ]);
-grunt.registerTask('flow', [ 'clean:flow', 'less:flow', 'cssmin:flow' ]);
-grunt.registerTask('test', [ 'concat:v2' ]);
+grunt.registerTask('base', [ 'clean:base', 'shell:bower', 'shell:bootstrapDir', 'shell:bootstrap', 'shell:base', 'shell:v3Svn', 'shell:v3Source' ]);
+grunt.registerTask('test', [ 'imagemin' ]);
 
 };
