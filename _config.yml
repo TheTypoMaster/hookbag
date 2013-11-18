@@ -15,4 +15,4 @@ port:             6800
 
 # Custom vars
 title: "Hookbag"
-version: "3.11.12"
+version: "3.11.18"
