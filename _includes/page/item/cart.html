@@ -1,21 +1,57 @@
 <div class="container">
-  <div class="row">
+  <div class="row mt10">
     <div class="col-md-6">
       <div class="alert alert-success">
-        <strong>Well done!</strong> 已经把商品添加到购物车.
+        <strong><span class="glyphicon glyphicon-check"></span> Well done!</strong> 已经把商品添加到购物车.
       </div>
     </div>
     <div class="col-md-6">
-      这里显示整个购物车的详情. 总金额,多少个商品.
+      <h4 class="un-title un-spc-title">整个购物车的详情. 总<strong>金额</strong>,<strong>多少</strong>个商品.</h4>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md">
-      这里是 购买了此商品还同时购买了什么
+    <h4 class="col-md-12 un-title un-spc-title">Customers Who Bought This Item Also Bought</h4>
+    <div class="col-md-12">
+      {% for x in (1...4) %}
+      <div class="col-md-3 un-list">
+		<div class="un-clip clearfix">
+			<div class="un-mainImg pull-left mr10">
+				<a title="" href="/page/item/html/item.html"><img class="lazy" src="holder.js/100x100" ></a>
+				
+			</div><!--img end-->
+			<div class="un-tit">
+			  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+			</div>
+			<div class="text-muted un-pri">
+			  <strong> CDN$ 40.57</strong>
+			</div>
+			<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+			<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+		</div>
+      </div>
+      {% endfor %}
     </div>
-    <div class="col-md">
-      这里是根据购买向他的推荐商品
+    <h4 class="col-md-12 un-title un-spc-title">Related to Item You've Viewed</h4>
+    <div class="col-md-12">
+      {% for x in (1...4) %}
+      <div class="col-md-3 un-list">
+		<div class="un-clip clearfix">
+			<div class="un-mainImg pull-left mr10">
+				<a title="" href="/page/item/html/item.html"><img class="lazy" src="holder.js/100x100" ></a>
+				
+			</div><!--img end-->
+			<div class="un-tit">
+			  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+			</div>
+			<div class="text-muted un-pri">
+			  <strong> CDN$ 40.57</strong>
+			</div>
+			<span class="img-circle un-targ un-targ-bestseller">Sale</span>
+			<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+		</div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 
