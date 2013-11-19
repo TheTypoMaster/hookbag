@@ -189,6 +189,7 @@ grunt.registerTask('v3', [
   'less',
   'uglify',
   'cssmin',
+  'imagemin',
   'shell:jekyllBuild',
   'shell:v3Svn',
   'shell:v3Source',
