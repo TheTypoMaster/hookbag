@@ -189,11 +189,18 @@
 }
 .un-nav{
    background: none repeat scroll 0 0 #FFFFFF;
-   border: medium none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-radius: none;
    position:relative;
    font-family: 'amblelight';
    font-size:15px;
    min-height:0;
+   li.active  {
+     margin-bottom: -2px;
+     border-bottom: 2px solid #f60;
+   }
    .navbar-header{
 		.navbar-toggle{
 			margin-bottom:0;
@@ -242,7 +249,6 @@
 		  }
 		  &.active,&:hover,&.open{
 			&>a{
-			  border-color:#F60;
 			  background:none;
 			  &:hover{
 				  background:none;
