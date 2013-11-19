@@ -1,19 +1,11 @@
-<div class="container ug-account">
+<div class="container un-account">
 
 	<div id="" class="row">
-		<div class="col-md-3">
-			{% include page/login/mod/mya.html %}
-		</div>
-		<div class="col-md-9">
-
-			<div class="panel panel-default ug-account-list">
-			  <div class="panel-heading">
-			  <strong>Replacement</strong>
-			  </div>
-			  <div class="panel-body">
+		<div class="col-md-12">
+			  <h3 class="un-title un-spc-title">Replacement</h3>
 				<div class="alert alert-warning"><span class="glyphicon glyphicon-info-sign"></span>　You have already applied for RMA.Below is your RMA history:</div>
 			  {% for x in (1..4) %}
-				<table class="table table-bordered  table-striped">
+				<table class="table table-bordered  table-striped fz11">
 					<thead>
 						<tr>
 						<th></th>
@@ -36,7 +28,7 @@
 					</tbody>
 				</table>
 		  {% endfor %}
-				<table class="table table-bordered  table-striped">
+				<table class="table table-bordered  table-striped fz11">
 					<thead>
 						<tr>
 						<th></th>
@@ -62,8 +54,7 @@
 					<textarea class="form-control" rows="6">WD My Book Studio 4TB Mac External Hard Drive Storage USB3.0</textarea>
 				  </div>
 				</div>
-				<a href="rma5.html" class="btn btn-primary btn-sm">Next >></a>
-			  </div>
+				<a href="rma5.html" class="btn btn-primary btn-sm un-btn">Next >></a>
 			</div>
 
 
