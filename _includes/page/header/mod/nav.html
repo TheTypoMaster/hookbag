@@ -100,8 +100,8 @@
         var $menu = $(".un-dropdown-nav");
 
         $menu.menuAim({
-            activate: activateSubmenu,
-            deactivate: deactivateSubmenu
+            enter: activateSubmenu,
+            exit: deactivateSubmenu
         });
         function activateSubmenu(row) {
             var $row = $(row),
