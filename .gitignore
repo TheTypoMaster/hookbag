@@ -80,3 +80,7 @@ style/base/select2/select2_locale_*.js
 style/base/select2/*.sh
 style/base/select2/LICENSE
 
+#jQuery-menu-aim
+style/base/jQuery-menu-aim/*.png
+style/base/jQuery-menu-aim/example/
+
