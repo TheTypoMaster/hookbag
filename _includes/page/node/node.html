@@ -73,7 +73,7 @@
     </div>
     <div class="col-md-7">
       <h3>所有厂商</h3>
-      
+
       <h3>热卖产品</h3>
       <div class="row">
         {% for x in (1..3) %}
@@ -107,6 +107,22 @@
         {% endfor %}
       </div>
       <h3>唯一产品</h3>
+      <div class="row">
+        {% for x in (1..3) %}
+        <div class="col-md-4">
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img class="media-object" src="holder.js/64x64">
+            </a>
+            <div class="media-body">
+              <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
+              产品价格
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <h3>根据购买记录浏览历史推荐产品</h3>
       <div class="row">
         {% for x in (1..3) %}
         <div class="col-md-4">
