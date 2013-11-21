@@ -11,13 +11,57 @@
       {% else if %}
         <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-align-justify"></span></a>
       {% endif %}
-        <ul class="dropdown-menu">
-          <li><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
+        <ul class="dropdown-menu un-dropdown-nav">
+		{% for x in (1..8) %}
+		<li class="dropdown-submenu" data-submenu-id="computer-systems">
+
+		<a href="">Computer Systems</a>
+
+		<div class="sNavMenu popover" id="computer-systems">
+		<h3 class="popover-title">Computer Systems</h3>
+		<dl class="popover-content">
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Notebooks</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Netbooks</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Tablets</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Desktop</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Workstations</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Servers</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Barebone Systems</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Terminals & Thin Clients</a></dd>
+		  <dd class="sNavLink"><a href="/page/node/html/grid.html">Laptop Accessories</a></dd>
+		</dl>
+		</div>
+
+		</li>
+		<li class="dropdown-submenu" data-submenu-id="computer-parts">
+		  <a href="">Computer Parts</a>
+		  <div class="sNavMenu sNavMenu02 popover" id="computer-parts">
+			<h3 class="popover-title">Computer Parts</h3>
+			<dl class="popover-content">
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Memory</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Surge Suppressors</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Mouse</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Peripheral</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Secure Digital Memory Cards</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Storage</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Computer Hardware</a></dd>
+			</dl>
+			<dl class="popover-content">
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Memory</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Surge Suppressors</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Mouse</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Peripheral</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Storage</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Computer Hardware</a></dd>
+			  <dd class="sNavLink"><a href="/page/node/html/grid.html">Power Supplies</a></dd>
+			</dl>
+		  </div>
+		</li>
+		{% endfor %}
         </ul>
     </div>
     <div class="collapse navbar-collapse">
@@ -59,3 +103,47 @@
 
   </div>
 </div>
+    <script>
+
+        var $menu = $(".un-dropdown-nav");
+
+        $menu.menuAim({
+            activate: activateSubmenu,
+            deactivate: deactivateSubmenu
+        });
+        function activateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId),
+                height = $menu.outerHeight(),
+                width = $menu.outerWidth();
+            // Show the submenu
+            $submenu.css({
+                display: "block",
+                top: -1,
+                left: width - 1,  // main should overlay submenu
+                height: height - 4,  // padding for main dropdown's arrow
+            });
+
+            $row.find("a").addClass("maintainHover");
+        }
+
+        function deactivateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId);
+
+            $submenu.css("display", "none");
+            $row.find("a").removeClass("maintainHover");
+        }
+
+        $(".dropdown-menu li").click(function(e) {
+            e.stopPropagation();
+        });
+
+        $(document).click(function() {
+            $(".popover").css("display", "none");
+            $("a.maintainHover").removeClass("maintainHover");
+        });
+
+    </script>
