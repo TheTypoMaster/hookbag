@@ -54,21 +54,26 @@
       background:none;
       color:#428bca;
     }
+	&>li{
+		margin-top:10px;
+		background:#63ADEC;
+		.glyphicon {
+			padding:4px 10px;
+		}
+	}
     #un-user{
       border-right:1px solid #eee;
-      color:#777;
-      span{
-        padding:15px;
-        cursor:pointer;
-        &:hover{
-          color:#428bca;
-        }
+		color:#fff;
+      .glyphicon{
+		background-color:#428bca;
+		padding-right:10px;
       }
       &.active span{
         color:#428bca;
       }
     }
     #un-cart{
+		background:#ddd;
       .ug-cart-btn{
         margin-left:20px;
         padding:6px 20px;
@@ -92,7 +97,6 @@
         display:-moz-inline-box;
       }
       .dropdown-toggle{
-        background:none;
         border-left:none;
       }
       .dropdown-menu{
