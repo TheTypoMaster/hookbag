@@ -3,7 +3,7 @@ grunt.initConfig({
   pkg: grunt.file.readJSON('package.json'),
   clean: {
     v3: ["./style/v3/css/*","./style/v3/img/*","./style/v3/js/*","./_site"],
-    base: ["./style/base/font-awesome/less","./style/base/font-awesome/scss","./style/base/font-awesome/src","./style/base/modernizr/test","./style/base/modernizr/media","./style/base/modernizr/feature-detects","./style/base/animate.css/source","./style/base/jQuery-menu-aim/example","./style/base/jQuery-menu-aim/*.png","./style/base/jQuery-menu-aim/README.md"],
+    base: ["./style/base/font-awesome/less","./style/base/font-awesome/scss","./style/base/font-awesome/src","./style/base/modernizr/test","./style/base/modernizr/media","./style/base/modernizr/feature-detects","./style/base/animate.css/source","./style/base/jQuery-menu-aim/example","./style/base/jQuery-menu-aim/*.png","./style/base/jQuery-menu-aim/README.md","./style/base/jQuery-menu-aim/.bower.json"],
   },
   // less
   less: {

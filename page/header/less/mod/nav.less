@@ -53,13 +53,17 @@
 				border-bottom-color:#777;
 			}
 		}
+    .ui-nav-active,
+    .ui-nav-item:hover  {
+      border-bottom:2px solid #f60;
+      margin-bottom: -2px;
+    }
 		&>li{
 		  padding:0 30px;
 		  &:first-child{
 			font-weight:700;
 		  }
 		  &>a{
-			border-bottom:2px solid transparent;
 			-moz-box-sizing: content-box;
 			padding:12px 0;
 			color:#777
@@ -67,9 +71,6 @@
 		  &.active,&:hover,&.open{
 			&>a{
 			  background:none;
-			  &:hover{
-				  border-color:#F60;
-			  }
 			}
 		  }
 		}
