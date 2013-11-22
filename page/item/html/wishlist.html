@@ -21,21 +21,22 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css?ui=2013-11-21T09%3A45%3A13%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-11-21T09%3A45%3A13%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-11-21T09%3A45%3A13%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-11-21T09%3A45%3A13%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css?ui=2013-11-22T14%3A51%3A30%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-11-22T14%3A51%3A30%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-11-22T14%3A51%3A30%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-11-22T14%3A51%3A30%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2013-11-21T09%3A45%3A13%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.min.js?ui=2013-11-21T09%3A45%3A13%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2013-11-21T09%3A45%3A13%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.min.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
 <script src="http://www.appelsiini.net/projects/lazyload/jquery.lazyload.js?v=1.9.0"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-11-21T09%3A45%3A13%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2013-11-21T09%3A45%3A13%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-11-22T14%3A51%3A30%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2013-11-21T09%3A45%3A13%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2013-11-22T14%3A51%3A30%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -58,14 +59,13 @@ $(document).ready(function() {
 
   <div class="container un-top pb0">
 
-    <div class="row">
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+      <div class="col-md-3 col-lg-2">
         <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo.png"></a>
       </div>
       
-      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2 col-md-push-6 col-lg-push-8">
+      <div class="col-md-3 col-lg-2 col-md-push-6 col-lg-push-8">
         <ul class="pull-right list-inline un-navmember">
-	<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > Hi,</span></li>
+	<li id="un-user" data-toggle='offcanvas'><span class="glyphicon glyphicon-user" > </span>  Hi,</li>
 	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  
@@ -143,7 +143,7 @@ $(document).ready(function() {
 </ul>
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-md-pull-3 col-lg-pull-2">
+      <div class="col-md-6 col-lg-8 col-md-pull-3 col-lg-pull-2">
         <div id="un-search" class="clearfix mt10">
 <form action="" class="form-inline">
   <div class="input-group">
@@ -156,7 +156,6 @@ $(document).ready(function() {
 </div>
 
       </div>
-    </div>
 
   </div>
 
@@ -171,27 +170,97 @@ $(document).ready(function() {
       
         <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES <span class="glyphicon glyphicon-align-justify"></span></a>
       
-        <ul class="dropdown-menu">
-          <li><a href="/page/node/html/grid.html" class="">Computer Hardware</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Storage</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Misc</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Peripheral</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Power Supplies</a></li>
-          <li><a href="/page/node/html/grid.html" class="">Computer Accessories</a></li>
-        </ul>
+        <ul class="dropdown-menu un-dropdown-nav">
+    <li class="dropdown-submenu" data-submenu-id="computer-systems">
+
+    <a href="/page/node/html/node.html"><span class="pull-right fz11 glyphicon glyphicon-chevron-right"></span>Computer Systems<br/><small>Get...for free shipping today</small></a>
+
+    <div class="popover" id="computer-systems">
+    <h3 class="popover-title un-title un-spc-title">Computer Systems</h3>
+    <dl class="popover-content">
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Notebooks</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Netbooks</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Tablets</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Desktop</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Workstations</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Servers</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Barebone Systems</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Terminals & Thin Clients</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/grid.html">Laptop Accessories</a></dd>
+    </dl>
+    </div>
+
+    </li>
+    <li class="dropdown-submenu" data-submenu-id="computer-parts">
+      <a href=""><span class="pull-right fz11 glyphicon glyphicon-chevron-right"></span>Computer Parts</a>
+      <div class="popover" id="computer-parts">
+      <h3 class="popover-title un-title un-spc-title">Computer Parts</h3>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+      </dl>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+      </dl>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/grid.html">Headsets</a></dd>
+      </dl>
+      
+      </div>
+    </li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Phones</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Network</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Office </a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Educational</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Software</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">HardWare</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Home & Garden</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Clothing & Shoes</a></li>
+  </ul>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         
-          
 
         
 
         
-          <li class="active"><a href="">Hookbag Home</a></li>
-          <li><a href="">Hottest Deals</a></li>
-          <li><a href="">Always Lowest Price</a></li>
-          <li><a href="">Hard To Find</a></li>
+          <li class="active ui-nav-active"><a href="">Hookbag Home</a></li>
+          <li class="ui-nav-item"><a href="">Hottest Deals</a></li>
+          <li class="ui-nav-item"><a href="">Always Lowest Price</a></li>
+          <li class="ui-nav-item"><a href="">Hard To Find</a></li>
         
         
       </ul>
@@ -200,6 +269,47 @@ $(document).ready(function() {
 
   </div>
 </div>
+    <script>
+
+        var $menu = $(".un-dropdown-nav");
+
+        $menu.menuAim({
+            enter: activateSubmenu,
+            exit: deactivateSubmenu
+        });
+        function activateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId),
+                height = $menu.outerHeight(),
+                width = $menu.outerWidth();
+        num = $row.find('dl').length;
+            // Show the submenu
+            $submenu.css({
+                display: "block",
+                top: -2,
+                left: width - 2,  // main should overlay submenu
+                height: height,  // padding for main dropdown's arrow
+        width:260*num+4
+            });
+
+            $row.find("a").addClass("maintainHover");
+        }
+
+        function deactivateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId);
+
+            $submenu.css("display", "none");
+            $row.find("a").removeClass("maintainHover");
+        }
+
+        $(".dropdown-menu li").click(function(e) {
+            e.stopPropagation();
+        });
+
+    </script>
 
 
 </div>
@@ -351,17 +461,7 @@ $(document).ready(function() {
       <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
       <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
     </div>
-    <div class="row un-footer un-footer-copyright">
-      <div class="col-md-9">
-        <strong>PAYMENT METHOD</strong>
-        <div class="un-footer-payment">
-          <table>
-            <tr></tr>
-          </table>
-        </div>
-      </div>
-      <div class="col-md-3">Copyright &copy;2012 Hookbag Inc. All rights reserved.</div>
-    </div>
+    
     </div>
   </div>
 </div>
