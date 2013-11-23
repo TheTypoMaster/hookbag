@@ -20,10 +20,20 @@
 	}
 }
 .un-side{
-	.nav>li>a{
-		padding:3px 15px;
-		font-size:12px;
-	}
+  .nav>li>.un-title{
+    font-size:15px;
+    margin-top:10px;
+    display: block;
+  }
+  .nav>li{
+    font-size:12px;
+    &>a{
+      padding:3px 15px;
+    }
+  }
+  .nav .nav>li{
+    padding-left:15px;
+  }
 	.page-header{
 		margin:10px 0 ;
 	}
