@@ -1,105 +1,45 @@
 <div class="container">
-
-	<div id="" class="row">
-		<div class="col-md-3">
-			{% include page/login/mod/mya.html %}
-		</div>
-		<div class="col-md-5">
-
-
-			<div class="panel panel-default">
-			  <div class="panel-heading">Existing Customers</div>
-			  <div class="panel-body">
-
-
-					<div class="ug-exist">
-
-						<form role="form">
-						  <div class="form-group">
-						    <label for="exampleInputEmail1">Email address</label>
-						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputPassword1">Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						  </div>
-						  <div class="checkbox">
-						    <label>
-						      <input type="checkbox"> Remember my Hookbag ID. 
-						    </label>
-						  </div>
-						  <button type="submit" class="btn btn-primary">Submit</button>
-						</form>
-
-					</div>
-
-
-			  </div>
+	
+	<div id="un-login" class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div id="un-header" class="bgGray">
+			{% include page/header/mod/logo.html %}
 			</div>
-
-			<div class="ug-signin-help">
-				
-				<div class="panel panel-default">
-				  <div class="panel-heading">Sign-In Help</div>
-				  <div class="panel-body">
-				    <p>If you are having problems logging in, try the following:</p>
-				    <ul>
-				    <li>1.Enable Cookies</li>
-				    <li>2.Refresh the page.</li>
-				    </ul>
-				    <p>
-				    If you are still experiencing problems, try using this
-				    <a href="/hb3/front/public/myaccount/cleancookie">link</a> to reset your cookies
-				    and reload the page automatically.
-				    </p>
+			<h3 class="un-title un-spc-title">Existing Customers</h3>
+			<div class="ug-exist ui-nav-border pb20">
+				<form role="form">
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
 				  </div>
-				</div>
-
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="checkbox">
+					<label>
+					  <input type="checkbox"> Remember my Hookbag ID. 
+					</label>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Sign in</button>
+				</form>
 			</div>
-
-
-
-		</div>
-		<div class="col-md-4">
-
-			<div class="panel panel-default">
-			  <div class="panel-heading">New Customer Sign-Up</div>
-			  <div class="panel-body">
-
-
-					<div class="ug-signup">
-
-					<form role="form">
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Login ID/Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Login ID/Email">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">Confirm Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Confirm Email">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">Confirm Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-					  </div>
-					  <div class="checkbox">
-					    <label>
-					      <input type="checkbox"> Remember my Hookbag ID. 
-					    </label>
-					  </div>
-					  <button type="submit" class="btn btn-success">Sign up</button>
-					</form>
-
-					</div>
-
-
-			  			  </div>
+			<!--sign in-->
+			<div class="ug-signin-help">
+				<h3 class="un-title un-spc-title">Sign-In Help</h3>
+				<p>If you are having problems logging in, try the following:</p>
+				<ul>
+				<li>1.Enable Cookies</li>
+				<li>2.Refresh the page.</li>
+				</ul>
+				<p>
+				If you are still experiencing problems, try using this
+				<a href="/hb3/front/public/myaccount/cleancookie">link</a> to reset your cookies
+				and reload the page automatically.
+				</p>
 			</div>
-
+			<!--help-->
 		</div>
+
 	</div>
 
