@@ -171,7 +171,7 @@ grunt.initConfig({
     },
     v2StyleImg: {
       files: ['./page/**/*.png'],
-      tasks: ['imagemin:v2base', 'shell:v2SvnStylev2', 'shell:v3Svn', 'shell:v3Source']
+      tasks: ['imagemin:v2Base', 'shell:v2SvnStylev2', 'shell:v3Svn', 'shell:v3Source']
     }
   },
 // grunt.initConfig end
