@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css?ui=2013-11-25T13%3A35%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-11-25T13%3A35%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-11-25T13%3A35%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-11-25T13%3A35%3A01%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.min.css?ui=2013-11-25T15%3A46%3A46%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-11-25T15%3A46%3A46%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-11-25T15%3A46%3A46%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-11-25T15%3A46%3A46%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.min.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.min.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-11-25T13%3A35%3A01%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-11-25T15%3A46%3A46%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2013-11-25T13%3A35%3A01%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2013-11-25T15%3A46%3A46%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -361,7 +361,7 @@ $(document).ready(function() {
 <div class="tac mt10"><a href="">View All Photos</a></div>       
     </div>
     <!--the img-->
-    <div class="col-md-8 fz11">
+    <div class="col-md-6 fz11">
 
       <div class="un-info">
   <h3 class="un-title"> <a class="un-bra" title="Shuttle" href=" "> <img title="Shuttle" alt="Shuttle" src="holder.js?75x20"> </a>Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</h3>
@@ -379,9 +379,6 @@ $(document).ready(function() {
 
       <div class="un-sold">Sold by Hookbag Canada</div>
 
-      <div class="label label-default un-unavailable">
-        <h5><i class="glyphicon glyphicon-exclamation-sign"></i> This product is not available now.</h5>
-      </div>
       
       <div class="un-productAttr">
   <div class="un-proSelect">Color: <strong>R TNF Black 2</strong></div>
@@ -409,19 +406,49 @@ $(document).ready(function() {
     
   </select>
 </div>
-      <form title="" action="cart.html" method="post" class="formHorizontal un-productBuy">
-  <div class="clearfix un-qty">
-    <label class="pull-left mr10" for="un-qtyNum">Qty:</label>
-    - <input type="text" size="1" class="pull-left form-control input-sm mr10" id="un-qtyNum" value="1" maxlength="3" name="qty"> +
-  </div>
-  <div class="test">
-    <button type="submit" class="btn btn-success un-btn" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
-    <a href="cart.html" class="btn btn-default btn-sm un-btn" alt="Back Order" title="Back Order"><span class="glyphicon glyphicon-saved"></span> Back Order</a>
-    <a href="wishlist.html" class="btn btn-default btn-sm un-btn">Add to Wishlist</a>
-  </div>
-</form>
 
     </div>
+	<div class="col-md-2">
+      <form title="" action="cart.html" method="post" class="formHorizontal un-productBuy un-tabs">
+	<div class="label label-default un-unavailable">
+		<h5><i class="glyphicon glyphicon-exclamation-sign"></i> Not available now.</h5>
+	</div>
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#new" class="un-title un-spc-title">Buy New:</a></li>
+		<li><a data-toggle="tab" href="#used" class="un-title un-spc-title">Buy Used:</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="new" class="tab-pane fade active in">
+			<div class="clearfix un-qty mt20">
+				<label class="pull-left mr10" for="un-qtyNum">Qty:</label>
+				<input type="text" size="1" class="pull-left form-control input-sm mr10" id="un-qtyNum" value="1" maxlength="3" name="qty">
+			</div>
+			<div class="mt10 mb10">
+				<span class="text-danger"> CDN$ 40.57 </span><span class="text-muted"> + Free Shipping</span>
+			</div>
+			<div class="test">
+				<button type="submit" class="btn btn-success un-btn mb10" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+				<a href="" class="btn btn-default btn-sm un-btn mb10" alt="Back Order" title="Back Order"><span class="glyphicon glyphicon-saved"></span> Back Order</a>    
+			</div>
+		</div>
+		<div id="used" class="tab-pane fade">
+			<div class="clearfix un-qty mt20">
+				<label class="pull-left mr10" for="un-qtyNum">Qty:</label>
+				<input type="text" size="1" class="pull-left form-control input-sm mr10" id="un-qtyNum" value="1" maxlength="3" name="qty">
+			</div>
+			<div class="mt10 mb10">
+				<span class="text-danger"> CDN$ 30.57 </span><span class="text-muted"> + Free Shipping</span>
+			</div>
+			<div class="test">
+				<button type="submit" class="btn btn-success un-btn mb10" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</button>
+				<a href="" class="btn btn-default btn-sm un-btn mb10" alt="Back Order" title="Back Order"><span class="glyphicon glyphicon-saved"></span> Back Order</a>    
+			</div>
+		</div>
+	</div>
+	<a href="wishlist.html" class="btn btn-default btn-sm un-btn">Add to Wishlist</a>
+</form>
+	
+	</div>
   </div>
 
   <div class="row mt10">
@@ -471,7 +498,7 @@ $(document).ready(function() {
       <dd class="un-price text-muted"> CDN$ 40.57</dd>
     </dl>
     </li>
-      <li class="col-xs-6 col-sm-4 col-md-4">
+      <li class="col-xs-6 col-sm-4 col-md-2">
         <div class="un-price">Price for Totals <strong>$43.45</strong></div>
       <a href="cart.html" class="btn btn-success un-btn" alt="Add To Cart" title="Add To Cart"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a>
       <a href="wishlist.html" class="btn btn-default btn-sm un-btn">Add to Wishlist</a>
@@ -483,7 +510,7 @@ $(document).ready(function() {
 
   <div class="row">
     <div class="col-md-12">
-      <div id="un-tabs">
+      <div class="un-tabs">
   <ul class="nav nav-tabs">
     <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
     <li><a href="#sizechart" data-toggle="tab">Size Chart</a></li>
@@ -1628,7 +1655,7 @@ $(document).ready(function() {
   </div>
 
   <div class="un-tar">
-    <a class="btn btn-default" href="/returns">Return Policy <i class="icon-chevron-right"></i></a>
+    <a class="btn btn-default un-btn" href="/returns">Return Policy <i class="icon-chevron-right"></i></a>
   </div>
   <br>
 
