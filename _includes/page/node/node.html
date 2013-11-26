@@ -99,109 +99,77 @@
       <h3>一些默认属性筛选 如intel i7 32mb缓存</h3>
     </div>
     <div class="col-md-7">
-      <h3>所有厂商</h3>
-      <div class="node-brand">
+      <h3 class="un-title un-spc-title">所有厂商</h3>
+      <div class="node-brand" id="un-tabs">
         <ul class="nav nav-tabs" id="myTab">
           <li class="active"><a data-toggle="tab" href="#home">Hot</a></li>
           <li class=""><a data-toggle="tab" href="#profile">A-D</a></li>
-          <li class=""><a data-toggle="tab" href="#profile">D-G</a></li>
+          <li class=""><a data-toggle="tab" href="#dropdown1">D-G</a></li>
           <li class=""><a data-toggle="tab" href="#profile">G-O</a></li>
-          <li class=""><a data-toggle="tab" href="#profile">O-Z</a></li>
+          <li class=""><a data-toggle="tab" href="#dropdown2">O-Z</a></li>
         </ul>
         <div class="tab-content" id="myTabContent">
           <div id="home" class="tab-pane fade active in">
-            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+            {% for x in (1..20) %}
+             <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+             {% endfor%}
           </div>
           <div id="profile" class="tab-pane fade">
-            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+            {% for x in (1..24) %}
+             <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+             {% endfor%}
           </div>
           <div id="dropdown1" class="tab-pane fade">
-            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+            {% for x in (1..34) %}
+             <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+             {% endfor%}
           </div>
           <div id="dropdown2" class="tab-pane fade">
-            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+            {% for x in (1..14) %}
+             <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+             {% endfor%}
           </div>
         </div>
       </div>
 
-      <h3>热卖产品</h3>
+      <h3 class="un-title un-spc-title">热卖产品</h3>
       <div class="row">
         {% for x in (1..3) %}
         <div class="col-md-4">
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="holder.js/64x64">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
-              产品价格
-            </div>
-          </div>
+          {% include page/node/mod/item.html %}
         </div>
         {% endfor %}
       </div>
-      <h3>推荐产品</h3>
+      <h3 class="un-title un-spc-title">推荐产品</h3>
       <div class="row">
         {% for x in (1..3) %}
         <div class="col-md-4">
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="holder.js/64x64">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
-              产品价格
-            </div>
-          </div>
+          {% include page/node/mod/item.html %}
         </div>
         {% endfor %}
       </div>
-      <h3>唯一产品</h3>
+      <h3 class="un-title un-spc-title">唯一产品</h3>
       <div class="row">
         {% for x in (1..3) %}
         <div class="col-md-4">
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="holder.js/64x64">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
-              产品价格
-            </div>
-          </div>
+          {% include page/node/mod/item.html %}
         </div>
         {% endfor %}
       </div>
-      <h3>根据购买记录浏览历史推荐产品</h3>
+      <h3 class="un-title un-spc-title">根据购买记录浏览历史推荐产品</h3>
       <div class="row">
         {% for x in (1..3) %}
         <div class="col-md-4">
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="holder.js/64x64">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
-              产品价格
-            </div>
-          </div>
+          {% include page/node/mod/item.html %}
         </div>
         {% endfor %}
       </div>
     </div>
     <div class="col-md-2">
-      <h3>最新降价产品</h3>
+      <h3 class="un-title un-spc-title">最新降价产品</h3>
       
       {% for x in (1..6) %}
-      <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" src="holder.js/64x64">
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading">产品标题产品标题产品标题产品标题产品标题</h4>
-          产品价格
-        </div>
-      </div>
+          {% include page/node/mod/item.html %}
       {% endfor %}
 
     </div>
