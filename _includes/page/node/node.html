@@ -1,104 +1,45 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <h3>产品分类</h3>
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                二级分类
-              </a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <ul>
-                <li><a href="">三级分类</a></li>
-                <li>
-                  <a href="">三级分类</a>
-                  <ul>
-                    <li><a href="">四级分类</a></li>
-                    <li>
-                      <a href="">四级分类</a>
-                      <ul>
-                        <li>
-                          <a href="">五级分类</a>
-                          <ul>
-                            <li><a href="">六级分类</a></li>
-                            <li><a href="">六级分类</a></li>
-                            <li><a href="">六级分类</a></li>
-                            <li><a href="">六级分类</a></li>
-                            <li><a href="">六级分类</a></li>
-                            <li><a href="">六级分类</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="">五级分类</a></li>
-                        <li><a href="">五级分类</a></li>
-                        <li><a href="">五级分类</a></li>
-                        <li><a href="">五级分类</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="">四级分类</a></li>
-                    <li><a href="">四级分类</a></li>
-                  </ul>
-                </li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                二级分类
-              </a>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                二级分类
-              </a>
-            </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-                <li><a href="">三级分类</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <div class="col-md-2">
+      <div class="un-side mt20" id="accordion">
+        <ul class="nav">
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Notebooks</a></li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Netbooks</a></li>
+          <li>
+            <a class="un-title un-spc-title" data-toggle="collapse" data-parent="#accordion" href="#collapse01"><b class="caret"></b> Tablets</a>
+            <ul id="collapse01" class="nav panel-collapse collapse in">
+                <li><a href="/page/node/html/grid.html">Tablet PCs</a></li>
+                <li><a href="/page/node/html/grid.html">Tablets</a></li>
+            </ul>
+          </li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Netbooks</a></li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Workstations</a></li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Servers</a></li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Barebone Systems</a></li>
+          <li><a class="un-title un-spc-title" href="/page/node/html/grid.html">Servers</a></li>
+          <li>
+            <a class="un-title un-spc-title" data-toggle="collapse" data-parent="#accordion" href="#collapse02"><b class="caret"></b> Laptop Accessories</a>
+            <ul id="collapse02" class="nav panel-collapse collapse in">
+                <li><a href="/page/node/html/grid.html">AC Adapters</a></li>
+                <li><a href="/page/node/html/grid.html">Bags & Carry Cases</a></li>
+                <li><a href="/page/node/html/grid.html"> Replicators / Docking Stations</a></li>
+                <li><a href="/page/node/html/grid.html"> Laptops Cooler &amp; Stand</a></li>
+                <li><a href="/page/node/html/grid.html">Laptop Battery</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
-      <h3>类似Finder的工具</h3>
-      <h3>一些默认属性筛选 如intel i7 32mb缓存</h3>
+      <!--类似Finder的工具-->
+      {% include page/index/mod/finder.html %}
+      <!--一些默认属性筛选 如intel i7 32mb缓存-->
+      <div class="mt20">
+      {% include page/node/mod/side.html %}
+      </div>
+
+
     </div>
-    <div class="col-md-7">
+    <div class="col-md-8">
       <h3 class="un-title un-spc-title">所有厂商</h3>
       <div class="node-brand" id="un-tabs">
         <ul class="nav nav-tabs" id="myTab">
