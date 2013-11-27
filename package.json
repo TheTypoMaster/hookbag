@@ -1,7 +1,7 @@
 {
   "author": "zvg",
   "name": "hookbag",
-  "version": "3.11.18",
+  "version": "3.11.27",
   "pathBuild": "./style/v3",
   "pathPage": "./page",
   "pathMod": "./mod",

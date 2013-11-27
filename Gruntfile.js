@@ -107,6 +107,18 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathPage %>/header/img/logo-us.png',
           dest: './style/v3/img/logo-us.png'
+        },
+        {
+          src: '<%= pkg.pathPage %>/common/img/ico-facebook.png',
+          dest: './style/v3/img/ico-facebook.png'
+        },
+        {
+          src: '<%= pkg.pathPage %>/common/img/ico-google.png',
+          dest: './style/v3/img/ico-google.png'
+        },
+        {
+          src: '<%= pkg.pathPage %>/common/img/ico-twitter.png',
+          dest: './style/v3/img/ico-twitter.png'
         }
       ]
     }
