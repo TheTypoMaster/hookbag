@@ -14,10 +14,35 @@
 		.navbar-toggle{
 			margin-bottom:0;
 		}
+		&:hover .navbar-brand,&.open .navbar-brand{
+			&:before,&:after{
+				border-color:#f60;
+			}
+		}
 		.navbar-brand{
-			padding:12px 12px 12px 0;
+			padding:12px 35px 12px 0;
 			color:#000;
 			margin:0 20px 0 0;
+			position:relative;
+			&:before,&:after{
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border-bottom: 2px solid #444444;
+				border-top: 2px solid #444444;
+				content: " ";
+				display: block;
+				height: 1px;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				width: 14px;
+				box-sizing:content-box;
+				-moz-box-sizing:content-box;
+				-chrome-box-sizing:content-box;
+				margin-top:1px;
+			}
+			&:before{
+				margin-top:-5px;
+			}
 			.glyphicon{
 				font-size:13px;
 				margin-left:10px;
