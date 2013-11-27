@@ -134,8 +134,11 @@ grunt.initConfig({
         async: false
       }
     },
-    base: {
+    baseAL: {
       command: '<%= pkg.rsync %> ./mod/Amble-Light/fonts/* ./style/v3/fonts',
+    },
+    baseIcomoon: {
+      command: '<%= pkg.rsync %> ./mod/icomoon/fonts/* ./style/v3/fonts',
     },
     jekyllSiteStyle: {
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
@@ -207,7 +210,7 @@ grunt.registerTask('v3', [
   'shell:v3Source',
   'watch'
 ]);
-grunt.registerTask('base', [ 'shell:bower', 'shell:bootstrapDir', 'shell:bootstrap', 'shell:base', 'clean:base', 'shell:jekyllBuild', 'shell:v3Svn', 'shell:v3Source' ]);
+grunt.registerTask('base', [ 'shell:bower', 'shell:bootstrapDir', 'shell:bootstrap', 'shell:baseAL', 'shell:baseIcomoon', 'clean:base', 'shell:jekyllBuild', 'shell:v3Svn', 'shell:v3Source' ]);
 grunt.registerTask('test', [ 'imagemin' ]);
 
 };
