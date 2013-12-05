@@ -32,6 +32,14 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathBuild %>/less/mod.less',
           dest: '<%= pkg.pathBuild %>/css/mod.css'
+        },
+        {
+          src: 'mod/bootstrap/less/bootstrap.less',
+          dest: './style/base/bootstrap/css/bootstrap.css'
+        },
+        {
+          src: 'mod/bootstrap/less/bootstrap-theme.less',
+          dest: './style/base/bootstrap/css/bootstrap-theme.css'
         }
       ]
     }
@@ -50,6 +58,14 @@ grunt.initConfig({
         {
           src: '<%= pkg.pathBuild %>/css/ui.css',
           dest: '<%= pkg.pathBuild %>/css/ui.css'
+        },
+        {
+          src: './style/base/bootstrap/css/bootstrap.css',
+          dest: './style/base/bootstrap/css/bootstrap.css'
+        },
+        {
+          src: './style/base/bootstrap/css/bootstrap-theme.css',
+          dest: './style/base/bootstrap/css/bootstrap-theme.css'
         }
       ]
     },
@@ -143,12 +159,6 @@ grunt.initConfig({
     jekyllSiteStyle: {
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
     },
-    bootstrapDir: {
-      command: 'mkdir -p ./style/base/bootstrap',
-    },
-    bootstrap: {
-      command: '<%= pkg.rsync %> ../bootstrap/dist/* ./style/base/bootstrap',
-    },
     v3Svn: {
       command: '<%= pkg.rsync %> ./_site/style/* ~/Sites/hb4/style',
     },
@@ -210,7 +220,7 @@ grunt.registerTask('v3', [
   'shell:v3Source',
   'watch'
 ]);
-grunt.registerTask('base', [ 'shell:bower', 'shell:bootstrapDir', 'shell:bootstrap', 'shell:baseAL', 'shell:baseIcomoon', 'clean:base', 'shell:jekyllBuild', 'shell:v3Svn', 'shell:v3Source' ]);
+grunt.registerTask('base', [ 'shell:bower', 'shell:baseAL', 'shell:baseIcomoon', 'clean:base', 'shell:jekyllBuild', 'shell:v3Svn', 'shell:v3Source' ]);
 grunt.registerTask('test', [ 'imagemin' ]);
 
 };
