@@ -1,0 +1,171 @@
+/*导航样式*/
+
+.un-nav{
+   background: none repeat scroll 0 0 #FFFFFF;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-radius: 0px;
+   position:relative;
+   font-family: 'amblelight';
+   font-size:15px;
+   min-height:0;
+	 .navbar-nav{
+		.dropdown-menu{
+			margin-top:2px;
+			border-top:none;
+		}
+	 }
+   .navbar-header{
+		.navbar-toggle{
+			margin-bottom:0;
+		}
+		&:hover .navbar-brand,&.open .navbar-brand{
+			&:before,&:after{
+				border-color:#f60;
+			}
+		}
+		.navbar-brand{
+			padding:12px 35px 12px 0;
+			color:#000;
+			margin:0 20px 0 0;
+			position:relative;
+			&:before,&:after{
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border-bottom: 2px solid #444444;
+				border-top: 2px solid #444444;
+				content: " ";
+				display: block;
+				height: 1px;
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				width: 14px;
+				box-sizing:content-box;
+				-moz-box-sizing:content-box;
+				-chrome-box-sizing:content-box;
+				margin-top:1px;
+			}
+			&:before{
+				margin-top:-5px;
+			}
+			.glyphicon{
+				font-size:13px;
+				margin-left:10px;
+			}
+		}
+		.dropdown-menu{
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			margin-top: 0;
+			width:100%;
+		}
+		&.open,&:hover{
+		  border-bottom:2px solid #F60;
+		  margin-bottom:-2px;
+			&>a{
+				color:#f60;
+			}
+		}
+   }
+  .un-navlist{
+	.navbar-header{
+		margin-right:-1px;
+	}
+    .navbar-collapse .nav{
+		.dropdown{
+			border-left:2px solid #eee;
+			.caret{
+				border-top-color:#777;
+				border-bottom-color:#777;
+			}
+		}
+    .ui-nav-active,
+    .ui-nav-item:hover  {
+      border-bottom:2px solid #f60;
+      margin-bottom: -2px;
+      > a {
+        color: #f60;
+      }
+    }
+		&>li{
+		  padding:0 30px;
+		  &:first-child{
+			font-weight:700;
+		  }
+		  &>a{
+			-moz-box-sizing: content-box;
+			padding:12px 0;
+			color:#777
+		  }
+		  &.active,&:hover,&.open{
+			&>a{
+			  background:none;
+			}
+		  }
+		}
+	}
+  }
+
+}
+
+
+
+/*一,二级下拉菜单样式*/
+.un-dropdown-nav{
+	border-top:2px solid #f60;
+	border-radius:0;
+	&>li>a{
+		font-weight:700;
+		padding:5px 10px 5px 15px;
+		small{
+			font-weight:400;
+			color:#aaa;
+		}
+		&:hover,&:focus{
+			background:none;
+			color:#f60;
+			font-weight:700;
+		}
+	}
+	.dropdown-submenu{
+		&>.maintainHover{
+			color:#f60;
+			.glyphicon{
+				color:#666;
+			}
+		}
+		.glyphicon{
+			margin-top:5px;
+			color:#aaa;
+		}
+		.popover{
+			border-top:2px solid #f60;
+			border-radius:0;
+			max-width:none;
+			.popover-title{
+				font-weight:700;
+				background:none;
+				border-bottom:none;
+				padding-bottom:0;
+				font-size:15px;
+			}
+			.popover-content{
+				width:260px;
+				margin-top:0;
+				float:left;
+				.sNavLink{
+					line-height:1.8em;
+					a{
+						color:#777;
+						&:hover{
+							color:#f60;
+							text-decoration:underline;
+						}
+					}
+				}
+			
+			}
+		}
+	}
+}
