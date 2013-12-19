@@ -59,17 +59,17 @@
     position:static;
 		&>li{
 			margin-top:10px;
-			background:#63ADEC;
+			background:#fff;
 			.glyphicon {
-				padding:4px 10px;
+				padding:5px 10px;
 				top:0;
 			}
 		}
     #un-user{
-			color:#fff;
       .glyphicon{
-		background-color:#428bca;
+		background-color:#B0C4DE;
 		padding-right:10px;
+		color:#fff;
       }
     }
     #un-cart{
@@ -88,12 +88,22 @@
       .caret{
         border-top-color:#666;
         border-bottom-color:#666;
-				margin:0 0 4px 6px;
+		margin:0 0 2px 6px;
       }
-      &.open .caret{
-        border-top-color:#428bca;
-        border-bottom-color:#428bca;
-      }
+	  .glyphicon{
+		&:hover{
+			color:#000;
+		}
+	  }
+		&.open {
+		  .glyphicon{
+			color:#000;
+		  }
+		  .caret{
+			border-top-color:#000;
+			border-bottom-color:#000;
+		  }
+		}
       .input-group-btn{
         display:-moz-inline-box;
       }
@@ -158,12 +168,14 @@
       &>a{
         position:relative;
         color:#777;
+		text-decoration:none;
         .un-cartNum{
           position: absolute;
-          top: 3px;
+          top: 2px;
           left: 50%;
           font-size: 11px;
-          margin-left: -8px;
+          margin-left: -11px;
+		  color:#fff;
         }
       }
     }
