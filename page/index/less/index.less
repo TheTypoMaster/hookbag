@@ -60,10 +60,18 @@
 }
 #un-cate{
 	.un-list {
-		padding:0;
+		.un-cate{
+			&:hover{
+				.un-title{
+					border:1px dotted #ddd;
+				}
+			}
+		}
 		.un-title {
+			border:1px dotted #fff;
 			margin:10px 0 20px;
 			padding-bottom:0;
+			font-size:18px;
 			a{
 				color:#000;
 				&:hover{
