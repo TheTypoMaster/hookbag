@@ -1,19 +1,6 @@
-      <h4 class="un-title un-spc-title">Best Seller</h4>
+      <h4 class="col-md-12 un-title un-spc-title">Best Seller</h4>
       {% for x in (1...4) %}
       <div class="col-md-3 un-list">
-    <div class="un-clip clearfix">
-      <div class="un-mainImg pull-left mr10">
-        <a title="" href="/page/item/html/item.html"><img class="lazy" src="holder.js/100x100" ></a>
-        
-      </div><!--img end-->
-      <div class="un-tit">
-        <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-      </div>
-      <div class="text-muted un-pri">
-        <strong> CDN$ 40.57</strong>
-      </div>
-      <span class="img-circle un-targ un-targ-bestseller">Sale</span>
-      <span class="img-circle un-targ un-targ-freeshipping">Free</span>
-    </div>
+          {% include page/node/mod/item2.html %}
       </div>
       {% endfor %}
