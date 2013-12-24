@@ -23,7 +23,6 @@
 		&:hover .navbar-brand,&.open .navbar-brand{
 			&:before,&:after{
 				border-color:darken(@color, 20%);
-;
 			}
 		}
 		.navbar-brand{
@@ -31,6 +30,7 @@
 			color:#fff;
 			margin:0 20px 0 0;
 			position:relative;
+			text-transform:uppercase;
 			&:before,&:after{
 				background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
 				border-bottom: 2px solid #fff;
@@ -75,10 +75,10 @@
 	}
     .navbar-collapse .nav{
 		.dropdown{
-			border-left:2px solid #eee;
+			border-left:2px solid #DBC3E5;
 			.caret{
-				border-top-color:#777;
-				border-bottom-color:#777;
+				border-top-color:darken(@color, 20%);
+				border-bottom-color:darken(@color, 20%);
 			}
 		}
     .ui-nav-active,
@@ -98,6 +98,7 @@
 			-moz-box-sizing: content-box;
 			padding:12px 0;
 			color:#fff;
+			text-transform:uppercase;
 		  }
 		  &.active,&:hover,&.open{
 			&>a{
