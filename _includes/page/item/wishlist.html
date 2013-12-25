@@ -8,9 +8,6 @@
     <div class="col-md-6">
       <h4 class="un-title un-spc-title">这里显示wishlist有<strong>多少</strong>个商品,有<strong>多少</strong>个商品价格已经变动</h4>
     </div>
-  </div>
-
-  <div class="row">
     <div class="col-md-12 mb20">
       <div class="share-button clear">
         <!-- AddThis Button BEGIN -->
@@ -29,26 +26,14 @@
       <!--the share button-->
 
     </div>
-    <div class="col-md-12">
-      <h4 class="un-title un-spc-title">Customers Who Collected This Item Also Bought</h4>
-      {% for x in (1...4) %}
-      <div class="col-md-3 un-list">
-		<div class="un-clip clearfix">
-			<div class="un-mainImg pull-left mr10">
-				<a title="" href="/page/item/html/item.html"><img class="lazy" src="holder.js/100x100" ></a>
-				
-			</div><!--img end-->
-			<div class="un-tit">
-			  <a  href="/page/item/html/item.html"> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
-			</div>
-			<div class="text-muted un-pri">
-			  <strong> CDN$ 40.57</strong>
-			</div>
-			<span class="img-circle un-targ un-targ-bestseller">Sale</span>
-			<span class="img-circle un-targ un-targ-freeshipping">Free</span>
+  </div>
+
+  <div class="row">
+		<h4 class="col-md-12 un-title un-spc-title">Customers Who Collected This Item Also Bought</h4>
+		{% for x in (1...4) %}
+		<div class="col-md-3 un-list">
+				{% include page/node/mod/item2.html %}
 		</div>
-      </div>
-      {% endfor %}
-    </div>
+		{% endfor %}
   </div>
 </div>
