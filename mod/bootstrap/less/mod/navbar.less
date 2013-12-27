@@ -60,6 +60,12 @@
 			border-top-right-radius: 0;
 			margin-top: 0;
 			width:100%;
+			li{
+				border-bottom:1px solid #efefef;
+				&:last-child{
+					border-bottom:none;
+				}
+			}
 		}
 		&.open,&:hover{
 		  border-bottom:2px solid #9B59B6;
@@ -158,8 +164,13 @@
 				margin-top:0;
 				float:left;
 				padding:5px 20px;
+				border-right:1px solid #efefef;
+				&:last-child{
+					border-right:none;
+				}
 				.sNavLink{
 					line-height:1.8em;
+					border-bottom:1px dotted #efefef;
 					a{
 						color:#777;
 						&:hover{
