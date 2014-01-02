@@ -1,0 +1,130 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-2 pl20 pr20 pb10 panel panel-default">
+		{% for x in (1..3) %}
+			<div class="clearfix pt10 pb10" style="border-bottom:1px solid #eee;">
+				<h4 class="pull-left text-muted mt0 mb0 fz12"><span class="glyphicon glyphicon-bookmark text-danger"></span>　热门团购</h4>
+				<ul class="pull-left ml20 mb0 list-inline fz12 ui-border-bottom">
+				<li class="pull-right"><a href="" class="btn btn-default btn-xs text-muted">更多 》</a></li>
+				{% for x in (1..11) %}
+					<li class="mr10 ml10"><a href="">代金卷</a></li>
+				{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
+			<h4><span class="glyphicon glyphicon-star text-danger"></span> 本周精选</h4>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+					{% for x in (1..2) %}
+            <dl class="col-md-6 text-muted">
+							<dd><a href=""><img data-src="holder.js/442x222"></a></dd>
+							<dd class="mt10"><a href="" class="text-muted">【北京】五彩城</a></dd>
+							<dd class="fz13">元旦狂欢</dd>
+						</dl>
+					{% endfor %}
+          </div>
+          <div class="item">
+					{% for x in (1..2) %}
+            <dl class="col-md-6 text-muted">
+							<dd><a href=""><img data-src="holder.js/442x222"></a></dd>
+							<dd class="mt10"><a href="" class="text-muted">【北京】五彩城</a></dd>
+							<dd class="fz13">元旦狂欢</dd>
+						</dl>
+					{% endfor %}
+          </div>
+          <div class="item">
+					{% for x in (1..2) %}
+            <dl class="col-md-6 text-muted">
+							<dd><a href=""><img data-src="holder.js/442x222"></a></dd>
+							<dd class="mt10"><a href="" class="text-muted">【北京】五彩城</a></dd>
+							<dd class="fz13">元旦狂欢</dd>
+						</dl>
+					{% endfor %}
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+		</div>
+	</div><!--本周精选-->
+	<div class="row panel panel-default">
+		<h3 class="col-md-12"><a href="" class="pull-right btn btn-default btn-xs">查看全部</a>今日新单</h3>
+		{% for x in (1..4) %}
+		<dl class="col-md-3 text-muted">
+			<dd><a href=""><img data-src="holder.js/269x125"></a></dd>
+			<dd class="fz13 mt10"><a href="" class="text-muted">【全国】香奈儿五号香水免费送~！：美梦成真，香奈儿五号香水...</a></dd>
+			<dd><strong class="text-danger" style="font-size:22px;">￥0</strong>　门店价-</dd>
+		</dl>
+		{% endfor %}
+	</div><!--今日新单-->
+	<nav id="navbar-scrollspy" class="navbar navbar-default" role="navigation" data-spy="affix" data-offset-top="700" style="top:10px;right:10px;">
+			<ul class="nav navbar-nav list-group mb0">
+				<li class="active"><a href="#fat">美食</a></li>
+				<li class=""><a href="#mdo">休闲娱乐</a></li>
+			</ul>
+	</nav><!--scrollspy-->
+	<div class="row" id="fat">
+		<h3 class="col-md-12" style="border-bottom:2px solid #eee;">
+			<ul class="pull-right list-inline fz14">
+			{% for x in (1..6) %}
+				<li><a href="" class="text-muted">自助餐</a></li>
+			{% endfor %}
+				<li><a href="" class="btn btn-default btn-xs">全部 > </a></li>
+			</ul>
+			<span class="glyphicon glyphicon-cutlery text-warning"></span> 
+			美食
+		</h3>
+		{% for x in (1..6) %}
+		<div class="col-md-4">
+		<dl class=" text-muted panel panel-default">
+			<dd><a href=""><img data-src="holder.js/364x200"></a></dd>
+			<dd class="panel-body mt10"><a href="" class="text-muted"><strong>【全国】上岛咖啡免费吃！</strong><br>霸王餐，0元吃个痛快，优雅不远，就在上岛咖啡</a></dd>
+			<dd class="panel-body"><strong class="text-danger" style="font-size:22px;">￥0</strong>　门店价-</dd>
+			<dd class="panel-heading fz13"><span class="pull-right text-muted">
+			{% for x in (1..4) %}
+			<span class="glyphicon glyphicon-star text-danger"></span>
+			{% endfor %}
+			<span class="glyphicon glyphicon-star-empty"></span>
+			2795人评价</span>已售 <span class="text-danger">35556</a></dd>
+		</dl>
+		</div>
+		{% endfor %}
+	</div><!--美食-->
+	<div class="row" id="mdo">
+		<h3 class="col-md-12" style="border-bottom:2px solid #eee;">
+			<ul class="pull-right list-inline fz14">
+			{% for x in (1..6) %}
+				<li><a href="" class="text-muted">自助餐</a></li>
+			{% endfor %}
+				<li><a href="" class="btn btn-default btn-xs">全部 > </a></li>
+			</ul>
+			<span class="glyphicon glyphicon-glass text-warning"></span>
+			休闲娱乐
+		</h3>
+		{% for x in (1..6) %}
+		<div class="col-md-4">
+		<dl class=" text-muted panel panel-default">
+			<dd><a href=""><img data-src="holder.js/364x200"></a></dd>
+			<dd class="panel-body mt10"><a href="" class="text-muted"><strong>【全国】上岛咖啡免费吃！</strong><br>霸王餐，0元吃个痛快，优雅不远，就在上岛咖啡</a></dd>
+			<dd class="panel-body"><strong class="text-danger" style="font-size:22px;">￥0</strong>　门店价-</dd>
+			<dd class="panel-heading fz13"><span class="pull-right text-muted">
+			{% for x in (1..4) %}
+			<span class="glyphicon glyphicon-star text-danger"></span>
+			{% endfor %}
+			<span class="glyphicon glyphicon-star-empty"></span>
+			2795人评价</span>已售 <span class="text-danger">35556</a></dd>
+		</dl>
+		</div>
+		{% endfor %}
+	</div><!--休闲娱乐-->
+</div>
