@@ -1,15 +1,11 @@
 <div class="navbar navbar-default un-nav mb0 ui-nav-border">
   <div id="un-navList" class="container un-navlist">
-    <div class="col-md-2 navbar-header dropdown open">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
       {% if page.title == "tuan-index" %}
+    <div class="col-md-2 navbar-header dropdown open">
         <a class="navbar-brand" href="/tuan/index.html">CATEGORIES</a>
       {% else if %}
-        <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/tuan/index.html">CATEGORIES </a>
+    <div class="col-md-2 navbar-header dropdown">
+       <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/tuan/index.html">CATEGORIES </a>
       {% endif %}
 			<ul class="dropdown-menu un-dropdown-nav">
 				<li class="dropdown-submenu" data-submenu-id="computer-systems">
