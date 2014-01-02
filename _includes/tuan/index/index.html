@@ -99,6 +99,9 @@
 		</dl>
 		</div>
 		{% endfor %}
+		<div class="col-md-12 well well-sm tac">
+			<a href="">请点击查看更多>></a>
+		</div>
 	</div><!--美食-->
 	<div class="row" id="mdo">
 		<h3 class="col-md-12" style="border-bottom:2px solid #eee;">
@@ -126,5 +129,50 @@
 		</dl>
 		</div>
 		{% endfor %}
+		<div class="col-md-12 well well-sm tac">
+			<a href="">请点击查看更多>></a>
+		</div>
 	</div><!--休闲娱乐-->
+	<div class="row panel panel-default">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs panel-heading">
+			<li class="active"><a href="#home" data-toggle="tab">城市团购</a></li>
+			<li><a href="#profile" data-toggle="tab">Profile</a></li>
+			<li><a href="#messages" data-toggle="tab">Messages</a></li>
+			<li><a href="#settings" data-toggle="tab">Settings</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content panel-body">
+			<div class="tab-pane active" id="home">
+				<ul class="list-inline">
+				{% for x in (1..32) %}
+					<li><a href="">北京团购</a></li>
+				{% endfor %}
+				</ul>		
+			</div>
+			<div class="tab-pane" id="profile">
+				<ul class="list-inline">
+				{% for x in (1..12) %}
+					<li><a href="">北京团购</a></li>
+				{% endfor %}
+				</ul>		
+			</div>
+			<div class="tab-pane" id="messages">
+				<ul class="list-inline">
+				{% for x in (1..32) %}
+					<li><a href="">北京团购</a></li>
+				{% endfor %}
+				</ul>		
+			</div>
+			<div class="tab-pane" id="settings">
+				<ul class="list-inline">
+				{% for x in (1..12) %}
+					<li><a href="">北京团购</a></li>
+				{% endfor %}
+				</ul>		
+			</div>
+		</div>
+	
+	</div><!--tabs-->
 </div>
