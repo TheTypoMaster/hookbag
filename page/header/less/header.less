@@ -64,11 +64,20 @@
 				top:0;
 			}
 		}
+		#un-signUp,#un-signIn{
+			padding:4px 10px 3px;
+			font-size:12px;
+			display:inline-block;
+		}
+		#un-signUp{
+			background-color:lighten(@color, 30%);
+			color:#fff;
+		}
     #un-user{
       .glyphicon{
-		background-color:lighten(@color, 30%);
-		padding-right:10px;
-		color:#fff;
+				background-color:lighten(@color, 30%);
+				padding-right:10px;
+				color:#fff;
       }
     }
     #un-cart{
@@ -167,7 +176,8 @@
       &>a{
         position:relative;
         color:#777;
-		text-decoration:none;
+				text-decoration:none;
+				float:left;
         .un-cartNum{
           position: absolute;
           font-size: 11px;
