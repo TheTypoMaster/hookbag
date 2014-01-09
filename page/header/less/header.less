@@ -29,59 +29,60 @@
 
 }
 .un-top{
-	padding:3px 0;
   #un-search{ 
-	clear:both;
-	margin-top:5px;
-    &>li{
-      padding:0;
-    }
-    input[type=search]{
-      border-radius:0;
-      margin:5px 15px 0 0;
-	  padding-left:26px;
-      border-color:#eee;
-      box-shadow:0 0 0 rgba(0,0,0,.5);
-      -webkit-box-shadow: 0 0 0 rgba(0,0,0,.5);
-      -moz-box-shadow: 0 0 0 rgba(0,0,0,.5);
-	  background:#fff url("../../../page/header/img/search-icon.png") no-repeat 7px center;
-    }
-	.btn{
-		background:darken(@color, 10%);
-		.glyphicon{
-			color:#fff;
+		clear:both;
+		padding:10px 0;
+		.form-control{
+			border-radius:4px;
 		}
-	}
+		.input-group-btn{
+			right:40px;
+			.btn{
+				//background:darken(@color, 10%);
+				background:transparent;
+				.glyphicon{
+					color:#ddd;
+				}
+			}
+		}
   }
 
   .un-navmember{
     position:static;
+		margin-bottom:0;
+		border-left:1px solid lighten(@color, 20%);
 		&>li{
-			margin-top:10px;
-			background:#fff;
+			border-right:1px solid lighten(@color, 20%);
+			padding:0;
 			.glyphicon {
 				padding:5px 10px;
 				top:0;
 			}
 		}
 		#un-signUp,#un-signIn{
-			padding:4px 10px 3px;
 			font-size:12px;
 			display:inline-block;
 		}
 		#un-signUp{
-			background-color:lighten(@color, 30%);
+			//background-color:lighten(@color, 30%);
 			color:#fff;
 		}
     #un-user{
       .glyphicon{
 				background-color:lighten(@color, 30%);
-				padding-right:10px;
 				color:#fff;
       }
     }
     #un-cart{
-		background:#ddd;
+			border-right:0;
+			//background:#ddd;
+			.glyphicon{
+				border-radius:15px;
+				background-color:#fff;
+				color:@color;
+				top:4px;
+				left:7px;
+			}
       .ug-cart-btn{
         margin-left:20px;
         padding:6px 20px;
@@ -94,9 +95,7 @@
         }
       }
       .caret{
-        border-top-color:#666;
-        border-bottom-color:#666;
-		margin:0 0 2px 12px;
+				margin:0 0 2px 12px;
       }
 	  .glyphicon{
 		&:hover{
@@ -108,8 +107,8 @@
 			color:#000;
 		  }
 		  .caret{
-			border-top-color:#000;
-			border-bottom-color:#000;
+				border-top-color:#000;
+				border-bottom-color:#000;
 		  }
 		}
       .input-group-btn{
@@ -175,9 +174,10 @@
     li{ 
       &>a{
         position:relative;
-        color:#777;
+        //color:#777;
+        color:#fff;
 				text-decoration:none;
-				float:left;
+				padding:18px 15px;
         .un-cartNum{
           position: absolute;
           font-size: 11px;
