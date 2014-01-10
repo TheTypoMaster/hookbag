@@ -29,6 +29,11 @@
 
 }
 .un-top{
+	#un-logo{
+		padding-top: 5px;
+		display: inline-block;
+	}
+	padding:0;
   #un-search{ 
 		clear:both;
 		padding:10px 0;
@@ -50,18 +55,23 @@
   .un-navmember{
     position:static;
 		margin-bottom:0;
+		display:table-row;
+		width:100%;
 		border-left:1px solid lighten(@color, 20%);
 		&>li{
 			border-right:1px solid lighten(@color, 20%);
-			padding:0;
-			.glyphicon {
-				padding:5px 10px;
-				top:0;
-			}
-		}
-		#un-signUp,#un-signIn{
-			font-size:12px;
-			display:inline-block;
+			width:1%;
+			display:table-cell;
+			text-align:center;
+			padding:18px 10px;
+      &>a{
+        color:#fff;
+				text-decoration:none;
+        .un-cartNum{
+          position: absolute;
+          font-size: 11px;
+        }
+      }
 		}
 		#un-signUp{
 			//background-color:lighten(@color, 30%);
@@ -71,17 +81,19 @@
       .glyphicon{
 				background-color:lighten(@color, 30%);
 				color:#fff;
+				border-radius:15px;
+				padding:3px 10px;
       }
     }
     #un-cart{
 			border-right:0;
+			padding:0;
 			//background:#ddd;
 			.glyphicon{
 				border-radius:15px;
 				background-color:#fff;
 				color:@color;
-				top:4px;
-				left:7px;
+				padding:5px 10px;
 			}
       .ug-cart-btn{
         margin-left:20px;
@@ -97,20 +109,20 @@
       .caret{
 				margin:0 0 2px 12px;
       }
-	  .glyphicon{
-		&:hover{
-			color:#000;
-		}
-	  }
-		&.open {
-		  .glyphicon{
-			color:#000;
-		  }
-		  .caret{
-				border-top-color:#000;
-				border-bottom-color:#000;
-		  }
-		}
+			.glyphicon{
+				&:hover{
+					color:#000;
+				}
+			}
+			&.open {
+				.glyphicon{
+					color:#000;
+				}
+				.caret{
+					border-top-color:#000;
+					border-bottom-color:#000;
+				}
+			}
       .input-group-btn{
         display:-moz-inline-box;
       }
@@ -121,10 +133,10 @@
         font-size:11px;
         border-radius:0;
         margin:0;
-        border-top-color:#0E71C0;
+        border-top-color:transparent;
         padding:10px;
-		left:auto;
-		right:0;
+				left:auto;
+				right:-8px;
         .ug-price .final{
           font-size:12px;
         }
@@ -155,9 +167,9 @@
             padding:3px 5px;
             font-size:12px;
             color:#fff;
-			&:hover{
-				background:#2BA52B;
-			}
+						&:hover{
+							background:#2BA52B;
+						}
           }
 
           &:last-child{
@@ -170,19 +182,6 @@
         }
       }
 
-    }
-    li{ 
-      &>a{
-        position:relative;
-        //color:#777;
-        color:#fff;
-				text-decoration:none;
-				padding:18px 15px;
-        .un-cartNum{
-          position: absolute;
-          font-size: 11px;
-        }
-      }
     }
   }
 }
