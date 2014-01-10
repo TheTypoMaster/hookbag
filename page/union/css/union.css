@@ -1,0 +1,26 @@
+.ui.union.ban {
+  height: 234px;
+  background: url(../img/share1.png) 0 0 no-repeat;
+  position: relative;
+}
+.ui.union.ban .posa {
+  position: absolute;
+  left: 260px;
+  top: 18px;
+}
+
+.ui.union.ban .tit {
+  color: #db2439;
+}
+
+.ui.mt {
+  margin-top: 20px;
+}
+
+.ui.thumbnail img {
+  height: 200px;
+}
+
+.ui.union .form-control {
+  width: 400px;
+}
