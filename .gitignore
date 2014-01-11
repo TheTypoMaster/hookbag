@@ -56,7 +56,7 @@ style/**/sass/
 style/**/scss/
 style/v3/css/mod.css
 style/v3/css/un.css
-style/base/bootstrap/css/
+style/base/bootstrap/css/*.css
 
 #style/jquery
 style/base/jquery/jquery-*.js
@@ -85,3 +85,7 @@ style/base/select2/LICENSE
 style/base/jQuery-menu-aim/*.png
 style/base/jQuery-menu-aim/example/
 
+
+style/base/bootstrap/css/bootstrap.css
+
+style/v3/css/ui.css
