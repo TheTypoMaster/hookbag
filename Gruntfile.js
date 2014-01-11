@@ -160,7 +160,7 @@ grunt.initConfig({
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
     },
     v3Svn: {
-      command: '<%= pkg.rsync %> ./_site/style/* ~/Sites/hb4/style',
+      command: '<%= pkg.rsync %> ./_site/style/* ~/SVN/hb4/style',
     },
     v3Source: {
       command: '<%= pkg.rsync %> ./_includes/page/* ~/Sites/hb4/app/view/source',
