@@ -1,7 +1,6 @@
 /*导航样式*/
 @color:#0E71C0;
 .un-nav{
-   background:lighten(@color, 10%);
    border-top: none;
    border-left: none;
    border-right: none;
@@ -27,14 +26,14 @@
 		}
 		.navbar-brand{
 			padding:12px 35px 12px 0;
-			color:#fff;
+			color:@color;
 			margin:0 20px 0 0;
 			position:relative;
 			text-transform:uppercase;
 			&:before,&:after{
 				background: none repeat scroll 0 0 rgba(255, 255, 255, 0);
-				border-bottom: 2px solid #fff;
-				border-top: 2px solid #fff;
+				border-bottom: 2px solid @color;
+				border-top: 2px solid  @color;
 				content: " ";
 				display: block;
 				height: 1px;
@@ -88,12 +87,9 @@
 			}
 		}
     .ui-nav-active,
-    .ui-nav-item:hover  {
+    .ui-nav-item:hover {
       border-bottom:2px solid @color;
       margin-bottom: -2px;
-      > a {
-				color:darken(@color, 10%);
-      }
     }
 		&>li{
 		  padding:0 30px;
@@ -101,10 +97,13 @@
 			font-weight:700;
 		  }
 		  &>a{
-			-moz-box-sizing: content-box;
-			padding:12px 0;
-			color:#fff;
-			text-transform:uppercase;
+				-moz-box-sizing: content-box;
+				padding:12px 0;
+				color:@color;
+				text-transform:uppercase;
+				&:hover {
+					color:darken(@color, 20%);
+				}
 		  }
 		  &.active,&:hover,&.open{
 			&>a{
