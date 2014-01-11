@@ -163,7 +163,7 @@ grunt.initConfig({
       command: '<%= pkg.rsync %> ./_site/style/* ~/SVN/hb4/style',
     },
     v3Source: {
-      command: '<%= pkg.rsync %> ./_includes/page/* ~/Sites/hb4/app/view/source',
+      command: '<%= pkg.rsync %> ./_includes/page/* ~/SVN/hb4/app/view/source',
     },
     bower: {
       command: 'bower install',
