@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2013-12-27T01%3A29%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2013-12-27T01%3A29%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2013-12-27T01%3A29%3A01%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2013-12-27T01%3A29%3A01%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-15T10%3A35%3A04%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-15T10%3A35%3A04%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-15T10%3A35%3A04%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-15T10%3A35%3A04%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2013-12-27T01%3A29%3A01%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-15T10%3A35%3A04%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2013-12-27T01%3A29%3A01%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-15T10%3A35%3A04%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -56,15 +56,26 @@ $(document).ready(function() {
   
 <div id="ui-top" class="" data-spy="affix" data-offset-top="100">
 
-  <div class="container un-top pt10 pb10 bgGray bgPurple bgBlack bgGreen bgBlue bgOrange bgSpec" >
+  <div class="container un-top bgBlue " >
 
-      <div class="col-md-3 col-lg-2">
+      <div class="col-sm-3 col-md-2">
         <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo-test6.png"></a>
       </div>
       
-      <div class="col-md-3 col-lg-2 col-md-push-6 col-lg-push-8">
-        <ul class="pull-right list-inline un-navmember">
-	<li id="un-user" data-toggle='offcanvas'><a href="/page/mya/html/mya.html"><span class="glyphicon glyphicon-user" > </span>  Hi,</a></li>
+      <div class="col-sm-4 col-md-3 col-sm-push-5 col-md-push-7">
+        <ul class="list-inline un-navmember">
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+	<!--
+	登录前
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+		登录后
+	<li id="un-user"><a href="/page/mya/html/mya.html"><span class="glyphicon glyphicon-user" > </span>  Hi,</a></li>
+	
+	-->
 	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  
@@ -142,7 +153,7 @@ $(document).ready(function() {
 </ul>
       </div>
 
-      <div class="col-md-6 col-lg-8 col-md-pull-3 col-lg-pull-2">
+      <div class="col-sm-5 col-md-7 col-sm-pull-4 col-md-pull-3">
         <div id="un-search" class="clearfix">
 <form action="" class="form-inline">
   <div class="input-group">
@@ -299,7 +310,7 @@ $(document).ready(function() {
             $submenu.css({
                 display: "block",
                 top: -2,
-                left: width - 4,  // main should overlay submenu
+                left: width - 2,  // main should overlay submenu
                 height: height,  // padding for main dropdown's arrow
         width:260*num+4
             });
@@ -456,7 +467,7 @@ $(document).ready(function() {
     </div>
     <div class="col-md-8">
       <h3 class="un-title un-spc-title">所有厂商</h3>
-      <div class="node-brand pd20" id="un-tabs">
+      <div class="node-brand pd20 un-tabs" >
         <ul class="nav nav-tabs" id="myTab">
           <li class="active"><a data-toggle="tab" href="#home">Hot</a></li>
           <li class=""><a data-toggle="tab" href="#profile">A-D</a></li>
