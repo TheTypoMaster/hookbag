@@ -1,5 +1,5 @@
 $(function() {
-  var $blocks = $('.animation.notViewed');
+  var $blocks = $('.animated.notViewed');
   var $window = $(window);
 
   $window.on('scroll', function(e){
@@ -13,8 +13,8 @@ $(function() {
 });
 function isScrolledIntoView(elem) {
   $(window).scroll(function(){
-		var docViewTop = $(window).scrollTop()+$(window).height()/2;
-		var docViewBottom = docViewTop + $(window).height();
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height()*1.5;
 		var elemOffset = 0;
 		
 		if(elem.data('offset') != undefined) {
@@ -36,7 +36,7 @@ function isScrolledIntoView(elem) {
 			// once an element is visible exchange the classes
 			$(elem).removeClass('notViewed').addClass('viewed');
 			
-			var animElemsLeft = $('.animation.notViewed').length;
+			var animElemsLeft = $('.animated.notViewed').length;
 			if(animElemsLeft == 0){
 				// with no animated elements left debind the scroll event
 				$(window).off('scroll');
