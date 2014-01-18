@@ -1,7 +1,6 @@
 $(function() {
   var $blocks = $('.animated');
   var $window = $(window);
-	$('#skrollr-body').height($('body').height()-$('#ui-footer').height());
 	checkElem();
 	function checkElem(){
     $blocks.each(function(){
