@@ -5,11 +5,19 @@ title: Hookbag
 
 
 <div class="hb union" id="skrollr-body">
+		<div class="hidden navbar-union">
+		<ul class="nav">
+			<li class="active"><a href="#test1">1</a></li>
+    {% for x in (2..6) %}
+			<li class=""><a href="#test{{x}}">{{x}}</a></li>
+    {% endfor %}
+		</ul>
+		</div>
 
     {% for x in (1..6) %}
     <div class="test" id="test{{x}}">
         <div class="tit">
-            <h2>主题{{x}}</h2>
+            <h2 href="#test{{x}}">主题{{x}}</h2>
         </div>
         <div class="container">
             
@@ -52,6 +60,9 @@ $(function(){
 		}else{
 			$('.tit').removeClass('fixed');
 		}
+	});
+	$('.navbar-union li').click(function(){
+		console.log()
 	});
 });
 </script>
