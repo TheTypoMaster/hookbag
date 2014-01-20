@@ -7,9 +7,9 @@ title: Hookbag
 <div class="hb union" id="skrollr-body">
 
     {% for x in (1..6) %}
-    <div class="test">
+    <div class="test" id="test{{x}}">
         <div class="tit">
-            <h2>主题1</h2>
+            <h2>主题{{x}}</h2>
         </div>
         <div class="container">
             
@@ -42,4 +42,16 @@ title: Hookbag
     {% endfor %}
 
 </div>
-
+<script>
+$(function(){
+	$(window).scroll(function(){
+		var cur=$('.navbar-union li.active').index();
+		if($(window).scrollTop()>0){
+			$('.test').eq(cur).find('.tit').addClass('fixed');
+			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	});
+});
+</script>
