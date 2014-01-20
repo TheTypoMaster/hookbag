@@ -177,7 +177,7 @@ title: Hookbag
         </div>
     </div>
     <div class="scene"
-				 data-1300="top:54px;opacity:1;" 
+				 data-1300="top:0%;opacity:1;" 
 				 data-1400="top:100%;opacity:0;" 
 		>
         <div class="container color white">
@@ -207,7 +207,7 @@ title: Hookbag
 	skrollr.init({
 		render: function(data) {
 			//Debugging - Log the current scroll position.
-			console.log(data.curTop);
+			//console.log(data.curTop);
 		}
 	});
 	// ScrollTo Navigation 
@@ -218,7 +218,6 @@ title: Hookbag
 	}
 	$('.hb-slide>li').on('click', function() {
 		var currentSlide=$(this).attr('data-current');
-		$(this).addClass('cur').siblings().removeClass();
 		animateScroll(currentSlide,1000);
 	});
 </script>
