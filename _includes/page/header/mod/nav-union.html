@@ -23,7 +23,7 @@
 $(function(){
 	$(window).scroll(function(){
 		var cur=$('.navbar-union li.active').index();
-		if($(window).scrollTop()>0){
+		if($(window).scrollTop()>=56){
 			$('.test').eq(cur).find('.tit').addClass('fixed');
 			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
 		}else{
