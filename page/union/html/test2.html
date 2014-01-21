@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-21T18%3A25%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-21T18%3A25%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-21T18%3A25%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-21T18%3A25%3A43%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-21T18%3A25%3A43%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-21T18%3A25%3A43%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar-union">
+<body data-spy="scroll" data-target=".navbar-union"  data-offset="100">
 
   
 <div id="ui-top"  >
@@ -170,18 +170,21 @@ $(document).ready(function() {
 
   </div>
 
-  <div class="navbar navbar-default un-nav mb0 ui-nav-border" data-spy="affix" data-offset-top="56">
+  <div class="navbar navbar-default un-nav mb0 ui-nav-border"
+data-55="position:inherit;"
+data-56="position:fixed;top:0;width:100%;z-index:999;"
+>
   <div id="un-navList" class="container un-navlist">
     
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
 
-          <li class="active ui-nav-active"><a href=""><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
-          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
-          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
-          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
-          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
-          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
+          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
+          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
+          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
 
         
       </ul>
@@ -193,15 +196,25 @@ $(document).ready(function() {
 
 <script>
 $(function(){
-	$(window).scroll(function(){
-		var cur=$('.navbar-union li.active').index();
-		if($(window).scrollTop()>0){
+	function checkSpy(){
+		var element=$('.navbar-union li.active');
+		var cur=element.index();
+		var targ=element.find('a').attr('href');
+		var offsetT=$('.test').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT){
 			$('.test').eq(cur).find('.tit').addClass('fixed');
 			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
 		}else{
 			$('.tit').removeClass('fixed');
 		}
-	});
+	}
+	
+	
+	 $(window).on('load', function () {
+      $('body').scrollspy('refresh');
+    })	
+	
+	$('.navbar-union').on('activate.bs.scrollspy',checkSpy)
 });
 </script>
 
@@ -508,3 +521,73 @@ $(function(){
 
 
 
+	<div id="ui-footer" class="bgGray mt20 scene"
+		data-1600="top:100%;padding-top:0px;padding-bottom:0px;" 
+		data-1800="top:0;padding-top:150px;padding-bottom:150px;" 
+	>
+		<div class="container">
+			<div class="un-footer row" id="un-footer-info">
+				<div class="col-md-2 un-footer-service">
+					<h3 class="un-title un-footer-title">Customer Service</h3>
+					<ul>
+						<li><a href="">> About Us</a></li>
+						<li><a href="">> Contact Us</a></li>
+						<li><a href="">> Address Verification</a></li>
+					</ul>
+				</div>
+			<div class="col-md-2 un-footer-service">
+				<h3 class="un-title un-footer-title">Customer Service</h3>
+				<ul>
+					<li><a href="">> About Us</a></li>
+					<li><a href="">> Contact Us</a></li>
+					<li><a href="">> Address Verification</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 un-footer-service">
+				<h3 class="un-title un-footer-title">Customer Service</h3>
+				<ul>
+					<li><a href="">> About Us</a></li>
+					<li><a href="">> Contact Us</a></li>
+					<li><a href="">> Address Verification</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 un-footer-service">
+				<h3 class="un-title un-footer-title">Customer Service</h3>
+				<ul>
+					<li><a href="">> About Us</a></li>
+					<li><a href="">> Contact Us</a></li>
+					<li><a href="">> Address Verification</a></li>
+				</ul>
+			</div>
+			<div class="visible-md visible-lg col-md-3 col-md-4 un-footer-text">
+				<p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+				<p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../js/skrollr.js"></script>
+<script type="text/javascript">
+	skrollr.init({
+		render: function(data) {
+			//Debugging - Log the current scroll position.
+			console.log(data.curTop);
+		}
+	});
+	// ScrollTo Navigation 
+	var slideTopPosisition = [0, 100, 700, 1200, 1600,2000];
+	
+	var animateScroll = function(currentSlide,duration) {
+		$('html, body').animate({ scrollTop: slideTopPosisition[currentSlide] }, duration);
+	}
+	$('.hb-slide>li').on('click', function() {
+		var currentSlide=$(this).attr('data-current');
+		animateScroll(currentSlide,1000);
+	});
+</script>
+
+
+</body>
+</html>
