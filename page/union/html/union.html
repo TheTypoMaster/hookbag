@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-19T10%3A35%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-19T10%3A35%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-19T10%3A35%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-19T10%3A35%3A03%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-19T10%3A35%3A03%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-19T10%3A35%3A03%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -51,10 +51,10 @@ $(document).ready(function() {
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-union">
 
   
-<div id="ui-top"  data-0="position:static;" data-54="position:fixed;top:0;" >
+<div id="ui-top"  >
 
   <div class="container un-top bgBlue " >
 
@@ -170,6 +170,42 @@ $(document).ready(function() {
 
   </div>
 
+  <div class="navbar navbar-default un-nav mb0 ui-nav-border" data-spy="affix" data-offset-top="56">
+  <div id="un-navList" class="container un-navlist">
+    
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+          <li class="active ui-nav-active"><a href=""><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+
+        
+      </ul>
+      
+    </div>
+
+  </div>
+</div>
+
+<script>
+$(function(){
+	$(window).scroll(function(){
+		var cur=$('.navbar-union li.active').index();
+		if($(window).scrollTop()>0){
+			$('.test').eq(cur).find('.tit').addClass('fixed');
+			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	});
+});
+</script>
+
+
 </div>
   
 
@@ -260,77 +296,4 @@ $(document).ready(function() {
 
 
 
-<div id="ui-footer" class="bgGray mt20">
-  <div class="container">
-    <div class="un-footer row" id="un-footer-info">
-      <div class="col-md-2 un-footer-service">
-        <h3 class="un-title un-footer-title">Customer Service</h3>
-        <ul>
-          <li><a href="">> About Us</a></li>
-          <li><a href="">> Contact Us</a></li>
-          <li><a href="">> Address Verification</a></li>
-        </ul>
-      </div>
-    <div class="col-md-2 un-footer-service">
-      <h3 class="un-title un-footer-title">Customer Service</h3>
-      <ul>
-        <li><a href="">> About Us</a></li>
-        <li><a href="">> Contact Us</a></li>
-        <li><a href="">> Address Verification</a></li>
-      </ul>
-    </div>
-    <div class="col-md-2 un-footer-service">
-      <h3 class="un-title un-footer-title">Customer Service</h3>
-      <ul>
-        <li><a href="">> About Us</a></li>
-        <li><a href="">> Contact Us</a></li>
-        <li><a href="">> Address Verification</a></li>
-      </ul>
-    </div>
-    <div class="col-md-2 un-footer-service">
-      <h3 class="un-title un-footer-title">Customer Service</h3>
-      <ul>
-        <li><a href="">> About Us</a></li>
-        <li><a href="">> Contact Us</a></li>
-        <li><a href="">> Address Verification</a></li>
-      </ul>
-    </div>
-    <div class="visible-md visible-lg col-md-3 col-md-4 un-footer-text">
-      <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
-      <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
-    </div>
-    
-    </div>
-  </div>
-</div>
-<script>
-
-/*延迟加载
- $("img.lazy").lazyload({
-	effect : "fadeIn"
- });*/
-$("#un-gridMore").one("click", function() {
-     $("#un-gridList").load("image.html", function(response, status, xhr) {
-         $("img.lazy").lazyload({
-			effect : "fadeIn"
-		 });
-     });              
- });
-
-/*价格选择*/
-var p = document.getElementById("un-sort"),
-    res = document.getElementById("result");
-if(p){
-	res.innerHTML = "$" + p.value;
-
-	p.addEventListener("input", function() {
-		res.innerHTML = "$" + p.value;
-	}, false); 
-
-}
-
-
-</script>
-</body>
-</html>
 

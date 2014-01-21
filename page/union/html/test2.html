@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    
+      Hookbag
+    
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+
+<script src="/style/base/jquery/jquery.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-21T00%3A03%3A14%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<!--延迟加载-->
+
+<script src="/style/base/holderjs/holder.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-21T00%3A03%3A14%2B08%3A00"></script>
+<script>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+	$(this).toggleClass('active')
+  });
+  $('.nav-button').click(function() {
+    $('.un-nav').toggleClass('un-nav1 un-nav3');
+	$(this).toggleClass('nav-txt')
+  });
+});
+</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-union">
+
+  
+<div id="ui-top"  >
+
+  <div class="container un-top bgBlue " >
+
+      <div class="col-sm-3 col-md-2">
+        <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo-test6.png"></a>
+      </div>
+      
+      <div class="col-sm-4 col-md-3 col-sm-push-5 col-md-push-7">
+        <ul class="list-inline un-navmember">
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+	<!--
+	登录前
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+		登录后
+	<li id="un-user"><a href="/page/mya/html/mya.html"><span class="glyphicon glyphicon-user" > </span>  Hi,</a></li>
+	
+	-->
+	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+		</ul>
+	</li>
+</ul>
+      </div>
+
+      <div class="col-sm-5 col-md-7 col-sm-pull-4 col-md-pull-3">
+        <div id="un-search" class="clearfix">
+<form action="" class="form-inline">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Keywords,Model#,SKU or UPC#" autofocus>
+    <span class="input-group-btn">
+     <!-- <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>-->
+      <button class="btn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+    </span>
+  </div>
+</form>
+</div>
+
+      </div>
+
+  </div>
+
+  <div class="navbar navbar-default un-nav mb0 ui-nav-border" data-spy="affix" data-offset-top="56">
+  <div id="un-navList" class="container un-navlist">
+    
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+          <li class="active ui-nav-active"><a href=""><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
+          <li class="ui-nav-item"><a href=""><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+
+        
+      </ul>
+      
+    </div>
+
+  </div>
+</div>
+
+<script>
+$(function(){
+	$(window).scroll(function(){
+		var cur=$('.navbar-union li.active').index();
+		if($(window).scrollTop()>0){
+			$('.test').eq(cur).find('.tit').addClass('fixed');
+			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	});
+});
+</script>
+
+
+</div>
+  
+
+<div class="hb union" id="skrollr-body">
+<div class="hidden navbar-union">
+<ul class="nav">
+
+	<li class=""><a href="#test1">1</a></li>
+
+	<li class=""><a href="#test2">2</a></li>
+
+	<li class=""><a href="#test3">3</a></li>
+
+	<li class=""><a href="#test4">4</a></li>
+
+</ul>
+</div>
+    <div class="test" id="test1">
+        <div class="tit">
+            <h2>抽奖之前</h2>
+        </div>
+        <div class="container">
+            
+            <div class="tac">
+              <h3 style="line-height:4;">本期有5000人参加,50人有获得 $50 现金的机会哦</h3>
+            </div>
+            
+            <div class="countdown tac">
+              <img src="holder.js/100x100/sky/text:10">DAYS
+              <img src="holder.js/100x100/sky/text:11">HOURS
+              <img src="holder.js/100x100/sky/text:12">MINUTES
+              <img src="holder.js/100x100/sky/text:13">SECONDS
+            </div>
+
+            <div class="button tac" style="margin:50px 0px;">
+              <a class="btn btn-primary">立即购物参与抽奖</a>
+              <a class="btn btn-success">查看上一期中奖名单</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="test" id="test2">
+        <div class="tit">
+            <h2>抽奖结果揭晓之中奖</h2>
+        </div>
+        <div class="container">
+            
+            <div class="tac">
+              <h3 style="line-height:4;">恭喜! 您中奖了.获得 $50 现金</h3>
+            </div>
+
+            <div class="tac">
+              <p>您可以立即提现哦.或者赚取更多的 $75 现金</p>
+
+              <p>参加联盟之后,只要让5位facebook上的好友注册hookbag帐号,就能获得 $75 现金哦 =。=</p>
+            </div>
+
+            <div class="button tac" style="margin:50px 0px;">
+              <a class="btn btn-primary">知足是福,我提现$50.</a>
+              <a class="btn btn-success">开通联盟帐号,赚取$50+$75=$125!</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="test" id="test3">
+        <div class="tit">
+            <h2>抽奖结果揭晓之没有中奖</h2>
+        </div>
+        <div class="container">
+            
+            <div class="tac">
+              <h3 style="line-height:4;">本期抽奖已经结束哦! 您木有中奖!</h3>
+            </div>
+
+            <div class="tac">
+              <p>肿木办,连安慰奖都木有..........桑心</p>
+
+              <p>48小时内再次参与抽奖,中奖率会翻翻哦 =。=</p>
+            </div>
+
+            <div class="button tac" style="margin:50px 0px;">
+              <a class="btn btn-primary">立即购物,再次参与</a>
+              <a class="btn btn-success">开通联盟帐号,把本钱赚回来!</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="test" id="test4">
+      <div class="tit">
+        <h2>关于抽奖的常见问题</h2>
+      </div>
+      <div class="container">
+        
+        <div class="panel-group" id="accordion" style="margin-top:20px">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  抽奖必须拥有hookbag 帐号吗?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                我靠!你傻呀,hookbag 这里2000万商品.但是不卖药呀,请出门左转.
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                  参与抽奖需要购买多少钱的商品呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+                参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
