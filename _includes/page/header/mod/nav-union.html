@@ -25,10 +25,10 @@ $(function(){
 		var element=$('.navbar-union li.active');
 		var cur=element.index();
 		var targ=element.find('a').attr('href');
-		if($(window).scrollTop()>=56){
+		var offsetT=$('.test').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT){
 			$('.test').eq(cur).find('.tit').addClass('fixed');
 			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
-			
 		}else{
 			$('.tit').removeClass('fixed');
 		}
