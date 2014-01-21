@@ -6,29 +6,34 @@ title: Hookbag
 
 <div class="hb union index" id="skrollr-body">
 
-  <div class="share banner viewed animated fadeInUpBig">
-      <div class="container color white">
-          <div class="row">
-              <div class="col-md-7 animated fadeInLeft delay"  >
-                  <h2 class="animated pulse delay">碉堡了!!!</h2>
-                  <h3 class="animated fadeInLeftBig delay">Hookbag 联盟 <br>一次注册, 终生拿钱!!!</h3>
-              </div>
-              <div class="col-md-5 animated fadeInUpBig">
-                  <img src="../img/man.png" alt="">
-              </div>
-          </div>
-      </div>
-  </div>
+	<div class="scene share banner"
+	data-0="top:100px;"
+	data-56="top:46px;"
+	>
+		<div class="container color white">
+				<div class="row">
+						<div class="col-md-7 animated fadeInLeft delay"  
+						data-100="left:0%;" 
+						data-300="left:-100%;" >
+								<h2 class="animated pulse delay">碉堡了!!!</h2>
+								<h3 class="animated fadeInLeftBig delay">Hookbag 联盟 <br>一次注册, 终生拿钱!!!</h3>
+						</div>
+				</div>
+		</div>
+	</div>
 
-  <div class="mod">
-      <div class="tac">
-          <h2 class="tit">CEO的一封信</h2>
-          {% for x in (1..6) %}
-          <p class="doc">因为参与抽奖的用户都是忠实会员.写封信打亲情牌</p>
-          <p class="doc">第二期开始换成用户感言.收集获奖用户感言.</p>
-          {% endfor %}
-      </div>
-  </div>
+	<div class="scene mod ceo" 
+	data-100="width:0%;left:50%;" 
+	data-500="width:100%;left:0%;"
+	>
+		<div class="tac">
+				<h2>CEO的一封信</h2>
+				{% for x in (1..6) %}
+				<p>因为参与抽奖的用户都是忠实会员.写封信打亲情牌</p>
+				<p>第二期开始换成用户感言.收集获奖用户感言.</p>
+				{% endfor %}
+		</div>
+	</div>
 
   <div class="mod ui bgc wet-asphalt">
     <div class="container tac">
@@ -63,3 +68,21 @@ title: Hookbag
     </div>
   </div>
 
+	
+  <div class="scene"
+	data-1300="top:100px;opacity:1;" 
+	data-1400="top:100%;opacity:0;" 
+   >
+		 <div class="container color white">
+				 <div class="row">
+						 <div
+						 data-100="top:0px;"
+						 data-500="top:250px;" 
+						 data-650="transform:translateX(0%);" 
+						 data-900="transform:translateX(-150%);" 
+						 class="col-md-5 col-md-push-7 animated fadeInUpBig">
+								 <img src="../img/man.png" alt="">
+						 </div>
+				 </div>
+		 </div>
+   </div>
