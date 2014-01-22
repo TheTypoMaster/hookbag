@@ -171,55 +171,59 @@
 	overflow: hidden; 
 	position: relative;
 	//background-color:#1898b0;
-	
-}
-
-.notViewed{
-	opacity:0;
-}
-@import url("animated.less");
-
-.scene {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top:46px;
-	overflow:hidden;
-}
-.hb-slide{
-	position:fixed;
-	right:0;top:200px;
-	list-style-type:none;
-	li{
-		width:10px;
-		height:10px;
-		border-radius:50%;
-		background:#fff;
-		text-indent:-9999px;
-		cursor:pointer;
-		margin:10px;
-		box-shadow:0 1px 1px;
-		&.cur{
-			background:@color;
+	.notViewed{
+		opacity:0;
+	}
+	.scene {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top:46px;
+		overflow:hidden;
+	}
+	.hb-slide{
+		position:fixed;
+		right:0;top:200px;
+		list-style-type:none;
+		li{
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background:#fff;
+			text-indent:-9999px;
+			cursor:pointer;
+			margin:10px;
+			box-shadow:0 1px 1px;
+			&.cur{
+				background:@color;
+			}
 		}
 	}
-}
-.test .tit{
-	background:lighten(@color,30%);
-	color:#fff;
-	margin:0px 0px;
-    padding: 0px 10px;
-	&.fixed{
-		position:fixed;
-		width:100%;
-		top:44px;
-		margin:0;
+	.test .tit{
+		background:lighten(@color,30%);
+		color:#fff;
+		margin:0px 0px;
+			padding: 0px 10px;
+		&.fixed{
+			position:fixed;
+			width:100%;
+			top:44px;
+			margin:0;
+		}
+	}
+
+	.scene-left-scroll{
+		&>div{
+			height:100%;
+			padding-top:100px;
+		}
+	}	
+	#ui-footer{
+		height:auto;
+		top:auto;
+		bottom:0;
 	}
 }
 
-.scene-left-scroll{
-	&>div{
-		height:100%;
-		padding-top:100px;
-	}
-}
+@import url("animated.less");
+
