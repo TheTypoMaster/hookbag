@@ -5,7 +5,20 @@ title: Hookbag
 
 <div class="hb union" id="skrollr-body">
 
-    <div class="scene lotto help" id="help" 
+    <div class="scene mod ceo" 
+    data-100="width:0%;left:50%;" 
+    data-500="width:100%;left:0%;"
+    >
+        <div class="tac">
+                <h2>CEO的一封信</h2>
+                {% for x in (1..6) %}
+                <p>因为参与抽奖的用户都是忠实会员.写封信打亲情牌</p>
+                <p>第二期开始换成用户感言.收集获奖用户感言.</p>
+                {% endfor %}
+        </div>
+    </div>
+
+    <div class="scene lotto help" 
  		data-0="top:100px;"
  		data-56="top:46px;"
 		>
@@ -17,7 +30,7 @@ title: Hookbag
 							data-600="transform:scale(1);" 
 							data-700="transform:scale(.5);"
 							>
-                <img class="media-object img-circle" src="holder.js/150x150" alt="...">
+                <img class="media-object img-circle" src="../img/lotto1.jpg">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">free $50</h4>
@@ -31,7 +44,7 @@ title: Hookbag
 							data-600="transform:scale(1);" 
 							data-700="transform:scale(.7);"
 							>
-                <img class="media-object img-circle" src="holder.js/150x150" alt="...">
+                <img class="media-object img-circle" src="../img/lotto2.jpg">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">75$ bonus</h4>
@@ -44,7 +57,7 @@ title: Hookbag
 							data-560="transform:scale(.5);" 
 							data-600="transform:scale(1);"
 							>
-                <img class="media-object img-circle" src="holder.js/150x150" alt="...">
+                <img class="media-object img-circle" src="../img/lotto3.jpg">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">参与分享会员的机会</h4>
@@ -59,7 +72,7 @@ title: Hookbag
 		data-1000="top:0;padding-top:150px;padding-bottom:150px;background:rgb(95, 174, 227);"
 		>
         <div class="container color white">
-            <h2 class="tit">抽奖活动主题</h2>
+            <h2 class="tit">抽奖活动主题 <span>活动状态</span></h2>
             <ul class="rule">
                 <li>
                     活动时间: 2014-01-14 ~ 2014-01-24
@@ -74,10 +87,37 @@ title: Hookbag
 
             <div class="button">
                 <a href="test2.html" class="btn btn-warning btn-lg">访问该抽奖详情页</a>
+                <a href="test2.html" class="btn btn-info btn-lg">查看中奖名单</a>
             </div>
 
         </div>
     </div>
+
+        <div class="scene lotto item" 
+            data-700="top:100%;padding-top:0px;padding-bottom:0px;background:rgb(46, 204, 113);" 
+            data-1000="top:0;padding-top:150px;padding-bottom:150px;background:rgb(95, 174, 227);"
+            >
+            <div class="container color white">
+                <h2 class="tit">抽奖活动主题 <span>活动状态</span></h2>
+                <ul class="rule">
+                    <li>
+                        活动时间: 2014-01-14 ~ 2014-01-24
+                    </li>
+                    <li>
+                        中奖总额: 本期有5000人参加,50人有获得 $50 现金的机会哦
+                    </li>
+                    <li>
+                        参与条件: 芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉芭芭芭拉 巴拉巴拉
+                    </li>
+                </ul>
+
+                <div class="button">
+                    <a href="test2.html" class="btn btn-warning btn-lg">访问该抽奖详情页</a>
+                    <a href="test2.html" class="btn btn-info btn-lg">查看中奖名单</a>
+                </div>
+
+            </div>
+        </div>
     
 
     <div class="scene lotto more" id="more"
