@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-21T18%3A39%3A30%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-21T18%3A39%3A30%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-21T18%3A39%3A30%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-21T18%3A39%3A30%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-22T17%3A12%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-22T17%3A12%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-22T17%3A12%3A43%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-22T17%3A12%3A43%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-21T18%3A39%3A30%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-22T17%3A12%3A43%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-21T18%3A39%3A30%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-22T17%3A12%3A43%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -224,7 +224,7 @@ $(function(){
 
 <div class="hb union" id="skrollr-body">
     
-    <div class="scene share feature viewed animated fadeInDownBig"
+    <div class="scene share feature viewed animated fadeInDownBig" id="feature" 
 		data-0="top:100px;"
 		data-56="top:46px;"
 		>
@@ -253,7 +253,7 @@ $(function(){
         </div>
     </div>
 
-    <div class="scene share step facebook"
+    <div class="scene share step facebook" id="step" 
 		data-300="top:100%;padding-top:0px;padding-bottom:0px;" 
 		data-600="top:0%;padding-top:120px;padding-bottom:120px;"
 		>
@@ -264,15 +264,17 @@ $(function(){
         </div>
     </div>
 
-  <div class="scene mod scene-left-scroll"
+  <div class="scene mod scene-left-scroll" id="scroll" 
 	data-700="left:100%;" 
-	data-1100="left:0%;"
-	data-1400="left:-66%;"
+	data-1000="left:0%;"
+	data-1300="left:-66%;"
+	data-1350="top:46px;"
+	data-1600="top:-46px;" 
 	>
 		
 		<div class="col-md-4 ui bgc asbestos tac">
         <h2 class="tit">工具</h2>
-        <p class="doc">关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 </p>
+        <p class="doc circle">关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 关于工具的介绍 </p>
 
         <div class="button">
           <a class="btn btn-info btn-lg">访问工具详情页</a>
@@ -281,53 +283,56 @@ $(function(){
 
 		<div class="col-md-4 ui bgc clouds tac">
 			<h2 class="tit">怎样拥有联盟帐号</h2>
-			<p class="doc">怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号</p>
+			<p class="doc circle">怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号</p>
 
 			<div class="button">
-				<a class="btn btn-info btn-lg">访问工具详情页</a>
+				<a class="btn btn-info btn-lg">访问详情页</a>
 			</div>
     </div>
 
 		<div class="col-md-4 ui bgc silver tac">
 			<h2 class="tit">怎样拥有联盟帐号</h2>
-			<p class="doc">怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号</p>
+			<p class="doc circle">怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号 怎样拥有联盟帐号</p>
 
 			<div class="button">
-				<a class="btn btn-info btn-lg">访问工具详情页</a>
+				<a class="btn btn-info btn-lg">访问详情页</a>
 			</div>
     </div>
 	</div>
   <div class="scene mod scene-left-scroll"
-	data-1100="left:100%;" 
-	data-1400="left:33.3333%;"
+	data-1000="left:100%;" 
+	data-1300="left:33.3333%;"
+	data-1350="top:46px;"
+	data-1600="top:-46px;" 
 	>
 
 		<div class="col-md-4 ui bgc pomegranate tac">
 			<h2 class="tit">返利结算及兑现</h2>
-			<p class="doc">返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现</p>
+			<p class="doc circle">返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现 返利结算及兑现</p>
 
 			<div class="button">
-				<a class="btn btn-info btn-lg">访问工具详情页</a>
+				<a class="btn btn-info btn-lg">访问详情页</a>
 			</div>
     </div>
 
 		<div class="col-md-4 ui bgc pumpkin tac">
+			<h2><span class="icon-cart2 pumpkin color ui"></span></h2>
 			<h2 class="tit">立即购物</h2>
-			<p class="doc">立即购物 立即购物 立即购物 立即购物 立即购物 立即购物 立即购物</p>
+			<p class="doc">立即购物</p>
 
 			<div class="button">
-				<a class="btn btn-info btn-lg">访问工具详情页</a>
+				<a class="btn btn-info btn-lg">访问详情页</a>
 			</div>
     </div>
 	</div>
 
 
 
-	<div id="ui-footer" class="bgGray mt20 scene"
-		data-1600="top:100%;padding-top:0px;padding-bottom:0px;" 
-		data-1800="top:0;padding-top:150px;padding-bottom:150px;" 
+	<div id="ui-footer" class="bgGray scene"
+		data-1200="bottom:-100%" 
+		data-1500="bottom:0;" 
 	>
-		<div class="container">
+		<div class="">
 			<div class="un-footer row" id="un-footer-info">
 				<div class="col-md-2 un-footer-service">
 					<h3 class="un-title un-footer-title">Customer Service</h3>
@@ -375,18 +380,22 @@ $(function(){
 	skrollr.init({
 		render: function(data) {
 			//Debugging - Log the current scroll position.
-			console.log(data.curTop);
+			//console.log(data.curTop);
 		}
 	});
 	// ScrollTo Navigation 
-	var slideTopPosisition = [0, 100, 700, 1200, 1600,2000];
-	
+	var slideTopPosisition = [];
+	$('.scene').each(function(){
+		slideTopPosisition.push($(this).index()*600);
+	});
+	console.log(slideTopPosisition);
 	var animateScroll = function(currentSlide,duration) {
 		$('html, body').animate({ scrollTop: slideTopPosisition[currentSlide] }, duration);
 	}
 	$('.hb-slide>li').on('click', function() {
 		var currentSlide=$(this).attr('data-current');
 		animateScroll(currentSlide,1000);
+		
 	});
 </script>
 
