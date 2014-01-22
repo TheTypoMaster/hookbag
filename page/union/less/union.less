@@ -60,7 +60,6 @@
         img {
             width: 250px;
             height: 250px;
-						border:5px solid #A3D6CC;
         }
         p {
             font-size: 18px;
@@ -146,11 +145,29 @@
         .tit {
             font-size: 40px;
             line-height: 2;
+						span{
+							font-size:20px;
+						}
         }
         .rule {
             font-size: 18px;
             line-height: 2;
             margin-bottom: 2em;
+						list-style-type:none;
+						padding:0;
+						width:50%;
+						margin:10px auto 30px;
+						text-align:left;
+						background:#fff;
+						border-radius:10px;
+						color:#454545;
+						li{
+							padding:10px 30px;
+							&:first-child{
+								background:#333;
+								color:#fff;
+							}
+						}
         }
     }
     .lotto.item:nth-last-child(2n+2) {
@@ -180,6 +197,9 @@
 	overflow: hidden; 
 	position: relative;
 	//background-color:#1898b0;
+	.img-circle{
+		border:5px solid #A3D6CC;
+	}
 	.notViewed{
 		opacity:0;
 	}
