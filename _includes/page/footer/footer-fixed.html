@@ -1,6 +1,6 @@
 	<div id="ui-footer" class="bgGray scene"
-		data-1200="bottom:-100%" 
-		data-1500="bottom:0;" 
+	data-1200="bottom:-100%;"
+	data-1500="bottom:0;"
 	>
 		<div class="">
 			<div class="un-footer row" id="un-footer-info">
@@ -47,16 +47,10 @@
 </div>
 <script type="text/javascript" src="../js/skrollr.js"></script>
 <script type="text/javascript">
-	skrollr.init({
-		render: function(data) {
-			//Debugging - Log the current scroll position.
-			//console.log(data.curTop);
-		}
-	});
 	// ScrollTo Navigation 
 	var slideTopPosisition = [];
 	$('.scene').each(function(){
-		slideTopPosisition.push($(this).index()*600);
+		slideTopPosisition.push($(this).index()*300);
 	});
 	console.log(slideTopPosisition);
 	var animateScroll = function(currentSlide,duration) {
@@ -66,6 +60,19 @@
 		var currentSlide=$(this).attr('data-current');
 		animateScroll(currentSlide,1000);
 		
+	});
+	var dataCon=slideTopPosisition.length;
+	var data1=slideTopPosisition[dataCon-2];
+	var data2=slideTopPosisition[dataCon-1];
+	console.log(data1);
+	$('#ui-footer').attr('data-'+data1,'bottom:-100%');
+	$('#ui-footer').attr('data-'+data2,'bottom:0%');
+	
+	skrollr.init({
+		render: function(data) {
+			//Debugging - Log the current scroll position.
+			//console.log(data.curTop);
+		}
 	});
 </script>
 
