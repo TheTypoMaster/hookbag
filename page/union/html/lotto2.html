@@ -21,13 +21,7 @@ title: Hookbag
             <div class="tac">
               <h3 style="line-height:4;">本期有5000人参加,50人有获得 $50 现金的机会哦</h3>
             </div>
-            
-            <div class="countdown tac">
-              <img src="holder.js/100x100/sky/text:10">DAYS
-              <img src="holder.js/100x100/sky/text:11">HOURS
-              <img src="holder.js/100x100/sky/text:12">MINUTES
-              <img src="holder.js/100x100/sky/text:13">SECONDS
-            </div>
+            <div class="countdown tac clear"></div>
 
             <div class="button tac" style="margin:50px 0px;">
               <a class="btn btn-primary">立即购物参与抽奖</a>
@@ -146,4 +140,17 @@ title: Hookbag
     </div>
 </div>
 
+<script src="../js/jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function() {
+	var endDate = "April 7, 2014 11:03:25";
 
+	$('.countdown').countdown({
+		date: endDate,
+		render: function(data) {
+			$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 3) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
+		}
+	});
+
+});
+</script>
