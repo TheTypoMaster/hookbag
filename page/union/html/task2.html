@@ -11,13 +11,14 @@ title: Hookbag
 </ul>
 </div>
 
-    <div class="test tool" id="test1">
+    <div class="test tool task" id="test1">
         <div class="tit">
             <h2>Registration Inviting Task</h2>
         </div>
-        <div class="container">
+        <div class="container hb-box">
             
             <dl>
+                <dt class="ui-left"><span class="icon-users hb-icon"></span></dt>
                 <dt><a href="">Registration Inviting Task</a></dt>
                 <dd>
 
@@ -25,7 +26,7 @@ title: Hookbag
 
                     <hr>
 
-                    <p class="doc">Your promotion address:</p>
+                    <p class="alert alert-success"><strong>Your promotion address:</strong></p>
                     {% for x in (1..5) %}
                     <form class="form-inline" role="form">
                     
@@ -38,7 +39,7 @@ title: Hookbag
                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="电子邮箱">
                       </div>
                       <button type="submit" class="btn btn-default">Send</button>
-                      <div class="checkbox">
+                      <div class="checkbox label label-danger">
                         <label>
                           Uncompleted
                         </label>
