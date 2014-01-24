@@ -3,60 +3,61 @@ layout: page-nonav
 title: Hookbag
 ---
 <div class="hb union" id="skrollr-body">
-<div class="hidden navbar-union">
-<ul class="nav">
-{% for x in (1..2) %}
-    <li class=""><a href="#test{{x}}">{{x}}</a></li>
-{% endfor %}
-</ul>
-</div>
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      {% for x in (1..2) %}
+      <li class=""><a href="#test{{x}}">{{x}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
 
-    <div class="test report" id="test1">
-        <div class="tit tac">
-            <h2>效果报告</h2>
+  <div class="test report" id="test1">
+    <div class="tit tac">
+      <h2>效果报告</h2>
+    </div>
+    <div class="container hb-box">
+
+      <h4 class="tit ui-left">快捷报告</h4>
+      <table class="table table-bordered hb-reportList1">
+        <tr>
+          <td>昨日收入:$4232</td>
+          <td>本月收入:$323842</td>
+        </tr>
+        <tr>
+          <td>前7日收入:$4322</td>
+          <td>上月收入:$5242</td>
+        </tr>
+      </table>
+
+      <div class="row hb-reportList2">
+        <div class="col-sm-3 media">
+          <div class="pull-left"><span class="icon-gift hb-icon"></span></div>
+          <div class="media-body">抽奖收入<br><strong>$324</strong></div>
         </div>
-        <div class="container hb-box">
-
-              <h4 class="tit ui-left">快捷报告</h4>
-              <table class="table table-bordered hb-reportList1">
-                      <tr>
-                        <td>昨日收入:$4232</td>
-                        <td>本月收入:$323842</td>
-											</tr>
-											<tr>
-                        <td>前7日收入:$4322</td>
-                        <td>上月收入:$5242</td>
-                      </tr>
-              </table>
-              <div class="row hb-reportList2">
-								<div class="col-sm-3 media">
-									<div class="pull-left"><span class="icon-gift hb-icon"></span></div>
-									<div class="media-body">抽奖收入<br><strong>$324</strong></div>
-								</div>
-								<div class="col-sm-3 media">
-									<div class="pull-left"><span class="icon-copy hb-icon"></span></div>
-									<div class="media-body">分享收入<br><strong>$322</strong></div>
-								</div>
-								<div class="col-sm-3 media">
-									<div class="pull-left"><span class="icon-feed hb-icon"></span></div>
-									<div class="media-body">下线收入<br><strong>$324</strong></div>
-								</div>
-              </div>
-
-              <h4 class="tit ui-left">下线收入报告</h4>
-                <table class="table table-striped hb-reportList3">
-                    <tbody>
-                    {% for x in (1..5) %}
-                      <tr>
-                        <td>safasg@jj.com $5234</td>
-                        <td>2013-12-11 15:33</td>
-                      </tr>
-                      {% endfor %}
-                    </tbody>
-              </table>
-
+        <div class="col-sm-3 media">
+          <div class="pull-left"><span class="icon-copy hb-icon"></span></div>
+          <div class="media-body">分享收入<br><strong>$322</strong></div>
         </div>
+        <div class="col-sm-3 media">
+          <div class="pull-left"><span class="icon-feed hb-icon"></span></div>
+          <div class="media-body">下线收入<br><strong>$324</strong></div>
+        </div>
+      </div>
+
+      <h4 class="tit ui-left">下线收入报告</h4>
+      <table class="table table-striped hb-reportList3">
+        <tbody>
+          {% for x in (1..5) %}
+          <tr>
+            <td>safasg@jj.com $5234</td>
+            <td>2013-12-11 15:33</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
 
     </div>
+
+  </div>
 
 </div>
