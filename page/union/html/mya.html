@@ -2,21 +2,32 @@
 layout: page-nonav
 title: Hookbag
 ---
-
 <div class="hb union" id="skrollr-body">
+<div class="hidden navbar-union">
+<ul class="nav">
+{% for x in (1..2) %}
+    <li class=""><a href="#test{{x}}">{{x}}</a></li>
+{% endfor %}
+</ul>
+</div>
 
-    <div class="tool mod ui bgc concrete">
-        <div class="container">
-            <h2 class="tit tac">我的帐户</h2>
-            <dl>
-                <dt><a href="">我的财务情况</a></dt>
-                <dd>三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途</dd>
-                <dt><a href="">我的抽奖和任务状况</a></dt>
-                <dd>三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途</dd>
-                <dt><a href="">我的分享状况</a></dt>
-                <dd>三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途 三句话介绍工具的用途</dd>
-            </dl>
+    <div class="test tool" id="test1">
+        <div class="tit">
+            <h2>我的帐户</h2>
         </div>
+        <div class="container">
+            
+            <dl>
+                <dt><a href="">我的虚拟帐户情况</a></dt>
+                <dd>有多少钱: $50</dd>
+                <dt><a href="">我的抽奖和任务状况</a></dt>
+                <dd>有5次中奖  其中有5任务没完成</dd>
+                <dt><a href="">我的分享状况</a></dt>
+                <dd>多少返利佣金了 多少订单量</dd>
+            </dl>
+
+        </div>
+
     </div>
 
 </div>
