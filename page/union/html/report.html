@@ -18,30 +18,33 @@ title: Hookbag
         <div class="container hb-box">
 
               <h4 class="tit ui-left">快捷报告</h4>
-                <table class="table table-bordered">
-                      <tr style="font-size:20px;">
+              <table class="table table-bordered hb-reportList1">
+                      <tr>
                         <td>昨日收入:$4232</td>
-                        <td>前7日收入:$4322</td>
                         <td>本月收入:$323842</td>
+											</tr>
+											<tr>
+                        <td>前7日收入:$4322</td>
                         <td>上月收入:$5242</td>
                       </tr>
               </table>
-
-                <table class="table table-striped">
-                      
-                      <tr>
-                        <td colspan="4">抽奖收入:$324</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4">分享收入:$322</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4">下线收入:$3242</td>
-                      </tr>
-              </table>
+              <div class="row hb-reportList2">
+								<div class="col-sm-3 media">
+									<div class="pull-left"><span class="icon-gift hb-icon"></span></div>
+									<div class="media-body">抽奖收入<br><strong>$324</strong></div>
+								</div>
+								<div class="col-sm-3 media">
+									<div class="pull-left"><span class="icon-copy hb-icon"></span></div>
+									<div class="media-body">分享收入<br><strong>$322</strong></div>
+								</div>
+								<div class="col-sm-3 media">
+									<div class="pull-left"><span class="icon-feed hb-icon"></span></div>
+									<div class="media-body">下线收入<br><strong>$324</strong></div>
+								</div>
+              </div>
 
               <h4 class="tit ui-left">下线收入报告</h4>
-                <table class="table table-striped">
+                <table class="table table-striped hb-reportList3">
                     <tbody>
                     {% for x in (1..5) %}
                       <tr>
