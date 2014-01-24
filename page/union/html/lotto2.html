@@ -5,152 +5,138 @@ title: Hookbag
 
 
 <div class="hb union" id="skrollr-body">
-<div class="hidden navbar-union">
-<ul class="nav">
-{% for x in (1..4) %}
-	<li class=""><a href="#test{{x}}">{{x}}</a></li>
-{% endfor %}
-</ul>
-</div>
-    <div class="test" id="test1">
-        <div class="tit">
-            <h2>抽奖之前</h2>
-        </div>
-        <div class="container">
-            
-            <div class="tac">
-              <h3 style="line-height:4;">本期有5000人参加,50人有获得 $50 现金的机会哦</h3>
-            </div>
-            <div class="countdown tac clear"></div>
 
-            <div class="button tac" style="margin:50px 0px;">
-              <a class="btn btn-primary">立即购物参与抽奖</a>
-              <a class="btn btn-success">查看上一期中奖名单</a>
-            </div>
+	<div class="hidden navbar-union">
+		<ul class="nav">
+			{% for x in (1..4) %}
+			<li class=""><a href="#test{{x}}">{{x}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
 
-        </div>
+	<div class="test" id="test1">
+		<div class="tit">
+			<h2>抽奖之前</h2>
+		</div>
+		<div class="container">
+			<div class="tac">
+				<h3 style="line-height:4;">本期有5000人参加,50人有获得 $50 现金的机会哦</h3>
+			</div>
+			<div class="countdown tac clear"></div>
 
-    </div>
+			<div class="button tac" style="margin:50px 0px;">
+				<a class="btn btn-primary">立即购物参与抽奖</a>
+				<a class="btn btn-success">查看上一期中奖名单</a>
+			</div>
+		</div>
+	</div>
 
-    <div class="test" id="test2">
-        <div class="tit">
-            <h2>抽奖结果揭晓之中奖</h2>
-        </div>
-        <div class="container">
-            
-            <div class="tac">
-              <h3 style="line-height:4;">恭喜! 您中奖了.获得 $50 现金</h3>
-            </div>
+	<div class="test" id="test2">
+		<div class="tit">
+			<h2>抽奖结果揭晓之中奖</h2>
+		</div>
+		<div class="container">
+			<div class="tac">
+				<h3 style="line-height:4;">恭喜! 您中奖了.获得 $50 现金</h3>
+			</div>
+			<div class="tac">
+				<p>您可以立即提现哦.或者赚取更多的 $75 现金</p>
+				<p>参加联盟之后,只要让5位facebook上的好友注册hookbag帐号,就能获得 $75 现金哦 =。=</p>
+			</div>
 
-            <div class="tac">
-              <p>您可以立即提现哦.或者赚取更多的 $75 现金</p>
+			<div class="button tac" style="margin:50px 0px;">
+				<a href="lotto3.html" class="btn btn-primary">知足是福,我提现$50.</a>
+				<a href="union.html" class="btn btn-success">开通联盟帐号,赚取$50+$75=$125!</a>
+			</div>
+		</div>
+	</div>
 
-              <p>参加联盟之后,只要让5位facebook上的好友注册hookbag帐号,就能获得 $75 现金哦 =。=</p>
-            </div>
+	<div class="test" id="test3">
+		<div class="tit">
+			<h2>抽奖结果揭晓之没有中奖</h2>
+		</div>
+		<div class="container">
+			<div class="tac">
+				<h3 style="line-height:4;">本期抽奖已经结束哦! 您木有中奖!</h3>
+			</div>
+			<div class="tac">
+				<p>肿木办,连安慰奖都木有..........桑心</p>
+				<p>48小时内再次参与抽奖,中奖率会翻翻哦 =。=</p>
+			</div>
+			<div class="button tac" style="margin:50px 0px;">
+				<a class="btn btn-primary">立即购物,再次参与</a>
+				<a class="btn btn-success">开通联盟帐号,把本钱赚回来!</a>
+			</div>
+		</div>
 
-            <div class="button tac" style="margin:50px 0px;">
-              <a href="lotto3.html" class="btn btn-primary">知足是福,我提现$50.</a>
-              <a href="union.html" class="btn btn-success">开通联盟帐号,赚取$50+$75=$125!</a>
-            </div>
+	</div>
 
-        </div>
+	<div class="test" id="test4">
+		<div class="tit">
+			<h2>关于抽奖的常见问题</h2>
+		</div>
+		<div class="container">
 
-    </div>
+			<div class="panel-group" id="accordion" style="margin-top:20px">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<span class="icon-help"></span>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">抽奖必须拥有hookbag 帐号吗?</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							<blockquote><p>我靠!你傻呀,hookbag 这里2000万商品.但是不卖药呀,请出门左转.</p></blockquote>
+						</div>
+					</div>
+				</div>
 
-    <div class="test" id="test3">
-        <div class="tit">
-            <h2>抽奖结果揭晓之没有中奖</h2>
-        </div>
-        <div class="container">
-            
-            <div class="tac">
-              <h3 style="line-height:4;">本期抽奖已经结束哦! 您木有中奖!</h3>
-            </div>
+				{% for x in (1..6) %}
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<span class="icon-help"></span>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">参与抽奖需要购买多少钱的商品呢?</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<blockquote>参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?</blockquote>
+						</div>
+					</div>
+				</div>
 
-            <div class="tac">
-              <p>肿木办,连安慰奖都木有..........桑心</p>
-
-              <p>48小时内再次参与抽奖,中奖率会翻翻哦 =。=</p>
-            </div>
-
-            <div class="button tac" style="margin:50px 0px;">
-              <a class="btn btn-primary">立即购物,再次参与</a>
-              <a class="btn btn-success">开通联盟帐号,把本钱赚回来!</a>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="test" id="test4">
-      <div class="tit">
-        <h2>关于抽奖的常见问题</h2>
-      </div>
-      <div class="container">
-        
-        <div class="panel-group" id="accordion" style="margin-top:20px">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <span class="icon-help"></span><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                  抽奖必须拥有hookbag 帐号吗?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-              <div class="panel-body">
-                <blockquote><p>我靠!你傻呀,hookbag 这里2000万商品.但是不卖药呀,请出门左转.</p></blockquote>
-              </div>
-            </div>
-          </div>
-          {% for x in (1..6) %}
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <span class="icon-help"></span><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                  参与抽奖需要购买多少钱的商品呢?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-              <div class="panel-body">
-                <blockquote>参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?参与抽奖需要购买多少钱的商品呢?</blockquote>
-              </div>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <span class="icon-help"></span><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                  只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-              <div class="panel-body">
-                <blockquote>只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?</blockquote>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-        
-
-      </div>
-    </div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<span class="icon-help"></span>
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<blockquote>只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?只要购买商品.一定就能参加抽奖吗?中奖机率又是多少呢?</blockquote>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
 </div>
 
 <script src="../js/jquery.countdown.js"></script>
 <script type="text/javascript">
 $(function() {
-	var endDate = "April 7, 2014 11:03:25";
+var endDate = "April 7, 2014 11:03:25";
 
-	$('.countdown').countdown({
-		date: endDate,
-		render: function(data) {
-			$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 3) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
-		}
-	});
+$('.countdown').countdown({
+date: endDate,
+render: function(data) {
+$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 3) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
+}
+});
 
 });
 </script>
