@@ -1,0 +1,43 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+
+
+<div class="hb union" id="skrollr-body">
+
+  <div class="test" id="test2">
+    <div class="tit tac">
+      <h2>中奖名单</h2>
+    </div>
+    <div class="container">
+
+      <div class="hb-box">
+        <table class="table table-striped hb-reportList3">
+          <thead>
+            <tr>
+              <th>金额</th>
+              <th>用户名</th>
+              <th>时间</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for x in (1..10) %}
+            <tr>
+              <td><span class="label label-default">+$432</span></td>
+              <td>j******f@gmail.com</td>
+              <td>2013-12-11 15:33</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
