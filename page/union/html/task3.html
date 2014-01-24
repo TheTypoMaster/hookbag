@@ -1,0 +1,42 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+<div class="hb union" id="skrollr-body">
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      {% for x in (1..2) %}
+      <li class=""><a href="#unionCon{{x}}">{{x}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="unionCon tool task" id="unionCon1">
+    <div class="tit">
+      <h2>我的抽奖</h2>
+    </div>
+
+    <div class="hb-box container">
+      <table class="table table-striped hb-reportList3">
+        <thead>
+          <tr>
+            <th>活动名称</th>
+            <th>中奖时间</th>
+            <th>任务状况</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for x in (1..10) %}
+          <tr>
+            <td>中奖活动名称</td>
+            <td>2013-12-11 15:33</td>
+            <td><a href="task.html" class="btn btn-default">任务未完成</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
