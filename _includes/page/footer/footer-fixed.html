@@ -15,18 +15,18 @@
 		animateScroll(currentSlide,1000);
 		
 	});
-	var dataCon=slideTopPosisition.length;
-	var data1=slideTopPosisition[dataCon-2];
-	var data2=slideTopPosisition[dataCon-1];
-	console.log(data1);
-	$('#ui-footer').attr('data-'+data1,'bottom:-100%');
-	$('#ui-footer').attr('data-'+data2,'bottom:0%');
 	
 	skrollr.init({
 		render: function(data) {
 			//Debugging - Log the current scroll position.
 			//console.log(data.curTop);
 		}
+	});
+	$(function(){
+		$('.panel-heading').click(function(){
+			$('.panel-heading').removeClass('active');
+			$(this).addClass('active');
+		});
 	});
 </script>
 
