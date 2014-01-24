@@ -11,15 +11,14 @@ title: Hookbag
 </ul>
 </div>
 
-    <div class="test tool" id="test1">
-        <div class="tit">
+    <div class="test report" id="test1">
+        <div class="tit tac">
             <h2>效果报告</h2>
         </div>
-        <div class="container">
+        <div class="container hb-box">
 
-            <div class="panel panel-default">
-              <div class="panel-heading">快捷报告</div>
-                <table class="table table-bordered">
+              <h4 class="tit">快捷报告</h4>
+                <table class="table">
                     <tbody>
                       <tr>
                         <td>昨日收入:$423</td>
@@ -35,11 +34,9 @@ title: Hookbag
                       </tr>
                     </tbody>
               </table>
-            </div>
 
-            <div class="panel panel-default">
-              <div class="panel-heading">下线收入报告</div>
-                <table class="table table-bordered">
+              <h4 class="tit">下线收入报告</h4>
+                <table class="table">
                     <tbody>
                     {% for x in (1..5) %}
                       <tr>
@@ -49,7 +46,6 @@ title: Hookbag
                       {% endfor %}
                     </tbody>
               </table>
-            </div>
 
         </div>
 
