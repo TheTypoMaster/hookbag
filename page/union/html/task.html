@@ -1,0 +1,33 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+<div class="hb union" id="skrollr-body">
+<div class="hidden navbar-union">
+<ul class="nav">
+{% for x in (1..2) %}
+    <li class=""><a href="#test{{x}}">{{x}}</a></li>
+{% endfor %}
+</ul>
+</div>
+
+    <div class="test tool" id="test1">
+        <div class="tit">
+            <h2>我的抽奖和任务状况</h2>
+        </div>
+        <div class="container">
+            
+            <dl>
+                <dt><a href="">我的虚拟帐户情况</a></dt>
+                <dd>有多少钱: $50 (这里跳转到了 my account)</dd>
+                <dt><a href="task.html">我的抽奖和任务状况</a></dt>
+                <dd>有5次中奖  其中有5任务没完成</dd>
+                <dt><a href="">我的分享效果报告</a></dt>
+                <dd>多少返利佣金了 多少订单量</dd>
+            </dl>
+
+        </div>
+
+    </div>
+
+</div>
