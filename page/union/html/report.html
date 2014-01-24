@@ -19,24 +19,29 @@ title: Hookbag
 
               <h4 class="tit ui-left">快捷报告</h4>
                 <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>昨日收入:$423</td>
+                      <tr style="font-size:20px;">
+                        <td>昨日收入:$4232</td>
                         <td>前7日收入:$4322</td>
                         <td>本月收入:$323842</td>
                         <td>上月收入:$5242</td>
                       </tr>
+              </table>
+
+                <table class="table table-striped">
+                      
                       <tr>
-                        <td>抽奖收入:$324</td>
-                        <td>分享收入:$322</td>
-                        <td>下线收入:$3242</td>
-                        <td></td>
+                        <td colspan="4">抽奖收入:$324</td>
                       </tr>
-                    </tbody>
+                      <tr>
+                        <td colspan="4">分享收入:$322</td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">下线收入:$3242</td>
+                      </tr>
               </table>
 
               <h4 class="tit ui-left">下线收入报告</h4>
-                <table class="table">
+                <table class="table table-striped">
                     <tbody>
                     {% for x in (1..5) %}
                       <tr>
