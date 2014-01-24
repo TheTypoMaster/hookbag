@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-24T21%3A11%3A11%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-24T21%3A11%3A11%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-24T21%3A11%3A11%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-24T21%3A11%3A11%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-24T22%3A01%3A22%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-24T22%3A01%3A22%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-24T22%3A01%3A22%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-24T22%3A01%3A22%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-24T21%3A11%3A11%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-24T22%3A01%3A22%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-24T21%3A11%3A11%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-24T22%3A01%3A22%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -200,10 +200,10 @@ $(function(){
 		var element=$('.navbar-union li.active');
 		var cur=element.index();
 		var targ=element.find('a').attr('href');
-		var offsetT=$('.test').eq(1).offset().top-56;
+		var offsetT=$('.unionCon').eq(1).offset().top-56;
 		if($(window).scrollTop()>=offsetT){
-			$('.test').eq(cur).find('.tit').addClass('fixed');
-			$('.test').eq(cur).siblings().find('.tit').removeClass('fixed');
+			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
+			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
 		}else{
 			$('.tit').removeClass('fixed');
 		}
@@ -226,14 +226,14 @@ $(function(){
   <div class="hidden navbar-union">
     <ul class="nav">
       
-      <li class=""><a href="#test1">1</a></li>
+      <li class=""><a href="#unionCon1">1</a></li>
       
-      <li class=""><a href="#test2">2</a></li>
+      <li class=""><a href="#unionCon2">2</a></li>
       
     </ul>
   </div>
 
-  <div class="test report" id="test1">
+  <div class="unionCon report" id="unionCon1">
     <div class="tit tac">
       <h2>效果报告</h2>
     </div>
