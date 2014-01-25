@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-25T11%3A12%3A10%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-25T11%3A12%3A10%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-25T11%3A12%3A10%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-25T11%3A12%3A10%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-25T11%3A12%3A10%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-25T11%3A12%3A10%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -237,6 +237,13 @@ $(function(){
     <div class="tit tac">
       <h2>我的帐户</h2>
     </div>
+
+		<div class="mt20 container alert alert-success" style="max-width:600px;">
+			<div class="button pull-right">
+        <a href="union1.html" class="btn btn-success">注册</a>
+      </div>
+			<span class="pull-left mr20 glyphicon glyphicon-info-sign" style="font-size:4rem;"></span><h2>提示用户还没有加入联盟！</h2>
+		</div>
     <div class="container hb-box">
       <dl class="col-md-12">
         <dt class="ui-left mr20"><span class="icon-user5 hb-icon"></span></dt>
@@ -291,9 +298,10 @@ $(function(){
 		}
 	});
 	$(function(){
-		$('.panel-heading').click(function(){
-			$('.panel-heading').removeClass('active');
-			$(this).addClass('active');
+		$('.hb-tool').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.hb-tool-collapse').hide();
+			$($(this).attr('data-tool')).show();
 		});
 	});
 </script>
