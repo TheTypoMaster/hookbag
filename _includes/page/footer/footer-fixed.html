@@ -23,9 +23,10 @@
 		}
 	});
 	$(function(){
-		$('.panel-heading').click(function(){
-			$('.panel-heading').removeClass('active');
-			$(this).addClass('active');
+		$('.hb-tool').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.hb-tool-collapse').hide();
+			$($(this).attr('data-tool')).show();
 		});
 	});
 </script>
