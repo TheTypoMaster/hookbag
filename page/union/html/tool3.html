@@ -1,0 +1,43 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+
+
+<div class="hb union" id="skrollr-body">
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      {% for x in (1..2) %}
+      <li class=""><a href="#unionCon{{x}}">{{x}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="unionCon tool" id="unionCon1">
+    <div class="tit tac">
+      <h2>Leading Advertisement</h2>
+    </div>
+    <div class="container hb-box tac" >
+
+
+      <div class="row hb-iconList mod">
+			{% for x in (1..3) %}
+        <div class="col-sm-4">
+					<div class="doc">
+						<h3 class="title">圣诞节主打</h3>
+						<p>圣诞节的活动，大家快来领取</p>
+					</div>
+					<div class="button">
+						<a href="tool4.html" class="btn btn-info un-btn">领取</a>
+					</div>
+        </div>
+			{% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
