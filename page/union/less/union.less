@@ -412,7 +412,33 @@
 	}
 	.tool{
 		.hb-iconList{
-			padding:50px 20px;
+			padding:20px;
+			.hb-tool{
+				position:relative;
+				.hb-arrow{
+					font-size: 3.5rem;
+					position: absolute;
+					bottom: -32px;
+					left: 50%;
+					color: #f3f3f3;
+					margin-left: -.5em;
+					display:none;
+				}
+				&.active{
+					.hb-arrow{
+						display:block;
+					}
+				}
+			}
+		}
+		.hb-tool-collapse{
+			border-top:3px solid #f3f3f3;
+			.hb-icon[class^="icon-"]{
+				width:80px;
+				height:80px;
+				font-size:4rem;
+				line-height:70px;
+			}
 		}
 		#served-preview{
 			width:200px;
