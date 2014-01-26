@@ -13,70 +13,70 @@ title: Hookbag
 
   <div class="unionCon report" id="unionCon1">
     <div class="tit tac">
-      <h2>效果报告</h2>
+      <h2>Share & Income</h2>
     </div>
     <div class="container hb-box">
 
-      <h4 class="tit ui-left">快捷报告</h4>
+      <h4 class="tit ui-left">Quick View</h4>
       <table class="table table-bordered hb-reportList1">
         <tr>
-          <td>昨日收入:$4232</td>
-          <td>本月收入:$323842</td>
+          <td>Yesterday:$4232</td>
+          <td>This Month:$323842</td>
         </tr>
         <tr>
-          <td>前7日收入:$4322</td>
-          <td>上月收入:$5242</td>
+          <td>Last 7 Days:$4322</td>
+          <td>Last Month:$5242</td>
         </tr>
       </table>
 
       <div class="row hb-reportList2">
         <div class="col-sm-3 media">
           <div class="pull-left"><span class="icon-users hb-icon"></span></div>
-          <div class="media-body">上级<br><strong>上级id</strong></div>
+          <div class="media-body">Introducer<br><strong>Introducer ID</strong></div>
         </div>
         <div class="col-sm-3 media">
           <div class="pull-left"><span class="icon-alarm2 hb-icon"></span></div>
-          <div class="media-body">有效期<br><strong>55天</strong></div>
+          <div class="media-body">Validity<br><strong>55 Days</strong></div>
         </div>
         <div class="col-sm-3 media">
           <div class="pull-left"><span class="icon-credit hb-icon"></span></div>
-          <div class="media-body">下线收入<br><strong>$324</strong></div>
+          <div class="media-body">Referral Income<br><strong>$324</strong></div>
         </div>
         <div class="col-sm-3 media">
           <div class="pull-left"><span class="icon-feed hb-icon"></span></div>
-          <div class="media-body"><a href="report1.html">下线详情<br><strong>56 人</strong></a></div>
+          <div class="media-body"><a href="report1.html">Referral Details<br><strong>56 </strong></a></div>
         </div>
       </div>
 
-      <h4 class="tit ui-left">详细收入报告</h4>
+      <h4 class="tit ui-left">Income Details</h4>
       <table class="table table-striped hb-reportList3">
         <thead>
           <tr>
-            <th>金额</th>
-            <th>类型</th>
-            <th>时间</th>
-            <th>详情</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Lucky Cash</th>
+            <th>Details</th>
           </tr>
         </thead>
         <tbody>
           {% for x in (1..10) %}
           <tr>
             <td><span class="label label-success">+$432</span></td>
-            <td>抽奖</td>
+            <td>Lucky Cash</td>
             <td>2013-12-11 15:33</td>
             <td>-</td> 
           </tr>
           <tr>
             <td><span class="label label-success">+$42</span></td>
-            <td>下线</td>
+            <td>Referral</td>
             <td>2013-12-11 15:33</td>
             <td>f******k@gmail.com</td>
           </tr>
           <tr>
             <td><span class="label label-danger">-$32</span></td>
-            <td>分享</td>
+            <td>Sharing</td>
             <td>2013-12-11 15:33</td>
-            <td>被退货</td>
+            <td>Be returned</td>
           </tr>
           {% endfor %}
         </tbody>
