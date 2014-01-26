@@ -21,35 +21,38 @@ title: Hookbag
       <dl>
         <dt class="ui-left"><span class="icon-users hb-icon"></span></dt>
         <dt><a href="">Friends Inviting Task</a></dt>
-        <dd>
+        <dd class="row">
           <p class="doc">You need to bring 25 registered users. You have brought 0 registered users. When users register on Hookbag official website from your special hyperlink or fill in your login account name in the introducer column during the initial registration process,you will then be considered to have brought one registered user. </p>
 
           <hr>
 
           <p class="alert alert-success"><strong>Your promotion address:</strong></p>
-
-          {% for x in (1..5) %}
-          <form class="form-inline" role="form">
-
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail2">优惠码</label>
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="优惠码" disabled>
-            </div>
-            <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail2">Email Address</label>
-              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address">
-            </div>
-            <button type="submit" class="btn btn-default">Send</button>
-            <div class="checkbox label label-danger">
-              <label>Uncompleted</label>
-            </div>
-          </form>
-          {% endfor %}
+					<div class="col-md-6">
+						{% for x in (1..5) %}
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputEmail2">优惠码</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="优惠码">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputEmail2">Email Address</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email Address">
+							</div>
+							<button type="submit" class="btn btn-default">Send</button>
+							<div class="checkbox label label-danger">
+								<label>Uncompleted</label>
+							</div>
+						</form>
+						{% endfor %}
+					</div>
+					<div class="col-md-6">
+						<textarea class="form-control" rows="10">亲,我这有个打折码{code},可以在hookbag使用</textarea>
+					</div>
 
         </dd>
       </dl>
 
-      <div class="button tac">
+      <div class="col-md-12 button tac">
         <a class="btn btn-info">Start the other Task</a>
       </div>
 
