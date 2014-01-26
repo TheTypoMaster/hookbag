@@ -22,13 +22,28 @@
 			//console.log(data.curTop);
 		}
 	});
-	$(function(){
-		$('.hb-tool').click(function(){
-			$(this).addClass('active').siblings().removeClass('active');
-			$('.hb-tool-collapse').hide();
-			$($(this).attr('data-tool')).show();
-		});
+$(function(){
+	$('.hb-tool').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.hb-tool-collapse').hide();
+		$($(this).attr('data-tool')).show();
 	});
+	function checkSpy(){
+		var element=$('.navbar-union li.active');
+		var len=$('.unionCon').length;
+		var cur=element.index();
+		console.log(cur);
+		var targ=element.find('a').attr('href');
+		var offsetT=$('.unionCon').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT&&cur<len){
+			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
+			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	}
+	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+});
 </script>
 
 

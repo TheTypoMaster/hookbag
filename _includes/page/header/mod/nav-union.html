@@ -22,26 +22,3 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
   </div>
 </div>
 
-<script>
-$(function(){
-	function checkSpy(){
-		var element=$('.navbar-union li.active');
-		var cur=element.index();
-		var targ=element.find('a').attr('href');
-		var offsetT=$('.unionCon').eq(1).offset().top-56;
-		if($(window).scrollTop()>=offsetT){
-			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
-			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
-		}else{
-			$('.tit').removeClass('fixed');
-		}
-	}
-	
-	
-	 $(window).on('load', function () {
-      $('body').scrollspy('refresh');
-    })	
-	
-	$('.navbar-union').on('activate.bs.scrollspy',checkSpy)
-});
-</script>
