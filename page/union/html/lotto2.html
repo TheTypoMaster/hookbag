@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -179,12 +179,12 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
 
-          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
-          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
-          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
-          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
-          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
-          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>
+          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> Lucky Cash</a></li>
+          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> CRP Club</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> Tools</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
 
         
       </ul>
@@ -194,29 +194,6 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
   </div>
 </div>
 
-<script>
-$(function(){
-	function checkSpy(){
-		var element=$('.navbar-union li.active');
-		var cur=element.index();
-		var targ=element.find('a').attr('href');
-		var offsetT=$('.unionCon').eq(1).offset().top-56;
-		if($(window).scrollTop()>=offsetT){
-			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
-			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
-		}else{
-			$('.tit').removeClass('fixed');
-		}
-	}
-	
-	
-	 $(window).on('load', function () {
-      $('body').scrollspy('refresh');
-    })	
-	
-	$('.navbar-union').on('activate.bs.scrollspy',checkSpy)
-});
-</script>
 
 
 </div>
@@ -236,6 +213,7 @@ $(function(){
       <li class=""><a href="#unionCon4">4</a></li>
       
     </ul>
+    </ul>
   </div>
 
   <div class="unionCon" id="unionCon1">
@@ -249,23 +227,25 @@ $(function(){
       <div class="countdown tac clear"></div>
 
       <div class="button tac" style="margin:50px 0px;">
-        <a class="btn btn-primary">立即购物参与抽奖</a>
-        <a class="btn btn-success">查看上一期中奖名单</a>
+        <a class="btn btn-primary">Shopping to Draw</a>
+        <a class="btn btn-success">Latest Winners' List</a>
       </div>
     </div>
   </div>
 
-  <div class="unionCon" id="unionCon2">
+  <div class="unionCon" id="unionCon2" style="padding-top:160px;padding-bottom:100px;">
     <div class="tit">
       <h2>抽奖结果揭晓之中奖</h2>
     </div>
     <div class="container">
       <div class="tac">
-        <h3 style="line-height:4;">Congratulations you win!Get $50 CASH!</h3>
+        <h3 style="line-height:2;">Congratulations!</h3>
+        <h3>You have won in Hookbag’s Lucky Cash Sweepstakes.</h3>
+        <h4 style="line-height:2;">Please claim you prize before the expiration date</h4>
       </div>
-      <div class="tac">
-        <p>You can withdraw the cash now, or get the other $75.</p>
-        <p>Share your winning news to your friends on Facebook and let 25 of them to rigister on HookBag, then you can get $75 CASH!</p>
+      <div class="tac" style="width:800px;margin:0 auto;">
+        <p>Award amount is CAD 125.  Agree with Hookbag’s Winners Rules Agreement, and you will get a CAD 50 cash prize. After confirming the agreement, you can win another CAD 75 by completing Hookbag’s specified tasks.</p>
+        <p>Bonuses will be transferred to your Cash Account. Bonuses in Cash Account can be cashed and used for shopping on Hookbag. These bonuses will never expire.</p>
       </div>
 
       <div class="button tac" style="margin:50px 0px;">
@@ -275,7 +255,7 @@ $(function(){
     </div>
   </div>
 
-  <div class="unionCon" id="unionCon3">
+  <div class="unionCon" id="unionCon3" style="padding-bottom:200px;">
     <div class="tit">
       <h2>抽奖结果揭晓之没有中奖</h2>
     </div>
@@ -285,143 +265,32 @@ $(function(){
       </div>
       <div class="tac">
         <p>肿木办,连安慰奖都木有..........桑心</p>
-        <p>48小时内再次参与抽奖,中奖率会翻翻哦 =。=</p>
+        <p>Take another try withing 48 hrs to double your odds</p>
       </div>
       <div class="button tac" style="margin:50px 0px;">
-        <a class="btn btn-primary">立即购物,再次参与</a>
+        <a class="btn btn-primary">Shopping now to join again!</a>
       </div>
     </div>
 
   </div>
-<!--
-  <div class="unionCon" id="unionCon4">
+  <div class="unionCon" id="unionCon4" style="padding-bottom:200px;">
     <div class="tit">
-      <h2>FAQ</h2>
+      <h2>抽奖结果揭晓之还没有参加活动</h2>
     </div>
     <div class="container">
-
-      <div class="panel-group" id="accordion" style="margin-top:20px">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How can I win?</a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <blockquote><p>You can get a Lucky Cash & Prize Entry ticket by spending CAD 50 or more on Hookbag. The more tickets you get, the more chances you win.</p></blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">What should I do to get all the bonuses after I have won?</a>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>You can get a CAD 50 Cash Prize by confirming Hookbag’s Winners Rules Agreement after you have won. You can get another CAD 50 task bonus by completing sharing tasks after you have won. After you complete the sharing tasks, you can get another CAD 25 task bonus by bringing in newly registered users. Meanwhile, each newly registered user that joins also earns a CAD 5 Gift Certificate per person just for joining.</blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">How to get qualified for Hookbag’s Commission Referral Program Members?</a>
-            </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>Users who have won in Hookbag’s Lucky Cash Sweepstakes activities will become Hookbag’s Commission Referral Program Members. Other users can become Hookbag’s Commission Referral Program Members by filling in the introducer’s unique code during the initial registration process, and by also spending CAD 100 or more on Hookbag after their registration. Membership is valid for 1 year. If the cumulative spending reaches CAD 100 again within the validity, then the validity will extend.</blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">How can I get a rebate?</a>
-            </h4>
-          </div>
-          <div id="collapseFour" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>For example, User A is a Hookbag Commission Referral Program Member. User A is User B’s direct introducer. When B makes a purchase on Hookbag, all Commission Referral Program members above B in the Program network will get different amounts of Commission Bonuses. User A will receive a 3% Direct Sales Commission from User B's total purchase. User C is User A’s direct introducer in the Commission Referral Program network and User C will receive a 1% of Passive Income from User B’s total purchase. User D is User C’s direct introducer in the Commission Referral Program network and User D will receive a 0.5% of Passive Income from User B’s total purchase. and so on. Each level will get half Commission amount of its lower level.<br>(Note: This purchase amount mentioned above does not include Shipping/Handling/Taxes.)
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">I am already a Hookbag’s Commission Referral Program Member, what methods do Hookbag provide to let me share and get Commission Bonuses?</a>
-            </h4>
-          </div>
-          <div id="collapseFive" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>Commission Referral Program members can share Hookbag’s website and bring registered users by sharing product images and links, Hookbag activities, Hookbag functions and by other methods. When brought registered users consume on Hookbag, you can get Commission Bonuses.
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">How to maintain my Hookbag Commission Referral Program Membership?</a>
-            </h4>
-          </div>
-          <div id="collapseSix" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>If your cumulative consumption reaches CAD 100 within the validity, your membership will extend for 1 year.
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">What should I do if I want to withdraw cash from my Cash Account?</a>
-            </h4>
-          </div>
-          <div id="collapseSeven" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>Commission Referral Program members can freely withdraw cash from your Hookbag Cash Account. Available withdrawal channels are PayPal, credit card and company check.
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <span class="icon-help"></span>
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Why can my Commission Bonuses only be cashed after 45 days?</a>
-            </h4>
-          </div>
-          <div id="collapseEight" class="panel-collapse collapse">
-            <div class="panel-body">
-              <blockquote>Commission Bonuses will be transferred to Commission Bonuses winner’s Cash Account after the consumer completes the payment. If the consumer claims a return or refund within the 45 Days of Worry-Free Coverage, Commission Bonuses will be invalid. After the 45 Days of Worry-Free Coverage, Commission Bonuses will change from a hold on funds status to useable funds status. Under the useable funds status, Commission Bonuses can then be cashed. 
-              </blockquote>
-            </div>
-          </div>
-        </div>
-
+      <div class="tac">
+        <h3 style="line-height:4;">Oops!</h3>
+      </div>
+      <div class="tac">
+        <p>还没有参加活动</p>
+        <p>参加了活动才可以抽奖哦 =。=</p>
+      </div>
+      <div class="button tac" style="margin:50px 0px;">
+        <a class="btn btn-primary">立即购物,参与活动</a>
       </div>
     </div>
+
   </div>
--->
 </div>
 
 <script src="../js/jquery.countdown.js"></script>
@@ -464,13 +333,28 @@ $(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 3) + "<span
 			//console.log(data.curTop);
 		}
 	});
-	$(function(){
-		$('.hb-tool').click(function(){
-			$(this).addClass('active').siblings().removeClass('active');
-			$('.hb-tool-collapse').hide();
-			$($(this).attr('data-tool')).show();
-		});
+$(function(){
+	$('.hb-tool').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.hb-tool-collapse').hide();
+		$($(this).attr('data-tool')).show();
 	});
+	function checkSpy(){
+		var element=$('.navbar-union li.active');
+		var len=$('.unionCon').length;
+		var cur=element.index();
+		console.log(cur);
+		var targ=element.find('a').attr('href');
+		var offsetT=$('.unionCon').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT&&cur<len){
+			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
+			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	}
+	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+});
 </script>
 
 

@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-25T22%3A42%3A03%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-25T22%3A42%3A03%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -179,12 +179,12 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
 
-          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 联盟首页</a></li>
-          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> 抽奖</a></li>
-          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> 分享</a></li>
-          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> 工具</a></li>
-          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> 帐户</a></li>
-          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> 帮助</a></li>
+          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>
+          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> Lucky Cash</a></li>
+          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> CRP Club</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> Tools</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
 
         
       </ul>
@@ -194,29 +194,6 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
   </div>
 </div>
 
-<script>
-$(function(){
-	function checkSpy(){
-		var element=$('.navbar-union li.active');
-		var cur=element.index();
-		var targ=element.find('a').attr('href');
-		var offsetT=$('.unionCon').eq(1).offset().top-56;
-		if($(window).scrollTop()>=offsetT){
-			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
-			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
-		}else{
-			$('.tit').removeClass('fixed');
-		}
-	}
-	
-	
-	 $(window).on('load', function () {
-      $('body').scrollspy('refresh');
-    })	
-	
-	$('.navbar-union').on('activate.bs.scrollspy',checkSpy)
-});
-</script>
 
 
 </div>
@@ -373,13 +350,28 @@ $(function(){
 			//console.log(data.curTop);
 		}
 	});
-	$(function(){
-		$('.hb-tool').click(function(){
-			$(this).addClass('active').siblings().removeClass('active');
-			$('.hb-tool-collapse').hide();
-			$($(this).attr('data-tool')).show();
-		});
+$(function(){
+	$('.hb-tool').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.hb-tool-collapse').hide();
+		$($(this).attr('data-tool')).show();
 	});
+	function checkSpy(){
+		var element=$('.navbar-union li.active');
+		var len=$('.unionCon').length;
+		var cur=element.index();
+		console.log(cur);
+		var targ=element.find('a').attr('href');
+		var offsetT=$('.unionCon').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT&&cur<len){
+			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
+			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	}
+	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+});
 </script>
 
 
