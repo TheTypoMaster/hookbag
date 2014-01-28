@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -179,13 +179,12 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
 
-          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>
+          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home Page</a></li>
           <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> Lucky Cash</a></li>
           <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> CRP Club</a></li>
-          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> Tools</a></li>
-          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> CRP Tools</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> Account Management</a></li>
           <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
-
         
       </ul>
       
@@ -203,31 +202,31 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
 
   <div class="unionCon tool" id="unionCon1">
     <div class="tit tac">
-      <h2>product link</h2>
+      <h2>Product Link</h2>
     </div>
     <div class="container">
 
       <div class="hb-box row">
 				<form class="form-horizontal" role="form">
 					<div class="form-group">
-						<label for="proId" class="pull-left control-label">商品 ID</label>
-						<div class="col-sm-3">
+						<label for="proId" class="pull-left control-label">Product SKU/UPC</label>
+						<div class="col-sm-2">
 							<input type="text" class="form-control" id="proId" placeholder="H3C0CT92K">
 						</div>
-						<input type="submit" class="col-sm-1 btn btn-default">
+						<input type="submit" class="col-sm-1 btn btn-default" value="Search">
 					</div>
 					<div class="form-group">
-						<label for="proName" class="pull-left control-label">商品名字</label>
-						<div class="col-sm-7">
+						<label for="proName" class="pull-left control-label">Product Description/Name</label>
+						<div class="col-sm-6">
 							<input type="text" class="form-control" id="proName" placeholder="2640C H/U LITE 4AA BAT PACK + HALOGEN/3 LED">
 						</div>
-						<label for="proName" class="pull-left control-label">商品价格</label>
+						<label for="proName" class="pull-left control-label">Price</label>
 						<div class="col-sm-1">
 							<input type="text" class="form-control" id="proName" placeholder="505.22">
 						</div>
 						<div class="col-sm-2">
 							<select class="form-control">
-								<option>track id</option>
+								<option>Track ID</option>
 								<option>2</option>
 								<option>3</option>
 								<option>4</option>
@@ -241,19 +240,19 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
 								<div class="radio radio-inline">
 									<label>
 										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-										图片+文字
+										Product Image + Product Description
 									</label>
 								</div>
 								<div class="radio radio-inline">
 									<label>
 										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
-										图片
+										Product Image
 									</label>
 								</div>
 								<div class="radio radio-inline">
 									<label>
 										<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" >
-										文字
+										Product Description
 									</label>
 								</div>
 							</div>

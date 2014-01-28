@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-27T14%3A13%3A34%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-01-28T08%3A48%3A17%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-27T14%3A13%3A34%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-01-28T08%3A48%3A17%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -179,13 +179,12 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
 
-          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Homepage</a></li>
+          <li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home Page</a></li>
           <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> Lucky Cash</a></li>
           <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> CRP Club</a></li>
-          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> Tools</a></li>
-          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> CRP Tools</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> Account Management</a></li>
           <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
-
         
       </ul>
       
@@ -218,75 +217,71 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
 
   <div class="unionCon" id="unionCon1">
     <div class="tit">
-      <h2>抽奖之前</h2>
+      <h2>Current Status</h2>
     </div>
     <div class="container">
-      <div class="tac">
-        <h3 style="line-height:4;">333 people to share $5000 prize!</h3>
+      <div class="tac pt20">
+        <h3>333 people to share $5000 prize!</h3>
+				<h4 style="line-height:4;">Time Remaining Until Next Drawing</h4>
       </div>
       <div class="countdown tac clear"></div>
 
       <div class="button tac" style="margin:50px 0px;">
-        <a class="btn btn-primary">Shopping to Draw</a>
-        <a class="btn btn-success">Latest Winners' List</a>
+        <a class="btn btn-primary">Go Shopping to Get a Lucky Cash Ticket</a>
+        <a class="btn btn-success">Previous Winners List</a>
       </div>
     </div>
   </div>
 
-  <div class="unionCon" id="unionCon2" style="padding-top:160px;padding-bottom:100px;">
+  <div class="unionCon" id="unionCon2">
     <div class="tit">
-      <h2>抽奖结果揭晓之中奖</h2>
+      <h2>Winners Status</h2>
     </div>
-    <div class="container">
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
       <div class="tac">
-        <h3 style="line-height:2;">Congratulations!</h3>
-        <h3>You have won in Hookbag’s Lucky Cash Sweepstakes.</h3>
-        <h4 style="line-height:2;">Please claim you prize before the expiration date</h4>
+        <h3 style="line-height:2;">Congratulations You Have Won!</h3>
+        <h3> Claim Your $50 Now!</h3>
+        <ul style="line-height:2;list-style-type:none;">
+					<li>You can withdraw your cash prize now.You can win $25 more by sharing and Linking Facebook.You can win another $50 by inviting 5 friends. First 5 of your friends that enroll will win a $10 Gift Certificate each. (Gift Certificate only good for actual purchase amount of product. Gift Certificate cannot be applied to Tax, Shipping, and EHF)</li>
+				</ul>
       </div>
-      <div class="tac" style="width:800px;margin:0 auto;">
-        <p>Award amount is CAD 125.  Agree with Hookbag’s Winners Rules Agreement, and you will get a CAD 50 cash prize. After confirming the agreement, you can win another CAD 75 by completing Hookbag’s specified tasks.</p>
-        <p>Bonuses will be transferred to your Cash Account. Bonuses in Cash Account can be cashed and used for shopping on Hookbag. These bonuses will never expire.</p>
-      </div>
+
 
       <div class="button tac" style="margin:50px 0px;">
         <a href="lotto3.html" class="btn btn-primary">Get $50 CASH</a>
-        <a href="union.html" class="btn btn-success">Join CRP Club to get $50+$75</a>
       </div>
     </div>
   </div>
 
-  <div class="unionCon" id="unionCon3" style="padding-bottom:200px;">
+  <div class="unionCon" id="unionCon3">
     <div class="tit">
-      <h2>抽奖结果揭晓之没有中奖</h2>
+      <h2>Current Status</h2>
     </div>
-    <div class="container">
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
       <div class="tac">
-        <h3 style="line-height:4;">Oops!</h3>
-      </div>
-      <div class="tac">
-        <p>肿木办,连安慰奖都木有..........桑心</p>
-        <p>Take another try withing 48 hrs to double your odds</p>
+        <h3 style="line-height:4;">Sorry!</h3>
+        <h4>You didn’t win this period. Try Again!</h4>
       </div>
       <div class="button tac" style="margin:50px 0px;">
-        <a class="btn btn-primary">Shopping now to join again!</a>
+        <a class="btn btn-primary">Go Shopping Now</a>
       </div>
     </div>
 
   </div>
-  <div class="unionCon" id="unionCon4" style="padding-bottom:200px;">
+  <div class="unionCon" id="unionCon4" >
     <div class="tit">
-      <h2>抽奖结果揭晓之还没有参加活动</h2>
+      <h2>Prize Entry Ticket Qualification Status</h2>
     </div>
-    <div class="container">
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
       <div class="tac">
-        <h3 style="line-height:4;">Oops!</h3>
+        <h3 style="line-height:4;">Sorry, you need to spend at least $50 to get a ticket.</h3>
       </div>
       <div class="tac">
-        <p>还没有参加活动</p>
-        <p>参加了活动才可以抽奖哦 =。=</p>
+        <p>Hookbag has a lot of great products at low prices.</p>
+        <p>Spend a little more and get a Prize Entry Ticket.</p>
       </div>
       <div class="button tac" style="margin:50px 0px;">
-        <a class="btn btn-primary">立即购物,参与活动</a>
+        <a class="btn btn-primary">Go Shopping</a>
       </div>
     </div>
 
