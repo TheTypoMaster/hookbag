@@ -62,7 +62,8 @@
             height: 250px;
         }
         p {
-            font-size: 18px;
+           // font-size: 18px;
+						padding:5% 12%;
         }
         .row {
             margin-bottom: 2em;
@@ -83,6 +84,7 @@
         p {
             font-size: 18px;
             line-height: 40px;
+						padding:40px;
         }
         img {
             margin-bottom: 2em;
@@ -276,7 +278,7 @@
 		display: inline-block;
 		margin: 0 auto;
 		border-radius: 50%;
-		line-height: 100px;
+		line-height: 85px;
 		font-size: 45px;
 		border:5px solid #f3f3f3;
 		text-align:center;
@@ -393,13 +395,13 @@
 				border-radius:3px 3px 0 0;
 			}
 			.hb-reportList1{
-				font-size:20px;
+				font-size:18px;
 				td{
 					padding:5px 10px;
 				}
 			}
 			.hb-reportList2{
-				font-size:18px;
+				font-size:15px;
 				margin:50px 0;
 				.media{
 					margin-top:0;
@@ -425,7 +427,12 @@
 			padding:20px;
 			.hb-tool{
 				position:relative;
+				color:#aaa;
 				min-height: 250px;
+				cursor:pointer;
+				.title{
+					color:#666;
+				}
 				.hb-arrow{
 					font-size: 3.5rem;
 					position: absolute;
@@ -436,6 +443,10 @@
 					display:none;
 				}
 				&.active{
+					color:#666;
+					.title{
+						color:#333;
+					}
 					.hb-arrow{
 						display:block;
 					}
@@ -445,15 +456,11 @@
 		.hb-tool-collapse{
 			border-top:3px solid #f3f3f3;
 			.hb-iconList>a{
-				color:#aaa;
 				.hb-icon[class^="icon-"]{
 					width:80px;
 					height:80px;
 					font-size:4rem;
 					line-height:70px;
-				}
-				&:hover{
-					color:@color;
 				}
 			}
 		}
@@ -471,13 +478,6 @@
 			}
 			textarea{
 				border-radius:0;
-			}
-		}
-		.hb-tool{
-			cursor:pointer;
-			color:#aaa;
-			&.active{
-				color:@color;
 			}
 		}
 	}
