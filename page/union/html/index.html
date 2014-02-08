@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -219,12 +219,13 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
     <p>The Hookbag Team wishes to express our appreciation of your business and patronage with our Shopping Platform. We want to reward our loyal customers for their support and patronage for the  past 2 years. </p>
     <p>Hookbag could have not grown without their support. To show our Customer Appreciation, Hookbag is launching  a Lucky Cash Sweepstakes. In the begining of our Contest, Hookbag will draw names and award our customers various cash prizes and award a very special Hookbag Commission Referal Program Club(The "CRP Club") Membership to existing and new customers. This new CRP Club allows members to earn and collect Direct Commissions for Direct Referal Sales, and Indirect Referral Commission Bonuses. We wish to expand not only our business but increase business opportunities for our valued Associated Affiliates and Buyers. </p>
      <p>Hookbag has over 10 Million products available for sale. Due to limited space on Hookbag's Website to show all these items, if you don't see it listed or shown on our website, please feel free to ask 1 of our Customer Service Representatives to find it for you and give you a price quote. Hookbag is dedicated in providing High Quality Service and Customer Satisfaction.</p>
+		 <p class="pull-right">CEO:Jerry Pearson</p>
   </div>
 </div>
 
 <div class="scene mod scene-left-scroll" data-600="left:100%;" data-900="left:0%;">
   <div class="col-md-4 ui bgc wet-asphalt tac">
-		<h2><span class="icon-credit hb-icon ui color wet-asphalt"></span></h2>
+		<h2><span class="icon-heart hb-icon ui color wet-asphalt"></span></h2>
     <h2 class="tit">Lucky Cash</h2>
     <p style="padding:5% 18%;height:130px;">Every $50 of actual purchase you make, you will have a chance to win Cash Prizes.</p>
     <div class="button">
@@ -310,6 +311,11 @@ $(function(){
 		}
 	}
 	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+	$('.showTip').tooltip({
+		container: '.showTip',
+		html: true,
+		title: $(this).find('.tooltip').html()
+	});
 });
 </script>
 

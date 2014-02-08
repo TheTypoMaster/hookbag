@@ -21,21 +21,21 @@
 
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
 
-<script src="/style/base/jquery/jquery.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/v3/js/app.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<script src="/style/base/jquery/jquery.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 
-<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-02-07T12%3A50%3A51%2B08%3A00">
-<script src="/style/base/select2/select2.min.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-02-08T21%3A17%3A14%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 <!--延迟加载-->
 
-<script src="/style/base/holderjs/holder.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
-<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-02-07T12%3A50%3A51%2B08%3A00"></script>
+<script src="/style/base/holderjs/holder.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-02-08T21%3A17%3A14%2B08%3A00"></script>
 <script>
 $(document).ready(function() {
   $('[data-toggle=offcanvas]').click(function() {
@@ -247,6 +247,7 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
       </div>
 
       <h4 class="tit ui-left">Income Details</h4>
+      <h4 class="ui-left" style="margin:0 0 0 10px;"><a href="mya.html" class="btn btn-default">MY CASH</a></h4>
       <table class="table table-striped hb-reportList3">
         <thead>
           <tr>
@@ -481,8 +482,16 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
           
         </tbody>
       </table>
-
-    </div>
+			<ul class="pagination pull-right">
+				<li class="disabled"><a href="#">«</a></li>
+				<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">»</a></li>
+			</ul>
+		 </div>
 
   </div>
 
@@ -535,6 +544,11 @@ $(function(){
 		}
 	}
 	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+	$('.showTip').tooltip({
+		container: '.showTip',
+		html: true,
+		title: $(this).find('.tooltip').html()
+	});
 });
 </script>
 
