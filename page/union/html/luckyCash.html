@@ -1,0 +1,65 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+<div class="hb union" id="skrollr-body">
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      {% for x in (1..2) %}
+      <li class=""><a href="#unionCon{{x}}">{{x}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="unionCon luckyCash" id="unionCon1">
+    <div class="tit tac">
+      <h2>我的奖券</h2>
+    </div>
+    <div class="container hb-box">
+
+      <table class="table table-striped ">
+        <thead>
+          <tr>
+            <th>获得时间</th>
+            <th>个数</th>
+            <th>获得途径</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for x in (1..5) %}
+          <tr>
+            <td>2013-12-11 15:33</td>
+            <td class="showTip" id="0{{x}}" data-id="#0{{x}}" data-toggle="tooltip" data-placement="left" title="">6
+						</td>
+            <td>人品大发，朋友给送的</td>
+          </tr>
+          <tr>
+            <td>2013-12-11 15:33</td>
+            <td class="showTip" id="{{x}}" data-id="{{x}}" data-toggle="tooltip" data-placement="left" title="">6
+						</td>
+            <td>通过完成订单<a href="">1113918366203887</a>获得</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+			<div class="tooltip">
+				<div class="tooltip-inner">
+					<p>所有奖券号：002200 001100 002200 001100 002200 001100 </p>
+					<p>中奖奖券号：002200 </p>
+				</div>
+				<div class="tooltip-arrow"></div>
+			</div>
+			<ul class="pagination pull-right">
+				<li class="disabled"><a href="#">«</a></li>
+				<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">»</a></li>
+			</ul>
+    </div>
+
+  </div>
+
+</div>

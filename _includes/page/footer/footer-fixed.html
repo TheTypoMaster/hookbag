@@ -43,6 +43,11 @@ $(function(){
 		}
 	}
 	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+	$('.showTip').tooltip({
+		container: '.showTip',
+		html: true,
+		title: $(this).find('.tooltip').html()
+	});
 });
 </script>
 
