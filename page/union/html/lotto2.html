@@ -115,7 +115,7 @@ var endDate = "April 7, 2014 11:03:25";
 $('.countdown').countdown({
 date: endDate,
 render: function(data) {
-$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 3) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
+$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 2) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
 }
 });
 
