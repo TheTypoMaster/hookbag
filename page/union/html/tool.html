@@ -17,22 +17,28 @@ title: Hookbag
     <div class="tit tac">
       <h2>Commission Referral Club Member Tools</h2>
     </div>
-    <div class="container hb-box tac" style="width:800px;">
+    <div class="container hb-box tac">
 
 
       <div class="row hb-iconList">
-        <a href="tool1.html" class="hb-tool col-sm-4">
+        <a class="hb-tool col-sm-3" data-tool="#tool0">
+					<span class="icon-arrow-up6 hb-arrow"></span>
+          <span class="icon-facebook hb-icon"></span>
+          <h4 class="title">Share products</h4>
+					<p>Share a specific product on the Hookbag product page.</p>
+        </a>
+        <a href="tool1.html" class="hb-tool col-sm-3">
           <span class="icon-link hb-icon"></span>
           <h4 class="title">Product Links</h4>
 					<p>Link a specific product from Hookbag to your website.</p>
         </a>
-        <div class="col-sm-4 hb-tool" data-tool="#tool2">
+        <div class="col-sm-3 hb-tool" data-tool="#tool2">
 					<span class="icon-arrow-up6 hb-arrow"></span>
           <span class="icon-images hb-icon"></span>
           <h4 class="title">Create Banner Link Advertisement</h4>
 					<p>Create Banner Advertisement for Hookbag Prmotions. Showcase hot deals from Hookbag on your site.</p>
         </div>
-        <div class="col-sm-4 hb-tool" data-tool="#tool3">
+        <div class="col-sm-3 hb-tool" data-tool="#tool3">
 					<span class="icon-arrow-up6 hb-arrow"></span>
           <span class="icon-cog3 hb-icon"></span>
           <h4 class="title">Widgets</h4>
@@ -40,6 +46,14 @@ title: Hookbag
         </div>
       </div>
 
+			<div id="tool0" class="hb-tool-collapse collapse">
+				<div class="row hb-iconList mod">
+					<img style="width:100%" src="../img/tool-share.png">
+					<div class="button">
+						<a class="btn btn-info btn-lg">Go Shopping Now!</a>
+					</div>
+				</div>
+			</div>
 			<div id="tool2" class="hb-tool-collapse collapse">
 				<div class="row hb-iconList mod">
 				{% for x in (1..12) %}
