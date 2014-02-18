@@ -1,27 +1,15 @@
 	
 <script type="text/javascript" src="../js/skrollr.js"></script>
 <script type="text/javascript">
-	// ScrollTo Navigation 
-	var slideTopPosisition = [];
-	$('.scene').each(function(){
-		slideTopPosisition.push($(this).index()*300);
-	});
-	console.log(slideTopPosisition);
-	var animateScroll = function(currentSlide,duration) {
-		$('html, body').animate({ scrollTop: slideTopPosisition[currentSlide] }, duration);
-	}
-	$('.hb-slide>li').on('click', function() {
-		var currentSlide=$(this).attr('data-current');
-		animateScroll(currentSlide,1000);
-		
-	});
+
 	
-	skrollr.init({
-		render: function(data) {
-			//Debugging - Log the current scroll position.
-			//console.log(data.curTop);
-		}
-	});
+skrollr.init({
+	render: function(data) {
+		//Debugging - Log the current scroll position.
+		//console.log(data.curTop);
+	}
+});
+//tool
 $(function(){
 	$('.hb-tool').click(function(){
 		$(this).addClass('active').siblings().removeClass('active');
@@ -32,7 +20,6 @@ $(function(){
 		var element=$('.navbar-union li.active');
 		var len=$('.unionCon').length;
 		var cur=element.index();
-		console.log(cur);
 		var targ=element.find('a').attr('href');
 		var offsetT=$('.unionCon').eq(1).offset().top-56;
 		if($(window).scrollTop()>=offsetT&&cur<len){
@@ -43,6 +30,8 @@ $(function(){
 		}
 	}
 	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+
+	//showTip
 	$('.showTip').tooltip({
 		container: '.showTip',
 		html: true,
