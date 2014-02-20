@@ -4,7 +4,15 @@
 		font-size:15px;
 		h1,h2,h3,h4,h5,h6{
 			font-family:calibri,"Helvetica Neue",Helvetica,Arial,sans-serif;
-			font-size:23px;
+			font-size:21px;
+			font-weight:bold;
+			line-height:21px;
+		}
+		h4,{
+			font-size:18px;
+		}
+		h5,h6{
+			font-size:16px;
 		}
     .container {
         width: 1140px;
@@ -490,6 +498,37 @@
 			textarea{
 				border-radius:0;
 			}
+		}
+	}
+	.crp{
+		&.border{
+			border-top:1px solid #ddd;
+			-webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
+			-moz-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
+			margin-top:30px;
+		
+		}
+		a{
+			text-decoration:underline;
+			font-weight:700;
+		}
+		.button a{
+			text-decoration:none;
+		}
+		.blue{
+			color:@color;
+		}
+		.red{
+			color:red;
+		}
+		.col-md-4{
+			.thumbnail{
+				border-width:0;
+				border-radius:0;
+				min-height:360px;
+			}
+
 		}
 	}
 }
