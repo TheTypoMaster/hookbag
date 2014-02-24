@@ -199,100 +199,97 @@ data-56="position:fixed;top:0;width:100%;z-index:999;"
   
 
 <div class="hb union" id="skrollr-body">
-
-  <div class="unionCon tool" id="unionCon1">
-    <div class="tit tac">
-      <h2>Search Box</h2>
-    </div>
-    <div class="container">
-
-      <div class="hb-box row">
-				<form class="form-horizontal" role="form">
-					<div class="form-group">
-				
-						<div class="checkbox checkbox-inline">
-						Search Box Structure：Search Box+
-						</div>
-						<div class="checkbox checkbox-inline">
-							<label>
-								<input type="checkbox" value="" checked>
-								Hookbag Logo +
-							</label>
-						</div>					
-						<div class="checkbox checkbox-inline">
-							<label>
-								<input type="checkbox" value="">
-								Hot Keywords + Search Box
-							</label>
-						</div>					
-					</div>
-					<div class="form-group">
-							<div class="col-sm-3">
-								<input type="text" class="form-control" placeholder="Width of Search Box:345px">
-							</div>
-							<div class="col-sm-2">
-								<select class="form-control">
-									<option>Track ID</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-							<div class="col-sm-12">
-								<div id="served-preview" class="clearfix thumbnail tac" style="width:450px;">
-									<a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo.bak.png"></a>
-									<div class="form-group pull-left mt10" style="width:345px;margin-left:20px;">
-										<input type="search" class="form-control"  placeholder="Product Description/SKU/UPC">
-									</div>
-									<button type="submit" class="pull-left btn btn-default mt10">Search</button>
-									<div id="keywords" class="col-md-12 viewkeywords">
-										<!--<div class="pull-left ml20">Hot Keywords</div> 
-										<div class="col-md-9 text-left">
-											<a href="#">数码摄像机</a>
-										
-											<a href="#">索尼</a>
-										
-											<a href="#">单反相机</a>
-										
-											<a href="#">奥林巴斯</a>
-										
-											<a href="#">600D</a>
-										
-											<a href="#">550D</a>
-										
-											<a href="#">诺基亚</a>
-										
-											<a href="#">HTC</a>
-										 
-										</div>-->
-									</div>
-								</div>
-							<!--img-->
-							</div>			
-					</div>
-					<div class="form-group">
-						<div class="col-sm-12 hb-copy">
-						 <label for="" style="display:block;text-align:center;">HTML CODE</label>
-							<textarea class="form-control" id="getHtml" rows="7"><div style="text-align: center; margin: 0px auto; padding: 5px 5px 0px; width: 125px;border:1px solid #000;"><a class="imgUrl" href="http://demo.hookbag.ca/commerce/item/view/sku/H3C00U5Z3/token/T_32_3"><img src="http://images.hookbag.ca/d/0/df23aa84031cd80d/thumb.jpg"></a><span style="font-size:12px;"><a href="http://demo.hookbag.ca/commerce/item/view/sku/H3C00U5Z3/token/T_32_3">Intel Core 2 Quad Processor Q9550 2.83GHz 1333MHz 12 MB LGA775 EM64T CPU BX80569Q9550</a></span><br/><span style="font-size:12px;">PRICE:502.52</span><input type="image" name="submit.add" value="Buy from Amazon.com" alt="Buy from Amazon.com" src="https://images-na.ssl-images-amazon.com/images/G/01/buttons/buy-from-tan.gif"><p id="privacy"><a href="http://www.amazon.com/gp/dra/info" target="_blank">Privacy Information</a></p></div>
-							</textarea>
-							<input type="submit" class="btn btn-default un-btn" value="COPY">
-						</div>
-					</div>
-				</form>	
-
-				
-				
-      </div>
-
+  <div class="hidden navbar-union">
+    <ul class="nav">
       
+      <li class=""><a href="#unionCon1">1</a></li>
+      
+      <li class=""><a href="#unionCon2">2</a></li>
+      
+    </ul>
+  </div>
 
-    </div>
+  <div class="unionCon" id="unionCon1">
+    <div class="tit tac"><h2>My Orders</h2></div>
+    <div class="container mt20">
+    <div class="myaOrder">
+          <table class="table tableMya table-striped table-bordered skin-table-mya skin-cart">
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+              <th>ID</th>
+              <th>Payment Status</th>
+              <th>Order Step</th>
+              <th>Creation Time</th>
+              <th>Invoice</th>
+              <th>Prize Entry Tickets Qty</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113932045154768">1113932045154768</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Sun, 23 Feb 2014 20:15:15 -0500</td>
+              <td></td>
+              <td><a class="showTip" href="#" data-toggle="tooltip" data-placement="left" title="Please click here to check your Lucky Cash Tickets for this order.">3</a></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113918366203887">1113918366203887</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Sat, 08 Feb 2014 00:17:00 -0500</td>
+              <td></td>
+              <td><span class="showTip" href="#" data-toggle="tooltip" data-placement="left" title="Your Lucky Cash Tickets will be activated as soon as your payment was captured successfully.">2</span></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113908128059491">1113908128059491</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Mon, 27 Jan 2014 03:53:25 -0500</td>
+              <td>
+                      </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113642394564704">1113642394564704</a></td>
+              <td>Captured Successfully</td>
+              <td>Completed</td>
+              <td>Mon, 25 Mar 2013 15:24:17 -0400</td>
+              <td>
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-mini btn-info dropdown-toggle">Print <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                  <li><a target="_blank" class="tdu" href="http://dev.hookbag.com/hb3/front/public/myaccount/order/invoice/1113642394564704/html">HTML</a></li>
+                  <li><a target="_blank" class="tdu" href="http://dev.hookbag.com/hb3/front/public/myaccount/order/invoice/1113642394564704/pdf">PDF</a></li>
+                  </ul>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
 
+        
+          <div class="pagi skin">
+            <div class="pagi-wrap">
+              <span class="pagi-info">Total:4,</span>
+              <a class="pagi-page" href="/hb3/front/public/myaccount/order/index/page/1">1</a>
+            </div>
+          </div>    
+
+    </div> 
+    </div>   
   </div>
 
 
 </div>
+
 
 
 
