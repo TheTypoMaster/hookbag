@@ -1,0 +1,97 @@
+---
+layout: page-nonav
+title: Hookbag
+---
+
+
+<div class="hb union" id="skrollr-body">
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      {% for x in (1..2) %}
+      <li class=""><a href="#unionCon{{x}}">{{x}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="unionCon" id="unionCon1">
+    <div class="tit tac"><h2>My Orders</h2></div>
+    <div class="container mt20">
+    <div class="myaOrder">
+          <table class="table tableMya table-striped table-bordered skin-table-mya skin-cart">
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+              <th>ID</th>
+              <th>Payment Status</th>
+              <th>Order Step</th>
+              <th>Creation Time</th>
+              <th>Invoice</th>
+              <th>Prize Entry Tickets Qty</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113932045154768">1113932045154768</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Sun, 23 Feb 2014 20:15:15 -0500</td>
+              <td></td>
+              <td><a class="showTip" href="#" data-toggle="tooltip" data-placement="left" title="Please click here to check your Lucky Cash Tickets for this order.">3</a></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113918366203887">1113918366203887</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Sat, 08 Feb 2014 00:17:00 -0500</td>
+              <td></td>
+              <td><span class="showTip" href="#" data-toggle="tooltip" data-placement="left" title="Your Lucky Cash Tickets will be activated as soon as your payment was captured successfully.">2</span></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113908128059491">1113908128059491</a></td>
+              <td>Not Paid</td>
+              <td>Pending</td>
+              <td>Mon, 27 Jan 2014 03:53:25 -0500</td>
+              <td>
+                      </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="/hb3/front/public/myaccount/order/detail/id/1113642394564704">1113642394564704</a></td>
+              <td>Captured Successfully</td>
+              <td>Completed</td>
+              <td>Mon, 25 Mar 2013 15:24:17 -0400</td>
+              <td>
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-mini btn-info dropdown-toggle">Print <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                  <li><a target="_blank" class="tdu" href="http://dev.hookbag.com/hb3/front/public/myaccount/order/invoice/1113642394564704/html">HTML</a></li>
+                  <li><a target="_blank" class="tdu" href="http://dev.hookbag.com/hb3/front/public/myaccount/order/invoice/1113642394564704/pdf">PDF</a></li>
+                  </ul>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            </tbody>
+          </table>
+
+        
+          <div class="pagi skin">
+            <div class="pagi-wrap">
+              <span class="pagi-info">Total:4,</span>
+              <a class="pagi-page" href="/hb3/front/public/myaccount/order/index/page/1">1</a>
+            </div>
+          </div>    
+
+    </div> 
+    </div>   
+  </div>
+
+
+</div>
+
+

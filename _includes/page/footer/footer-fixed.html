@@ -32,11 +32,7 @@ $(function(){
 	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
 
 	//showTip
-	$('.showTip').tooltip({
-		container: '.showTip',
-		html: true,
-		title: $(this).find('.tooltip').html()
-	});
+	$('.showTip').tooltip();
 });
 </script>
 
