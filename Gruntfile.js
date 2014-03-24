@@ -4,26 +4,25 @@ grunt.initConfig({
   clean: {
     temp: ["<%= pkg.build %>/temp"],
   },
+  compass: {
+    dist: {
+      options: {
+        sassDir: '<%= pkg.src %>',
+        cssDir: '<%= pkg.build %>/css',
+        outputStyle: 'compressed'
+      }
+    }
+  },
   less: {
     dist: {
       src: ['<%= pkg.build %>/temp/*.css'],
       dest: '<%= pkg.build %>/css/app.css',
     },
-    cssPage: {
+    cssTemp: {
       files: [{
         expand: true,
         flatten: true,
         cwd: '<%= pkg.page %>/',
-        src: ['**/*.less'],
-        dest: '<%= pkg.build %>/temp/',
-        ext: '.css'
-      }]
-    },
-    cssSrc: {
-      files: [{
-        expand: true,
-        flatten: true,
-        cwd: '<%= pkg.src %>/',
         src: ['**/*.less'],
         dest: '<%= pkg.build %>/temp/',
         ext: '.css'
@@ -72,7 +71,7 @@ grunt.initConfig({
       files: [{
         expand: true,
         flatten: true,
-        cwd: '<%= pkg.src %>/',
+        cwd: '<%= pkg.page %>/',
         src: ['**/*.js'],
         dest: '<%= pkg.build %>/temp/',
         ext: '.js'
@@ -146,19 +145,25 @@ grunt.initConfig({
       livereload: 6789
     },
     html: {
-      files: ['./*.html', './_includes/**/*.html', './<%= pkg.src %>/**/*.html', './<%= pkg.page %>/**/*.html'],
+      files: ['./*.html', './_includes/**/*.html', './<%= pkg.page %>/**/*.html'],
       tasks: ['jekyll:build']
     },
+    css: {
+      files: [
+        '**/*.sass',
+        '**/*.scss'
+      ],
+      tasks: ['compass']
+    },
     less: {
-      files: ['./<%= pkg.src %>/**/*.less', './<%= pkg.page %>/**/*.less'],
+      files: ['./<%= pkg.page %>/**/*.less'],
       tasks: ['less', 'concat', 'clean:temp', 'cssmin', 'shell:site']
     },
     js: {
-      files: ['./<%= pkg.src %>/**/*.js', './<%= pkg.page %>/**/*.js'],
+      files: ['./<%= pkg.page %>/**/*.js'],
       tasks: ['uglify', 'shell:site']
     },
     img: {
-      // files: ['<%= pkg.src %>/**/*.{png,jpg,gif}', '<%= pkg.page %>/**/*.{png,jpg,gif}'],
       files: ['<%= pkg.src %>/**/*.png', '<%= pkg.src %>/**/*.jpg', '<%= pkg.src %>/**/*.gif', '<%= pkg.page %>/**/*.png', '<%= pkg.page %>/**/*.jpg', '<%= pkg.page %>/**/*.gif'],
       tasks: ['imagemin']
     }
@@ -174,6 +179,7 @@ grunt.event.on('watch', function(action, filepath) {
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-less');
+grunt.loadNpmTasks('grunt-contrib-compass');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -188,13 +194,13 @@ grunt.loadNpmTasks('grunt-browser-sync');
 // 默认执行的任务
 grunt.registerTask('default', [ 
   'shell:base',
+  'compass',
   'less',
   'concat',
   'imagemin',
   'cssmin',
   'uglify',
   'clean:temp',
-  'shell:jekyll',
   'shell:site',
   'browserSync',
   'watch'
