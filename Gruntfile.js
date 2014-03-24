@@ -127,7 +127,7 @@ grunt.initConfig({
   },
   browserSync: {
     files: {
-      src : [
+      site : [
         '_site/**/css/*.css',
         '_site/**/img/*.png',
         '_site/**/img/*.jpg',
