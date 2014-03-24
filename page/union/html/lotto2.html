@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    
+      Hookbag
+    
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-03-25T03%3A12%3A44%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-03-25T03%3A12%3A44%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-03-25T03%3A12%3A44%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-03-25T03%3A12%3A44%2B08%3A00">
+
+<script src="/style/base/jquery/jquery.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-03-25T03%3A12%3A44%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+<!--延迟加载-->
+
+<script src="/style/base/holderjs/holder.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-03-25T03%3A12%3A44%2B08%3A00"></script>
+<script>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+	$(this).toggleClass('active')
+  });
+  $('.nav-button').click(function() {
+    $('.un-nav').toggleClass('un-nav1 un-nav3');
+	$(this).toggleClass('nav-txt')
+  });
+});
+</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-union"  data-offset="100">
+
+  
+<div id="ui-top"  >
+
+  <div class="container un-top bgBlue " >
+
+      <div class="col-sm-3 col-md-2">
+        <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo-test6.png"></a>
+      </div>
+      
+      <div class="col-sm-4 col-md-3 col-sm-push-5 col-md-push-7">
+        <ul class="list-inline un-navmember">
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+	<!--
+	登录前
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+		登录后
+	<li id="un-user"><a href="/page/mya/html/mya.html"><span class="glyphicon glyphicon-user" > </span>  Hi,</a></li>
+	
+	-->
+	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+		</ul>
+	</li>
+</ul>
+      </div>
+
+      <div class="col-sm-5 col-md-7 col-sm-pull-4 col-md-pull-3">
+        <div id="un-search" class="clearfix">
+<form action="" class="form-inline">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Keywords,Model#,SKU or UPC#" autofocus>
+    <span class="input-group-btn">
+     <!-- <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>-->
+      <button class="btn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+    </span>
+  </div>
+</form>
+</div>
+
+      </div>
+
+  </div>
+
+  <div class="navbar navbar-default un-nav mb0 ui-nav-border"
+data-55="position:inherit;"
+data-56="position:fixed;top:0;width:100%;z-index:999;"
+>
+  <div id="un-navList" class="container un-navlist">
+    
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+          <!--<li class="ui-nav-active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home Page</a></li>-->
+          <li class="ui-nav-item"><a href="lotto.html"><span class="glyphicon glyphicon-heart"></span> Lucky Cash</a></li>
+          <li class="ui-nav-item"><a href="union.html"><span class="glyphicon glyphicon-bullhorn"></span> CRP Club</a></li>
+          <li class="ui-nav-item"><a href="tool.html"><span class="glyphicon glyphicon-wrench"></span> CRP Tools</a></li>
+          <li class="ui-nav-item"><a href="mya.html"><span class="glyphicon glyphicon-user"></span> Account Management</a></li>
+          <li class="ui-nav-item"><a href="help.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+          <li class="ui-nav-item"><a href="step.html"><span class="glyphicon glyphicon-question-sign"></span> How to Claim Lucky Cash Prize?</a></li>
+      </ul>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+</div>
+  
+
+<div class="hb union" id="skrollr-body">
+
+  <div class="hidden navbar-union">
+    <ul class="nav">
+      
+      <li class=""><a href="#unionCon1">1</a></li>
+      
+      <li class=""><a href="#unionCon2">2</a></li>
+      
+      <li class=""><a href="#unionCon3">3</a></li>
+      
+      <li class=""><a href="#unionCon4">4</a></li>
+      
+    </ul>
+    </ul>
+  </div>
+
+  <div class="unionCon" id="unionCon1">
+    <div class="tit">
+      <h2>Current Status</h2>
+    </div>
+    <div class="container">
+      <div class="tac pt20">
+        <h3>333 people to share $5000 prize!</h3>
+				<h4 style="line-height:4;">Time Remaining Until Next Drawing</h4>
+      </div>
+      <div class="countdown tac clear"></div>
+
+      <div class="button tac" style="margin:50px 0px;">
+        <a class="btn btn-primary">Go Shopping to Get a Lucky Cash Ticket</a>
+        <a class="btn btn-success">Previous Winners List</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="unionCon" id="unionCon2">
+    <div class="tit">
+      <h2>Winners Status</h2>
+    </div>
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
+      <div class="tac">
+        <h3 style="line-height:2;">Congratulations You Have Won!</h3>
+        <h3> Claim Your $50 Now!</h3>
+        <ul style="line-height:2;list-style-type:none;">
+					<li>You can withdraw your cash prize now.You can win $25 more by sharing and Linking Facebook.You can win another $50 by inviting 5 friends to shop on Hookbag. </li>
+					<li>First 5 of your friends that enroll and make the actual purchase will qualify to use a $10 Gift Certificate each. </li>
+					<li>(Gift Certificate only good for actual purchase amount of product. Gift Certificate cannot be applied to Tax, Shipping, and EHF)</li>
+					<li><strong>Note:</strong> You need to claim your $50 before the expiry date: 03/28/2014.</li>
+				</ul>
+      </div>
+
+
+      <div class="button tac" style="margin:50px 0px;">
+        <a href="lotto3.html" class="btn btn-primary">Get $50 CASH</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="unionCon" id="unionCon3">
+    <div class="tit">
+      <h2>Current Status</h2>
+    </div>
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
+      <div class="tac">
+        <h3 style="line-height:4;">Sorry!</h3>
+        <h4>You didn’t win this period. Try Again!</h4>
+      </div>
+      <div class="button tac" style="margin:50px 0px;">
+        <a class="btn btn-primary">Go Shopping Now</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="unionCon" id="unionCon3">
+    <div class="tit">
+      <h2>Current Status</h2>
+    </div>
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
+      <div class="tac">
+        <h3 style="line-height:4;">Sorry!</h3>
+        <h4>Sorry, You have not claimed your winnings in the allotted time given. </h4>
+				 <p>You will not be eligible to receive your Cash Prizes and the extra bonus money.Try again!</p>
+      </div>
+      <div class="button tac" style="margin:50px 0px;">
+        <a class="btn btn-primary">Go Shopping Now</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="unionCon" id="unionCon4" >
+    <div class="tit">
+      <h2>Prize Entry Ticket Qualification Status</h2>
+    </div>
+    <div class="container" style="padding-top:100px;padding-bottom:100px;">
+      <div class="tac">
+        <h3 style="line-height:4;">Sorry, you need to spend at least $50 to get a ticket.</h3>
+      </div>
+      <div class="tac">
+				<p>You are not eligible to enroll the prize drawings of this activity period.<br>But Hookbag Lucky Cash Sweepstakes Activity period: 2014-01-14~2014-01-24 is now in progress, try again!</p>
+        <p>Hookbag has a lot of great products at low prices.Spend a little more and get a Prize Entry Ticket.</p>
+      </div>
+      <div class="button tac" style="margin:50px 0px;">
+        <a class="btn btn-primary">Go Shopping</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="../js/jquery.countdown.js"></script>
+<script type="text/javascript">
+$(function() {
+var endDate = "April 7, 2014 11:03:25";
+
+$('.countdown').countdown({
+date: endDate,
+render: function(data) {
+$(this.el).html("<div class='time'>" +  this.leadingZeros(data.days, 2) + "<span>DAYS</span></div><div class='time'>" + this.leadingZeros(data.hours, 2) + "<span>HOURS</span></div><div class='time'>" + this.leadingZeros(data.min, 2) + "<span>MINUTES</span></div><div class='time'>" + this.leadingZeros(data.sec, 2) + " <span>SECONDS</span></div>");
+}
+});
+
+});
+</script>
+
+
+	
+<script type="text/javascript" src="../js/skrollr.js"></script>
+<script type="text/javascript">
+
+	
+skrollr.init({
+	render: function(data) {
+		//Debugging - Log the current scroll position.
+		//console.log(data.curTop);
+	}
+});
+//tool
+$(function(){
+	$('.hb-tool').click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.hb-tool-collapse').hide();
+		$($(this).attr('data-tool')).show();
+	});
+	function checkSpy(){
+		var element=$('.navbar-union li.active');
+		var len=$('.unionCon').length;
+		var cur=element.index();
+		var targ=element.find('a').attr('href');
+		var offsetT=$('.unionCon').eq(1).offset().top-56;
+		if($(window).scrollTop()>=offsetT&&cur<len){
+			$('.unionCon').eq(cur).find('.tit').addClass('fixed');
+			$('.unionCon').eq(cur).siblings().find('.tit').removeClass('fixed');
+		}else{
+			$('.tit').removeClass('fixed');
+		}
+	}
+	$('.navbar-union').on('activate.bs.scrollspy',checkSpy);
+
+	//showTip
+	$('.showTip').tooltip();
+});
+</script>
+
+
+</body>
+</html>
