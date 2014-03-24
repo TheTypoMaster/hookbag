@@ -1,0 +1,102 @@
+<div class="container bgGray">
+  <div class="row">
+    <div class="col-md-2 un-side">
+      <div id="un-sideLeft" class="un-sideLeft0 un-sideLeft open">
+      {% include page/node/mod/side0.html %}
+      </div>
+      <div id="un-sideLeft2" class="un-sideLeft0 un-sideLeft left">
+      {% include page/node/mod/side2.html %}
+      </div>
+
+    </div>
+    <div class="col-md-10 un-main">
+      {% include page/header/mod/breadcrumb.html %}
+      <div class="mb10" style="background:#9dd40d;">
+        <img data-src="holder.js/100%x100/#fff:#ddd/text:banner" class="img-responsive">
+      </div>
+      <div class="clearfix">
+        <div class="col-md-9 un-nodeMain">
+          <h3 class="un-title un-spc-title">所有厂商</h3>
+          <div class="node-brand pd20 un-tabs" >
+            <ul class="nav nav-tabs" id="myTab">
+              <li class="active"><a data-toggle="tab" href="#home">Hot</a></li>
+              <li class=""><a data-toggle="tab" href="#profile">A-D</a></li>
+              <li class=""><a data-toggle="tab" href="#dropdown1">D-G</a></li>
+              <li class=""><a data-toggle="tab" href="#profile">G-O</a></li>
+              <li class=""><a data-toggle="tab" href="#dropdown2">O-Z</a></li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div id="home" class="tab-pane fade active in">
+                {% for x in (1..20) %}
+                 <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+                 {% endfor%}
+              </div>
+              <div id="profile" class="tab-pane fade">
+                {% for x in (1..24) %}
+                 <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+                 {% endfor%}
+              </div>
+              <div id="dropdown1" class="tab-pane fade">
+                {% for x in (1..34) %}
+                 <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+                 {% endfor%}
+              </div>
+              <div id="dropdown2" class="tab-pane fade">
+                {% for x in (1..14) %}
+                 <a href=""><img src="holder.js?75x25" class="mt10"> </a>
+                 {% endfor%}
+              </div>
+            </div>
+          </div>
+
+          <h3 class="un-title un-spc-title mb10">热卖产品</h3>
+          <div class="un-index-grid">
+            {% for x in (1..4) %}
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                {% include page/node/mod/item.html %}
+              </div>      
+            {% endfor %}
+          </div>
+          <h3 class="un-title un-spc-title mb10">推荐产品</h3>
+          <div class="un-index-grid">
+            {% for x in (1..4) %}
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                {% include page/node/mod/item.html %}
+              </div>      
+            {% endfor %}
+          </div>
+          <h3 class="un-title un-spc-title mb10">唯一产品</h3>
+          <div class="un-index-grid">
+            {% for x in (1..4) %}
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                {% include page/node/mod/item.html %}
+              </div>      
+            {% endfor %}
+          </div>
+          <h3 class="un-title un-spc-title mb10">根据购买记录浏览历史推荐产品</h3>
+          <div class="un-index-grid">
+            {% for x in (1..4) %}
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                {% include page/node/mod/item.html %}
+              </div>      
+            {% endfor %}
+          </div>
+        </div>
+        <!--nodeMain-->
+        <div class="col-md-3" style="padding-right:0;">
+          <div class="un-sideRight">
+            <h3 class="un-title un-spc-title">最新降价产品</h3>
+            <div class="row">
+            {% for x in (1..6) %}
+                {% include page/node/mod/item2.html %}
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+        <!--sideRigh-->
+      </div>
+      {% include page/footer/footer.html %}
+
+    </div>
+  </div>
+</div>

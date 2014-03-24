@@ -1,0 +1,74 @@
+<div id="ui-footer" class=" mt10" >
+  <div class="container">
+    <div class="un-footer row " id="un-footer-info">
+      <div class="col-md-3 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col-md-12 un-footer un-footer-text">
+        <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+        <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+
+/*延迟加载
+ $("img.lazy").lazyload({
+	effect : "fadeIn"
+ });*/
+$("#un-gridMore").one("click", function() {
+     $("#un-gridList").load("image.html", function(response, status, xhr) {
+         $("img.lazy").lazyload({
+			effect : "fadeIn"
+		 });
+     });              
+ });
+
+/*价格选择*/
+var p = document.getElementById("un-sort"),
+    res = document.getElementById("result");
+if(p){
+	res.innerHTML = "$" + p.value;
+
+	p.addEventListener("input", function() {
+		res.innerHTML = "$" + p.value;
+	}, false); 
+
+}
+
+
+</script>
+</body>
+</html>

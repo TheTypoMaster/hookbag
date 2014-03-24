@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row mt10">
+    <div class="col-md-6">
+      <div class="alert alert-success">
+        <strong><span class="glyphicon glyphicon-check"></span> Well done!</strong> 已经把商品添加到wishlist.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4 class="un-title un-spc-title">这里显示wishlist有<strong>多少</strong>个商品,有<strong>多少</strong>个商品价格已经变动</h4>
+    </div>
+    <div class="col-md-12 mb20">
+      <div class="share-button clear">
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f77bdf47e4afe14"></script>
+        <!-- AddThis Button END -->
+      </div>
+      <!--the share button-->
+
+    </div>
+  </div>
+
+  <div class="row">
+		<h4 class="col-md-12 un-title un-spc-title">Customers Who Collected This Item Also Bought</h4>
+		{% for x in (1...4) %}
+		<div class="col-md-3 un-list">
+				{% include page/node/mod/item2.html %}
+		</div>
+		{% endfor %}
+  </div>
+</div>

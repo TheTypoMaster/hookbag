@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    {% if page.title == "Hookbag" %}
+      {{ page.title }}
+    {% else if %}
+      {{ page.title }} | {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  {% include page/header/style.html %}
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-union"  data-offset="100">
+
+  
+<div id="ui-top"  >
+
+  <div class="container un-top bgBlue " >
+
+      <div class="col-sm-3 col-md-2">
+        {% include page/header/mod/logo.html %}
+      </div>
+      
+      <div class="col-sm-4 col-md-3 col-sm-push-5 col-md-push-7">
+        {% include page/header/mod/user.html %}
+      </div>
+
+      <div class="col-sm-5 col-md-7 col-sm-pull-4 col-md-pull-3">
+        {% include page/header/mod/search.html %}
+      </div>
+
+  </div>
+
+  {% include page/header/mod/nav-union.html %}
+
+</div>
+  

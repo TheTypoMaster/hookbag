@@ -1,0 +1,24 @@
+<div class="container un-container">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li class="active">grid</li>
+	</ol>
+	<div class="row un-special">
+		<h3 class="un-grid-title un-spc-title col-md-12" data-spy="affix" data-offset-top="310">Daily Steals <small> SAVE UP TO 50% OFF AND UP</small></h3>
+		<div class="col-md-2 un-side">
+			{% include page/node/mod/side.html %}
+		</div><!--the side-->
+		<div class="col-md-10">
+		
+			{% for x in (1..12) %}
+			<div class="col-md-4">
+				{% include page/node/mod/item.html %}
+			</div>			
+			{% endfor %}
+			<div id="un-gridList"></div>
+			<div id="un-gridMore" class="tac mb10"><span class="btn btn-default">View More</span></div>
+
+		</div><!--the gridList-->
+		
+	</div>
+</div>

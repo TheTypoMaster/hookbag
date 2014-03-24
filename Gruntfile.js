@@ -9,7 +9,17 @@ grunt.initConfig({
       src: ['<%= pkg.build %>/temp/*.css'],
       dest: '<%= pkg.build %>/css/app.css',
     },
-    cssTemp: {
+    cssPage: {
+      files: [{
+        expand: true,
+        flatten: true,
+        cwd: '<%= pkg.page %>/',
+        src: ['**/*.less'],
+        dest: '<%= pkg.build %>/temp/',
+        ext: '.css'
+      }]
+    },
+    cssSrc: {
       files: [{
         expand: true,
         flatten: true,
@@ -136,7 +146,7 @@ grunt.initConfig({
       livereload: 6789
     },
     html: {
-      files: ['./*.html', './<%= pkg.src %>/**/*.html', './<%= pkg.page %>/**/*.html'],
+      files: ['./*.html', './_includes/**/*.html', './<%= pkg.src %>/**/*.html', './<%= pkg.page %>/**/*.html'],
       tasks: ['jekyll:build']
     },
     less: {
@@ -184,6 +194,7 @@ grunt.registerTask('default', [
   'cssmin',
   'uglify',
   'clean:temp',
+  'shell:jekyll',
   'shell:site',
   'browserSync',
   'watch'

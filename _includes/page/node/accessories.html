@@ -1,0 +1,42 @@
+<div class="container un-container">
+	<ol class="breadcrumb">
+	  <li><a href="#">Home</a></li>
+	  <li class="active">grid</li>
+	</ol>
+	<div class="row">
+		<div class="col-md-2 un-side">
+			{% include page/node/mod/category.html %}
+		</div><!--the side-->
+		<div class="col-md-10 un-main">
+			<div class="un-list un-acce" data-spy="affix" data-offset-top="310" class="affix-top">
+				<div class="clearfix un-clip">
+					<div class="un-mainImg pull-left mr20">
+						<a title="Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17  (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP" href=""> <img src="holder.js?160x160"></a>
+					</div><!--img end-->
+					<div class="un-tit">
+					  <a  href=""> Cooler Master NotePal U Stand Laptop Cooling Pad Aluminum Base, up to 17" (2 x 100mm Configurable Fans) - R9-NBS-USTD-GP</a>
+					</div>
+					<div class="text-muted un-sku">
+						<p><span class="sku SKU">SKU:<strong>H3C06OU15</strong></span>, <span class="sku MfgPartNo">MfgPartNo:<strong>R9-NBS-USTD-GP</strong></span>, <span class="sku Weight">Weight:<strong>4.35 lb</strong></span></p>
+					</div>
+					<div class="text-muted un-pri">
+					  <div class="un-price"><del>$63.06</del><div class="un-priceCurrent"><strong> CDN$ 40.57</strong> </div> </div>
+					</div>
+					<span href="" class="img-circle un-targ un-targ-bestseller">Sale</span>
+					<span href="" class="img-circle un-targ un-targ-freeshipping">Free</span>
+				</div>
+			</div>
+			<!--the item-->
+			<h3 class="un-title un-grid-title un-spc-title">accessories</h3>
+			{% for x in (1..12) %}
+			<div class="col-md-4 mt10 mb10">
+				{% include page/node/mod/item.html %}
+			</div>			
+			{% endfor %}
+			<div id="un-gridList"></div>
+			<div id="un-gridMore" class="tac mb10"><span class="btn btn-default">View More</span></div>
+
+		</div><!--the gridList-->
+		
+	</div>
+</div>
