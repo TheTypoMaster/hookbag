@@ -5,6 +5,10 @@ grunt.initConfig({
     temp: ["<%= pkg.build %>/temp"],
   },
   less: {
+    dist: {
+      src: ['<%= pkg.build %>/temp/*.css'],
+      dest: '<%= pkg.build %>/css/app.css',
+    },
     cssTemp: {
       files: [{
         expand: true,
@@ -129,7 +133,7 @@ grunt.initConfig({
   },
   watch: {
     options: {
-      livereload: 6750
+      livereload: 6789
     },
     html: {
       files: ['./*.html', './<%= pkg.src %>/**/*.html', './<%= pkg.page %>/**/*.html'],

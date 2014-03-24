@@ -1,2 +1,0 @@
-flow.hokbag.c/page/index/html/
-flow.hokbag.c/page/node/html/node.html

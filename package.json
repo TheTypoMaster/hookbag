@@ -1,7 +1,6 @@
 {
   "author": "zvg",
-  "name": "webapp",
-  "version": "v1",
+  "name": "zvg",
   "build": "./style/v1",
   "page": "./page",
   "src": "./src",
