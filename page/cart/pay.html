@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    
+      pay | Hookbag
+    
+  </title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+  <!--[if lt IE 9]>
+  <script src="/style/v2/js/html5shiv.js"></script>
+  <![endif]-->
+
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/style/base/bootstrap/css/bootstrap.css?ui=2014-03-25T04%3A01%3A24%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/un.css?ui=2014-03-25T04%3A01%3A24%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/ui.css?ui=2014-03-25T04%3A01%3A24%2B08%3A00">
+<link rel="stylesheet" href="/style/v3/css/mod.css?ui=2014-03-25T04%3A01%3A24%2B08%3A00">
+
+<script src="/style/base/jquery/jquery.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+<script src="/style/base/bootstrap/js/bootstrap.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+<script src="/style/v3/js/app.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+
+<link rel="stylesheet" href="/style/base/select2/select2.css?ui=2014-03-25T04%3A01%3A24%2B08%3A00">
+<script src="/style/base/select2/select2.min.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+<!--延迟加载-->
+
+<script src="/style/base/holderjs/holder.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+<script src="/style/base/jQuery-menu-aim/jquery.menu-aim.js?ui=2014-03-25T04%3A01%3A24%2B08%3A00"></script>
+<script>
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+	$(this).toggleClass('active')
+  });
+  $('.nav-button').click(function() {
+    $('.un-nav').toggleClass('un-nav1 un-nav3');
+	$(this).toggleClass('nav-txt')
+  });
+});
+</script>
+
+</head>
+
+<body>
+
+  
+<div id="ui-top" class="" data-spy="affix" data-offset-top="100">
+
+  <div class="container un-top bgBlue " >
+
+      <div class="col-sm-3 col-md-2">
+        <a id="un-logo" href="/page/index/html/index.html"><img src="/page/header/img/logo-test6.png"></a>
+      </div>
+      
+      <div class="col-sm-4 col-md-3 col-sm-push-5 col-md-push-7">
+        <ul class="list-inline un-navmember">
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+	<!--
+	登录前
+	<li><a href="/page/mya/html/mya.html" id="un-signUp">Sign Up</a></li>
+	
+	<li><a href="/page/mya/html/mya.html" id="un-signIn">Sign In</a></li>
+		登录后
+	<li id="un-user"><a href="/page/mya/html/mya.html"><span class="glyphicon glyphicon-user" > </span>  Hi,</a></li>
+	
+	-->
+	<li id="un-cart" class="dropdown"><a class="glyphicon glyphicon-shopping-cart dropdown-toggle" href="#" data-toggle="dropdown"><span class="un-cartNum">2</span><b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li>
+			<div class="media" style="margin: 0px 5px;">
+			  <a class="pull-left" href="#">
+				<img class="media-object" src="holder.js?40x40">
+			  </a>
+			  <div class="media-body">
+				<h5 class="media-heading">
+				  <div class="ug-pri ui-pri-smallfont"><div class="ug-price"><span class="ug-priceCurrent"><strong> CDN$ 40.57</strong></span> </div>
+					  </div>
+				</h5>
+				<div class="ug-pty">qty:1</div>
+			  </div>
+			</div>
+
+		  </li>
+		  <li class="divider"></li>
+		  
+		  <li class="dropdown-header"><a href="" class="btn btn-success btn-lg btn-block">去买单: $424324</a></li>
+		</ul>
+	</li>
+</ul>
+      </div>
+
+      <div class="col-sm-5 col-md-7 col-sm-pull-4 col-md-pull-3">
+        <div id="un-search" class="clearfix">
+<form action="" class="form-inline">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Keywords,Model#,SKU or UPC#" autofocus>
+    <span class="input-group-btn">
+     <!-- <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>-->
+      <button class="btn" type="button"><span class="glyphicon glyphicon-search"></span></button>
+    </span>
+  </div>
+</form>
+</div>
+
+      </div>
+
+  </div>
+
+  <div class="navbar navbar-default un-nav mb0 ui-nav-border">
+  <div id="un-navList" class="container un-navlist">
+    <div class="navbar-header dropdown">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" href="/page/node/html/node.html">ALL CATEGORIES </a>
+      
+        <ul class="dropdown-menu un-dropdown-nav">
+    <li class="dropdown-submenu" data-submenu-id="computer-systems">
+
+    <a href="/page/node/html/node.html"><span class="pull-right fz11 glyphicon glyphicon-chevron-right"></span>Computer Systems<br/><small>Get...for free shipping today</small></a>
+
+    <div class="popover" id="computer-systems">
+    <h3 class="popover-title un-title un-spc-title">Computer Systems</h3>
+    <dl class="popover-content">
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Notebooks</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Netbooks</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Tablets</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Desktop</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Workstations</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Servers</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Barebone Systems</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Terminals & Thin Clients</a></dd>
+      <dd class="sNavLink"><a href="/page/node/html/node.html">Laptop Accessories</a></dd>
+    </dl>
+    </div>
+
+    </li>
+    <li class="dropdown-submenu" data-submenu-id="computer-parts">
+      <a href=""><span class="pull-right fz11 glyphicon glyphicon-chevron-right"></span>Computer Parts</a>
+      <div class="popover" id="computer-parts">
+      <h3 class="popover-title un-title un-spc-title">Computer Parts</h3>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+      </dl>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+      </dl>
+      
+      <dl class="popover-content">
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Memory</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Surge Suppressors</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Mouse</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Peripheral</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Secure Digital Memory Cards</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Storage</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Computer Hardware</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Hard Drives</a></dd>
+        <dd class="sNavLink"><a href="/page/node/html/node.html">Headsets</a></dd>
+      </dl>
+      
+      </div>
+    </li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Phones</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Network</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Office </a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Educational</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Software</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">HardWare</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Home & Garden</a></li>
+    <li class="dropdown-submenu"><a href="/page/node/html/node.html">Clothing & Shoes</a></li>
+  </ul>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+
+        
+
+        
+          <li class="active ui-nav-active"><a href="">Hookbag Home</a></li>
+          <li class="ui-nav-item"><a href="">Hottest Deals</a></li>
+          <li class="ui-nav-item"><a href="">Always Lowest Price</a></li>
+          <li class="ui-nav-item"><a href="">Hard To Find</a></li>
+        
+        
+      </ul>
+      
+    </div>
+
+  </div>
+</div>
+    <script>
+
+        var $menu = $(".un-dropdown-nav");
+
+        $menu.menuAim({
+            enter: activateSubmenu,
+            exit: deactivateSubmenu
+        });
+        function activateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId),
+                height = $menu.outerHeight(),
+                width = $menu.outerWidth();
+        num = $row.find('dl').length;
+            // Show the submenu
+            $submenu.css({
+                display: "block",
+                top: -2,
+                left: width - 2,  // main should overlay submenu
+                height: height,  // padding for main dropdown's arrow
+        width:260*num+4
+            });
+
+            $row.find("a").addClass("maintainHover");
+        }
+
+        function deactivateSubmenu(row) {
+            var $row = $(row),
+                submenuId = $row.data("submenuId"),
+                $submenu = $("#" + submenuId);
+
+            $submenu.css("display", "none");
+            $row.find("a").removeClass("maintainHover");
+        }
+
+        $(".dropdown-menu li").click(function(e) {
+            e.stopPropagation();
+        });
+
+    </script>
+
+
+</div>
+  
+
+<div class="container mt20">
+<div class="panel panel-default">
+  <div class="panel-body">
+  	<h3><a href="" class="btn btn-default pull-right mb10">编辑</a>1 交付选项</h3>
+ 		<table class="table">
+			
+			<tr><td>
+			  <ul class="media-list">
+				  <li class="media">
+				    <a class="pull-left" href="#">
+				      <img class="media-object mr20" data-src="holder.js/110x110" alt="...">
+				    </a>
+				    <div class="media-body">
+							<div class="media-heading" style="display:table;width:100%"> 
+								<div style="display:table-cell;vertical-align:middle;"> 
+									<h4><a href="" style="color:#000;"> iPod touch 64GB 黄色 </a>  | <small><a href="">显示产品详情</a></small></h4>
+								</div> 
+								<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 2,998
+								</strong> 
+							</div>
+							<div class="well well-sm">
+								<ul>
+									<li>预计发货时间：<span>24小时内</span> | <a href="">查看交付方式和选项</a></li>
+									<li>交付方式：<strong>2014/03/02 </strong><span class="text-muted">通过 标准送货 运送至 江苏 连云港 赣榆县 222100</span> | <a href="">更改运送选项</a></li>
+								</ul>
+							</div>
+					    <p><strong>服务和支持</strong></p>
+					    <div class="media">
+					    	<div class="pull-left">
+						      <img class="media-object mr20" data-src="holder.js/60x60" alt="...">
+					    	</div>
+
+					    	<div class="media-body">
+								<div class="media-heading" style="display:table;widt class="mb10"h:100%;"> 
+									<div style="display:table-cell;vertical-align:middle;"> 
+										<strong><a href="" style="color:#000;">AppleCare+ 全方位服务计划适用于iPad</a></strong>
+									</div> 
+									<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 788
+									</strong> 
+								</div>				    		已自动通过你的Apple硬件注册
+					    	</div>
+					    </div>
+				    </div>
+				  </li>
+				</ul>
+			</td></tr>
+			
+			<tr><td>
+			  <ul class="media-list">
+				  <li class="media">
+				    <a class="pull-left" href="#">
+				      <img class="media-object mr20" data-src="holder.js/110x110" alt="...">
+				    </a>
+				    <div class="media-body">
+							<div class="media-heading" style="display:table;width:100%"> 
+								<div style="display:table-cell;vertical-align:middle;"> 
+									<h4><a href="" style="color:#000;"> iPod touch 64GB 黄色 </a>  | <small><a href="">显示产品详情</a></small></h4>
+								</div> 
+								<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 2,998
+								</strong> 
+							</div>
+							<div class="well well-sm">
+								<ul>
+									<li>预计发货时间：<span>24小时内</span> | <a href="">查看交付方式和选项</a></li>
+									<li>交付方式：<strong>2014/03/02 </strong><span class="text-muted">通过 标准送货 运送至 江苏 连云港 赣榆县 222100</span> | <a href="">更改运送选项</a></li>
+								</ul>
+							</div>
+					    <p><strong>服务和支持</strong></p>
+					    <div class="media">
+					    	<div class="pull-left">
+						      <img class="media-object mr20" data-src="holder.js/60x60" alt="...">
+					    	</div>
+
+					    	<div class="media-body">
+								<div class="media-heading" style="display:table;widt class="mb10"h:100%;"> 
+									<div style="display:table-cell;vertical-align:middle;"> 
+										<strong><a href="" style="color:#000;">AppleCare+ 全方位服务计划适用于iPad</a></strong>
+									</div> 
+									<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 788
+									</strong> 
+								</div>				    		已自动通过你的Apple硬件注册
+					    	</div>
+					    </div>
+				    </div>
+				  </li>
+				</ul>
+			</td></tr>
+			
+			<tr><td>
+			  <ul class="media-list">
+				  <li class="media">
+				    <a class="pull-left" href="#">
+				      <img class="media-object mr20" data-src="holder.js/110x110" alt="...">
+				    </a>
+				    <div class="media-body">
+							<div class="media-heading" style="display:table;width:100%"> 
+								<div style="display:table-cell;vertical-align:middle;"> 
+									<h4><a href="" style="color:#000;"> iPod touch 64GB 黄色 </a>  | <small><a href="">显示产品详情</a></small></h4>
+								</div> 
+								<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 2,998
+								</strong> 
+							</div>
+							<div class="well well-sm">
+								<ul>
+									<li>预计发货时间：<span>24小时内</span> | <a href="">查看交付方式和选项</a></li>
+									<li>交付方式：<strong>2014/03/02 </strong><span class="text-muted">通过 标准送货 运送至 江苏 连云港 赣榆县 222100</span> | <a href="">更改运送选项</a></li>
+								</ul>
+							</div>
+					    <p><strong>服务和支持</strong></p>
+					    <div class="media">
+					    	<div class="pull-left">
+						      <img class="media-object mr20" data-src="holder.js/60x60" alt="...">
+					    	</div>
+
+					    	<div class="media-body">
+								<div class="media-heading" style="display:table;widt class="mb10"h:100%;"> 
+									<div style="display:table-cell;vertical-align:middle;"> 
+										<strong><a href="" style="color:#000;">AppleCare+ 全方位服务计划适用于iPad</a></strong>
+									</div> 
+									<strong style="display:table-cell;vertical-align:middle;text-align:right;">RMB 788
+									</strong> 
+								</div>				    		已自动通过你的Apple硬件注册
+					    	</div>
+					    </div>
+				    </div>
+				  </li>
+				</ul>
+			</td></tr>
+			
+			<tr><td>
+				<table class="pull-right">
+					<tr style="color:red;border-bottom:1px solid #ddd;">
+						<th>免费送货</th>
+						<td align="right">RMB 0</td>
+					</tr>
+					<tr>
+						<td style="font-size:2rem;">订单合计</td>
+						<td style="font-size:2.5rem;">RMB 27,760</td>
+					</tr>
+				</table>
+				<a href="">输入促销代码</a>
+			</td></tr>
+		</table>
+  	<h3 class="page-header">2 送货地址</h3>
+		<form role="form" class="col-md-6">
+	    <label class="col-md-12">送货地址</label>
+		  <div class="form-group clearfix">
+		    <div class="col-md-7">
+		    	<input type="text" class="form-control" id="user" placeholder="姓氏">
+	  		</div>
+	  		<div class="col-md-5">
+		    	<input type="text" class="form-control" id="name" placeholder="名字">
+		    </div>
+		  </div>
+		  <div class="form-group clearfix">
+		    <div class="col-md-4">
+		    	<input type="text" class="form-control" id="code" placeholder="区号">
+	  		</div>
+	  		<div class="col-md-8">
+		    	<input type="text" class="form-control" id="tel" placeholder="联系号码，（如手机，区号输0）">
+		    </div>
+		  </div>
+		  <div class="form-group clearfix">
+		    <div class="col-md-4">
+		    	<select class="form-control">
+		    		<option>省份</option>
+		    	</select>
+	  		</div>
+	  		<div class="col-md-4">
+		    	<select class="form-control">
+		    		<option>城镇/城市</option>
+		    	</select>
+		    </div>
+	  		<div class="col-md-4">
+		    	<select class="form-control">
+		    		<option>区</option>
+		    	</select>
+		    </div>
+		  </div>
+		  <div class="form-group col-md-12">
+	    	<input type="text" class="form-control" id="addr" placeholder="区，街道编号/名称，楼宇名称">
+		  </div>
+		  <div class="form-group col-md-12">
+	    	<input type="text" class="form-control" id="addr" placeholder="房间、套房、单元、楼层或街区">
+		  </div>
+		  <div class="form-group col-md-5">
+	    	<input type="text" class="form-control" id="code" placeholder="邮政编码">
+		  </div>
+	    <label class="col-md-12">发货通知</label>
+		  <div class="form-group col-md-12">
+				<span class="help-block">货通知电子邮件已发送至帐单联系人。可在下方添加其他收件人的电子邮件地址。</span>
+	    	<input type="email" class="form-control" id="addr" placeholder="邮件">
+		  </div>
+		  <div class="form-group col-md-12">
+				<span class="help-block">请在下面输入手机号码，以接收短信了解最新发货状态。此处号码仅限于接收短信。<br><a href="">与收货地址的电话相同</a></span>
+	    	<input type="text" class="form-control" id="addr" placeholder="手机号码（可选）">
+		  </div>
+		</form>
+		<div class="col-md-6">
+			<p><strong>Apple 送货政策</strong> | <a href="">了解更多</a></p>
+			<ul style="line-height:2;">
+				<li>交付时需要签名</li>
+				<li>如果您所在的城市不在下拉菜单中的城市范围内，我们目前无法送货。请点击这里查看您附近的 Apple 授权经销商。</li>
+				<li>送货时间按照送货至市中心地区进行估算。送货至边远地区可能需要更长的时间。您的发货通知电子邮件中将包括按照您的具体地址估算的送货时间。</li>
+				<li>对于军事禁区，保税监管区或者其他任何政府监管区域，(我们)将无法提供运送服务。</li>
+				<li>送货时间：星期一至星期日 上午 8:30 至下午 5:30 (公众假期暂停交货)</li>
+			</ul>
+		</div>	
+		<div class="clearfix"></div>
+  	<h3><a href="" class="btn btn-default pull-right mb10">编辑</a>2 送货地址</h3>
+  	<table class="table">
+  		<tr>
+  			<th>送货地址</th>
+  			<td>
+  				<p><a href="" class="pull-right">商品送达时，需签收</a>姓氏 名字</p>
+  				<p>区号 联系号码</p>
+  				<p>省份 城镇 区</p>
+  				<p>区，街道编号/名称，楼宇名称</p>
+  				<p>房间、套房、单元、楼层或街区</p>
+  				<p>邮政编码</p>
+					<p>国家</p>
+				</td>
+  		</tr>
+  		<tr>
+  			<th>发货通知</th>
+  			<td>邮件地址</td>
+  		</tr>
+  	</table>
+  	<h3 class="page-header">3 付款</h3>
+  	<p><strong> 分期付款</strong> | <a href="">比较分期付款方案</a></p>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked><img src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-CMB?wid=140&hei=26&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1386297806199">
+		  </label>
+		</div>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><img class="ir" src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-ICBC?wid=140&amp;hei=26&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297809395" alt="" width="140" height="26" data-scale-params-2="wid=280&amp;hei=52&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297809395" id="coherent_id_463">
+		  </label>
+		</div>  	
+  	<p class="pt10" style="border-top:1px solid #ddd;"><strong> 网上支付 — 本地信用卡/借计卡</strong><br><a href="">请点击此链接查询各银行卡支付限额规定</a></p>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked><img src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-CMB?wid=140&hei=26&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1386297806199">
+		  </label>
+		</div>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><img class="ir" src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-ICBC?wid=140&amp;hei=26&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297809395" alt="" width="140" height="26" data-scale-params-2="wid=280&amp;hei=52&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297809395" id="coherent_id_463">
+		  </label>
+		</div>  	
+  	<p class="pt10" style="border-top:1px solid #ddd;"><strong>其它付款类型</strong></p>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked><img class="ir" src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-Alipay?wid=140&amp;hei=26&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297810591" alt="" width="140" height="26" data-scale-params-2="wid=280&amp;hei=52&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297810591" id="coherent_id_597">
+		  </label>
+		</div>
+		<div class="radio-inline">
+		  <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"><img class="ir" src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-VISA?wid=140&amp;hei=26&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297807240" alt="" width="140" height="26" data-scale-params-2="wid=280&amp;hei=52&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297807240" id="coherent_id_604">
+		  </label>
+		</div>  	
+  	<h3><a href="" class="btn btn-default pull-right mb10">编辑</a>3 付款</h3>
+  	<table class="table">
+  		<tr>
+  			<th>付款方式</th>
+  			<td>
+  				<img class="ir" src="https://store.storeimages.cdn-apple.com/7631/as-images.apple.com/is/image/AppleInc/checkout-bank-VISA?wid=140&amp;hei=26&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297807240" alt="" width="140" height="26" data-scale-params-2="wid=280&amp;hei=52&amp;fmt=jpeg&amp;qlt=95&amp;op_sharpen=0&amp;resMode=bicub&amp;op_usm=0.5,1.5,0,0&amp;iccEmbed=0&amp;layer=comp&amp;.v=1386297807240" id="coherent_id_604">
+  				<p>付款方式</p>
+				</td>
+  		</tr>
+  	</table>
+  	<h3 class="page-header">4 发票</h3>
+  	<div class="col-md-6">
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			    <strong>Apple 标准发票</strong>
+			    <p>Apple 标准发票 这是您本次购买商品的 Apple 电子发票。本发票将于您的订单发货后发送到您订单上的电子邮件地址。此发票可视为购买的正式凭证，可用于商品保修和维修等申请。*发票地址会在 Apple 电子发票显示<br>注意：如果您需要其它类型发票，请在下面选择。</p>
+			    <p>如果您的公司具备“一般纳税人资格”，可以进行增值税进项抵扣，您将需要增值税专用发票。</p>
+			  </label>
+			</div>  
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					<strong>Apple 标准发票与增值税普通发票 －（个人，公司）</strong>
+					<p>增值税普通发票 - (个人，公司) 在您的订单发货后，发票将邮寄至您订单上的发票地址。...</p>
+			  </label>
+			</div>
+			<dl>
+				<dt>Apple 标准发票与增值税专用发票</dt>
+				<dd>如要您需要增值税专用发票，请选择 “公司银行转帐” 作为您的付款方式。 请注意：我们可能需要几天时间处理银行转帐付款的订单，因此将会延迟您的发货时间。收到付款后，我们会通过电子邮件与您确认发货时间。</dd>
+			</dl>
+  	</div>
+  	<div class="col-md-6">
+			<form role="form">
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">发票电子邮件地址</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="电子邮件地址">
+			  </div>
+			</form>
+  	</div>
+  	<div class="clearfix"></div>
+  	<h3><a href="" class="btn btn-default pull-right mb10">编辑</a>4 发票</h3>
+  	<table class="table">
+  		<tr>
+  			<th>发票类型</th>
+  			<th>电子邮件地址</th>
+  		</tr>
+  		<tr>
+  			<td>Apple标准发票</td>
+  			<td>邮件地址</td>
+  		</tr>
+  	</table>
+  	<h3 class="page-header">5 帐户</h3>
+  	<div class="col-md-6">
+  		<strong>创建Apple ID (可选)</strong>
+  		<p>如果您创建一个 Apple ID，我们将保存您的信息，这样您就可以让您的购物体验独具特色，并可以在线访问“订单状态”页面来查看和更改您的订单。您还可以使用自己的帐户在 App Store 购物、注册您的产品，以及执行诸多其他操作。</p>
+  	</div>
+  	<div class="col-md-6">
+			<form role="form">
+			  <div class="form-group">
+			    <label class="col-sm-2 control-label">Aplle ID</label>
+			    <div class="col-sm-10">
+			      <p class="form-control-static">email@example.com</p>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码（至少8个字符）">
+			  </div>
+			  <div class="form-group">
+			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="再次输入密码">
+			  </div>
+			  <div class="checkbox">
+			    <label>
+			      <input type="checkbox" checked="checked"> 保持联系！请随时向我提供最新的 Apple 新闻。 
+			    </label>
+			  </div>
+			</form>
+  	</div>
+  	<h3>5 帐户</h3>
+  	<table class="table">
+  		<tr><th>未创建ID</th><td>访客</td></tr>
+  	</table>
+  	<h3 class="page-header">6 条款与条件</h3>
+  	<div class="checkbox">
+		  <label>
+		    <input type="checkbox" value="">
+				通过点击“立即结帐”，我同意接受苹果在线商店<a href="">条款和条件。</a> 
+		  </label>
+		  <p>请注意以下内容： </p>
+
+			<p>预计发货时间将根据您的付款方式有所更改。 请参考以上“交付选项”一栏。 </p>
+
+			<p><strong>装运和交货时间</strong>为苹果做出的最佳估算时间。就少数订单，由于无法预料的产品短缺或超出我们控制以外的因素，实际时间可能会更长。如有迟延，我们将联系您，并给您取消订单及要求完全退款的选择。 </p>
+
+			<p>我们网站上的<strong>产品和定价</strong>信息在公布前已经过核实。但是，在极少数情形下会有错误。如果我们发现定价错误，我们将通知您，取消您的订单，并对订单金额全额退款。 </p>
+
+			<p>对于iPhone/iPad的退回要求，我们将收取一定的行政费用。详情请参见<a href="">条款和条件。</a></p>
+		</div>
+  	<h3 class="page-header clearfix"><a href="" class="btn btn-default pull-right">查看</a>6 条款与条件</h3>
+  </div>
+  <div class="panel-heading">
+  	<a href="pay.html" class="pull-right btn btn-success ml10">继续</a>
+  	<a href="pay.html" class="pull-right btn btn-default">查看交付日期和选项</a>
+  	<button type="button" class="btn btn-default"><span class="icon-cart"></span> 返回购物车</button>
+  	<button type="button" class="btn btn-default">现在聊天</button>
+  </div>
+	<ul class="list-group">
+	    <li class="list-group-item">2 送货地址</li>
+	    <li class="list-group-item">3 付款</li>
+	    <li class="list-group-item">4 发票</li>
+	    <li class="list-group-item">5 条款与条件</li>
+	  </ul>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h3 class="page-header">问题</h3>
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#option" data-toggle="tab">交付选项</a></li>
+		  <li><a href="#addr" data-toggle="tab">送货地址</a></li>
+		  <li><a href="#pay" data-toggle="tab">付款</a></li>
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+		  <div class="tab-pane active" id="option">
+		  	<div class="row">
+		  		<dl class="col-md-4 mt20 pl20 pr20">
+		  			<dt class="mb10">我何时能收到订购的商品？</dt class="mb10">
+		  			<dd>“送货”时间是将您的产品送达您的收货地址的预计时间。这考虑到了仓库处理时间（即“发货”时间）和承运商的送货时间。</dd>
+		  			<dd>我们会在结帐流程中提供有关派单选项和交付日期的更多信息。了解有关<a href="">发货与交货</a>的更多信息。</dd>
+		  		</dl>
+		  		<dl class="col-md-4 mt20 pl20 pr20">
+		  			<dt class="mb10">怎样才能免运费？</dt class="mb10">
+		  			<dd>Apple Store 在线商店对所有订单提供免费运送服务。在结帐时，请选择免费的“标准”运送选项。</dd>
+		  		</dl>
+		  		<dl class="col-md-4 mt20 pl20 pr20">
+		  			<dt class="mb10">Apple 的退货和退款政策是如何规定的？</dt class="mb10">
+		  			<dd>如果您对所购产品不满意，可以按照相关规定办理退货。了解有关<a href="">退货和退款</a>的更多信息。</dd>
+		  		</dl>
+		  	</div>
+		  	<div class="row" style="border-top:1px solid #ddd;">
+		  		<dl class="col-md-4 mt20 pl20 pr20">
+		  			<dt class="mb10">我如何跟踪发货情况？</dt class="mb10">
+		  			<dd>每件产品从我们的仓库发出时，我们都会给您发送发货通知电子邮件。访问在线<a href="">订单状态</a>，查看您的订单的最新状态。</dd>
+		  		</dl>
+		  		<dl class="col-md-4 mt20 pl20 pr20">
+		  			<dt class="mb10">我何时会收到短信通知？</dt class="mb10">
+		  			<dd>除了电子邮件通知以外，我们还会在您的产品发货后给您发送短信。短信发送时间为当地时间上午 8:00 至晚上 9:00。</dd>
+		  			<dd>如要停止接收短信通知，请致电 400-666-8800 与 Apple 代表联系。</dd>
+		  		</dl>
+		  	</div>
+		  </div>
+		  <div class="tab-pane" id="addr">...</div>
+		  <div class="tab-pane" id="pay">...</div>
+		</div>	
+	</div>
+</div>
+</div>
+
+
+
+<div id="ui-footer" class="bgGray mt20">
+  <div class="container">
+    <div class="un-footer row" id="un-footer-info">
+      <div class="col-md-2 un-footer-service">
+        <h3 class="un-title un-footer-title">Customer Service</h3>
+        <ul>
+          <li><a href="">> About Us</a></li>
+          <li><a href="">> Contact Us</a></li>
+          <li><a href="">> Address Verification</a></li>
+        </ul>
+      </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 un-footer-service">
+      <h3 class="un-title un-footer-title">Customer Service</h3>
+      <ul>
+        <li><a href="">> About Us</a></li>
+        <li><a href="">> Contact Us</a></li>
+        <li><a href="">> Address Verification</a></li>
+      </ul>
+    </div>
+    <div class="visible-md visible-lg col-md-3 col-md-4 un-footer-text">
+      <p>Prices are in Canadian dollars. Hookbag.ca is not responsible for typographical or photographical errors. Prices and specifications are subject to change without notice. Logos and trademarks are copyright and the property of their respective owners.</p>
+      <p>Les prix sont en dollars Canadiens. Hookbag.ca n'est pas responsable des erreurs typographiques ou photographiques. Prix et spécifications sont sujets à changement sans préavis.</p>
+    </div>
+    
+    </div>
+  </div>
+</div>
+<script>
+
+/*延迟加载
+ $("img.lazy").lazyload({
+	effect : "fadeIn"
+ });*/
+$("#un-gridMore").one("click", function() {
+     $("#un-gridList").load("image.html", function(response, status, xhr) {
+         $("img.lazy").lazyload({
+			effect : "fadeIn"
+		 });
+     });              
+ });
+
+/*价格选择*/
+var p = document.getElementById("un-sort"),
+    res = document.getElementById("result");
+if(p){
+	res.innerHTML = "$" + p.value;
+
+	p.addEventListener("input", function() {
+		res.innerHTML = "$" + p.value;
+	}, false); 
+
+}
+
+
+</script>
+</body>
+</html>
+
