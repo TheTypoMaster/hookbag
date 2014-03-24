@@ -1,0 +1,8 @@
+.svn
+.git
+less
+*.less
+*.md
+README
+component.json
+package.json
