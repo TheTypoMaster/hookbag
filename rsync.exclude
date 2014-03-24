@@ -10,3 +10,5 @@ component.json
 package.json
 .bowerrc
 bower.json
+base.sh
+webapp.sh
