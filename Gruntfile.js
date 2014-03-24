@@ -119,7 +119,7 @@ grunt.initConfig({
       }
     },
     base: {
-      command: 'source ~/Sites/webapp/base.sh',
+      command: 'source ./base.sh',
     },
     site: {
       command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
@@ -201,6 +201,7 @@ grunt.registerTask('default', [
   'cssmin',
   'uglify',
   'clean:temp',
+  'jekyll:build',
   'shell:site',
   'browserSync',
   'watch'
