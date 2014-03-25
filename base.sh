@@ -13,4 +13,4 @@ rm -rf ./style/base/holderjs
 rm -rf ./style/base/modernizr
 rm -rf ./style/base/bs-sass
 rm -rf ./style/base/sassCore
-rm -rf ./style/base/sui
+rm -rf ./style/base/bs

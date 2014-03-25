@@ -14,14 +14,6 @@ grunt.initConfig({
     }
   },
   less: {
-    bs: {
-      src: ['<%= pkg.src %>/bs/less/bs.less'],
-      dest: '<%= pkg.style %>/base/bs/css/bs.css',
-    },
-    bst: {
-      src: ['<%= pkg.src %>/bs/less/bst.less'],
-      dest: '<%= pkg.style %>/base/bs/css/bst.css',
-    },
     dist: {
       src: ['<%= pkg.build %>/temp/*.css'],
       dest: '<%= pkg.build %>/css/app.css',
@@ -130,7 +122,7 @@ grunt.initConfig({
       command: 'source ./base.sh',
     },
     site: {
-      command: 'rsync --progress -a --delete -e "ssh -q" style/ _site/style',
+      command: '<%= pkg.rsync %> style/ _site/style',
     }
   },
   browserSync: {

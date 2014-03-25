@@ -14,5 +14,5 @@ exclude:          [".editorconfig", ".gitignore", ".ruby-version", "bower.json",
 port:             4000
 
 # Custom vars
-title: "hookbag"
+title: "zvg"
 version: "0.1"
