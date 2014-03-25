@@ -21,7 +21,7 @@
             </div>
             <!--Exculsive Deals-->
           </div>
-          <h3 class="un-title">Hottest Deals<a class="pull-right" href="/page/node/html/special.html">+ more</a></h3>
+          <h3 class="un-title">Hottest Deals<a class="pull-right" href="/page/node/html/special.html">more</a></h3>
           <div class="clearfix un-index-grid un-index-spc-grid" id="un-hottest">
             <div class="un-index-gridItem">
               <div class="col-xs-6 col-sm-4 col-md-3">
@@ -35,7 +35,7 @@
             </div>
           </div>    
           <!--the hottest deals-->
-          <h3 class="un-title">Always Lowest Price<a class="pull-right" href="/page/node/html/special.html">+ more</a></h3>
+          <h3 class="un-title">Always Lowest Price<a class="pull-right" href="/page/node/html/special.html">more</a></h3>
           <div class="clearfix un-index-grid un-index-spc-grid" id="un-lowest">
             <div class="un-index-gridItem">
               {% for x in (1..4) %}
@@ -46,7 +46,7 @@
             </div>
           </div>    
           <!--the Always Lowest Price-->
-          <h3 class="un-title">Hard To Find<a class="pull-right" href="/page/node/html/special.html">+ more</a></h3>
+          <h3 class="un-title">Hard To Find<a class="pull-right" href="/page/node/html/special.html">more</a></h3>
           <div class="clearfix un-index-grid un-index-spc-grid" id="un-hard">
             <div class="un-index-gridItem">
               {% for x in (1..4) %}
@@ -77,7 +77,7 @@
               </div>
           </div>
           <!--the category-->
-          <h2 class="un-title">electronics<a class="pull-right" href="">+ more</a></h2>
+          <h2 class="un-title">electronics<a class="pull-right" href="">more</a></h2>
           <div class="clearfix un-index-grid mb10" id="un-elec">
               <ul class="list-inline col-md-3 clearfix" id="un-brand">
                 {% for x in (1..12) %}
@@ -95,10 +95,6 @@
         <!--nodeMain-->
         <div class="col-md-3" style="padding-right:0;">
           <div class="un-sideRight">
-            <div id="un-finder">
-              {% include page/index/mod/finder.html %}
-            </div>
-            <!--Ink & Toner Finder-->
             <div id="un-best">
               <div class="pull-right"><a class="un-control un-control-pre" data-slide="prev" href="#un-bestseller"><span class="glyphicon glyphicon-chevron-left"></span></a>
               <a class="un-control un-control-next" data-slide="next" href="#un-bestseller"><span class="glyphicon glyphicon-chevron-right"></span></a></div>
@@ -106,7 +102,7 @@
               <div id="un-bestseller">
                 <div class="carousel-inner un-list">
                   <div class="row item active">
-                    {% for x in (1..6) %}
+                    {% for x in (1..10) %}
                     {% include page/node/mod/item2.html %}
 
                     {% endfor %}
