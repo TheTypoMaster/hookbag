@@ -16,18 +16,26 @@
 			color:darken(@link,20%);
 		}
 	}
-	.hb.grid>.column{
-		padding-left:10px;
-		padding-right:10px;
+}
+.hb{
+/*******************************
+           hb  
+*******************************/
+	&.grid>.column{
+		padding-left:1%;
+		padding-right:1%;
 	}
-	.hb.segment{
+	.segment{
 		border-radius:0;
 		margin:0;
+	}
+	ul.hb{
+		list-style-type:none;
 	}
 /*******************************
            header  
 *******************************/
-	#header{
+	&#header{
 		border-radius:0;
 		margin-bottom:1px;
 		.hb.logo{
@@ -81,6 +89,25 @@
 			margin-bottom:10px;
 			.active{
 				color:#666;
+			}
+		}
+	}
+/*******************************
+           item
+*******************************/
+	#photo{
+		margin-top:0;
+		#small{
+			text-align:right;
+			margin-top:22px;
+			.small{
+				cursor:pointer;
+			}
+		}
+		#big{
+			margin-top:0;
+			img{
+				max-width:100%;
 			}
 		}
 	}

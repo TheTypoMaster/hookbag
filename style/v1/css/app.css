@@ -2,15 +2,6 @@
   background-color: #F1F1F1;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif /*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
   font-size: 87.5%;
-  /*******************************
-           header  
-*******************************/
-  /*******************************
-           side
-*******************************/
-  /*******************************
-           main
-*******************************/
 }
 #hb body {
   margin: 0;
@@ -23,58 +14,94 @@
 #hb a:hover {
   color: #245482;
 }
-#hb .hb.grid > .column {
-  padding-left: 10px;
-  padding-right: 10px;
+.hb {
+  /*******************************
+           hb  
+*******************************/
+  /*******************************
+           header  
+*******************************/
+  /*******************************
+           side
+*******************************/
+  /*******************************
+           main
+*******************************/
+  /*******************************
+           item
+*******************************/
 }
-#hb .hb.segment {
+.hb.grid > .column {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.hb .segment {
   border-radius: 0;
   margin: 0;
 }
-#hb #header {
+.hb ul.hb {
+  list-style-type: none;
+}
+.hb#header {
   border-radius: 0;
   margin-bottom: 1px;
 }
-#hb #header .hb.logo {
+.hb#header .hb.logo {
   width: 200px;
   height: 45px;
   margin-top: 5px;
   background: url(/page/img/logo.png);
 }
-#hb #header .item {
+.hb#header .item {
   padding: 20px;
 }
-#hb #header .item.hb.search {
+.hb#header .item.hb.search {
   width: 800px;
 }
-#hb #side.hb.side {
+.hb #side.hb.side {
   border-radius: 0;
   border-top: none;
   padding: 0;
 }
-#hb #side.hb.side.left .item {
+.hb #side.hb.side.left .item {
   border-radius: 0;
   color: #000;
   font-size: 15px;
   text-transform: uppercase;
   padding: 20px 10px;
 }
-#hb #side.hb.side.left .item .icon {
+.hb #side.hb.side.left .item .icon {
   float: left;
   margin: 0 1em 0 0;
 }
-#hb #side.hb.side.left .item:hover {
+.hb #side.hb.side.left .item:hover {
   background: #0e71c0;
   color: #fff;
 }
-#hb #main {
+.hb #main {
   margin: 0;
 }
-#hb #main .breadcrumb.segment {
+.hb #main .breadcrumb.segment {
   box-shadow: none;
   width: 100%;
   margin-bottom: 10px;
 }
-#hb #main .breadcrumb.segment .active {
+.hb #main .breadcrumb.segment .active {
   color: #666;
+}
+.hb #photo {
+  margin-top: 0;
+}
+.hb #photo #small {
+  text-align: right;
+  margin-top: 22px;
+}
+.hb #photo #small .small {
+  cursor: pointer;
+}
+.hb #photo #big {
+  margin-top: 0;
+}
+.hb #photo #big img {
+  max-width: 100%;
 }
