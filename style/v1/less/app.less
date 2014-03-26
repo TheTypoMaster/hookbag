@@ -1,0 +1,30 @@
+@link:#4288ca;
+#hb{
+	font-family:"Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif/*rtl:prepend:"Droid Arabic Kufi","Droid Sans", */;
+	font-size:62.5%;
+	body{
+		margin:0;
+		padding:0;
+	}
+	a{
+		color:@link;
+		text-decoration:none;
+		&:hover{
+			color:darken(@link,20%);
+		}
+	}
+	#header{
+		.hb.logo{
+			width:200px;
+			height:45px;
+			margin-top:5px;
+			background:url(/page/img/logo.png);
+		}
+		.item{
+			padding:20px;
+			&.hb.search{
+				width:800px;
+			}
+		}
+	}
+}

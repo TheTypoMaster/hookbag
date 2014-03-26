@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" id="hb">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,3 +15,17 @@
 <body>
 
   {% include page/header/mod/if-lt-ie8.html %}
+  <div class="ui menu" id="header">
+  	<a href="/page/html/index.html" class="item hb logo"></a>
+  	<ul class="right menu">
+  		<li class="item hb search">
+  			<div class="ui icon input">
+          <input type="text" placeholder="Keywords,Model#,SKU or UPC#">
+          <i class="search link icon"></i>
+        </div>
+  		</li>
+  		<li class="item"><a href="">Sign Up</a></li>
+  		<li class="item"><a href="">Sign In</a></li>
+  		<li class="item">cart</li>
+  	</ul>
+  </div>
