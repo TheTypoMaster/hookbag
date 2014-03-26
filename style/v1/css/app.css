@@ -30,6 +30,7 @@
   /*******************************
            item
 *******************************/
+  /*photo*/
 }
 .hb.grid > .column {
   padding-left: 1%;
@@ -104,4 +105,24 @@
 }
 .hb #photo #big img {
   max-width: 100%;
+}
+.hb #attr .hb.header {
+  text-transform: uppercase;
+}
+.hb #attr .hb.header .item {
+  font-size: 11px;
+}
+.hb #attr .price {
+  color: #aaa;
+}
+.hb #attr .price .current span {
+  font-size: 2rem;
+  color: #000;
+}
+.hb #attr .color .item {
+  width: auto;
+  min-height: 0;
+}
+.hb #attr .size {
+  margin-left: 38px;
 }
