@@ -5,7 +5,7 @@
 }
 #hb body {
   margin: 0;
-  padding: 0;
+  padding: 55px 0 0 0;
 }
 #hb a {
   color: #4288ca;
@@ -52,7 +52,11 @@
 }
 .hb#header {
   border-radius: 0;
-  margin-bottom: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
 }
 .hb#header .hb.logo {
   width: 200px;
@@ -72,6 +76,9 @@
   padding: 0;
   /*left*/
 }
+.hb #side.hb.side.left {
+  position: fixed;
+}
 .hb #side.hb.side.left .item {
   border-radius: 0;
   color: #000;
@@ -89,6 +96,7 @@
 }
 .hb #main {
   margin: 0;
+  float: right;
 }
 .hb #main .breadcrumb.segment {
   box-shadow: none;
