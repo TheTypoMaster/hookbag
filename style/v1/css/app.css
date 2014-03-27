@@ -144,6 +144,24 @@
 .hb #buy .price strong {
   color: #A94442;
 }
+.hb #policy .grid .column {
+  position: relative;
+}
+.hb #policy .grid .column:after {
+  display: block;
+  height: 0;
+  width: 15px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-weight: bold;
+  content: "→";
+  font-size: 1.5rem;
+  margin-top: -1rem;
+}
+.hb #policy .grid .column:last-child:after {
+  display: none;
+}
 .hb .hb.horizontal > .item {
   margin: 0;
   padding: 0;

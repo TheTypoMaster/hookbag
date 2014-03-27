@@ -6,10 +6,20 @@ $(function(){
 	$('.hb.checkbox')
 	.checkbox()
 	;
-	$('.hb.tabular .item')
+	$('#tab1>.item')
 	.tab({
-		context : '#hb',
-		history : false
-	})
-	;
+		history:false,
+		onTabLoad:function(){
+			$('.hb.tab').eq(0).addClass('active');
+		}
+	});
+	$('#size>.item').click(function(){
+		var dataTab=$(this).attr('data-tab');
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.hb.tab').each(function(){
+			if($(this).attr('data-tab')==dataTab){
+				$(this).addClass('active').siblings().removeClass('active');
+			}
+		});
+	});
 });

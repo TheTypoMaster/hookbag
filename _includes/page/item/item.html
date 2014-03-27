@@ -149,7 +149,7 @@
 				</div>
 			</div>
 		</div><!--accessories-->
-		<div class="ui hb tabular menu">
+		<div class="ui hb tabular menu" id="tab1">
 			<a class="item active" data-tab="overview">Overview</a>
 			<a class="item" data-tab="size">Size Chart</a>
 			<a class="item" data-tab="spec">Specifications</a>
@@ -209,12 +209,12 @@
 				<a href="#">Back to Top</a>
 			</div>
 			<div style="clear:both;"></div>
-			<div class="ui hb tabular menu">
+			<div class="ui hb tabular menu" id="size">
 				<a class="item active" data-tab="women">Women</a>
 				<a class="item" data-tab="men">Men</a>
 				<a class="item" data-tab="kind">Kinds</a>
 			</div>
-			<div class="ui tab active" data-tab="women">
+			<div class="ui hb tab active" data-tab="women">
 				<div class="ui tiny header">Regular Sizing</div>
 				<table class="ui table ">
 					<tbody>
@@ -263,11 +263,322 @@
 					</tbody>
 				</table>				
 			</div>
-			<div class="ui tab" data-tab="men"></div>
-			<div class="ui tab" data-tab="kind"></div>
+			<div class="ui hb tab" data-tab="men"></div>
+			<div class="ui hb tab" data-tab="kind"></div>
 		</div><!--size-->
-		<div class="ui tab" data-tab="spec"></div><!--spec-->
-		<div class="ui tab" data-tab="policy"></div><!--policy-->
+		<div class="ui tab" data-tab="spec">
+			<div class="ui left floated header">
+				Product Specifications
+			</div>
+			<div class="ui right floated tiny header">
+				<a href="#">Back to Top</a>
+			</div>
+			<table class="ui celled table">
+				<tbody>
+				<tr>
+				    <th colspan="2" class="pth">Interfaces/Ports</th>
+				</tr>
+				<tr>
+				    <th>Network (RJ-45)</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>HDMI</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>VGA</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Number of USB 2.0 Ports</th>
+				    <td>4</td>
+				</tr>
+				<tr>
+				    <th>Total Number of USB Ports</th>
+				    <td>4</td>
+				</tr>
+				<tr>
+				    <th>Audio Line In</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Audio Line Out</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Physical Characteristics</th>
+				</tr>
+				<tr>
+				    <th>Weight (Approximate)</th>
+				    <td>6.46 lb</td>
+				</tr>
+				<tr>
+				    <th>Form Factor</th>
+				    <td>Desktop</td>
+				</tr>
+				<tr>
+				    <th>Depth</th>
+				    <td>1.7"</td>
+				</tr>
+				<tr>
+				    <th>Height</th>
+				    <td>12.9"</td>
+				</tr>
+				<tr>
+				    <th>Width</th>
+				    <td>15.4"</td>
+				</tr>
+				<tr>
+				    <th>Color</th>
+				    <td>Black</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">I/O Expansions</th>
+				</tr>
+				<tr>
+				    <th>Number of Total Expansion Bays</th>
+				    <td>1</td>
+				</tr>
+				<tr>
+				    <th>Number of Internal 2.5" Bays</th>
+				    <td>1</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Memory</th>
+				</tr>
+				<tr>
+				    <th>Memory Technology</th>
+				    <td>DDR3 SDRAM</td>
+				</tr>
+				<tr>
+				    <th>Maximum Memory</th>
+				    <td>4 GB</td>
+				</tr>
+				<tr>
+				    <th>Number of Total Memory Slots</th>
+				    <td>2</td>
+				</tr>
+				<tr>
+				    <th>Memory Card Supported</th>
+				    <td>Secure Digital (SD) Card;Secure Digital High Capacity (SDHC);Secure Digital Extended Capacity (SDXC);</td>
+				</tr>
+				<tr>
+				    <th>Memory Card Reader</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Network &amp; Communication</th>
+				</tr>
+				<tr>
+				    <th>Ethernet Technology</th>
+				    <td>Gigabit Ethernet</td>
+				</tr>
+				<tr>
+				    <th>Wi-Fi Standard</th>
+				    <td>IEEE 802.11b/g/n</td>
+				</tr>
+				<tr>
+				    <th>Wi-Fi</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Power Description</th>
+				</tr>
+				<tr>
+				    <th>Maximum Power Supply Wattage</th>
+				    <td>40 W</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Software</th>
+				</tr>
+				<tr>
+				    <th>Operating System</th>
+				    <td>No</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Processor &amp; Chipset</th>
+				</tr>
+				<tr>
+				    <th>Processor Manufacturer</th>
+				    <td>Intel</td>
+				</tr>
+				<tr>
+				    <th>Processor Core</th>
+				    <td>Dual-core (2 Core)</td>
+				</tr>
+				<tr>
+				    <th>Number of Processors Supported</th>
+				    <td>1</td>
+				</tr>
+				<tr>
+				    <th>Chipset Manufacturer</th>
+				    <td>Intel</td>
+				</tr>
+				<tr>
+				    <th>64-bit Processing</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Cache</th>
+				    <td>1 MB</td>
+				</tr>
+				<tr>
+				    <th>Processor Type</th>
+				    <td>Atom</td>
+				</tr>
+				<tr>
+				    <th>Processor Speed</th>
+				    <td>1.86 GHz</td>
+				</tr>
+				<tr>
+				    <th>Chipset Model</th>
+				    <td>NM10 Express</td>
+				</tr>
+				<tr>
+				    <th>Processor Model</th>
+				    <td>D2550</td>
+				</tr>
+				<tr>
+				    <th>Number of Processors Installed</th>
+				    <td>1</td>
+				</tr>
+				<tr>
+				    <th>Hyper-Threading</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Display &amp; Graphics</th>
+				</tr>
+				<tr>
+				    <th>Screen Mode</th>
+				    <td>HD</td>
+				</tr>
+				<tr>
+				    <th>Screen Size</th>
+				    <td>15.6"</td>
+				</tr>
+				<tr>
+				    <th>Screen Resolution</th>
+				    <td>1366 x 768</td>
+				</tr>
+				<tr>
+				    <th>Display Screen Type</th>
+				    <td>Active Matrix TFT Color LCD</td>
+				</tr>
+				<tr>
+				    <th>Graphics Controller Model</th>
+				    <td>Graphics Media Accelerator 3650</td>
+				</tr>
+				<tr>
+				    <th>Graphics Controller Manufacturer</th>
+				    <td>Intel</td>
+				</tr>
+				<tr>
+				    <th>Graphics Memory Technology</th>
+				    <td>DDR3 SDRAM</td>
+				</tr>
+				<tr>
+				    <th>Graphics Memory Capacity</th>
+				    <td>384 MB</td>
+				</tr>
+				<tr>
+				    <th>Aspect Ratio</th>
+				    <td>16:9</td>
+				</tr>
+				<tr>
+				    <th>Graphics Memory Accessibility</th>
+				    <td>Shared</td>
+				</tr>
+				<tr>
+				    <th>Touchscreen</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Backlight Technology</th>
+				    <td>LED</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Controllers</th>
+				</tr>
+				<tr>
+				    <th>Controller Type</th>
+				    <td>Serial ATA/300</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Built-in Devices</th>
+				</tr>
+				<tr>
+				    <th>Webcam</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Microphone</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Detail Specifications</th>
+				</tr>
+				<tr>
+				    <th>VGA</th>
+				    <td>Yes</td>
+				</tr>
+				<tr>
+				    <th>Color</th>
+				    <td>Black</td>
+				</tr>
+				<tr>
+				    <th>Form Factor</th>
+				    <td>Desktop</td>
+				</tr>
+				<tr>
+				    <th>Depth</th>
+				    <td>1.7"</td>
+				</tr>
+				<tr>
+				    <th>Height</th>
+				    <td>12.9"</td>
+				</tr>
+				<tr>
+				    <th>Width</th>
+				    <td>15.4"</td>
+				</tr>
+				<tr>
+				    <th>Operating System</th>
+				    <td>No</td>
+				</tr>
+				<tr>
+				    <th colspan="2" class="pth">Key Features</th>
+				</tr>
+				<tr>
+				    <th>Product Type</th>
+				    <td>All-in-One Computer</td>
+				</tr>
+				<tr>
+				    <th>Operating System</th>
+				    <td>No</td>
+				</tr>
+				<tr>
+				    <th>Form Factor</th>
+				    <td>Desktop</td>
+				</tr>
+				</tbody>
+			</table>
+		</div><!--spec-->
+		<div class="ui tab vertical segment" id="policy" data-tab="policy">
+			<div class="ui block inverted black header">General Return Policy</div>
+			{% for x in (1..6) %}
+			<div class="ui small header">01/Free Return</div>
+			<p>Hookbag offers you hassle free returns for a full refund or replacement within 45 days from the delivery date (special products excluded).</p>
+			{% endfor %}
+			<div class="ui block inverted black header">Return Procedure</div>
+			<div class="ui four column grid">
+				{% for x in (1..4) %}
+				<div class="column">Visit our Online Returns Center and get a return mailing label and return mailing authorization. We will inform you within one business day whether your RMA is valid or not.</div>
+				{% endfor %}
+			</div>
+			<div class="ui fluid basic button"><i class="forward mail icon"></i> Return Policy</div>
+		</div><!--policy-->
 		<!--tab-->
 		<div class="ui hb header">BEST SELLER</div>
 		<div class="ui hb horizontal list four column grid " id="best">
