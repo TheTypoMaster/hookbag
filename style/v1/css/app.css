@@ -67,9 +67,6 @@
 .hb#header .item {
   padding: 20px;
 }
-.hb#header .item.hb.search {
-  width: 800px;
-}
 .hb #side.hb.side {
   border-radius: 0;
   border-top: none;
@@ -94,14 +91,40 @@
   background: #0e71c0;
   color: #fff;
 }
-.hb #main {
+.hb #side.hb.side.left .item.slideLeft.active .icon {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+.hb #side.hb.side.slideLeft {
+  width: 5%;
+}
+.hb #side.hb.side.slideLeft .item {
+  font-size: 0;
+  min-height: 3.5rem;
+  padding: 16px 0;
+  text-align: center;
+}
+.hb #side.hb.side.slideLeft .item .icon {
+  font-size: 1.5rem;
   margin: 0;
+  float: none;
+}
+.hb #side.hb.side.slideLeft .item.slideLeft .icon {
+  font-size: 2rem;
+}
+.hb #main {
+  margin: 10px 0 0;
   float: right;
+}
+.hb #main.slideLeft {
+  width: 95%;
 }
 .hb #main .breadcrumb.segment {
   box-shadow: none;
   width: 100%;
   margin-bottom: 10px;
+  display: none;
 }
 .hb #main .breadcrumb.segment .active {
   color: #666;

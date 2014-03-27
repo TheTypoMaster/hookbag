@@ -1,11 +1,26 @@
 $(function(){
-	$('#side').height($(window).height());
+	//side
+	$('#side')
+	.height($(window).height())
+	;
+	$('#side>.item.slideLeft')
+	.click(function(){
+		$(this)
+		.toggleClass('active')
+		.parent().toggleClass('slideLeft').next().toggleClass('slideLeft')
+		;
+	})
+	;
+
+	//select
 	$('.hb.selection.dropdown')
 	.dropdown()
 	;	
+	//checkbox
 	$('.hb.checkbox')
 	.checkbox()
 	;
+	//tabs
 	$('#tab1>.item')
 	.tab({
 		history:false,
