@@ -6,4 +6,10 @@ $(function(){
 	$('.hb.checkbox')
 	.checkbox()
 	;
+	$('.hb.tabular .item')
+	.tab({
+		context : '#hb',
+		history : false
+	})
+	;
 });

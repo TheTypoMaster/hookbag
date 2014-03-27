@@ -14,6 +14,10 @@
 #hb a:hover {
   color: #245482;
 }
+#hb .hb.header {
+  margin: 20px 0 10px;
+  clear: both;
+}
 .hb {
   /*******************************
            hb  
@@ -31,6 +35,9 @@
            item
 *******************************/
   /*photo*/
+  /*attr*/
+  /*buy*/
+  /*list*/
 }
 .hb.grid > .column {
   padding-left: 1%;
@@ -63,6 +70,7 @@
   border-radius: 0;
   border-top: none;
   padding: 0;
+  /*left*/
 }
 .hb #side.hb.side.left .item {
   border-radius: 0;
@@ -101,6 +109,7 @@
   cursor: pointer;
 }
 .hb #photo #big {
+  background-color: #4a4a4a;
   margin-top: 0;
 }
 .hb #photo #big img {
@@ -135,10 +144,11 @@
 .hb #buy .price strong {
   color: #A94442;
 }
-.hb #acce > .item {
-  margin-left: 0;
+.hb .hb.horizontal > .item {
+  margin: 0;
+  padding: 0;
 }
-.hb #acce > .item .header {
+.hb .hb.horizontal > .item .header {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #454545;
