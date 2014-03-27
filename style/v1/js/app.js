@@ -1,6 +1,9 @@
 $(function(){
 	$('#side').height($(window).height());
-	$('.ui.selection.dropdown')
+	$('.hb.selection.dropdown')
 	.dropdown()
 	;	
+	$('.hb.checkbox')
+	.checkbox()
+	;
 });

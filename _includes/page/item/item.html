@@ -53,9 +53,9 @@
 			<div class="six wide column" id="photo">
 				<div class="ui grid">
 					<ul class="hb three wide column" id="small">
+						{% for x in (1..3) %}
 						<li class="small"><img src="" alt="" data-src="holder.js/50x50/sky"></li>
-						<li class="small"><img src="" alt="" data-src="holder.js/50x50/sky"></li>
-						<li class="small"><img src="" alt="" data-src="holder.js/50x50/sky"></li>
+						{% endfor %}
 					</ul><!--small-->
 					<div class="thirteen wide column" id="big">
 						<img src="" alt="" data-src="holder.js/340x340/industrial">
@@ -89,7 +89,7 @@
 						<li class="item"><img src="" alt="" data-src="holder.js/40x40/sky"></li>
 					</ul><!--color-->
 					<p>Size: <strong>LG(14-16 Big Kids)</strong></p>
-					<div class="ui selection dropdown size">
+					<div class="ui hb selection dropdown size">
 	          <input type="hidden" name="gender">
 	          <div class="default text">LG(14-16 Big Kids)</div>
 	          <i class="dropdown icon"></i>
@@ -109,18 +109,46 @@
 				  </div>
 				  <div class="field price"><strong>CDN$ 40.75</strong> + <span>Free Shipping</span></div>
 				  <div class="field">
-					  <div class="ui green small fluid submit button"><i class="cart icon"></i> Add to Cart</div>			  	
+					  <div class="ui green small fluid button"><i class="cart icon"></i> Add to Cart</div>			  	
 				  </div>
 				  <div class="field">
-					  <div class="ui submit small fluid button"><i class="cart icon"></i> Back Order</div>
+					  <div class="ui small fluid button"><i class="cart icon"></i> Back Order</div>
 				  </div>
 				  <div class="field">
-					  <div class="ui submit small fluid button"><i class="cart icon"></i> Add to Wishlist</div>
+					  <div class="ui small fluid button"><i class="cart icon"></i> Add to Wishlist</div>
 				  </div>
 				</div>				
 			</div><!--buy-->
 		</div>
 		<!--itemInfo-->
+		<div class="ui header">FREQUENTLY BOUGHT TOGETHER & ACCESSORIES</div>
+		<div class="ui horizontal list five column grid " id="acce">
+			{%  for x in (1..4) %}
+			<div class="item column">
+				<img src="" data-src="holder.js/80x80/sky" alt="" class="ui avart image">
+				<div class="ui hb checkbox">
+          <input type="checkbox" checked>
+          <label></label>
+	      </div>
+				<div class="content">
+					<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+					CDN$ 40.57
+				</div>
+			</div>
+			{% endfor %}
+			<div class="item column">
+				<div class="ui form inverted segment">
+				  <div class="field">Price for Totals <strong>$222.99</strong></div>
+				  <div class="field">
+					  <div class="ui green small fluid button"><i class="cart icon"></i> Add to Cart</div>			  	
+				  </div>
+				  <div class="field">
+					  <div class="ui small fluid button"><i class="cart icon"></i> Add to Wishlist</div>
+				  </div>
+					
+				</div>
+			</div>
+		</div><!--accessories-->
 	</div>
 	<!--product-->
 
