@@ -78,6 +78,7 @@
 }
 .hb #side.hb.side.left {
   position: fixed;
+  transition: opacity .5s;
 }
 .hb #side.hb.side.left .item {
   border-radius: 0;
@@ -106,6 +107,7 @@
 }
 .hb #side.hb.side.slideLeft {
   width: 5%;
+  transition: width .5s;
 }
 .hb #side.hb.side.slideLeft .item {
   font-size: 0;
