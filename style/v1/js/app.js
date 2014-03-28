@@ -1,14 +1,18 @@
 $(function(){
 	//side
-	$('#side')
+	$('.nav')
 	.height($(window).height())
 	;
-	$('#side>.item.slideLeft')
+
+	$('[data-toggle=offcanvas]')
 	.click(function(){
-		$(this)
-		.toggleClass('active')
-		.parent().toggleClass('slideLeft').next().toggleClass('slideLeft')
-		;
+    var side=$($(this).attr('data-target')).parent(),sideElm=$($(this).attr('data-target')),len=side.find('#nav').children().index(sideElm.find('.left'));
+    if($(this).hasClass('slideLeft')){
+      side.toggleClass('slideLeft').next().toggleClass('slideLeft');
+    }else{
+      side.toggleClass('subNav');
+      console.log(side);
+    }
 	})
 	;
 

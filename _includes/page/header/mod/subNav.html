@@ -1,0 +1,14 @@
+    <ul id="subNav" class="nav">
+      <li class="ui grid pagination menu">
+        <a class="thirteen wide column item" href="node.html">
+            <i class="desktop icon"></i>
+            Computer Systems
+        </a>
+        <span class="three wide column item" data-toggle='offcanvas' data-target="#nav"><i class="angle right icon"></i></span>
+      </li>
+      {% for x in (1..6) %}
+      <li class="ui sub pagination menu slideLeft">
+        <a href="grid.html">Notebooks</a>
+      </li>
+      {% endfor %}
+    </ul>

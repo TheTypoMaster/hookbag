@@ -1,0 +1,38 @@
+	<div class="thirteen wide column" id="main">
+		<div class="ui segment">
+			<div class="ui dividing huge header">
+				Computer Systems
+				<div class="sub header">
+					共有 1000 product(s) 符合　　
+					<a class="ui black small label">
+					  人气降序 <i class="icon close"></i>
+					</a>
+					<a class="ui green small label">
+					  HP品牌 <i class="icon close"></i>
+					</a>
+					<a class="ui red small label">
+					  4G内存 <i class="icon close"></i>
+					</a>
+					<a class="ui blue small label">
+					  价格 10-500 <i class="icon close"></i>
+					</a>
+					<a class="ui orange small label">
+					  红色 <i class="icon close"></i>
+					</a>
+					<a class="ui purple small label">
+					  排除 GT650 <i class="icon close"></i>
+					</a>
+				</div>
+			</div><!-- head -->
+			<div class="ui hb horizontal list four column grid itemList">
+				{% for x in (1..5) %}
+				<div class="row">
+				{%  for x in (1..4) %}
+					{% include page/mod/item.html %}
+				{% endfor %}
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!--grid-->
+
