@@ -19,6 +19,7 @@
 }
 #hb .hb.header {
   clear: both;
+  margin: 25px 0 10px;
 }
 .hb {
   /*******************************
@@ -269,6 +270,9 @@
 }
 .hb #index > .column#side {
   padding-left: 10px;
+}
+.hb #index > .column#side .segment > .header {
+  margin-top: 0;
 }
 .hb #index .header {
   font-size: 1rem;
