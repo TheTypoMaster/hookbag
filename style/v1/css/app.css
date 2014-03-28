@@ -233,7 +233,6 @@
   position: absolute;
   right: 10%;
   top: 20%;
-  z-index: 999;
 }
 .hb #acce .column.acce:nth-child(4):before {
   content: "=";
