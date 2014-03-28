@@ -14,8 +14,10 @@
 #hb a:hover {
   color: #245482;
 }
+#hb .clear {
+  clear: both;
+}
 #hb .hb.header {
-  margin: 20px 0 10px;
   clear: both;
 }
 .hb {
@@ -38,6 +40,9 @@
   /*attr*/
   /*buy*/
   /*list*/
+  /*******************************
+           index
+*******************************/
   /*******************************
            footer
 *******************************/
@@ -130,6 +135,10 @@
   margin: 10px 0 0;
   float: right;
 }
+.hb #main .banner {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
 .hb #main.slideLeft {
   width: 95%;
 }
@@ -182,6 +191,24 @@
 .hb #attr .size {
   margin-left: 38px;
 }
+.hb #acce .column.acce {
+  position: relative;
+}
+.hb #acce .column.acce:before {
+  content: "+";
+  height: 0;
+  width: 20px;
+  display: block;
+  color: #aaaaaa;
+  font-size: 2rem;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  z-index: 999;
+}
+.hb #acce .column.acce:nth-child(4):before {
+  display: none;
+}
 .hb #buy .price {
   color: #aaa;
 }
@@ -206,14 +233,63 @@
 .hb #policy .grid .column:last-child:after {
   display: none;
 }
-.hb .hb.horizontal > .item {
+.hb .hb.itemList .item {
   margin: 0;
   padding: 0;
 }
-.hb .hb.horizontal > .item .header {
+.hb .hb.itemList .item .header {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #454545;
+  max-height: 3.6em;
+  overflow: hidden;
+}
+.hb .hb.itemList .item .price {
+  color: #A94442;
+}
+.hb .hb.itemList .item .price del {
+  color: #aaa;
+}
+.hb .hb.itemList2 {
+  margin: 0;
+  font-size: 1rem;
+}
+.hb .hb.itemList2 .item img {
+  max-width: 36%;
+}
+.hb .hb.itemList2 .item .content {
+  width: 50%;
+}
+.hb #index {
+  margin: 0;
+}
+.hb #index > .column {
+  margin-top: 0;
+  padding: 0;
+}
+.hb #index > .column#side {
+  padding-left: 10px;
+}
+.hb #index .header {
+  font-size: 1rem;
+}
+.hb #index .header .header {
+  margin-bottom: 5px;
+  line-height: 2;
+}
+.hb #index .header .header.left {
+  font-size: 2em;
+  line-height: 1;
+}
+.hb #index #deals .hb.header {
+  margin-top: 0;
+}
+.hb #index #deals .hb.header .sub.header {
+  text-transform: uppercase;
+  line-height: 2.8rem;
+}
+.hb #index #deals.inverted > .header {
+  color: #000;
 }
 .hb #footer {
   color: #454545;

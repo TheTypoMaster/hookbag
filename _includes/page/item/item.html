@@ -73,9 +73,9 @@
 			</div>
 			<!--itemInfo-->
 			<div class="ui hb header">FREQUENTLY BOUGHT TOGETHER & ACCESSORIES</div>
-			<div class="ui hb horizontal list five column grid " id="acce">
+			<div class="ui hb horizontal list five column grid itemList" id="acce">
 				{%  for x in (1..4) %}
-				<div class="item column">
+				<div class="item column acce">
 					<img src="" data-src="holder.js/80x80/sky" alt="" class="ui avart image">
 					<div class="ui hb checkbox">
 	          <input type="checkbox" checked>
@@ -107,12 +107,14 @@
 				<a class="item" data-tab="policy">Return Policy</a>
 			</div><!--tabular-->
 			<div class="ui tab active" data-tab="overview">
-				<div class="ui left floated header">
-					Overview
-					<div class="sub header">Shuttle System X50V3L (BLACK) All-In-One 15.6inch Intel Atom D2700 GMA3650 DDR3 SODIMM D-Sub/HDMI 2.5xHDD Black Retail</div>
-				</div>
-				<div class="ui right floated tiny header">
-					<a href="#">Back to Top</a>
+				<div class="ui hb header">
+					<div class="ui left floated header">
+						Overview
+						<div class="sub header">Shuttle System X50V3L (BLACK) All-In-One 15.6inch Intel Atom D2700 GMA3650 DDR3 SODIMM D-Sub/HDMI 2.5xHDD Black Retail</div>
+					</div>
+					<div class="ui right floated tiny header">
+						<a href="#">Back to Top</a>
+					</div>
 				</div>
 				<table class="ui celled table">
 	        <tbody>
@@ -152,14 +154,16 @@
 		    </table>
 			</div><!--overview-->
 			<div class="ui tab" data-tab="size">
-				<div class="ui left floated header">
-					Size Chart
-					<div class="sub header">We do not have specific size information for this item, <br>but please see our general size chart below for reference.</div>
+				<div class="ui hb header">
+					<div class="ui left floated header">
+						Size Chart
+						<div class="sub header">We do not have specific size information for this item, <br>but please see our general size chart below for reference.</div>
+					</div>
+					<div class="ui right floated tiny header">
+						<a href="#">Back to Top</a>
+					</div>
 				</div>
-				<div class="ui right floated tiny header">
-					<a href="#">Back to Top</a>
-				</div>
-				<div style="clear:both;"></div>
+				<div class="clear"></div>
 				<div class="ui hb tabular menu" id="size">
 					<a class="item active" data-tab="women">Women</a>
 					<a class="item" data-tab="men">Men</a>
@@ -534,18 +538,8 @@
 			</div><!--policy-->
 			<!--tab-->
 			<div class="ui hb header">BEST SELLER</div>
-			<div class="ui hb horizontal list four column grid " id="best">
-				{%  for x in (1..4) %}
-				<div class="item column">
-					<img src="" data-src="holder.js/180x180/industrial" alt="" class="ui avart image">
-					<div class="content">
-						<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-						CDN$ 40.57
-					</div>
-				</div>
-				{% endfor %}
-
-			</div><!--bestSeller-->
+			{% include page/mod/itemList.html %}
+			<!--bestSeller-->
 
 		</div>
 		<!--product-->
