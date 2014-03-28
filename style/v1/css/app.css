@@ -236,7 +236,7 @@
   z-index: 999;
 }
 .hb #acce .column.acce:nth-child(4):before {
-  display: none;
+  content: "=";
 }
 .hb #buy .price {
   color: #aaa;
