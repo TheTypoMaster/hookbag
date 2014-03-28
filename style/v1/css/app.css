@@ -76,60 +76,71 @@
 .hb#header .item {
   padding: 20px;
 }
-.hb #side.hb.side {
+.hb #side.side {
   border-radius: 0;
   border-top: none;
   padding: 0;
   /*left*/
 }
-.hb #side.hb.side.left {
+.hb #side.side.left {
   position: fixed;
   transition: opacity .5s;
+  margin-top: 0;
 }
-.hb #side.hb.side.left .item {
+.hb #side.side.left #nav {
+  margin: 0;
+  padding: 0;
+}
+.hb #side.side.left #nav > .menu {
+  width: 100%;
   border-radius: 0;
   color: #000;
-  font-size: 15px;
   text-transform: uppercase;
-  padding: 20px 10px;
+  padding: 8px 0;
 }
-.hb #side.hb.side.left .item .icon {
+.hb #side.side.left #nav > .menu > .item {
+  margin: 0;
+  text-align: left;
+}
+.hb #side.side.left #nav > .menu a {
+  color: #000;
+}
+.hb #side.side.left #nav > .menu .icon {
   float: left;
-  margin: 0 .5em 0 0;
-  font-size: 1.5rem;
+  margin-right: 1rem;
 }
-.hb #side.hb.side.left .item .icon.mobile {
+.hb #side.side.left #nav > .menu .icon.mobile {
   font-size: 2rem;
   margin: -0.3rem 0.5rem 0 -0.4rem;
 }
-.hb #side.hb.side.left .item:hover {
+.hb #side.side.left #nav > .menu:hover {
   background: #0e71c0;
   color: #fff;
 }
-.hb #side.hb.side.left .item.slideLeft.active .icon {
+.hb #side.side.left #nav > .menu.slideLeft.active .icon {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
 }
-.hb #side.hb.side.slideLeft {
+.hb #side.side.slideLeft {
   width: 5%;
   transition: width .5s;
 }
-.hb #side.hb.side.slideLeft .item {
+.hb #side.side.slideLeft .item {
   font-size: 0;
   min-height: 3.5rem;
   padding: 16px 0;
   text-align: center;
 }
-.hb #side.hb.side.slideLeft .item .icon {
+.hb #side.side.slideLeft .item .icon {
   font-size: 1.5rem;
   margin: 0;
   float: none;
 }
-.hb #side.hb.side.slideLeft .item .icon.mobile {
+.hb #side.side.slideLeft .item .icon.mobile {
   margin: 0;
 }
-.hb #side.hb.side.slideLeft .item.slideLeft .icon {
+.hb #side.side.slideLeft .item.slideLeft .icon {
   font-size: 2rem;
 }
 .hb #main {

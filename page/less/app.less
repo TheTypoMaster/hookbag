@@ -66,37 +66,48 @@
            side
 *******************************/
 	#side{
-		&.hb.side{
+		&.side{
 			border-radius:0;
 			border-top:none;
 			padding:0;
 			&.left{
 				position:fixed;
 				transition:opacity .5s;
-				.item{
-					border-radius:0;
-					color:#000;
-					font-size:15px;
-					text-transform:uppercase;
-					padding:20px 10px;
-					.icon{
-						float:left;
-						margin:0 .5em 0 0;
-						font-size:1.5rem;
-						&.mobile{
-							font-size: 2rem;
-							margin: -.3rem .5rem 0 -.4rem;
+				margin-top:0;
+				#nav{
+					margin:0;
+					padding:0;
+					&>.menu{
+						width:100%;
+						border-radius:0;
+						color:#000;
+						text-transform:uppercase;
+						padding:8px 0;
+						&>.item{
+							margin:0;
+							text-align:left;
 						}
-					}
-					&:hover{
-						background:@linkbg;
-						color:#fff;
-					}
-					&.slideLeft.active{
+						a{
+							color:#000;
+						}
 						.icon{
-							transform:rotate(180deg);
-							-webkit-transform:rotate(180deg);
-							-moz-transform:rotate(180deg);
+							float:left;
+							margin-right:1rem;
+							&.mobile{
+								font-size: 2rem;
+								margin: -.3rem .5rem 0 -.4rem;
+							}
+						}
+						&:hover{
+							background:@linkbg;
+							color:#fff;
+						}
+						&.slideLeft.active{
+							.icon{
+								transform:rotate(180deg);
+								-webkit-transform:rotate(180deg);
+								-moz-transform:rotate(180deg);
+							}
 						}
 					}
 				}
