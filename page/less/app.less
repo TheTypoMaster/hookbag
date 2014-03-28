@@ -76,6 +76,7 @@
 					margin:0;
 					padding:0;
 					position:fixed;
+					z-index:1;
 					width:18.75%;
 					background:#fff;
 					transition:margin .2s;
@@ -128,6 +129,12 @@
 				#nav > .menu{
 					span.item{
 						display:none;
+					}
+					&:hover{
+						width:215px;
+						.item{
+							font-size:1rem;
+						}
 					}
 					.item{
 						font-size:0;

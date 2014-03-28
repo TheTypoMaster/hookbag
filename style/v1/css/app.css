@@ -89,6 +89,7 @@
   margin: 0;
   padding: 0;
   position: fixed;
+  z-index: 1;
   width: 18.75%;
   background: #fff;
   transition: margin .2s;
@@ -136,6 +137,12 @@
 }
 .hb #side.side.slideLeft #nav > .menu span.item {
   display: none;
+}
+.hb #side.side.slideLeft #nav > .menu:hover {
+  width: 215px;
+}
+.hb #side.side.slideLeft #nav > .menu:hover .item {
+  font-size: 1rem;
 }
 .hb #side.side.slideLeft #nav > .menu .item {
   font-size: 0;
