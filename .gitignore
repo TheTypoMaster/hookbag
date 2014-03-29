@@ -4,6 +4,9 @@ _site
 .ruby-version
 .sass-cache
 
+#webapp
+style/v*/
+
 # Numerous always-ignore extensions
 *.diff
 *.err
