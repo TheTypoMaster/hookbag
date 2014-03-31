@@ -209,7 +209,7 @@ $flexMid:                     true !default; //用于ie10 -ms前缀
 
 @mixin background-size($size...) {
   // <length> | auto | cover | contain
-  @if length($origin) >= 1 {
+  @if length($size) >= 1 {
     @include prefixer(background-size, $size, webkit);
   } @else {
     @include prefixer(background-size, cover, webkit);
@@ -693,8 +693,9 @@ $flexMid:                     true !default; //用于ie10 -ms前缀
   // 只传入数字则三大版本都支持
   @if type-of($arg) == number {
     @include flex-old(box-flex,$arg);
+    @include flex-mid(flex,$arg);
   }
-  @include prefixer(flex, $arg, ms webkit moz);
+  @include prefixer(flex, $arg, webkit moz);
 }
 
 
