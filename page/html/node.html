@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title></title>
+<title>node</title>
 
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,7 +42,8 @@
   	</ul>
   </div>
 <div class="ui hb grid">
-  <div class="three wide column side left" id="side">
+  
+  <div class="three wide column side left subNav" id="side">
       <ul id="nav" class="nav">
       <li class="ui grid pagination menu" data-toggle='offcanvas' data-target="#subNav">
         <span class="three wide column item"><i class="angle left icon"></i></span>
@@ -115,13 +116,21 @@
         </a>
       </li>
       <li class="ui grid pagination menu slideLeft" data-toggle='offcanvas' data-target="#nav">
+        <div class="open">
         <div class="sixteen column item" href="node.html">
           <i class="arrow sign left icon"></i>
           收起菜单
         </div>
+        </div>
+        <div class="close">
+        <div class="sixteen column item" href="node.html">
+          <i class="arrow sign right icon"></i>
+          展开菜单
+        </div>
+        </div>
       </li>
-    </ul>
-      <ul id="subNav" class="nav">
+    </ul>      
+    <ul id="subNav" class="nav attr ui  menu">
       <li class="ui grid pagination menu">
         <a class="thirteen wide column item" href="node.html">
             <i class="desktop icon"></i>
@@ -130,32 +139,47 @@
         <span class="three wide column item" data-toggle='offcanvas' data-target="#nav"><i class="angle right icon"></i></span>
       </li>
       
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
+      <li class="item">
+        <a href="grid.html">Notebooks <i class="angle right icon"></i></a>
       </li>
       
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
+      <li class="item">
+        <a href="grid.html">Notebooks <i class="angle right icon"></i></a>
       </li>
       
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
+      <li class="item">
+        <a href="grid.html">Notebooks <i class="angle right icon"></i></a>
       </li>
       
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
+      <li class="item ui hb basic accordion">
+        <span class="un-title un-spc-title active title"><i class="triangle right icon"></i> Brand Name</span>
+        <ul class="sNav active content">
+          <li><input type="checkbox" id="checkbox1"><label for="checkbox1"> Acer</label></li>
+          <li><input type="checkbox" id="checkbox2"><label for="checkbox2"> ASUS</label></li>
+          <li><input type="checkbox" id="checkbox3"><label for="checkbox3"> BTI</label></li>
+          <li><input type="checkbox" id="checkbox4"><label for="checkbox4"> Case Logic</label></li>
+          <li><input type="checkbox" id="checkbox5"><label for="checkbox5"> Cocoon</label></li>
+          <li><input type="checkbox" id="checkbox6"><label for="checkbox6"> Dell</label></li>
+          <li><input type="checkbox" id="checkbox7"><label for="checkbox7"> HP</label></li>
+          <li><input type="checkbox" id="checkbox8"><label for="checkbox8"> IBM</label></li>
+          <li><input type="checkbox" id="checkbox9"><label for="checkbox9"> Intel</label></li>
+          <li><input type="checkbox" id="checkbox10"><label for="checkbox9"> Kensington</label></li>
+        </ul>
       </li>
-      
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
-      </li>
-      
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
-      </li>
-      
-    </ul>
+      <li class="item ui hb basic accordion">
+        <span class="un-title un-spc-title title"><i class="triangle right icon"></i> Product Type</span>
+        <ul class="sNav content">
+            <li><input type="checkbox" id="checkbox11"><label for="checkbox11"> AC Adapter</label></li>
+            <li><input type="checkbox" id="checkbox12"><label for="checkbox12"> Carrying Case</label></li>
+            <li><input type="checkbox" id="checkbox13"><label for="checkbox13"> Cooling Stand</label></li>
+            <li><input type="checkbox" id="checkbox14"><label for="checkbox14"> Docking Station</label> </li>
+            <li><input type="checkbox" id="checkbox15"><label for="checkbox15"> Notebook Battery</label> </li>
+        </ul>                         
+      </li>                             
 
+
+    </ul>
+  
   </div><!--side-->
 
 
@@ -173,48 +197,56 @@
 					</div>
 					<div class="ui hb horizontal list four column grid itemList">
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
 </div>
@@ -225,48 +257,56 @@
 					</div>
 					<div class="ui hb horizontal list four column grid itemList">
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
 </div>
@@ -277,48 +317,56 @@
 					</div>
 					<div class="ui hb horizontal list four column grid itemList">
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
 </div>
@@ -329,48 +377,56 @@
 					</div>
 					<div class="ui hb horizontal list four column grid itemList">
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
-		<a href="item.html" class="item column">
-	<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
-	<div class="content">
-		<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
-		<div class="price">
-			<div class="current"><span>CDN$ 40.57</span></div>
+		<div class="column">
+	<a href="item.html" class="item">
+		<img src="" data-src="holder.js/150x150/industrial" alt="" class="ui avart image">
+		<div class="content">
+			<div class="header">AV / multimedia cable - mini-phone stereo 3.5 mm (M) - RCA (M) - 6 ft</div>
+			<div class="price">
+				<div class="current"><span>CDN$ 40.57</span></div>
+			</div>
 		</div>
-	</div>
-</a>	
+	</a>	
+</div>
 
 	
 </div>
@@ -585,7 +641,7 @@
 
 	</div><!--main-->
 </div><!--grid-->
-<script src="/style/v1/js/app.js"></script>
+<script src="/page/js/plugins.js"></script>
 
 
 </body>
