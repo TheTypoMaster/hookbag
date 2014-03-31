@@ -103,6 +103,14 @@
 						border-radius:0;
 						color:#000;
 						text-transform:uppercase;
+						&.slideLeft{
+							padding:10px 0;
+							text-align:center;
+							cursor:pointer;
+						}
+						.close{
+							display:none;
+						}
 						&>.item{
 							margin:0;
 							padding:0 1rem;
@@ -139,6 +147,12 @@
 							}
 						}
 					}
+					&.attr{
+						&>.item{
+							padding:10px;
+							width:100%;
+						}
+					}
 				}
 			}/*left*/
 			&.slideLeft{
@@ -157,24 +171,26 @@
 					}
 					.item{
 						font-size:0;
-						min-height:3.5rem;
-						padding:1.2rem;
 						width:100%;
 						.icon{
 							font-size:1.5rem;
-							margin:0;
+							margin:0 0 0 .5rem;
 							float:none;
 							&.mobile{
-								margin:0
+								margin:0;
+								font-size:2rem;
 							}
 						}
 					}
-					&.slideLeft{
-						.icon{
-							transform:rotate(180deg);
-							-webkit-transform:rotate(180deg);
-							-moz-transform:rotate(180deg);
-							font-size:2rem;
+					&.slideLeft {
+						.open{
+							display:none;
+						}
+						.close{
+							display:block;
+							.icon{
+								font-size:2rem;
+							}
 						}
 					}
 

@@ -70,9 +70,32 @@
         </a>
       </li>
       <li class="ui grid pagination menu slideLeft" data-toggle='offcanvas' data-target="#nav">
+        <div class="open">
         <div class="sixteen column item" href="node.html">
           <i class="arrow sign left icon"></i>
           收起菜单
         </div>
+        </div>
+        <div class="close">
+        <div class="sixteen column item" href="node.html">
+          <i class="arrow sign right icon"></i>
+          展开菜单
+        </div>
+        </div>
       </li>
     </ul>
+      
+    <ul id="subNav" class="nav">
+      <li class="ui grid pagination menu">
+        <a class="thirteen wide column item" href="node.html">
+            <i class="desktop icon"></i>
+            Computer Systems
+        </a>
+        <span class="three wide column item" data-toggle='offcanvas' data-target="#nav"><i class="angle right icon"></i></span>
+      </li>
+      {% for x in (1..8) %}
+      <li class="item">
+        <a href="grid.html">Notebooks <i class="angle right icon"></i></a>
+      </li>
+      {% endfor %}
+    </ul>    
