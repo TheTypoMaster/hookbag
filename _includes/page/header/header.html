@@ -31,10 +31,14 @@
   </div>
 <div class="ui hb grid">
   {% if page.title == 'index' or page.title == 'item' %}
-  <div class="three wide column side left" id="side">
+    {% if page.title == 'item' %}
+    <div class="three wide column side left slideLeft" id="side">
+    {% else %}  
+    <div class="three wide column side left" id="side">
+    {% endif %}
   {% include page/header/mod/nav.html %}
   {% else %}
-  <div class="three wide column side left" id="side">
+  <div class="three wide column side left subNav" id="side">
   {% include page/header/mod/subNav.html %}
   {% endif %}
   </div><!--side-->
