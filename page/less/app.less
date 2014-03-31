@@ -80,6 +80,24 @@
 					width:18.75%;
 					background:#fff;
 					transition:margin .2s;
+					&>.item{
+						padding:0 2rem;
+						line-height:2rem;
+						border-bottom:1px dotted #ddd;
+						width:auto;
+						.title{
+							&.active .icon{
+								transform:rotate(90deg);
+								-webkit-transform:rotate(90deg);
+								-moz-transform:rotate(90deg);
+							}
+						}
+						&>.sNav{
+							list-style-type:none;
+							line-height:2rem;
+							padding:0 0 0 1rem;
+						}
+					}
 					&>.menu{
 						width:100%;
 						border-radius:0;
@@ -87,8 +105,9 @@
 						text-transform:uppercase;
 						&>.item{
 							margin:0;
-							padding:1.4rem .5rem;
+							padding:0 1rem;
 							cursor:pointer;
+							line-height:4rem;
 							&:first-child{
 								border-radius:0;
 							}

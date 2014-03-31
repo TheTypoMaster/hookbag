@@ -31,7 +31,7 @@ $(function(){
 
     $('[data-toggle=offcanvas]')
     .click(function(){
-    var side=$($(this).attr('data-target')).parent(),sideElm=$($(this).attr('data-target')),len=side.find('#nav').children().index(sideElm.find('.left'));
+    var sideElm=$($(this).attr('data-target')),side=$(sideElm).parent();
     if($(this).hasClass('slideLeft')){
       side.toggleClass('slideLeft').next().toggleClass('slideLeft');
     }else{
@@ -45,6 +45,10 @@ $(function(){
     $('.hb.selection.dropdown')
     .dropdown()
     ;   
+    //accordion
+    $('.hb.accordion')
+      .accordion()
+    ;
     //checkbox
     $('.hb.checkbox')
     .checkbox()

@@ -1,14 +1,42 @@
-    <ul id="subNav" class="nav">
-      <li class="ui grid pagination menu">
-        <a class="thirteen wide column item" href="node.html">
-            <i class="desktop icon"></i>
-            Computer Systems
-        </a>
-        <span class="three wide column item" data-toggle='offcanvas' data-target="#nav"><i class="angle right icon"></i></span>
-      </li>
-      {% for x in (1..6) %}
-      <li class="ui sub pagination menu slideLeft">
-        <a href="grid.html">Notebooks</a>
-      </li>
-      {% endfor %}
-    </ul>
+      
+      <ul id="subNav" class="nav">
+        <li class="ui grid pagination menu">
+          <a class="thirteen wide column item" href="node.html">
+              <i class="desktop icon"></i>
+              Computer Systems
+          </a>
+          <span class="three wide column item" data-toggle='offcanvas' data-target="#nav"><i class="angle right icon"></i></span>
+        </li>
+        {% for x in (1..3) %}
+        <li class="item">
+          <a href="grid.html">Notebooks <i class="angle right icon"></i></a>
+        </li>
+        {% endfor %}
+        <li class="item ui hb basic accordion">
+          <span class="un-title un-spc-title active title"><i class="triangle right icon"></i> Brand Name</span>
+          <ul class="sNav active content">
+            <li><input type="checkbox" id="checkbox1"><label for="checkbox1"> Acer</label></li>
+            <li><input type="checkbox" id="checkbox2"><label for="checkbox2"> ASUS</label></li>
+            <li><input type="checkbox" id="checkbox3"><label for="checkbox3"> BTI</label></li>
+            <li><input type="checkbox" id="checkbox4"><label for="checkbox4"> Case Logic</label></li>
+            <li><input type="checkbox" id="checkbox5"><label for="checkbox5"> Cocoon</label></li>
+            <li><input type="checkbox" id="checkbox6"><label for="checkbox6"> Dell</label></li>
+            <li><input type="checkbox" id="checkbox7"><label for="checkbox7"> HP</label></li>
+            <li><input type="checkbox" id="checkbox8"><label for="checkbox8"> IBM</label></li>
+            <li><input type="checkbox" id="checkbox9"><label for="checkbox9"> Intel</label></li>
+            <li><input type="checkbox" id="checkbox10"><label for="checkbox9"> Kensington</label></li>
+          </ul>
+        </li>
+        <li class="item ui hb basic accordion">
+          <span class="un-title un-spc-title title"><i class="triangle right icon"></i> Product Type</span>
+          <ul class="sNav content">
+              <li><input type="checkbox" id="checkbox11"><label for="checkbox11"> AC Adapter</label></li>
+              <li><input type="checkbox" id="checkbox12"><label for="checkbox12"> Carrying Case</label></li>
+              <li><input type="checkbox" id="checkbox13"><label for="checkbox13"> Cooling Stand</label></li>
+              <li><input type="checkbox" id="checkbox14"><label for="checkbox14"> Docking Station</label> </li>
+              <li><input type="checkbox" id="checkbox15"><label for="checkbox15"> Notebook Battery</label> </li>
+          </ul>                         
+        </li>                             
+
+
+      </ul>
