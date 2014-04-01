@@ -72,6 +72,13 @@
 			padding:0;
 			&.left{
 				margin-top:0;
+				#nav.nav.main{
+					.menu{
+						a{
+							display:block;
+						}
+					}
+				}
 				.nav{
 					margin:0;
 					padding:0;
@@ -103,6 +110,7 @@
 						border-radius:0;
 						color:#000;
 						text-transform:uppercase;
+						margin:0;
 						&.slideLeft{
 							padding:10px 0;
 							text-align:center;
@@ -125,6 +133,7 @@
 							}
 						}
 						&>a.item{
+							padding-right:0;
 							text-align:left;
 							color:#000;
 						}
@@ -138,6 +147,7 @@
 					}
 					&#subNav{
 						margin-left:-18.75%;
+						overflow-y:auto;
 						.sub.menu a{
 							font-size:1rem;
 							padding:15px 10px 15px 33px;

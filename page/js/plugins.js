@@ -74,7 +74,7 @@ $(function(){
 
     //side
     $('.nav')
-    .height($(window).height())
+    .height($(window).height()-$('#header').height())
     ;
     if($.cookie('side')=='close'){
       $('#side').addClass('slideLeft').next().toggleClass('slideLeft');
