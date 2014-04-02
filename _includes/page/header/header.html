@@ -24,21 +24,23 @@
           <i class="search link icon"></i>
         </div>
   		</li>
-  		<li class="item"><a href="">Sign Up</a></li>
-  		<li class="item"><a href="">Sign In</a></li>
-  		<li class="item"><a href="">Cart</a><span class="ui  label">22</span></li>
+  		<li class="item"><a href="login.html">Sign Up</a></li>
+  		<li class="item"><a href="login.html">Sign In</a></li>
+  		<li class="item"><a href="cart.html">Cart</a><span class="ui  label">22</span></li>
   	</ul>
   </div>
 <div class="ui hb grid">
-  {% if page.title == 'index' or page.title == 'item' %}
-    {% if page.title == 'item' %}
-    <div class="three wide column side left slideLeft" id="side">
-    {% else %}  
-    <div class="three wide column side left" id="side">
+  {% if page.title != 'login' %}
+    {% if page.title == 'index' or page.title == 'item' %}
+      {% if page.title == 'item' %}
+      <div class="three wide column side left slideLeft" id="side">
+      {% else %}  
+      <div class="three wide column side left" id="side">
+      {% endif %}
+    {% include page/header/mod/nav.html %}
+    {% else %}
+    <div class="three wide column side left subNav" id="side">
+    {% include page/header/mod/subNav.html %}
     {% endif %}
-  {% include page/header/mod/nav.html %}
-  {% else %}
-  <div class="three wide column side left subNav" id="side">
-  {% include page/header/mod/subNav.html %}
+    </div><!--side-->
   {% endif %}
-  </div><!--side-->
