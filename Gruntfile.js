@@ -123,6 +123,12 @@ grunt.initConfig({
     },
     site: {
       command: '<%= pkg.rsync %> style/ _site/style',
+    },
+    svn: {
+      command: [
+        '<%= pkg.rsync %> ./_site/style/* ~/SVN/hb4/style',
+        '<%= pkg.rsync %> ./_includes/page/* ~/SVN/hb4/app/view/source'
+      ].join('&')
     }
   },
   browserSync: {
