@@ -5,7 +5,6 @@ _site
 .sass-cache
 
 #webapp
-dist
 _temp
 
 # Numerous always-ignore extensions

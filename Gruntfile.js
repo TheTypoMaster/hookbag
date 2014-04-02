@@ -1,7 +1,8 @@
 module.exports = function(grunt) {
+require('time-grunt')(grunt);
 grunt.initConfig({
   path:{
-    dist:'./dist',
+    dist:'./style',
     temp:'./_temp',
     fonts:'./fonts',
     scss:'./sass',
@@ -114,11 +115,11 @@ grunt.initConfig({
       command: 'source ./base.sh',
     },
     siteStyle: {
-      command: '<%= pkg.rsync %> style/ _site/style',
+      command: '<%= pkg.rsync %> <%= path.dist %>/* _site/style',
     },
     svn: {
       command: [
-        '<%= pkg.rsync %> ./_site/style/* ~/SVN/hb4/style',
+        '<%= pkg.rsync %> <%= path.dist %>/* ~/SVN/hb4/style',
         '<%= pkg.rsync %> ./_includes/page/* ~/SVN/hb4/app/view/source'
       ].join('&')
     }
@@ -139,8 +140,15 @@ grunt.initConfig({
     }
   },
   watch: {
-    options: {
-      livereload: 6789
+    options:{
+      //开启 livereload
+      livereload:true,
+      livereload: 6789,
+      //显示日志
+      dateFormate:function(time){
+        grunt.log.writeln('编译完成,用时'+time+'ms ' + (new Date()).toString());
+        grunt.log.writeln('Wating for more changes...');
+      }
     },
     html: {
       files: ['./*.html', './_includes/**/*.html', './<%= pkg.page %>/**/*.html'],
@@ -199,6 +207,7 @@ grunt.registerTask('default', [
   'imagemin',
   'jekyll:build',
   'shell:siteStyle',
+  'shell:svn',
   'browserSync',
   'watch'
 ]);
