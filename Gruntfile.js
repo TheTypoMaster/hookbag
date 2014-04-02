@@ -1,61 +1,30 @@
 module.exports = function(grunt) {
 grunt.initConfig({
+  path:{
+    dist:'./dist',
+    temp:'./_temp',
+    fonts:'./fonts',
+    scss:'./sass',
+    sass:'./sass',
+    less:'./less',
+    css:'./css',
+    js:'./js',
+    img:'./img'
+  },
   pkg: grunt.file.readJSON('package.json'),
   clean: {
-    temp: ["<%= pkg.build %>/temp"],
-  },
-  compass: {
-    dist: {
-      options: {
-        sassDir: '<%= pkg.src %>',
-        cssDir: '<%= pkg.build %>/css',
-        outputStyle: 'compressed'
-      }
-    }
+    temp: ["<%= path.temp %>/"],
+    dist: ["<%= path.dist %>/"]
   },
   less: {
-    dist: {
-      src: ['<%= pkg.build %>/temp/*.css'],
-      dest: '<%= pkg.build %>/css/app.css',
-    },
-    cssTemp: {
-      files: [{
-        expand: true,
-        flatten: true,
-        cwd: '<%= pkg.page %>/',
-        src: ['**/*.less'],
-        dest: '<%= pkg.build %>/temp/',
-        ext: '.css'
-      }]
-    },
-    dynamic: {
-      files: [{
-        expand: true,
-        flatten: true,
-        cwd: '<%= pkg.build %>/less/',
-        src: ['**/*.less'],
-        dest: '<%= pkg.build %>/css/',
-        ext: '.css'
-      }]
-    }
-  },
-  concat: {
-    dist: {
-      src: ['<%= pkg.build %>/temp/*.css'],
-      dest: '<%= pkg.build %>/css/app.css',
-    }
-  },
-  cssmin: {
-    options: {
-      report: 'gzip'
-    },
     css: {
       files: [{
         expand: true,
         flatten: true,
-        cwd: '<%= pkg.build %>/css/',
-        src: ['*.css'],
-        dest: '<%= pkg.build %>/css/'
+        cwd: '<%= path.less %>/',
+        src: ['*.less', '!config.less'],
+        dest: '<%= path.temp %>/css/',
+        ext: '.css'
       }]
     }
   },
@@ -71,15 +40,38 @@ grunt.initConfig({
       files: [{
         expand: true,
         flatten: true,
-        cwd: '<%= pkg.page %>/',
-        src: ['**/*.js'],
-        dest: '<%= pkg.build %>/temp/',
+        cwd: '<%= path.js %>/',
+        src: ['*.js'],
+        dest: '<%= path.temp %>/js/',
         ext: '.js'
       }]
+    }
+  },
+  cssmin: {
+    options: {
+      report: 'gzip',
+      compatibility: 'ie8',
+      keepSpecialComments: '*',
+      noAdvanced: true
     },
-    dist: {
-      src: ['<%= pkg.build %>/temp/*.js'],
-      dest: '<%= pkg.build %>/js/app.js',
+    css: {
+      files: [{
+        expand: true,
+        flatten: true,
+        cwd: '<%= path.temp %>/css/',
+        src: ['*.css'],
+        dest: '<%= path.temp %>/css/'
+      }]
+    }
+  },
+  concat: {
+    css: {
+      src: ['<%= path.temp %>/css/*.css'],
+      dest: '<%= path.dist %>/css/app.css',
+    },
+    js: {
+      src: ['<%= path.temp %>/js/*.js'],
+      dest: '<%= path.dist %>/js/app.js',
     }
   },
   imagemin: {
@@ -90,9 +82,9 @@ grunt.initConfig({
       files: [{
         expand: true,
         flatten: true,
-        cwd: 'src/',
+        cwd: '<%= path.img %>/',
         src: ['**/*.{png,jpg,gif}'],
-        dest: '<%= pkg.build %>/img/'
+        dest: '<%= path.dist %>/img/'
       }]
     }
   },
@@ -121,7 +113,7 @@ grunt.initConfig({
     base: {
       command: 'source ./base.sh',
     },
-    site: {
+    siteStyle: {
       command: '<%= pkg.rsync %> style/ _site/style',
     },
     svn: {
@@ -154,20 +146,17 @@ grunt.initConfig({
       files: ['./*.html', './_includes/**/*.html', './<%= pkg.page %>/**/*.html'],
       tasks: ['jekyll:build']
     },
-    css: {
-      files: [
-        '**/*.sass',
-        '**/*.scss'
-      ],
-      tasks: ['compass']
+    sass: {
+      files: ['<%= path.sass %>/*.sass','<%= path.sass %>/*.scss'],
+      tasks: ['sass']
     },
     less: {
-      files: ['./<%= pkg.page %>/**/*.less'],
-      tasks: ['less', 'concat', 'clean:temp', 'cssmin', 'shell:site']
+      files: ['<%= path.less %>/*.less'],
+      tasks: ['less', 'concat:css', 'cssmin', 'shell:siteStyle']
     },
     js: {
-      files: ['./<%= pkg.page %>/**/*.js'],
-      tasks: ['uglify', 'shell:site']
+      files: ['<%= path.js %>/*.js'],
+      tasks: ['uglify', 'concat:js', 'shell:siteStyle']
     },
     img: {
       files: ['<%= pkg.src %>/**/*.png', '<%= pkg.src %>/**/*.jpg', '<%= pkg.src %>/**/*.gif', '<%= pkg.page %>/**/*.png', '<%= pkg.page %>/**/*.jpg', '<%= pkg.page %>/**/*.gif'],
@@ -182,33 +171,34 @@ grunt.event.on('watch', function(action, filepath) {
 });
 
 // 加载指定插件任务
-grunt.loadNpmTasks('grunt-contrib-clean');
-grunt.loadNpmTasks('grunt-contrib-copy');
-grunt.loadNpmTasks('grunt-contrib-less');
-grunt.loadNpmTasks('grunt-contrib-compass');
-grunt.loadNpmTasks('grunt-contrib-cssmin');
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-jshint');
-grunt.loadNpmTasks('grunt-contrib-concat');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-jekyll');
-grunt.loadNpmTasks('grunt-html-validation');
-grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-shell-spawn');
+grunt.loadNpmTasks('grunt-contrib-clean');
+grunt.loadNpmTasks('grunt-contrib-sass');
+grunt.loadNpmTasks('grunt-contrib-less');
+grunt.loadNpmTasks('grunt-autoprefixer');
+grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-contrib-concat');
+grunt.loadNpmTasks('grunt-contrib-htmlmin');
+grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.loadNpmTasks('grunt-html-validation');
+grunt.loadNpmTasks('grunt-contrib-csslint');
+grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-jekyll');
+grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-browser-sync');
 
 // 默认执行的任务
 grunt.registerTask('default', [ 
+  'clean',
   'shell:base',
-  'compass',
   'less',
+  'uglify',
+  'cssmin',
   'concat',
   'imagemin',
-  'cssmin',
-  'uglify',
-  'clean:temp',
   'jekyll:build',
-  'shell:site',
+  'shell:siteStyle',
   'browserSync',
   'watch'
 ]);
