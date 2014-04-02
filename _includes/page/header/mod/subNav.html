@@ -92,11 +92,12 @@
             Computer Systems
         </a>
       </li>
-      {% for x in (1..3) %}
+      {% for x in (1..8) %}
       <li class="item">
         <a href="grid.html">Terminals & Thin Clients <i class="angle right icon"></i></a>
       </li>
       {% endfor %}
+      {% for x in (1..3) %}
       <li class="item ui hb basic accordion">
         <span class="un-title un-spc-title active title"><i class="triangle right icon"></i>　Brand Name</span>
         <ul class="sNav active content">
@@ -122,6 +123,7 @@
             <li><input type="checkbox" id="checkbox15"><label for="checkbox15"> Notebook Battery</label> </li>
         </ul>                         
       </li>                             
+      {% endfor %}
 
 
     </ul>
