@@ -5,7 +5,7 @@ _site
 .sass-cache
 
 #webapp
-_temp
+_temp/
 
 # Numerous always-ignore extensions
 *.diff
