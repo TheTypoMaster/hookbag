@@ -6,6 +6,7 @@ _site
 
 #webapp
 _temp/
+style/
 
 # Numerous always-ignore extensions
 *.diff
