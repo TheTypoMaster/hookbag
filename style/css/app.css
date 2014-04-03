@@ -110,16 +110,6 @@
   border-bottom: 1px dotted #ddd;
   width: auto;
 }
-.hb #side.side.left .nav > .item .title.active .icon {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-}
-.hb #side.side.left .nav > .item > .sNav {
-  list-style-type: none;
-  line-height: 2rem;
-  padding: 0 0 0 1rem;
-}
 .hb #side.side.left .nav > .menu {
   width: 100%;
   border-radius: 0;
@@ -170,8 +160,49 @@
   text-decoration: underline;
 }
 .hb #side.side.left .nav.attr > .item {
-  padding: 5px 10px;
   width: 100%;
+  padding: 0;
+}
+.hb #side.side.left .nav.attr > .item a {
+  padding: .5rem 0 .5rem 1rem;
+  display: block;
+  color: #454545;
+  transition: background .2s;
+}
+.hb #side.side.left .nav.attr > .item a:hover {
+  color: #fff;
+  background: #0e71c0;
+}
+.hb #side.side.left .nav.attr > .item .title {
+  display: block;
+  padding: .5rem;
+}
+.hb #side.side.left .nav.attr > .item .title.active .icon {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.hb #side.side.left .nav.attr > .item .title:hover {
+  color: #4288ca;
+}
+.hb #side.side.left .nav.attr > .item > .sNav {
+  padding-top: 0;
+}
+.hb #side.side.left .nav.attr > .item > .sNav li {
+  list-style-type: none;
+  line-height: 2rem;
+  padding: .5rem 1rem;
+  transition: background .2s;
+}
+.hb #side.side.left .nav.attr > .item > .sNav li .checkbox {
+  display: block;
+}
+.hb #side.side.left .nav.attr > .item > .sNav li:hover {
+  color: #fff;
+  background: #0e71c0;
+}
+.hb #side.side.left .nav.attr > .item > .sNav li:hover .checkbox label {
+  color: #fff;
 }
 .hb #side.side.slideLeft #nav {
   width: 5%;
