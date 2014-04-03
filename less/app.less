@@ -55,6 +55,10 @@
 			margin-top:5px;
 			background:url(/img/logo.png);
 		}
+		.launch{
+			display:none;
+			margin-left:1rem;
+		}
 		.menu.right{
 			padding:0;
 		}
@@ -519,6 +523,40 @@
 		}
 		.vertical.segment{
 			padding-left:1rem;
+		}
+	}
+
+}
+
+
+@media (max-width:1024px){
+	.hb{
+		&#header{
+			.launch{
+				display:inline-block;
+			}
+			.right.menu .search{
+				display:none;
+			}
+		}
+		#side.side.left{
+			margin-left:-260px;
+			width:260px;
+			&.open{
+				margin-left:0;
+			}
+			.nav{
+				width:260px;
+				&#subNav{
+					margin-left:-260px;
+				}
+			}
+		}
+		#main{
+			width:100%;
+			&.open{
+				margin-right:-260px;
+			}
 		}
 	}
 

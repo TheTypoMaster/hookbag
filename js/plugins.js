@@ -26,6 +26,9 @@
 $(function(){
 
     //side
+    $('#header .launch').click(function(){
+        $('#side.side.left').toggleClass('open').siblings().toggleClass('open');
+    });
     $('.nav')
     .height($(window).height()-$('#header').height())
     ;
