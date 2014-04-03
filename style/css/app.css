@@ -76,6 +76,9 @@
   margin-top: 5px;
   background: url(/img/logo.png);
 }
+.hb#header .menu.right {
+  padding: 0;
+}
 .hb#header .item {
   padding: 20px;
 }
@@ -231,6 +234,10 @@
 .hb #photo {
   margin-top: 0;
   position: relative;
+  width: 100%;
+}
+.hb #photo img {
+  max-width: 100%;
 }
 .hb #photo .ppy-outer {
   display: none;
@@ -240,9 +247,9 @@
   background: #eff9c7;
 }
 .hb #photo.ppy-active {
-  width: 400px;
+  width: 100%;
   float: left;
-  margin: 0 20px 10px 0;
+  margin: 0;
 }
 .hb #photo.ppy-active .ppy-outer {
   display: block;
@@ -335,6 +342,10 @@
 .hb #buy .price strong {
   color: #A94442;
 }
+.hb #buy .form input {
+  width: 100%;
+  text-align: center;
+}
 .hb #policy .grid .column {
   position: relative;
 }
@@ -372,7 +383,6 @@
   color: #aaa;
 }
 .hb .hb.itemList2 {
-  margin: 0;
   font-size: 1rem;
 }
 .hb .hb.itemList2 .item img {

@@ -55,6 +55,9 @@
 			margin-top:5px;
 			background:url(/img/logo.png);
 		}
+		.menu.right{
+			padding:0;
+		}
 		.item{
 			padding:20px;
 			&.hb.search{
@@ -241,6 +244,10 @@
 	#photo{
 		margin-top:0;
 		position:relative;
+		width:100%;
+		img{
+			max-width:100%;
+		}
 		.ppy-outer{
 			display:none;
 			padding:10px;
@@ -249,9 +256,9 @@
 			background:#eff9c7;
 		}
 		&.ppy-active{
-			width:400px;
+			width:100%;
 			float:left;
-			margin:0 20px 10px 0;
+			margin:0;
 			.ppy-outer{
 				display:block;
 			}
@@ -351,6 +358,12 @@
 				color:#A94442;
 			}
 		}
+		.form{
+			input{
+				width:100%;
+				text-align:center;
+			}
+		}
 	}/*buy*/
 
 	#policy{
@@ -394,7 +407,6 @@
 		}
 	}
 	.hb.itemList2{
-		margin:0;
 		font-size:1rem;
 		.item{
 			img{
