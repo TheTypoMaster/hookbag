@@ -72,6 +72,6 @@ $(function(){
         });
     });
     //photo
-    $('#photo').popeye();
+    //$('#photo').popeye();
 
 });
