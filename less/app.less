@@ -123,14 +123,15 @@
 								border-radius:0;
 							}
 							&:hover{
-								background:@linkbg;
-								color:#fff;
+								box-shadow: -.2em 0 0 inset;
+								background: #f8f8f8;
 							}
 						}
 						&>a.item{
 							padding:1.5rem 0 1.5rem 1rem;
 							text-align:left;
 							color:#000;
+							border-radius:0;
 						}
 						.icon{
 							&.mobile{
@@ -162,8 +163,8 @@
 								color:#454545;
 								transition:background .2s;
 								&:hover{
-									color:#fff;
-									background:@linkbg;
+									box-shadow: -.2em 0 0 inset;
+									background: #f8f8f8;
 								}
 							}
 							.title{
@@ -185,17 +186,9 @@
 									line-height:2rem;
 									padding:.5rem 1rem;
 									transition:background .2s;
-									.checkbox{
-										display:block;
-									}
 									&:hover{
-										color:#fff;
-										background:@linkbg;
-										.checkbox{
-											label{
-												color:#fff;
-											}
-										}
+										box-shadow: -.2em 0 0 inset;
+										background: #f8f8f8;
 									}
 								}
 							}
@@ -550,6 +543,9 @@
 				&#subNav{
 					margin-left:-260px;
 				}
+				.slideLeft{
+					display:none;
+				}
 			}
 		}
 		#main{
@@ -557,6 +553,9 @@
 			&.open{
 				margin-right:-260px;
 			}
+		}
+		#side.side.left,#main{
+			transition:margin .2s;
 		}
 	}
 
