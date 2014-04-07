@@ -151,7 +151,7 @@ grunt.initConfig({
       }
     },
     html: {
-      files: ['./*.html', './_includes/**/*.html', './<%= pkg.page %>/**/*.html'],
+      files: ['./*.html', './_includes/**/*.html', './_layouts/**/*.html', './<%= pkg.page %>/**/*.html'],
       tasks: ['jekyll:build']
     },
     sass: {
