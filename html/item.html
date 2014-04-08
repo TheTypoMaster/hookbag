@@ -9,16 +9,14 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="/style/base/sui/css/sui.css">
-<link rel="stylesheet" href="/style/base/app/css/app.css">
-<link rel="stylesheet" href="/style/base/app/css/app.css">
-<link rel="stylesheet" href="/style/v1/css/app.css">
+<link rel="stylesheet" href="/style/css/base.css">
+<link rel="stylesheet" href="/style/css/app.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/style/base/jquery/jquery.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/style/js/jquery.js"><\/script>')</script>
 
-<script src="/style/base/sui/js/sui.js"></script>
-<script src="/style/base/app/js/app.js"></script>
+<script src="/style/js/base.js"></script>
+<script src="/js/holder.js"></script>
 
 </head>
 
@@ -28,7 +26,8 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
   <div class="ui hb menu" id="header">
-  	<a href="/page/html/index.html" class="item hb logo"></a>
+  	<a href="/html/index.html" class="item hb logo"></a>
+    <a class="launch item"><i class="icon list layout"></i></a>
   	<ul class="right menu">
   		<li class="item hb search">
   			<div class="ui icon input">
@@ -143,9 +142,11 @@
 					</div>
 				</div>
 			</div><!--name-->
-			<div class="ui grid">
-				<div class="six wide column" id="photo">
-					<img src="" alt="" data-src="holder.js/340x340/industrial">
+			<div class="ui stackable grid">
+				<div class="six wide column">
+					<div class="ppy" id="photo">
+						<img src="" alt="" data-src="holder.js/450x450/industrial">
+					</div>
 				</div><!--Photo-->
 				<div class="seven wide column" id="attr">
 					<div class="ui horizontal segment">
@@ -185,10 +186,10 @@
 						  <div class="ui green small fluid button"><i class="cart icon"></i> Add to Cart</div>			  	
 					  </div>
 					  <div class="field">
-						  <div class="ui small fluid button"><i class="cart icon"></i> Back Order</div>
+						  <div class="ui small fluid button"><i class="checkbox checked icon"></i> Back Order</div>
 					  </div>
 					  <div class="field">
-						  <div class="ui small fluid button"><i class="cart icon"></i> Add to Wishlist</div>
+						  <div class="ui small fluid button"><i class="add icon"></i> Add to Wishlist</div>
 					  </div>
 					</div>				
 				</div><!--buy-->
@@ -252,7 +253,7 @@
 						  <div class="ui green small fluid button"><i class="cart icon"></i> Add to Cart</div>			  	
 					  </div>
 					  <div class="field">
-						  <div class="ui small fluid button"><i class="cart icon"></i> Add to Wishlist</div>
+						  <div class="ui small fluid button"><i class="add icon"></i> Add to Wishlist</div>
 					  </div>
 						
 					</div>
@@ -865,7 +866,8 @@
 
 	</div><!--main-->
 </div><!--grid-->
-<script src="/page/js/plugins.js"></script>
+<script src="/js/popeye.js"></script>
+<script src="/js/plugins.js"></script>
 
 
 </body>

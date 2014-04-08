@@ -9,16 +9,14 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="/style/base/sui/css/sui.css">
-<link rel="stylesheet" href="/style/base/app/css/app.css">
-<link rel="stylesheet" href="/style/base/app/css/app.css">
-<link rel="stylesheet" href="/style/v1/css/app.css">
+<link rel="stylesheet" href="/style/css/base.css">
+<link rel="stylesheet" href="/style/css/app.css">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/style/base/jquery/jquery.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/style/js/jquery.js"><\/script>')</script>
 
-<script src="/style/base/sui/js/sui.js"></script>
-<script src="/style/base/app/js/app.js"></script>
+<script src="/style/js/base.js"></script>
+<script src="/js/holder.js"></script>
 
 </head>
 
@@ -28,7 +26,8 @@
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
   <div class="ui hb menu" id="header">
-  	<a href="/page/html/index.html" class="item hb logo"></a>
+  	<a href="/html/index.html" class="item hb logo"></a>
+    <a class="launch item"><i class="icon list layout"></i></a>
   	<ul class="right menu">
   		<li class="item hb search">
   			<div class="ui icon input">
@@ -47,7 +46,7 @@
 
 	<div class="column" id="login">
 		<div class="ui segment">
-			<div class="ui two column grid">
+			<div class="ui two column stackable grid">
 			  <div class="column">
 		      <div class="ui fluid form">
 	          <h3 class="ui header">Existing Customers</h3>
@@ -208,7 +207,8 @@
 
 	</div><!--main-->
 </div><!--grid-->
-<script src="/page/js/plugins.js"></script>
+<script src="/js/popeye.js"></script>
+<script src="/js/plugins.js"></script>
 
 
 </body>
