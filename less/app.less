@@ -556,11 +556,22 @@
 					display:none;
 				}
 			}
+			&.slideLeft{
+				#nav{
+					width:60px;
+					&#subNav{
+						margin-left:-60px;
+					}
+				}
+			}
 		}
 		#main{
 			width:100% !important;
 			&.open{
 				margin-right:-260px;
+				&.slideLeft{
+					margin-right:-60px;
+				}
 			}
 		}
 		#side.side.left,#main{
