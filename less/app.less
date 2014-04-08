@@ -65,7 +65,7 @@
 		.item{
 			padding:20px;
 			&.hb.search{
-				//width:800px;
+				width:640px;
 			}
 		}
 	}
@@ -367,6 +367,7 @@
 
 	#attr{
 		padding-right:0;
+		clear:both;
 		.hb.header{
 			text-transform:uppercase;
 			.item{
@@ -567,15 +568,22 @@
 
 }
 
-
+@media (max-width:1200px){
+	.hb#header .right.menu>.search{
+		width:500px;
+	}
+}
 @media (max-width:1024px){
 	.hb{
 		&#header{
 			.launch{
 				display:inline-block;
 			}
-			.right.menu .search{
-				display:none;
+			.right.menu>.search{
+				width:auto;
+			}
+			.item{
+				padding:20px 10px;
 			}
 		}
 		#side.side.left{
@@ -610,10 +618,21 @@
 					margin-right:-60px;
 				}
 			}
+			#itemPic{
+				width:100%;
+			}
+			#attr,#buy{
+				width:50%;
+			}
 		}
 		#side.side.left,#main{
 			transition:margin .2s;
 		}
 	}
 
+}
+@media (max-width:768px){
+	.hb#header .right.menu>.search{
+	
+	}
 }
