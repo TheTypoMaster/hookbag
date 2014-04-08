@@ -75,6 +75,10 @@ $(function(){
         });
     });
     //photo
-    //$('#photo').popeye();
+    var options = {
+        caption:    'permanent',
+        opacity:    1
+    }
+    $('.ppy').popeye(options);
 
 });

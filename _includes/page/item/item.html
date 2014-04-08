@@ -14,7 +14,29 @@
 			<div class="ui stackable grid">
 				<div class="six wide column">
 					<div class="ppy" id="photo">
-						<img src="" alt="" data-src="holder.js/450x450/industrial">
+						<ul class="ppy-imglist">
+						{% for x in (1..5) %}
+						 <li><a href="http://images.hookbag.ca/c/10/c492/c492595010ac5155/800"><img src="http://images.hookbag.ca/c/10/c492/c492595010ac5155/500" alt="" data-src="holder.js/450x450/industrial"></a></li>
+						 {% endfor %}
+						</ul>
+            <div class="ppy-outer">
+                <div class="ppy-stage">
+                    <div class="ppy-nav">
+                        <div class="nav-wrap">
+                            <a class="ppy-prev" title="Previous image">Previous image</a>
+                            <a class="ppy-play" title="Play Slideshow">Play Slideshow</a>
+                            <a class="ppy-pause" title="Stop Slideshow">Stop Slideshow</a>
+                            <a class="ppy-next" title="Next image">Next image</a>
+                        </div>
+                    </div>
+                    <div class="ppy-counter">
+                        <strong class="ppy-current"></strong> / <strong class="ppy-total"></strong> 
+                    </div>
+                </div>
+                <div class="ppy-caption">
+                    <span class="ppy-text"></span>
+                </div>
+            </div>
 					</div>
 				</div><!--Photo-->
 				<div class="seven wide column" id="attr">

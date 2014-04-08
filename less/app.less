@@ -184,12 +184,7 @@
 								li{
 									list-style-type:none;
 									line-height:2rem;
-									padding:.5rem 1rem;
 									transition:background .2s;
-									&:hover{
-										box-shadow: -.2em 0 0 inset;
-										background: #f8f8f8;
-									}
 								}
 							}
 						}
@@ -269,6 +264,9 @@
 /*******************************
            item
 *******************************/
+	.ppy-placeholder{
+		position:relative;
+	}
 	#photo{
 		margin-top:0;
 		position:relative;
@@ -280,7 +278,7 @@
 			display:none;
 			padding:10px;
 			border:1px solid #e1f1a1;
-			border-radius:0 10px 10px 10px;
+			border-radius:10px;
 			background:#eff9c7;
 		}
 		&.ppy-active{
@@ -294,13 +292,10 @@
 		.ppy-stage{
 			width:400px;
 			height:400px;
-			border-radius:0 5px 5px 5px;
+			border-radius:5px;
 			cursor:pointer;
 			background-repeat:no-repeat !important;
 			background-position:center !important;
-			position:relative;
-		}
-		.ppy-placeholder{
 			position:relative;
 		}
 		.ppy-caption,.ppy-captionwrap{
@@ -331,6 +326,41 @@
 		.ppy-extcaption{
 			width:400px;
 			display:block;
+		}
+		.ppy-loading{
+	    background-image:url(../img/loader-small.gif);
+	    background-repeat:no-repeat;
+	    background-position:center;
+		}
+		.ppy-counter{
+	    background: #fff;
+	    color:#333;
+	    padding:0 5px;
+	    font-size:0.8em;
+	    position:absolute;
+	    bottom:0;
+	    right:0;
+	    opacity:0.7;
+	    border-radius:5px 0 0 0;
+		}
+		.ppy-nav{
+			a{
+		    text-indent:-900em;
+		    height:22px;
+		    width:22px;
+		    display:inline-block;
+		    position:absolute;
+		    top:50%;
+		    margin-top:-11px;
+		    &.ppy-prev{
+			    left:0;
+			    background:url(../img/prev.png) no-repeat center;
+		    }
+		    &.ppy-next{
+			    right:0;
+			    background:url(../img/next.png) no-repeat center;
+		    }
+			}
 		}
 
 	}/*photo*/
@@ -432,6 +462,10 @@
 					color:#aaa;
 				}
 			}
+			&:hover .header{
+				color:#666;
+				text-decoration:underline;
+			}
 		}
 	}
 	.hb.itemList2{
@@ -506,6 +540,9 @@
 			&:before,&:after{
 				width:42%;
 			}
+		}
+		.button{
+			margin-bottom:1rem;
 		}
 	}	
 /*******************************
