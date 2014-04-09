@@ -102,7 +102,7 @@
             // css objects
             cssSelf = {
                 position:       'absolute',
-                width:          'auto',
+                width:          '100%',
                 height:         'auto',
                 margin:         0,
                 top:            0,
@@ -118,7 +118,7 @@
             },
             cssPlaceholder = {
                 'height':         (opts.caption == 'hover' || false) ? ppyOuter.outerHeight() : $self.outerHeight(),
-                'width':          (opts.caption == 'hover' || false) ? ppyOuter.outerWidth() : $self.outerWidth(),
+                'width':          (opts.caption == 'hover' || false) ? ppyOuter.outerWidth() : '100%',
                 'float':          $self.css('float'),
                 'margin-top':      $self.css('margin-top'),
                 'margin-right':    $self.css('margin-right'),
@@ -165,7 +165,8 @@
                     
                     // set selected thumb as background image of stage
                     var cssStageImage = {
-                        backgroundImage:    'url(' + img[i].src + ')'
+                        backgroundImage:    'url(' + img[i].src + ')',
+                        width: '100%'
                     };
                     // bogus animation css for IE 
                     var cssTemp = {
@@ -653,9 +654,15 @@
                     ppyStage.click(function(){
                         if(enlarged) {
                             showThumb(cur);
+                            $self.css({
+                                width: '100%'
+                            });
                         }
                         else {
                             showImage();
+                            $self.css({
+                                width: 'auto'
+                            });
                         }
                         
                     });
