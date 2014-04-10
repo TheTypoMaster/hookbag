@@ -172,6 +172,9 @@
                     var cssTemp = {
                         height:             '+=0'
                     };
+                    $self.css({
+                        width: '100%'
+                    });
                     
                     // if we are in enlarged mode, return to thumb mode
                     if(enlarged) {
@@ -287,6 +290,9 @@
                     // background can contain loading gfx
                     ppyStageWrap.addClass(lclass);
                     ppyStage.fadeTo((opts.duration/2), 0);
+                    $self.css({
+                        width: 'auto'
+                    });
                     
                     // if there are multiple popeyes opened at the same time,
                     // make sure the current one gets a higher z-index
@@ -654,15 +660,9 @@
                     ppyStage.click(function(){
                         if(enlarged) {
                             showThumb(cur);
-                            $self.css({
-                                width: '100%'
-                            });
                         }
                         else {
                             showImage();
-                            $self.css({
-                                width: 'auto'
-                            });
                         }
                         
                     });
